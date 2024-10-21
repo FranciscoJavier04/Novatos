@@ -1,0 +1,888 @@
+.home,
+.home * {
+  box-sizing: border-box;
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.vista-ordenador {
+  background: #373a3c;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.cabecera {
+  background: var(--fondo, #373a3c);
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 160px;
+  position: relative;
+  overflow: hidden;
+}
+.oneo {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.logo-sin-fondo {
+  flex-shrink: 0;
+  width: 120px;
+  height: 104px;
+  position: relative;
+  object-fit: cover;
+}
+.titulo {
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.texto-texto-eb-garomond {
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.titulo2 {
+  color: var(--texto, #e8d19f);
+  text-align: center;
+  font-family: "EbGaramond-BoldItalic", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  font-style: italic;
+  position: relative;
+}
+.acciones {
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-end;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.carta {
+  border-radius: 15px;
+  padding: 0px 15px 0px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.titulo3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.texto-texto-eb-garomond2 {
+  border-radius: 15px;
+  padding: 5px 15px 5px 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.titulo4 {
+  color: var(--texto, #e8d19f);
+  text-align: center;
+  font-family: "EbGaramond-Bold", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+}
+.reservas {
+  border-radius: 15px;
+  padding: 0px 15px 0px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.delivery {
+  border-radius: 15px;
+  padding: 0px 15px 0px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.line-2 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px 0 0 0;
+  flex-shrink: 0;
+  width: 164.45px;
+  height: 0px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(103.36deg) scale(1, 1);
+}
+.region {
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.europa {
+  flex-shrink: 0;
+  width: 24.22px;
+  height: 24.22px;
+  position: relative;
+  overflow: visible;
+}
+.titulo-peque-o {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.titulo5 {
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.texto-texto-eb-garomond3 {
+  border-radius: 15px;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.titulo6 {
+  color: var(--detalles, #bf9765);
+  text-align: center;
+  font-family: "EbGaramond-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+.body {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.inc {
+  border-radius: 0px 0px 15px 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 800px;
+  position: relative;
+  overflow: hidden;
+}
+.frame-15 {
+  background: var(--color, #ffffff);
+  border-radius: 15px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.descubrenos {
+  color: var(--black, #0d0d0d);
+  text-align: center;
+  font-family: "Playfair-ExtraBoldItalic", sans-serif;
+  font-size: 48px;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  font-style: italic;
+  position: relative;
+}
+.videos {
+  padding: 20px 120px 20px 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.frame-77 {
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.image-2 {
+  flex-shrink: 0;
+  width: 490px;
+  height: 273px;
+  position: relative;
+  object-fit: cover;
+}
+.estoy-seguro-de-que-has-visto-el-padrino-uno-de-los-nuestros-o-cualquier-pel-cula-de-mafiosos-pues-hoy-os-traigo-comiendo-en-el-restaurante-de-la-mafia-en-benidorn {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Playfair-ExtraBold", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  position: relative;
+  flex: 1;
+}
+.line-3 {
+  margin-top: -2px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 2px 0 0 0;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 0px;
+  position: relative;
+}
+.frame-78 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.as-es-comer-en-uno-de-los-restaurantes-mas-lujosos-de-espa-a-probamos-todos-los-platos-para-dar-nuestra-opini-n-mas-sincera {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Playfair-ExtraBold", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  position: relative;
+  flex: 1;
+}
+.image {
+  flex-shrink: 0;
+  width: 490px;
+  height: 273px;
+  position: relative;
+  object-fit: cover;
+}
+.line-4 {
+  margin-top: -2px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 2px 0 0 0;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 0px;
+  position: relative;
+}
+.frame-79 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.la-calidad-y-el-buen-servicio-son-nuestra-raz-n-de-ser-para-que-un-cliente-nos-elija-como-su-restaurante-de-referencia-una-filosof-a-llevada-a-nuestro-d-a-a-d-a {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Playfair-ExtraBold", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  position: relative;
+  flex: 1;
+}
+.line-5 {
+  margin-top: -2px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 2px 0 0 0;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 0px;
+  position: relative;
+}
+.footer-ordenador {
+  background: var(--fondo, #373a3c);
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-end;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 453px;
+  position: relative;
+  overflow: hidden;
+}
+.frame-5 {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.oneo2 {
+  padding: 0px 60px 0px 60px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 532px;
+  height: 120px;
+  position: relative;
+  overflow: hidden;
+}
+.info {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-end;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.texto-peque-o {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  position: relative;
+}
+.titulo7 {
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.texto-texto-eb-garomond4 {
+  border-radius: 15px;
+  padding: 0px 30px 0px 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-end;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.titulo8 {
+  color: var(--texto, #e8d19f);
+  text-align: left;
+  font-family: "Playfair-BoldItalic", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  font-style: italic;
+  position: relative;
+  align-self: stretch;
+  flex: 1;
+}
+.ubicacion {
+  padding: 0px 30px 0px 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-11 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+.texto-peque-o2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.titulo9 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.texto-texto-eb-garomond5 {
+  border-radius: 15px;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.titulo10 {
+  color: var(--texto, #e8d19f);
+  text-align: center;
+  font-family: "Playfair-BoldItalic", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  position: relative;
+}
+.line-1 {
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 433px;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+.acerca-de-neo {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 790px;
+  position: relative;
+  overflow: hidden;
+}
+.frame-8 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: 413px;
+  position: relative;
+  overflow: hidden;
+}
+.redes-sociales {
+  padding: 8px 21px 8px 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: 252px;
+  position: relative;
+  overflow: hidden;
+}
+.texto-peque-o3 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 376px;
+  height: 57px;
+  position: relative;
+}
+.titulo11 {
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.titulo12 {
+  color: var(--texto, #e8d19f);
+  text-align: center;
+  font-family: "Playfair-BoldItalic", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+  position: relative;
+}
+.instagram {
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.instagram2 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.texto-extra-peque-o {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.texto-extra-peque-o2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 244px;
+  position: relative;
+}
+.titulo13 {
+  color: var(--texto, #e8d19f);
+  text-align: center;
+  font-family: "Playfair-BoldItalic", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: italic;
+  position: relative;
+}
+.faccebok {
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.facebook {
+  flex-shrink: 0;
+  width: 20px;
+  height: 19.88px;
+  position: relative;
+  overflow: visible;
+}
+.telegram {
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.telegram2 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 16.77px;
+  position: relative;
+  overflow: visible;
+}
+.tripadvisor {
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.trip-advisor {
+  flex-shrink: 0;
+  width: 20px;
+  height: 11.86px;
+  position: relative;
+  overflow: visible;
+}
+.informacion {
+  padding: 0px 18px 0px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.texto-peque-o4 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 48px;
+  position: relative;
+}
+.titulo14 {
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.telefono {
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.telefono2 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 18.18px;
+  position: relative;
+  overflow: visible;
+}
+.correo {
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.correo2 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 15px;
+  position: relative;
+  overflow: visible;
+}
+.enlaces-legales {
+  padding: 13px 10px 13px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 342px;
+  height: 326px;
+  position: relative;
+  overflow: hidden;
+}
+.aviso-legal {
+  color: #e8d19f;
+  text-align: center;
+  font-family: "Playfair-BoldItalic", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+  position: relative;
+  width: 120px;
+}
+.politica-de-privacidad {
+  color: #e8d19f;
+  text-align: center;
+  font-family: "Playfair-BoldItalic", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+  position: relative;
+}
+.politica-de-cookies {
+  color: #e8d19f;
+  text-align: center;
+  font-family: "Playfair-BoldItalic", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+  position: relative;
+}
