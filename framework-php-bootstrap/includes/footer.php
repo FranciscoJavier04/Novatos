@@ -3,31 +3,33 @@
             <div class="row">
                 <!-- Footer Location-->
                 <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Location</h4>
+                    <h4 class="text-uppercase mb-4">ÓNEO</h4>
                     <p class="lead mb-0">
-                        2215 John Daniel Drive
+                    Óneo es un restaurante moderno y lujoso que ofrece una experiencia gastronómica exclusiva, fusionando alta cocina con un diseño elegante y contemporáneo para crear un ambiente sofisticado.
                         <br />
-                        Clark, MO 65243
+                        Dirección: Calle Francisco Villalón nº9,Marbella/España
                     </p>
                 </div>
                 <!-- Footer Social Icons-->
                 <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Around the Web</h4>
+                    <h4 class="text-uppercase mb-4">Redes Sociales</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-instagram"></i></a><p>Óneo_Official</p><br>
                     <a class="btn btn-outline-light btn-social mx-1" href="#!"><i
-                            class="fab fa-fw fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                            class="fab fa-fw fa-facebook-f"></i></a><p>Óneo_Official</p><br>     
                     <a class="btn btn-outline-light btn-social mx-1" href="#!"><i
-                            class="fab fa-fw fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                            class="fab fa-fw fa-Telegram-in"></i></a><p>Óneo_Official</p><br>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-tripadvisor"></i></a><p>Óneo</p>
+
+                    <h4 class="text-uppercase mb-4">Informacion</h4>
+                    <p>635582372</p>
+                    <p>informacion.óneo@gmail.com</p>  
                 </div>
                 <!-- Footer About Text-->
                 <div class="col-lg-4">
-                    <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                    <p class="lead mb-0">
-                        Freelance is a free to use, MIT licensed Bootstrap theme created by
-                        <a href="http://startbootstrap.com">Start Bootstrap</a>
-                        .
-                    </p>
+                    <h4 class="text-uppercase mb-4">Aviso Legal</h4>
+                    <h4 class="text-uppercase mb-4">Politica de Privacidad</h4>
+                    <h4 class="text-uppercase mb-4">Politica de Cookies</h4>
+                    
                 </div>
             </div>
         </div>
