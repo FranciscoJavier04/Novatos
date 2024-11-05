@@ -1,4 +1,4 @@
-<footer class="footer text-center">
+<footer class="text-center">
         <div class="container">
             <div class="row">
                 <!-- Footer Location-->
