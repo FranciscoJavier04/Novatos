@@ -5,10 +5,10 @@
                 <div class="col-lg-4 mb-5 mb-lg-0">
                     <h4 class="text-uppercase mb-4">ÓNEO</h4>
                     <p class="lead mb-0">
-                    Óneo es un restaurante moderno y lujoso que ofrece una experiencia gastronómica exclusiva, fusionando alta cocina con un diseño elegante y contemporáneo para crear un ambiente sofisticado.
-                        <br />
-                        Dirección: Calle Francisco Villalón nº9,Marbella/España
-                    </p>
+                    Óneo es un restaurante moderno y lujoso que ofrece una experiencia gastronómica exclusiva, 
+                    fusionando alta cocina con un diseño elegante y contemporáneo para crear un ambiente sofisticado.<br /></p>
+                    <p text-center >Dirección: Calle Francisco Villalón nº9,Marbella/España</p>
+                    
                 </div>
                 
                 <!-- Footer Social Icons-->
