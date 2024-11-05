@@ -7,7 +7,9 @@
 <body>
 <?php include("includes/navigation.php");?>
 <main>
-
+<div class="portfolio-main">
+        
+</div>
 </main>
 <?php include("includes/footer.php");?>
 </body>
