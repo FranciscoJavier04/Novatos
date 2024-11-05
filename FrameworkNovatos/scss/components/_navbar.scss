@@ -1,89 +1,54 @@
 // 
 // Navbar
 // 
+// Variables
+$navbar-bg-color: #343a40; // Color de fondo del navbar
+$navbar-link-color: #ffffff; // Color de los enlaces
+$navbar-link-hover-color: #adb5bd; // Color al hacer hover en los enlaces
+$navbar-brand-color: #ffdd57; // Color del texto de marca
+$search-btn-bg-color: #007bff; // Color de fondo del botón de búsqueda
+$search-btn-hover-color: darken($search-btn-bg-color, 10%); // Color de hover del botón de búsqueda
+$search-input-border-color: #ced4da; // Color de borde del input de búsqueda
 
-#mainNav {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-family: $headings-font-family;
-    font-weight: $headings-font-weight;
-
-    .navbar-brand {
-        color: $white;
+// Estilos de la barra de navegación
+.navbar {
+  background-color: $navbar-bg-color;
+  
+  .navbar-brand {
+    color: $navbar-brand-color;
+    &:hover {
+      color: lighten($navbar-brand-color, 10%);
     }
+  }
 
-    .navbar-nav {
-        margin-top: 1rem;
-
-        li.nav-item {
-            a.nav-link a.dropdown-item {
-                color: $white;
-
-                &:hover {
-                    color: $primary;
-                }
-
-                &:active,
-                &:focus {
-                    color: $white;
-                }
-
-                &.active {
-                    color: $primary;
-                }
-            }
-            div.dropdown-menu{
-                a.dropdown-item{
-                    &:hover {
-                        background-color: $primary;
-
-                    }
-                }
-            }
-        }
+  .navbar-nav {
+    .nav-link {
+      color: $navbar-link-color;
+      &:hover {
+        color: $navbar-link-hover-color;
+      }
     }
+  }
 
-    .navbar-toggler {
-        font-size: 80%;
-        padding: 0.8rem;
+  // Estilos para el botón de hamburguesa
+  .navbar-toggler {
+    border: none;
+    .navbar-toggler-icon {
+      filter: brightness(0) invert(1);
     }
-}
+  }
 
-
-@include media-breakpoint-up(lg) {
-    #mainNav {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-        transition: padding-top 0.3s, padding-bottom 0.3s;
-
-        .navbar-brand {
-            font-size: 1.75em;
-            transition: font-size 0.3s;
-        }
-
-        .navbar-nav {
-            margin-top: 0;
-        }
-
-        .navbar-nav>li.nav-item>a.nav-link.active {
-            color: $white;
-            background: $primary;
-
-            &:active,
-            &:focus,
-            &:hover {
-                color: $white;
-                background: $primary;
-            }
-        }
+  // Estilos para el formulario de búsqueda
+  form {
+    .form-control {
+      border-color: $search-input-border-color;
     }
-
-    #mainNav.navbar-shrink {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-
-        .navbar-brand {
-            font-size: 1.5em;
-        }
+    .btn {
+      background-color: $search-btn-bg-color;
+      color: #fff;
+      &:hover {
+        background-color: $search-btn-hover-color;
+      }
     }
+  }
 }
