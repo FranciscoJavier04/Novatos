@@ -9,7 +9,6 @@
 <?php include("includes/design-top.php");?>
 <?php include("includes/navigation.php");?>
 <main>
-<!-- Portfolio Section-->
 <section class="page-section portfolio" id="portfolio">
         <div class="container">
             <!-- Portfolio Section Heading-->
