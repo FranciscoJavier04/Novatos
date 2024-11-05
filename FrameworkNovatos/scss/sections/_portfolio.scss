@@ -2,12 +2,16 @@
 // Portfolio
 // 
 
-.portfolio {
-    .portfolio-main {
-        background-image: image();
-  
-    }
+
+.portfolio-main {
+    background-image: url("/assets/img/imgMain.webp");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    padding: 10%;
 }
+
+
 
 // Styling for the portfolio modals
 .portfolio-modal {
