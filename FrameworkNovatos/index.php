@@ -4,6 +4,10 @@
 <head>
 </head>
 <body>
+<?php include("includes/navigation.php");?>
+<main>
 
+</main>
+<?php include("includes/footer.php");?>
 </body>
 </html>
