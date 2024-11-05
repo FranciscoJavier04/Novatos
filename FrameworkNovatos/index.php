@@ -7,7 +7,9 @@
 <body>
 <?php include("includes/navigation.php");?>
 <main>
-
+<div>
+    
+</div>
 </main>
 <?php include("includes/footer.php");?>
 </body>
