@@ -15,6 +15,5 @@
 <!-- Core theme CSS (includes Bootstrap)-->
 <link href="css/styles.css" rel="stylesheet" />
 
-//Include Boostrap JS for interactive components
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 

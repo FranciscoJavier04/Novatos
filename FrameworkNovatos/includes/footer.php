@@ -3,7 +3,7 @@
             <div class="row">
                 <!-- ÓNEO Y DIRECCION-->
                 <div class="col-lg-4 mb-5 mb-lg-0">
-                    <a href=""><h4 class="text-uppercase mb-4">ÓNEO</h4></a>
+                    <a><h4 class="text-uppercase mb-4">ÓNEO</h4></a>
                     
                     <p class="descFooter">
                     Óneo es un restaurante moderno y lujoso que ofrece una experiencia gastronómica exclusiva, 
