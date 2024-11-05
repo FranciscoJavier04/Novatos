@@ -2,13 +2,13 @@
 // Navbar
 // 
 // Variables
-$navbar-bg-color: #343a40; // Color de fondo del navbar
-$navbar-link-color: #ffffff; // Color de los enlaces
-$navbar-link-hover-color: #adb5bd; // Color al hacer hover en los enlaces
-$navbar-brand-color: #ffdd57; // Color del texto de marca
-$search-btn-bg-color: #007bff; // Color de fondo del botón de búsqueda
-$search-btn-hover-color: darken($search-btn-bg-color, 10%); // Color de hover del botón de búsqueda
-$search-input-border-color: #ced4da; // Color de borde del input de búsqueda
+$navbar-bg-color: #343a40;
+$navbar-link-color: #ffffff; 
+$navbar-link-hover-color: #adb5bd; 
+$navbar-brand-color: #ffdd57; 
+$search-btn-bg-color: #007bff;
+$search-btn-hover-color: darken($search-btn-bg-color, 10%);
+$search-input-border-color: #ced4da; 
 
 // Estilos de la barra de navegación
 .navbar {
@@ -19,6 +19,10 @@ $search-input-border-color: #ced4da; // Color de borde del input de búsqueda
     &:hover {
       color: lighten($navbar-brand-color, 10%);
     }
+  }
+  img{
+    height: 100px;
+    width: 100px;
   }
 
   .navbar-nav {
@@ -38,17 +42,4 @@ $search-input-border-color: #ced4da; // Color de borde del input de búsqueda
     }
   }
 
-  // Estilos para el formulario de búsqueda
-  form {
-    .form-control {
-      border-color: $search-input-border-color;
-    }
-    .btn {
-      background-color: $search-btn-bg-color;
-      color: #fff;
-      &:hover {
-        background-color: $search-btn-hover-color;
-      }
-    }
-  }
 }
