@@ -4,10 +4,13 @@
 .footer {
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background-color: $secondary;
-    color: $white;
+    background-color: #373A3C;
+    text-align: center;
+    color: #E8D19F;
 }
-
+.descFooter{
+    text-align: justify;
+}
 .copyright {
     background-color: darken($secondary, 10%);
 }
