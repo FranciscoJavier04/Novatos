@@ -4,7 +4,7 @@
       <img src="assets/img/LogoSinFondo.png" alt="Logo" id="logo">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
-      <span class="navbar-toggler-icon"></span>
+      <i class="fas fa-bars"></i>
     </button>
     
     <div class="collapse navbar-collapse" id="navbar">
@@ -19,7 +19,13 @@
           <a class="nav-link" href="delivery.php">Delivery</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="delivery.php"><i class="fa-solid fa-earth-americas"></i></a>
+          <a class="nav-link" href="delivery.php"><i class="fas fa-globe-europe"></i>/ES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="delivery.php"><i class="fas fa-user"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="delivery.php"><i class="fas fa-cart-plus"></i></a>
         </li>
       </ul>
     </div>
