@@ -2,41 +2,30 @@
 // Navbar
 // 
 // Variables
-$navbar-bg-color: #343a40;
-$navbar-link-color: #ffffff; 
-$navbar-link-hover-color: #adb5bd; 
-$navbar-brand-color: #ffdd57; 
-$search-btn-bg-color: #007bff;
-$search-btn-hover-color: darken($search-btn-bg-color, 10%);
-$search-input-border-color: #ced4da; 
+$navbar-bg-color: #373A3C;
+$navbar-link-color: #BF9765; 
 
 // Estilos de la barra de navegación
 .navbar {
   background-color: $navbar-bg-color;
-  
-  .navbar-brand {
-    color: $navbar-brand-color;
-    &:hover {
-      color: lighten($navbar-brand-color, 10%);
+
+  .navbar-brand{
+    img{
+      width: 100px;
     }
-  }
-  img{
-    height: 100px;
-    width: 100px;
   }
 
   .navbar-nav {
     .nav-link {
       color: $navbar-link-color;
       &:hover {
-        color: $navbar-link-hover-color;
+        color: $navbar-link-color;
       }
     }
   }
-
-  // Estilos para el botón de hamburguesa
   .navbar-toggler {
     border: none;
+    color: $navbar-link-color;
     .navbar-toggler-icon {
       filter: brightness(0) invert(1);
     }
