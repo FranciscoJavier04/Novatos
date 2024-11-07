@@ -3,7 +3,7 @@
         <div class="row">
             <!-- ÓNEO y Dirección -->
             <div class="col-lg-4 mb-4">
-                <div class="d-flex align-items-center justify-content-center mb-3">
+                <div class="d-flex justify-content-center mb-3">
                     <img src="assets/img/LogoSinFondo.png" class="logo me-2">
                     <p class="oneo mb-0">ÓNEO</p>
                 </div>
@@ -16,30 +16,29 @@
                     <p class="mb-0 ms-2">Dirección: Calle Francisco Villalón nº9, Marbella/España</p>
                 </div>
             </div>
-
             <!-- Redes Sociales e Información -->
-            <div class="col-lg-4 mb-4 text-center">
+            <div class="col-lg-4 mb-4">
                 <p class="texto24 text-uppercase mb-4">Redes Sociales</p>
                 
-                <div class="d-flex align-items-center justify-content-center mb-2">
+                <div class="d-flex justify-content-center mb-2">
                     <span class="social-icon me-3"><i class="fab fa-instagram"></i> Óneo_Official</span>
                 </div>
-                <div class="d-flex align-items-center justify-content-center mb-2">
+                <div class="d-flex justify-content-center mb-2">
                     <span class="social-icon"><i class="fab fa-facebook"></i> Óneo_Official</span>
                 </div>
-                <div class="d-flex align-items-center justify-content-center mb-2">
+                <div class="d-flex justify-content-center mb-2">
                     <span class="social-icon me-3"><i class="fab fa-telegram"></i> Óneo_Official</span>
                 </div>
-                <div class="d-flex align-items-center justify-content-center mb-4">
+                <div class="d-flex justify-content-center mb-4">
                     <span class="social-icon"><i class="fab fa-tripadvisor"></i> Óneo_Official</span>
                 </div>
 
                 <p class="texto24 text-uppercase mb-4">Información</p>
                 
-                <div class="d-flex align-items-center justify-content-center mb-2">
+                <div class="d-flex justify-content-center mb-2">
                     <span><i class="fas fa-phone-alt"></i> 635582372</span>
                 </div>
-                <div class="d-flex align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
                     <span><i class="fas fa-envelope"></i> informacion.óneo@gmail.com</span>
                 </div>
             </div>

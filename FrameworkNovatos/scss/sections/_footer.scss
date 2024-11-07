@@ -5,7 +5,7 @@
     background-color: #373A3C;
     color: #E8D19F;
     text-align: center;
-    font-family: 'Playfair Display', serif;
+    font-family: $tipografia_textos;
 }
 
 .descFooter {
@@ -22,7 +22,6 @@
 .oneo {
     font-size: 64px;
     color: #E8D19F;
-    font-family: 'Playfair Display', serif;
 }
 
 .texto24 {
@@ -34,4 +33,9 @@
 .social-icon {
     color: #E8D19F;
     font-size: 16px;
+}
+
+.separador{
+    height: auto;
+    background-color: white;
 }
