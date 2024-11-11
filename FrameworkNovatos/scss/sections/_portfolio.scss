@@ -1,6 +1,11 @@
 
 main {
     background-color: #444;
+    color: white;
+}
+
+.p-5{
+    padding: 10% !important;
 }
 
 .portfolio-main {
@@ -8,8 +13,11 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    text-align: center;
-    padding: 10%;
+}
+
+.separator{
+    background-color: white;
+    height: 1px;
 }
 
 .video {
