@@ -1,17 +1,34 @@
-// 
-// Navbar
-// 
 // Variables
-$navbar-bg-color: #373A3C;
-$navbar-link-color: #BF9765; 
+$navbar-bg-color: #373a3c;
+$navbar-link-color: #bf9765;
 
-// Estilos de la barra de navegación
+// Navbar
 .navbar {
   background-color: $navbar-bg-color;
+  font-family: $tipografia_titulos;
+  font-size: 25px;
 
-  .navbar-brand{
-    img{
+  .navbar-brand {
+    color: $navbar-link-color;
+    font-size: 25px;
+    img {
       width: 100px;
+      display: none;
+    }
+
+    #titulo {
+      display: inline;
+    }
+
+
+    @media (min-width: 768px) {
+      img {
+        display: inline;
+      }
+
+      #titulo {
+        display: none;
+      }
     }
   }
 
@@ -23,12 +40,13 @@ $navbar-link-color: #BF9765;
       }
     }
   }
+
   .navbar-toggler {
     border: none;
     color: $navbar-link-color;
+
     .navbar-toggler-icon {
       filter: brightness(0) invert(1);
     }
   }
-
 }
