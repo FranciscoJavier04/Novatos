@@ -2,14 +2,13 @@
 .footer {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    background-color: #373A3C;
-    color: #E8D19F;
+    background-color: $secondary;
+    color: $text;
     font-family: $tipografia_textos;
 }
 
 .descFooter {
     text-align: justify;
-    color: #E8D19F;
 }
 
 .logo {
@@ -20,17 +19,14 @@
 
 .oneo {
     font-size: 64px;
-    color: #E8D19F;
 }
 
 .texto24 {
     font-size: 24px;
-    color: #E8D19F;
 }
 
 /* Estilo de los iconos de redes sociales */
 .social-icon {
-    color: #E8D19F;
     font-size: 16px;
 }
 
