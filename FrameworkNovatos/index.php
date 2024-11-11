@@ -10,16 +10,16 @@
     <?php include("includes/navigation.php"); ?>
     <main class="text-center">
         <div class="portfolio-main p-5">
-            <button class="btn btn-lg btn-light">DESCÚBRENOS</button>
+            <button class="btn-xl">DESCÚBRENOS</button>
         </div>
 
-        <div class="container py-5">
+        <div class="container py-5 ">
             <!-- Primera tarjeta -->
             <div class="row align-items-center mb-3">
-                <div class="col-md-4">
+                <div class="col-md-4 p-0">
                     <img src="assets/img/Logo.png" alt="Imagen 1" class="img-fluid video">
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8 p-0">
                     <p>
                         Estoy seguro de que has visto el Padrino, uno de los nuestros o cualquier película de Mafiosos.
                         Pues hoy os traigo Comiendo en el RESTAURANTE DE LA MAFIA en Benidorm.
@@ -30,10 +30,10 @@
 
             <!-- Segunda tarjeta (invertida) -->
             <div class="row align-items-center my-3">
-                <div class="col-md-4 order-md-1">
+                <div class="col-md-4 order-md-1 p-0">
                     <img src="assets/img/Logo.png" alt="Imagen 2" class="img-fluid video">
                 </div>
-                <div class="col-md-8 order-md-0">
+                <div class="col-md-8 order-md-0 p-0">
                     <p>
                         Así es comer en uno de los restaurantes más lujosos de España, probamos todos los platos para
                         dar nuestra opinión más sincera.
@@ -45,10 +45,10 @@
 
             <!-- Tercera tarjeta -->
             <div class="row align-items-center my-3">
-                <div class="col-md-4">
+                <div class="col-md-4 p-0">
                     <img src="assets/img/Logo.png" alt="Imagen 3" class="img-fluid video">
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8 p-0">
                     <p>
                         La calidad y el buen servicio son nuestra razón de ser para que un cliente nos elija como su
                         restaurante de referencia. Una filosofía llevada a nuestro día a día.
