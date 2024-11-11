@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+<nav class="navbar navbar-expand-md  sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand me-auto" href="Index.php">
       <img src="assets/img/LogoSinFondo.png" alt="Logo" id="logo">
@@ -20,9 +20,19 @@
         <li class="nav-item">
           <a class="nav-link" href="delivery.php">Delivery</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="idioma.php"><i class="fas fa-globe-europe"></i>/ES</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="languageDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fas fa-globe-europe"></i> / ES
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item">Español</a></li>
+            <li><a class="dropdown-item">Inglés</a></li>
+            <li><a class="dropdown-item">Francés</a></li>
+            <li><a class="dropdown-item">Alemán</a></li>
+          </ul>
         </li>
+
         <li class="nav-item">
           <a class="nav-link" href="usuario.php"><i class="fas fa-user"></i></a>
         </li>

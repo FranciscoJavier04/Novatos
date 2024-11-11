@@ -1,23 +1,26 @@
-// Variables
-$navbar-bg-color: #373a3c;
-$navbar-link-color: #bf9765;
+// Variables comunes
+$navbar-font-size: 25px;
+$navbar-font-weight: bold;
 
-// Navbar
 .navbar {
-  background-color: $navbar-bg-color;
+  background-color: $secondary;
   font-family: $tipografia_titulos;
-  font-size: 25px;
+  font-size: $navbar-font-size;
+  font-weight: $navbar-font-weight;
+  color: $text;
+  
 
   .navbar-brand {
-    color: $navbar-link-color;
-    font-size: 25px;
+    font-size: $navbar-font-size;
+    color: $text;
+    
+    #titulo {
+      display: inline;
+    }
+
     img {
       width: 100px;
       display: none;
-    }
-
-    #titulo {
-      display: inline;
     }
 
 
@@ -32,18 +35,35 @@ $navbar-link-color: #bf9765;
     }
   }
 
+
   .navbar-nav {
     .nav-link {
-      color: $navbar-link-color;
+      color: $text;
+      font-size: $navbar-font-size;
+
       &:hover {
-        color: $navbar-link-color;
+        color: $text;
       }
     }
   }
 
+  // Dropdown
+  .dropdown-menu {
+    font-size: $navbar-font-size;
+    background-color: $secondary !important;
+
+    .dropdown-item {
+      color: $text !important;
+      &:hover {
+        background-color: transparent;
+        color: $text !important;  }
+    }
+  }
+
+
   .navbar-toggler {
     border: none;
-    color: $navbar-link-color;
+    color: $icons;
 
     .navbar-toggler-icon {
       filter: brightness(0) invert(1);
