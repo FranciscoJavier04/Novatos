@@ -1,10 +1,9 @@
 /* Footer */
 .footer {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     background-color: #373A3C;
     color: #E8D19F;
-    text-align: center;
     font-family: $tipografia_textos;
 }
 
@@ -35,7 +34,7 @@
     font-size: 16px;
 }
 
-.separador{
-    height: auto;
-    background-color: white;
+.linea {
+    width: 1px; 
+    border-left: 2px solid white;
 }
