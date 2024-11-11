@@ -3,13 +3,18 @@
 // 
 
 //- Override and add to color system
-$teal: #1abc9c;
-$dark-blue: #2c3e50;
-$myorange: #ff7700;
+$gray: #373A3C;
+$pie: #F2E7C4;
+$dark: #0D0D0D;
+$mybrown: #BF9765;
+$myyellow: #E8D19F;
+$white:white;
 
 //- Override primary color
-$primary: $myorange;
-$secondary: $dark-blue;
+$primary: $pie;
+$secondary: $gray;
+$text:$myyellow;
+$icons:$mybrown;
 // $danger: yellow;
 // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
 // See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
