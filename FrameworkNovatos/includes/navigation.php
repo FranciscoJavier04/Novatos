@@ -32,7 +32,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="usuario.php"><i class="fas fa-user"></i></a>
+          <a class="nav-link" href="login.php"><i class="fas fa-user"></i></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="carrito.php"><i class="fas fa-cart-plus"></i></a>
