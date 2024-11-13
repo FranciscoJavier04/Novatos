@@ -1,12 +1,29 @@
-
+//MANU
 .index {
-    background-color:$lightgray;
+    background-color: $lightgray;
     color: $white;
     font-size: 25px;
-    font-family:$tipografia_textos ;
+    font-family: $tipografia_textos ;
 }
 
-.p-5{
+.bg-login {
+    background-image: url('/assets/img/imagenInicio.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0 10px 10px 0;
+    height: 100vh;
+}
+
+.logo-login img{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    object-position: center -150px;
+    border-radius: 15px;
+}
+
+.p-5 {
     padding: 10% !important;
 }
 
@@ -17,7 +34,7 @@
     background-position: center;
 }
 
-.separator{
+.separator {
     background-color: $white;
     height: 1px;
 }
@@ -25,16 +42,13 @@
 .video {
     width: 300px;
 }
-.card {
-    .card-img-top {
-        border: 3px solid $myyellow;
-        border-radius: 10px;   
-    }
-    .card-body {
-        border: 3px solid $mybrown;
-        border-radius: 10px;   
-    }
-}
-.p-4{
-    padding: 50px !important;
-}
+
+
+//FRAN
+
+
+
+
+
+
+//ALEX
