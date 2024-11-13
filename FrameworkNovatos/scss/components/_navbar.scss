@@ -8,12 +8,11 @@ $navbar-font-weight: bold;
   font-size: $navbar-font-size;
   font-weight: $navbar-font-weight;
   color: $text;
-  
 
   .navbar-brand {
     font-size: $navbar-font-size;
     color: $text;
-    
+
     #titulo {
       display: inline;
     }
@@ -22,7 +21,6 @@ $navbar-font-weight: bold;
       width: 100px;
       display: none;
     }
-
 
     @media (min-width: 768px) {
       img {
@@ -35,11 +33,12 @@ $navbar-font-weight: bold;
     }
   }
 
-
   .navbar-nav {
     .nav-link {
       color: $text;
       font-size: $navbar-font-size;
+      margin-right: 15px;
+      margin-left: 15px;
 
       &:hover {
         color: $text;
@@ -56,10 +55,10 @@ $navbar-font-weight: bold;
       color: $text !important;
       &:hover {
         background-color: transparent;
-        color: $text !important;  }
+        color: $text !important;
+      }
     }
   }
-
 
   .navbar-toggler {
     border: none;
