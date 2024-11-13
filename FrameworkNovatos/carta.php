@@ -11,7 +11,6 @@
     <main class="text-center">
     
     </main>
-
     <?php include("includes/footer.php"); ?>
 </body>
 
