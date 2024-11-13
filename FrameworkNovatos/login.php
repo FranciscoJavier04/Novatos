@@ -13,7 +13,7 @@
             <div class="row min-vh-100">
                 <div class="col-md-6 d-flex align-items-center justify-content-center">
                     <div class="login-container text-center">
-                        <div class="logo">
+                        <div class="logo-login">
                             <img src="/assets/img/Logo.png" alt="Logo Óneo">
                         </div>
                         <h2 class="fw-bold">BIENVENIDO DE NUEVO!</h2>
@@ -41,8 +41,7 @@
                     </div>
                 </div>
 
-                <!-- Columna de imagen del restaurante -->
-                <div class="col-md-6 bg-image d-none d-md-block"></div>
+                <div class="col-md-6 bg-login d-none d-md-block"></div>
             </div>
         </div>
     </main>
