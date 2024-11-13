@@ -31,7 +31,6 @@
             <li><a class="dropdown-item">Alemán</a></li>
           </ul>
         </li>
-
         <li class="nav-item">
           <a class="nav-link" href="usuario.php"><i class="fas fa-user"></i></a>
         </li>
