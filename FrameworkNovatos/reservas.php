@@ -9,14 +9,19 @@
 <body>
     <?php include("includes/navigation.php"); ?>
     <main class="align-items-center">
-        <div class="container mt-3">
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                    <a href="#" class="btn btn-primary">See Profile</a>
+        <div class="container mt-3 d-flex justify-content-center">
+            <div class="card p-4 border-0">
+                <img class="card-img-top" src="assets/img/Logo.png" alt="terraza">
+                <div class="card-body text-center mt-3">
+                    <h1 class="card-title">Terraza</h1>
+                    <p class="card-text"> Una terraza elegante al aire libre, decorada con mesas de comedor adornadas
+                        con flores coloridas y rodeadas de velas. La terraza tiene una vista espectacular del océano y
+                        las montañas al fondo, enmarcada por un cielo al atardecer. La ambientación es romántica y
+                        acogedora, con iluminación suave y detalles lujosos, ideal para una cena íntima en un entorno
+                        paradisíaco.</p>
                 </div>
+                <div class="d-flex justify-content-center mt-3"><a href="datosReserva.php" class="btn btn-primary">Reservar</a></div>
+
             </div>
         </div>
     </main>
