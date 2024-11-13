@@ -14,7 +14,7 @@
                 <div class="col-md-6 d-flex align-items-center justify-content-center">
                     <div class="login-container text-center">
                         <div class="logo">
-                            <img src="path_to_your_logo.png" alt="Logo Óneo">
+                            <img src="/assets/img/Logo.png" alt="Logo Óneo">
                         </div>
                         <h2 class="fw-bold">BIENVENIDO DE NUEVO!</h2>
                         <p>Introduce tus datos para disfrutar de todas nuestras funciones.</p>
@@ -33,8 +33,8 @@
                             </div>
                             <button type="submit" class="btn btn-primary w-100 mb-2"
                                 style="background-color: #D5BA86; border-color: #D5BA86;">Iniciar Sesión</button>
-                            <button type="button" class="btn btn-google w-100 mb-3">
-                                <img src="path_to_google_icon.png" alt="Google Icon"> Sign in with Google
+                            <button type="button" class="btn btn-google text-center m-3 p-2">
+                                <i class="fab fa-google"></i></i> Sign in with Google
                             </button>
                             <p>¿No tienes cuenta? <a href="#">Regístrate</a></p>
                         </form>
