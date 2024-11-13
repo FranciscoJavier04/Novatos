@@ -45,10 +45,18 @@
 
 
 //FRAN
-
-
-
-
-
+.card {
+    .card-img-top {
+        border: 3px solid $myyellow;
+        border-radius: 10px;   
+    }
+    .card-body {
+        border: 3px solid $mybrown;
+        border-radius: 10px;   
+    }
+}
+.p-4{
+    padding: 50px !important;
+}
 
 //ALEX
