@@ -37,9 +37,9 @@ $navbar-font-weight: bold;
     .nav-link {
       color: $text;
       font-size: $navbar-font-size;
-      .nav-item {
-        margin-right: 40px;
-      }
+      margin-right: 15px;
+      margin-left: 15px;
+
       &:hover {
         color: $text;
       }
