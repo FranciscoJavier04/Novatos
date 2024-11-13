@@ -1,0 +1,42 @@
+body {
+    background-color: #333;
+    color: #eee;
+}
+.navbar, .footer {
+    background-color: #1f1f1f;
+}
+.navbar-brand, .nav-link {
+    color: #e0c070 !important;
+}
+.hero-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: #222;
+}
+.logo-img {
+    max-width: 200px;
+}
+.menu-section {
+    background-color: #444;
+    padding: 2rem;
+    border-radius: 8px;
+}
+.menu-section h2 {
+    color: #e0c070;
+    font-weight: bold;
+}
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #666;
+}
+main {
+    background-image: url('assets/img/carta-fondo.png');
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+}
