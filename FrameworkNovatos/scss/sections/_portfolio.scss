@@ -81,6 +81,7 @@ $cursiva: italic;
 .body-carta {
     background-image: url("/assets/img/carta/cartafondo.png");
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -89,40 +90,54 @@ $cursiva: italic;
     align-items: center;
 }
 
-
-
-.subtitle-carta,.title-carta{
-    font-family: $tipografia_titulos;
+.title-carta {
+  margin-top: 300px; /* Baja el elemento con un margen superior */
 }
 
-.item-carta{
-    font-family: $tipografia_textos;
+.subtitle-carta,.title-carta{
+  font-family: $tipografia_titulos;
+  font-weight: bold;
+}
+
+.items-carta {
+  font-family: $tipografia_textos;
+  text-align: center; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.item-carta {
+  font-family: $tipografia_textos; 
+  text-align: justify; 
+  max-width: 600px; 
 }
 
 .hero-logo-carta {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    margin-bottom: -20px; /* Hace que el logo se superponga al contenedor */
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: -20px; 
 }
 
 .logo-carta {
-    max-width: 500px; /* Establece un límite de tamaño para pantallas grandes */
-    transform: translateY(300px); /* Mueve la imagen hacia arriba */
+    border-radius: 1000000px;
+    max-width: 300px;
+    transform: translateY(190px);
 }
 
 .container-carta {
     background-color: $secondary;
     align-items: center;
-    width: 80%; /* Ocupa el 85% del ancho de la página */
+    width: 80%;
     margin: 0 auto;
     height: 100%;
-    border-radius: 15px; /* Bordes redondeados */
-    overflow: hidden; /* Evita que el contenido sobresalga de los bordes redondeados */
-    padding-top: 20px; /* Opcional: agrega espacio en la parte superior para la superposición */
+    border-radius: 15px;
+    overflow: hidden;
+    padding-top: 20px;
 }
 
 .section-image-carta{
     width: 50%; 
-    max-width: 200px; /* Establece un límite de tamaño para pantallas grandes */
+    max-width: 200px;
 }
