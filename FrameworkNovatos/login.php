@@ -37,11 +37,11 @@
                                 </button>
                             </div>
                             
-                            <p>¿No tienes cuenta? <a href="">Regístrate</a></p>
+                            <p>¿No tienes cuenta? <a href="registro.php">Regístrate</a></p>
                         </form>
                     </div>
                 </div>
-<!-- ESTO ES EL FONDO DEL LOGIN -->
+
                 <div class="col-md-6 bg-login d-none d-md-block text-end"></div>
             </div>
     </main>
