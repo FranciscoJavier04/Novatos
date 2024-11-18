@@ -78,3 +78,51 @@ $cursiva: italic;
 
 
 //ALEX
+.body-carta {
+    background-image: url("/assets/img/carta/cartafondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    color: $text;
+    align-items: center;
+}
+
+
+
+.subtitle-carta,.title-carta{
+    font-family: $tipografia_titulos;
+}
+
+.item-carta{
+    font-family: $tipografia_textos;
+}
+
+.hero-logo-carta {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin-bottom: -20px; /* Hace que el logo se superponga al contenedor */
+}
+
+.logo-carta {
+    max-width: 500px; /* Establece un límite de tamaño para pantallas grandes */
+    transform: translateY(300px); /* Mueve la imagen hacia arriba */
+}
+
+.container-carta {
+    background-color: $secondary;
+    align-items: center;
+    width: 80%; /* Ocupa el 85% del ancho de la página */
+    margin: 0 auto;
+    height: 100%;
+    border-radius: 15px; /* Bordes redondeados */
+    overflow: hidden; /* Evita que el contenido sobresalga de los bordes redondeados */
+    padding-top: 20px; /* Opcional: agrega espacio en la parte superior para la superposición */
+}
+
+.section-image-carta{
+    width: 50%; 
+    max-width: 200px; /* Establece un límite de tamaño para pantallas grandes */
+}
