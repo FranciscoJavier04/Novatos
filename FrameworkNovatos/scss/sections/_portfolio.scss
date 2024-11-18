@@ -49,20 +49,18 @@ a{
 }
 
 //FRAN
-$card-font-size: 25px;
-$card-font-weight: bold;
-$cursiva: italic; 
+$card-font-size: 25px; 
 #cardReserva {
   border: none;
   font-family: $tipografia_textos;
   font-size: $card-font-size;
-  font-weight: $card-font-weight;
+  font-weight: $negrita;
   font-style: $cursiva;
   color: $dark;
 }
 #cardReserva #titulo {
     font-family: $tipografia_titulos;
-    font-weight: $card-font-weight;
+    font-weight: $negrita;
 }
 #cardReserva .card-img-top {
   border: 3px solid $myyellow;

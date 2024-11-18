@@ -21,7 +21,7 @@
                         paradisíaco.</p>
                 </div>
                 <div class="d-flex justify-content-center mt-3"><a href="datosReserva.php"
-                        class="btn btn-primary">Reservar</a></div>
+                        class="btn btn-comun">RESERVAR</a></div>
             </div>
         </div>
         <div class="container mt-3 d-flex justify-content-center">
@@ -36,7 +36,7 @@
                         sofisticada y exclusiva. </p>
                 </div>
                 <div class="d-flex justify-content-center mt-3"><a href="datosReserva.php"
-                        class="btn btn-primary">Reservar</a></div>
+                        class="btn btn-comun">RESERVAR</a></div>
             </div>
         </div>
         <div class="container mt-3 d-flex justify-content-center">
@@ -51,7 +51,7 @@
                         opulento.</p>
                 </div>
                 <div class="d-flex justify-content-center mt-3"><a href="datosReserva.php"
-                        class="btn btn-primary">Reservar</a></div>
+                        class="btn btn-comun">RESERVAR</a></div>
             </div>
         </div>
     </main>
