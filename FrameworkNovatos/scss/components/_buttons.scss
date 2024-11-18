@@ -30,3 +30,11 @@
     border: 1px solid #ddd;
     gap: 0.5rem;
   }
+
+  .btn-comun {
+    background-color:$primary;
+    color:$dark;
+    border-radius: 15px;
+    border: 1px solid $dark;
+    gap: 0.5rem;
+  }
