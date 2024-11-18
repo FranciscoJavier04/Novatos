@@ -1,4 +1,9 @@
 //MANU
+a{
+    color: blue;
+    text-decoration: none;
+}
+
 .index {
     background-color: $lightgray;
     color: $white;
@@ -11,7 +16,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 0 10px 10px 0;
+    border-radius: 10px 0 0 10px;
     height: 100vh;
 }
 
