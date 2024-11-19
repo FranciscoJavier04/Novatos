@@ -179,3 +179,10 @@ $card-font-size: 25px;
     max-width: 200px;
 }
 
+.alergeno-item-carta {
+  text-align: justify;
+  font-family: $tipografia_textos;
+  max-width: 600px;
+  font-size: 18px; /* Tamaño del texto */
+  margin-bottom: 100px;
+}
