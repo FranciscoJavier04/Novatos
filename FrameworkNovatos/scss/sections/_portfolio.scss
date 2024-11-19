@@ -79,24 +79,53 @@ $cursiva: italic;
 
 //ALEX
 .body-carta {
-    background-image: url("/assets/img/carta/cartafondo.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    color: $text;
-    align-items: center;
+  background-image: url("/assets/img/carta/cartafondo.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  color: $text;
+  align-items: center;
+}
+
+.hero-logo-carta {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-bottom: -20px; 
+}
+
+.logo-carta {
+  border-radius: 1000000px;
+  max-width: 300px;
+  transform: translateY(180px);
+}
+
+.container-carta {
+  background-color: $secondary;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  padding-top: 20px;
 }
 
 .title-carta {
-  margin-top: 300px; /* Baja el elemento con un margen superior */
-}
-
-.subtitle-carta,.title-carta{
+  margin-top: 160px;
+  margin-bottom: 150px;
+  font-size: 55px;
   font-family: $tipografia_titulos;
   font-weight: bold;
+}
+
+.subtitle-carta {
+  font-family: $tipografia_titulos;
+  font-weight: bold;
+  font-size: 35px;
 }
 
 .items-carta {
@@ -110,34 +139,44 @@ $cursiva: italic;
 .item-carta {
   font-family: $tipografia_textos; 
   text-align: justify; 
-  max-width: 600px; 
+  max-width: 600px;
+  width: 50%;
+  font-size: 20px; /* Tamaño del texto */
+}
+.item-carta-bebida {
+  font-family: $tipografia_textos; 
+  text-align: justify; 
+  max-width: 450px;
+  width: 50%;
+  font-size: 20px; /* Tamaño del texto */
 }
 
-.hero-logo-carta {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    margin-bottom: -20px; 
+.section-header-carta {
+  gap: 6px; /* Espaciado entre los elementos */
 }
 
-.logo-carta {
-    border-radius: 1000000px;
-    max-width: 300px;
-    transform: translateY(190px);
+.imagen-tipo-plato {
+  width: 250px;
+  height: 250px;
 }
 
-.container-carta {
-    background-color: $secondary;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-    height: 100%;
-    border-radius: 15px;
-    overflow: hidden;
-    padding-top: 20px;
+.section-background-carta {
+  width: 350px;
+  height: auto;
+  background-color: #6d5c28;
 }
 
-.section-image-carta{
-    width: 50%; 
-    max-width: 200px;
+.subtitle-carta-alergeno{
+  font-family: $tipografia_titulos;
+  font-weight: bold;
+  font-size: 30px;
+
 }
+.alergeno-item-carta {
+  text-align: justify;
+  font-family: $tipografia_textos;
+  max-width: 600px;
+  font-size: 18px; /* Tamaño del texto */
+  margin-bottom: 100px;
+}
+

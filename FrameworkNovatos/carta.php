@@ -18,160 +18,163 @@
         <!-- CARTA -->
         <div class="container-carta my-5">
             <div class="menu-section-carta">
-                <h2 class="text-center title-carta">CARTA</h2>
+                <h2 class="title-carta text-center">CARTA</h2>
 
-                <!-- ENTRANTES -->
-                <div class="section-header-carta d-flex justify-content-center mb-4">
-                    <img src="assets/img/carta/ENTRANTES.webp" class="section-image-carta">
-                    <div class="bg-warning section-background-carta"></div>
+               <!-- ENTRANTES -->
+               <div class="section-header-carta d-flex justify-content-center mb-4 mt-5">
+                    <img src="assets/img/carta/ENTRANTES.webp" class="imagen-tipo-plato">
+                    <div class="section-background-carta"></div>
                 </div>
 
                 <h3 class="text-center subtitle-carta">ENTRANTES</h3>
                 <div class="items-carta">
                 <div class="item-carta">
-                    <span class="item-titulo">- Jamón Ibérico de Bellota . . . . . . . . . . . . . . . . . . . . . . . 35€</span>
+                    <span class="item-titulo">- Jamón Ibérico de Bellota. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35€ </span>
                     <p class="description-carta">Cortado a mano, acompañado de pan con tomate.</p>
                 </div>
                 <div class="item-carta">
-                    <span class="item-titulo">- Tartar de Atún Rojo del Mediterráneo . . . . . . . . . . . . . 28€</span>
+                    <span class="item-titulo">- Tartar de Atún Rojo del Mediterráneo. . . . . . . . . . . . . . . . . . . . . . . . . 28€</span>
                     <p class="description-carta">Con aguacate, sésamo y emulsión de wasabi.</p>
                 </div>
                 <div class="item-carta">
-                    <span class="item-titulo">- Carpaccio de Wagyu con Trufa Negra . . . . . . . . . . . . . 32€</span>
+                    <span class="item-titulo">- Carpaccio de Wagyu con Trufa Negra . . . . . . . . . . . . . . . . . . . . . . . . . 32€</span>
                     <p class="description-carta">Aliñado con aceite de oliva virgen extra y parmesano.</p>
                 </div>
                 <div class="item-carta">
-                    <span class="item-titulo">- Vieiras a la Plancha . . . . . . . . . . . . . . . . . . . . . . . . . . . 30€</span>
+                    <span class="item-titulo">- Vieiras a la Plancha . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30€</span>
                     <p class="description-carta">Con puré de coliflor, mantequilla noisette y caviar.</p>
                 </div>
                 <div class="item-carta">
-                    <span class="item-titulo">- Foie Gras Mi-cuit . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29€</span>
+                    <span class="item-titulo">- Foie Gras Mi-cuit . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29€</span>
                     <p class="description-carta">Servido con chutney de higos y brioche tostado.</p>
                 </div>
                 <div class="item-carta">
-                    <span class="item-titulo">- Pulpo a la Brasa . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27€</span>
+                    <span class="item-titulo">- Pulpo a la Brasa . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27€</span>
                     <p class="description-carta">Con puré de patatas ahumadas y pimentón de la Vera.</p>
                 </div>
                 <div class="item-carta">
-                    <span class="item-titulo">- Ceviche de Lubina y Maracuyá . . . . . . . . . . . . . . . . . . 26€</span>
+                    <span class="item-titulo">- Ceviche de Lubina y Maracuyá . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26€</span>
                     <p class="description-carta">Con leche de tigre y maíz crujiente.</p>
                 </div>
             </div>
 
 
                 <!-- PRINCIPALES -->
-                <div class="section-header-carta d-flex justify-content-center mb-4">
-                    <img src="assets/img/carta/Principal.webp" class="section-image-carta">
-                    <div class="bg-warning section-background-carta"></div>
+                <div class="section-header-carta d-flex justify-content-center mb-4 mt-5">
+                    <img src="assets/img/carta/Principal.webp" class="imagen-tipo-plato">
+                    <div class="section-background-carta"></div>
                 </div>
 
-                <h3 class="text-center">PLATOS PRINCIPALES</h3>
+                <h3 class="text-center subtitle-carta">PLATOS PRINCIPALES</h3>
                 <div class="items-carta">
                     <div class="item-carta">
-                        <span>- Cochinillo Asado a Baja Temperatura . . . . . . . . . . . . . 45€</span>
+                        <span>- Cochinillo Asado a Baja Temperatura . . . . . . . . . . . . . . . . . . . . . . . . . 45€</span>
                         <p class="description-carta">Con puré de boniato y jugo de su asado.</p>
                     </div>
                     <div class="item-carta">
-                        <span>- Solomillo de Buey con Salsa de Oporto . . . . . . . . . . . . 48€</span>
+                        <span>- Solomillo de Buey con Salsa de Oporto . . . . . . . . . . . . . . . . . . . . . . . 48€</span>
                         <p class="description-carta">Acompañado de papas gratinadas y espárragos verdes.</p>
                     </div>
                     <div class="item-carta">
-                        <span>- Merluza a la Koskera . . . . . . . . . . . . . . . . . . . . . . . . . . 42€</span>
+                        <span>- Merluza a la Koskera . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42€</span>
                         <p class="description-carta">Con almejas, espárragos y guisantes frescos.</p>
                     </div>
                     <div class="item-carta">
-                        <span>- Arroz Negro con Calamar y Alioli de Ajo Negro . . . . . 38€</span>
+                        <span>- Arroz Negro con Calamar y Alioli de Ajo Negro . . . . . . . . . . . . . . . . 38€</span>
                         <p class="description-carta">Cremoso y con sabores profundos de tinta de calamar.</p>
                     </div>
                     <div class="item-carta">
-                        <span>- Carrilleras de Ternera al Vino Tinto . . . . . . . . . . . . . . . 44€</span>
+                        <span>- Carrilleras de Ternera al Vino Tinto . . . . . . . . . . . . . . . . . . . . . . . . . . 44€</span>
                         <p class="description-carta">Con parmentier de patata trufada.</p>
                     </div>
                     <div class="item-carta">
-                        <span>- Ravioli de Bogavante . . . . . . . . . . . . . . . . . . . . . . . . . . 40€</span>
+                        <span>- Ravioli de Bogavante . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40€</span>
                         <p class="description-carta">Con bisque de marisco y chips de zanahoria.</p>
                     </div>
                 </div>
 
                 <!-- ESPECIALIDADES -->
-                <div class="section-header-carta d-flex justify-content-center mb-4">
-                    <img src="assets/img/carta/Especialidad.webp" class="section-image-carta">
-                    <div class="bg-warning section-background-carta"></div>
+                <div class="section-header-carta d-flex justify-content-center mb-4 mt-5">
+                    <img src="assets/img/carta/Especialidad.webp" class="imagen-tipo-plato">
+                    <div class="section-background-carta"></div>
                 </div>
 
-                <h3 class="text-center subtitle-carta">ESPECIALIDADES</h3>
+                <h3 class="text-center subtitle-carta ">ESPECIALIDADES</h3>
                 <div class="items-carta">
                     <div class="item-carta">
-                        <span>- Paella de Mariscos Tradicional . . . . . . . . . . . . . . . . . . . 50€</span>
+                        <span>- Paella de Mariscos Tradicional . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50€</span>
                         <p class="description-carta">Con gambas, mejillones, cigalas y azafrán.</p>
                     </div>
                     <div class="item-carta">
-                        <span>- Lubina Salvaje al Horno . . . . . . . . . . . . . . . . . . . . . . . . 55€</span>
+                        <span>- Lubina Salvaje al Horno . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .55€</span>
                         <p class="description-carta">Servida con hinojo asado y salsa de limón.</p>
                     </div>
                     <div class="item-carta">
-                        <span>- Presa Ibérica con Glaseado de Miel y Mostaza . . . . . . . 46€</span>
+                        <span>- Presa Ibérica con Glaseado de Miel y Mostaza . . . . . . . . . . . . . . . . . . 46€</span>
                         <p class="description-carta">Acompañada de puré de batata y espárragos.</p>
                     </div>
                     <div class="item-carta">
-                        <span>- Cordero Lechal Confitado . . . . . . . . . . . . . . . . . . . . . . . 52€</span>
+                        <span>- Cordero Lechal Confitado . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52€</span>
                         <p class="description-carta">Con reducción de vino de Rioja y espinacas salteadas.</p>
                     </div>
                     <div class="item-carta">
-                        <span>- Bacalao a la Brasa con Crema de Guisantes . . . . . . . . . 47€</span>
+                        <span>- Bacalao a la Brasa con Crema de Guisantes . . . . . . . . . . . . . . . . . . . . 47€</span>
                         <p class="description-carta">Con cebollas caramelizadas y un toque de jamón ibérico.</p>
                     </div>
                 </div>
 
                 <!-- BEBIDAS -->
-                <h3 class="text-center subtitle-carta">BEBIDAS</h3>
+                <h3 class="text-center subtitle-carta mt-5">BEBIDAS</h3>
                 <div class="items-carta">
-                    <div class="item-carta">
-                        <span>Agua Mineral Premium . . . . . . . . . . . . . . . . . 6€</span>
+                    <div class="item-carta-bebida">
+                        <span>Agua Mineral Premium . . . . . . . . . . . . . . . . . . . . . . . 6€</span>
                     </div>
-                    <div class="item-carta">
-                        <span>Refrescos . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6€</span>
+                    <div class="item-carta-bebida">
+                        <span>Refrescos . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6€</span>
                     </div>
-                    <div class="item-carta">
-                        <span>Cerveza Artesanal . . . . . . . . . . . . . . . . . . . . . 8€</span>
+                    <div class="item-carta-bebida">
+                        <span>Cerveza Artesanal . . . . . . . . . . . . . . . . . . . . . . . . . . . 8€</span>
                     </div>
-                    <div class="item-carta">
-                        <span>Cerveza Internacional . . . . . . . . . . . . . . . . . . 7€</span>
+                    <div class="item-carta-bebida">
+                        <span>Cerveza Internacional . . . . . . . . . . . . . . . . . . . . . . . . 7€</span>
                     </div>
                 </div>
 
                 <!-- VINOS BLANCOS -->
-                <h3 class="text-center subtitle-carta">VINO BLANCO</h3>
+                <h3 class="text-center subtitle-carta mt-5">VINO BLANCO</h3>
                 <div class="items-carta">
-                    <div class="item-carta">
-                        <span>Albariño Rías Baixas . . . . . . . . . . . . . . . . . . . 24€</span>
+                    <div class="item-carta-bebida">
+                        <span>Albariño Rías Baixas . . . . . . . . . . . . . . . . . . . . . . . . 24€</span>
                     </div>
-                    <div class="item-carta">
-                        <span>Chardonnay Penedés . . . . . . . . . . . . . . . . . . . 28€</span>
+                    <div class="item-carta-bebida">
+                        <span>Chardonnay Penedés . . . . . . . . . . . . . . . . . . . . . . . . 28€</span>
                     </div>
-                    <div class="item-carta">
-                        <span>Verdejo Rueda . . . . . . . . . . . . . . . . . . . . . . . . 22€</span>
+                    <div class="item-carta-bebida">
+                        <span>Verdejo Rueda . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22€</span>
                     </div>
                 </div>
 
                 <!-- VINOS TINTOS -->
-                <h3 class="text-center subtitle-carta">VINO TINTO</h3>
+                <h3 class="text-center subtitle-carta mt-5">VINO TINTO</h3>
                 <div class="items-carta">
-                    <div class="item-carta">
-                        <span>Rioja Reserva . . . . . . . . . . . . . . . . . . . . . . . 30€</span>
+                    <div class="item-carta-bebida">
+                        <span>Rioja Reserva . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30€</span>
                     </div>
-                    <div class="item-carta">
-                        <span>Ribera del Duero Crianza . . . . . . . . . . . . . . 32€</span>
+                    <div class="item-carta-bebida">
+                        <span>Ribera del Duero Crianza . . . . . . . . . . . . . . . . . . . . . 32€</span>
                     </div>
-                    <div class="item-carta">
-                        <span>Garnacha Priorat . . . . . . . . . . . . . . . . . . . . . 35€</span>
+                    <div class="item-carta-bebida">
+                        <span>Garnacha Priorat IV . . . . . . . . . . . . . . . . . . . . . . . . . 35€</span>
                     </div>
                 </div>
 
                 <!-- ALERGENOS -->
-                <h3 class="text-center">ALERGENOS</h3>
-                <div>
-                    <span class="menu-item-carta">Informamos a nuestros clientes que algunos de nuestros platos contienen alérgenos tales como gluten, mariscos, frutos secos, lácteos, y otros. Por favor, consulte con nuestro personal antes de realizar su pedido si tiene alguna alergia o intolerancia alimentaria.</span>
+                <h3 class="subtitle-carta-alergeno text-center mt-5">ALERGENOS</h3>
+                <div class="items-carta"> 
+                    <p class="alergeno-item-carta">Informamos a nuestros clientes que algunos de nuestros 
+                        platos contienen alérgenos tales como gluten, mariscos, frutos secos, lácteos, y otros. 
+                        Por favor, consulte con nuestro personal antes de realizar su pedido si tiene alguna alergia o 
+                        intolerancia alimentaria.</p>
                 </div>
             </div>
         </div>
