@@ -96,7 +96,6 @@ $card-font-size: 25px;
   color: $text;
   align-items: center;
 }
-
 .hero-logo-carta {
   display: flex;
   justify-content: center;
@@ -123,9 +122,11 @@ $card-font-size: 25px;
 
 .title-carta {
   margin-top: 300px; /* Baja el elemento con un margen superior */
+  font-family: $tipografia_titulos;
+  font-weight: bold;
 }
 
-.subtitle-carta,.title-carta{
+.subtitle-carta{
   font-family: $tipografia_titulos;
   font-weight: bold;
 }
@@ -134,6 +135,12 @@ $card-font-size: 25px;
   font-family: $tipografia_titulos;
   font-weight: bold;
   font-size: 35px;
+}
+
+.subtitle-carta-alergeno{
+  font-family: $tipografia_titulos;
+  font-weight: bold;
+  font-size: 30px;
 }
 
 .items-carta {
@@ -151,27 +158,27 @@ $card-font-size: 25px;
 }
 
 .hero-logo-carta {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    margin-bottom: -20px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -20px;
 }
 
 .logo-carta {
-    border-radius: 1000000px;
-    max-width: 300px;
-    transform: translateY(190px);
+  border-radius: 1000000px;
+  max-width: 300px;
+  transform: translateY(190px);
 }
 
 .container-carta {
-    background-color: $secondary;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-    height: 100%;
-    border-radius: 15px;
-    overflow: hidden;
-    padding-top: 20px;
+  background-color: $secondary;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  padding-top: 20px;
 }
 
 .section-image-carta{
