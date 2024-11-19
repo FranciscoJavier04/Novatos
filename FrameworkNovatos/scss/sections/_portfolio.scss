@@ -11,6 +11,12 @@ a {
   font-family: $tipografia_textos;
 }
 
+.profile-pic img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
 .bg-login {
     background-image: url('/assets/img/imagenInicio.png');
     background-size: cover;
@@ -82,6 +88,7 @@ $card-font-size: 25px;
   background-attachment: fixed;
 }
 //FRAN//datosReserva.php
+
 
 
 //ALEX
