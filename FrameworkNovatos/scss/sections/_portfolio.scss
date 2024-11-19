@@ -124,6 +124,7 @@ $card-font-size: 25px;
   margin-top: 300px; /* Baja el elemento con un margen superior */
   font-family: $tipografia_titulos;
   font-weight: bold;
+  font-size: 50px;
 }
 
 
@@ -151,13 +152,13 @@ $card-font-size: 25px;
   font-family: $tipografia_textos; 
   text-align: justify; 
   max-width: 600px; 
+  font-size: 20px;
 }
 
 .section-image-carta{
     width: 50%; 
     max-width: 200px;
 }
-
 
 .imagen-tipo-plato {
   width: 250px;
@@ -174,4 +175,11 @@ $card-font-size: 25px;
 
 .section-header-carta {
   gap: 6px; /* Espaciado entre los elementos */
+}
+
+.section-background-carta {
+  width: 50%; /* El ancho del cuadro amarillo */
+  max-width: 300px; /* Ajusta al diseño */
+  height: auto;
+  background-color: #000000; /* Amarillo bootstrap */
 }
