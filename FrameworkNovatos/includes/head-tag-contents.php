@@ -1,5 +1,5 @@
-<title><?php print $PAGE_TITLE;?></title>
-
+<title>ÓNEO</title>
+<link rel="icon" href="/assets/img/LogoSinFondo.png" type="image/png">
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="description" content="" />
