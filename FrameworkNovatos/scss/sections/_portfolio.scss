@@ -96,15 +96,51 @@ $card-font-size: 25px;
   color: $text;
   align-items: center;
 }
+.hero-logo-carta {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-bottom: -20px; 
+}
+
+.logo-carta {
+  border-radius: 1000000px;
+  max-width: 300px;
+  transform: translateY(180px);
+}
+
+.container-carta {
+  background-color: $secondary;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  padding-top: 20px;
+}
 
 .title-carta {
   margin-top: 300px; /* Baja el elemento con un margen superior */
-}
-
-.subtitle-carta,
-.title-carta {
   font-family: $tipografia_titulos;
   font-weight: bold;
+}
+
+.subtitle-carta{
+  font-family: $tipografia_titulos;
+  font-weight: bold;
+}
+
+.subtitle-carta {
+  font-family: $tipografia_titulos;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.subtitle-carta-alergeno{
+  font-family: $tipografia_titulos;
+  font-weight: bold;
+  font-size: 30px;
 }
 
 .items-carta {
@@ -116,9 +152,9 @@ $card-font-size: 25px;
 }
 
 .item-carta {
-  font-family: $tipografia_textos;
-  text-align: justify;
-  max-width: 600px;
+  font-family: $tipografia_textos; 
+  text-align: justify; 
+  max-width: 600px; 
 }
 
 .hero-logo-carta {
@@ -145,7 +181,15 @@ $card-font-size: 25px;
   padding-top: 20px;
 }
 
-.section-image-carta {
-  width: 50%;
-  max-width: 200px;
+.section-image-carta{
+    width: 50%; 
+    max-width: 200px;
+}
+
+.alergeno-item-carta {
+  text-align: justify;
+  font-family: $tipografia_textos;
+  max-width: 600px;
+  font-size: 18px; /* Tamaño del texto */
+  margin-bottom: 100px;
 }
