@@ -9,7 +9,11 @@
 <body id="bodyDReserva">
     <?php include("includes/navigation.php"); ?>
     <main>
-
+    <div class="container">
+        <div class="row">
+            
+        </div>
+    </div>
     </main>
     <?php include("includes/footer.php"); ?>
 </body>
