@@ -24,17 +24,24 @@
 }
 
 .btn-google {
-  background-color: white;
-  color: #333;
-  border-radius: 15px;
-  border: 1px solid #ddd;
-  gap: 0.5rem;
-}
+    background-color: white;
+    color: #333;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    gap: 0.5rem;
+  }
 
-.btn-comun {
-  background-color: $primary;
-  color: $dark;
-  border-radius: 15px;
-  border: 1px solid $dark;
-  gap: 0.5rem;
-}
+
+  .btn-comun {
+    background-color:$primary;
+    color:$dark;
+    border-radius: 10px;
+    border: 1px solid $dark;
+    gap: 0.5rem;
+    font-family: $tipografia_textos;
+    font-weight: $negrita;
+    &:hover {
+      background-color:$secondary;
+      color: $primary;
+    }
+  }
