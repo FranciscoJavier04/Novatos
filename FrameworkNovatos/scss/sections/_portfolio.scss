@@ -1,7 +1,7 @@
 //MANU
-a{
-    color: blue;
-    text-decoration: none;
+a {
+  color: blue;
+  text-decoration: none;
 }
 
 .index {
@@ -45,8 +45,9 @@ a{
   width: 300px;
 }
 
-//FRAN
-$card-font-size: 25px; 
+//FRAN//reserva.php
+$card-font-size: 25px;
+
 #cardReserva {
   border: none;
   font-family: $tipografia_textos;
@@ -54,85 +55,97 @@ $card-font-size: 25px;
   font-weight: $negrita;
   font-style: $cursiva;
   color: $dark;
+  height: 100%;
+  background-color: transparent; /* Fondo transparente para la tarjeta */
 }
+
 #cardReserva #titulo {
-    font-family: $tipografia_titulos;
-    font-weight: $negrita;
+  font-family: $tipografia_titulos;
+  font-weight: $negrita;
 }
+
 #cardReserva .card-img-top {
   border: 3px solid $myyellow;
   border-radius: 10px;
 }
+
 #cardReserva .card-body {
   border: 3px solid $mybrown;
   border-radius: 10px;
+  background-color: $myyellow; 
 }
-.p-4 {
-  padding: 50px !important;
+
+#bodyReserva {
+  background-image: url("/assets/img/reserva/fondoreserva.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
+//FRAN//datosReserva.php
 
 
 //ALEX
 .body-carta {
-    background-image: url("/assets/img/carta/cartafondo.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    color: $text;
-    align-items: center;
+  background-image: url("/assets/img/carta/cartafondo.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  color: $text;
+  align-items: center;
 }
 
 .title-carta {
   margin-top: 300px; /* Baja el elemento con un margen superior */
 }
 
-.subtitle-carta,.title-carta{
+.subtitle-carta,
+.title-carta {
   font-family: $tipografia_titulos;
   font-weight: bold;
 }
 
 .items-carta {
   font-family: $tipografia_textos;
-  text-align: center; 
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .item-carta {
-  font-family: $tipografia_textos; 
-  text-align: justify; 
-  max-width: 600px; 
+  font-family: $tipografia_textos;
+  text-align: justify;
+  max-width: 600px;
 }
 
 .hero-logo-carta {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    margin-bottom: -20px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -20px;
 }
 
 .logo-carta {
-    border-radius: 1000000px;
-    max-width: 300px;
-    transform: translateY(190px);
+  border-radius: 1000000px;
+  max-width: 300px;
+  transform: translateY(190px);
 }
 
 .container-carta {
-    background-color: $secondary;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-    height: 100%;
-    border-radius: 15px;
-    overflow: hidden;
-    padding-top: 20px;
+  background-color: $secondary;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  padding-top: 20px;
 }
 
-.section-image-carta{
-    width: 50%; 
-    max-width: 200px;
+.section-image-carta {
+  width: 50%;
+  max-width: 200px;
 }
