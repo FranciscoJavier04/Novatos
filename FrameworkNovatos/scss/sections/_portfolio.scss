@@ -108,8 +108,8 @@ $card-font-size: 25px;
 }
 
 .logo-carta {
-  max-width: 350px;
-  transform: translateY(180px);
+  max-width: 300px;
+  transform: translateY(200px);
 }
 
 .container-carta {
@@ -133,9 +133,22 @@ $card-font-size: 25px;
   font-size: 35px;
 }
 
+.subtitle-carta-postre{
+  font-family: $tipografia_titulos;
+  font-size: 35px;
+  margin-top: 200px;
+}
+
+.subtitle-carta-bebidas{
+  font-family: $tipografia_titulos;
+  font-size: 35px;
+  margin-top: 200px;
+}
+
 .subtitle-carta-alergeno{
   font-family: $tipografia_titulos;
   font-size: 25px;
+  margin-top: 150px;
 }
 
 
@@ -155,7 +168,7 @@ $card-font-size: 25px;
 
 .imagen-tipo-plato {
   width: 250px;
-  height: 250px;
+  height: 200px;
 }
 
 .alergeno-item-carta {
@@ -171,9 +184,9 @@ $card-font-size: 25px;
 
 .section-background-carta {
   width: 50%; 
-  max-width: 300px;
+  max-width: 370px;
   height: auto;
-  background-color: #000000;
+  background-image: url("/assets/img/carta/a.png");
 }
 
 .img-postres{

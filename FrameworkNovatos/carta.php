@@ -24,11 +24,11 @@
 
                <!-- ENTRANTES -->
                <div class="section-header-carta d-flex justify-content-center mb-4 mt-5">
-                    <img src="assets/img/carta/ENTRANTES.webp" class="imagen-tipo-plato">
-                    <div class="section-background-carta"></div>
+                    <img src="assets/img/carta/ENTRANTES.webp" class="imagen-tipo-plato mt-5">
+                    <div class="section-background-carta mt-5"></div>
                 </div>
 
-                <h3 class="text-center subtitle-carta fw-bold">ENTRANTES</h3>
+                <p class="text-center subtitle-carta mt-5 mb-3 fw-bold">ENTRANTES</p>
                 <div class="items-carta d-flex">
                 <div class="item-carta">
                     <span class="item-titulo">- Jamón Ibérico de Bellota. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35€ </span>
@@ -63,11 +63,11 @@
 
                 <!-- PRINCIPALES -->
                 <div class="section-header-carta d-flex justify-content-center mb-4 mt-5">
-                    <img src="assets/img/carta/Principal.webp" class="imagen-tipo-plato">
-                    <div class="section-background-carta"></div>
+                    <img src="assets/img/carta/Principal.webp" class="imagen-tipo-plato mt-5">
+                    <div class="section-background-carta mt-5"></div>
                 </div>
 
-                <h3 class="text-center subtitle-carta fw-bold">PLATOS PRINCIPALES</h3>
+                <p class="text-center subtitle-carta mt-5 mb-3 fw-bold">PLATOS PRINCIPALES</p>
                 <div class="items-carta d-flex">
                     <div class="item-carta">
                         <span>- Cochinillo Asado a Baja Temperatura . . . . . . . . . . . . . . . . . . . . . . . . . 45€</span>
@@ -97,11 +97,11 @@
 
                 <!-- ESPECIALIDADES -->
                 <div class="section-header-carta d-flex justify-content-center mb-4 mt-5">
-                    <img src="assets/img/carta/Especialidad.webp" class="imagen-tipo-plato">
-                    <div class="section-background-carta"></div>
+                    <img src="assets/img/carta/Especialidad.webp" class="imagen-tipo-plato mt-5">
+                    <div class="section-background-carta mt-5"></div>
                 </div>
 
-                <h3 class="text-center subtitle-carta fw-bold ">ESPECIALIDADES</h3>
+                <p class="text-center subtitle-carta mt-5 mb-3 fw-bold ">ESPECIALIDADES</p>
                 <div class="items-carta d-flex">
                     <div class="item-carta">
                         <span>- Paella de Mariscos Tradicional . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50€</span>
@@ -126,7 +126,7 @@
                 </div>
 
                 <!-- POSTRES -->
-                <h3 class="text-center subtitle-carta fw-bold">POSTRES</h3>
+                <p class="subtitle-carta-postre text-center mb-3 fw-bold">POSTRES</p>
 
                 <div class="items-carta-postre d-flex flex-wrap justify-content-center gap-5">
                 <div class="item-carta-postre">
@@ -165,7 +165,7 @@
                 </div>
 
                 <!-- BEBIDAS -->
-                <h3 class="text-center subtitle-carta fw-bold mt-5">BEBIDAS</h3>
+                <p class="text-center subtitle-carta-bebidas mb-3 fw-bold">BEBIDAS</p>
                 <div class="items-carta d-flex">
                     <div class="item-carta-bebida">
                         <span>Agua Mineral Premium . . . . . . . . . . . . . . . . . . . . . . . 6€</span>
@@ -182,7 +182,7 @@
                 </div>
 
                 <!-- VINOS BLANCOS -->
-                <h3 class="text-center subtitle-carta fw-bold mt-5">VINO BLANCO</h3>
+                <p class="text-center subtitle-carta mt-5 mb-3 fw-bold">VINO BLANCO</p>
                 <div class="items-carta d-flex">
                     <div class="item-carta-bebida">
                         <span>Albariño Rías Baixas . . . . . . . . . . . . . . . . . . . . . . . . 24€</span>
@@ -196,7 +196,7 @@
                 </div>
 
                 <!-- VINOS TINTOS -->
-                <h3 class="text-center subtitle-carta fw-bold mt-5">VINO TINTO</h3>
+                <p class="text-center subtitle-carta mt-5 mb-3 fw-bold">VINO TINTO</p>
                 <div class="items-carta d-flex">
                     <div class="item-carta-bebida">
                         <span>Rioja Reserva . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30€</span>
@@ -210,11 +210,11 @@
                 </div>
 
                 <!-- ALERGENOS -->
-                <h3 class="subtitle-carta-alergeno text-center mt-5 fw-bold">ALERGENOS</h3>
+                <p class="subtitle-carta-alergeno mb-3 text-center fw-bold">ALERGENOS</p>
                 <div class="items-carta d-flex"> 
                     <p class="alergeno-item-carta mb-5">Informamos a nuestros clientes que algunos de nuestros 
                         platos contienen alérgenos tales como gluten, mariscos, frutos secos, lácteos, y otros. 
-                        Por favor, consulte con nuestro personal antes de realizar su pedido si tiene alguna alergia o intolerancia alimentaria.</p>
+                        Por favor, consulte con nuestro personal antes de realizar su pedido, y asegurese si tiene alguna alergia o intolerancia.</p>
                 </div>
             </div>
         </div>
