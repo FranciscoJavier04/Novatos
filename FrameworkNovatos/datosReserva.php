@@ -6,33 +6,29 @@
     <?php include("includes/head-tag-contents.php"); ?>
 </head>
 
-<body id="bodyDReserva">
+<body id="bodyReserva">
     <?php include("includes/navigation.php"); ?>
-    <main class="align-items-center">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-12">
-                    <h1>DATOS DE LA RESERVA</h1>
+    <main class="d-flex justify-content-center align-items-center vh-100">
+        <div class="card shadow-lg" id="cardFormulario">
+            <div class="card-body d-flex flex-column justify-content-between p-4">
+                <div class="text-center">
+                    <h1 class="card-title">DATOS DE LA RESERVA</h1>
                 </div>
-            </div>
-            <!-- Selección de Fecha -->
-            <div class="row">
-                <div class="col align-items-center">
-                    <h2>Elige tu día</h2>
-                    <img src="/assets/img/LogoSinFondo.png" style="filter: brightness(0.3);">
-                </div>
-                <div class="col">
-                    <div class="container mt-5">
-                        <div class="mb-3">
-                            <h2 for="dateInput" class="form-label">Selecciona una fecha</h2>
+                <hr class="my-4">
+                <!-- Selección de Fecha -->
+                <div class="row">
+                    <div class="col align-items-center text-center">
+                        <h2>Elige tu día</h2>
+                        <img src="/assets/img/LogoSinFondo.png" style="filter: brightness(0.3); width: 80px;">
+                    </div>
+                    <div class="col">
+                        <div class="mb-4">
+                            <label for="dateInput" class="form-label"><strong>Selecciona una fecha</strong></label>
                             <input type="date" class="form-control custom-date-input" id="dateInput">
                         </div>
-                    </div>
-                    <div class="container">
-                <div class="row mt-3">
-                    <div class="col">
-                        <div class="mb-3">
-                            <h2 for="timeSelect" class="form-label">Hora</h2>
+                        <!-- Selección de hora -->
+                        <div class="mb-4">
+                            <label for="timeSelect" class="form-label"><strong>Hora</strong></label>
                             <select id="timeSelect" class="form-select">
                                 <option selected>Selecciona una hora</option>
                                 <option value="12:00">12:00 PM</option>
@@ -45,35 +41,22 @@
                                 <option value="23:00">11:00 PM</option>
                             </select>
                         </div>
-                    </div>
-                </div>
-                <!-- Selección de Número de Personas -->
-                <div class="row mt-3">
-                    <div class="col">
-                        <div class="mb-3">
-                            <h2 for="numPersonas" class="form-label">Número de personas</h2>
+                        <!-- Selección de Número de Personas -->
+                        <div>
+                            <label for="numPersonas" class="form-label"><strong>Número de personas</strong></label>
                             <input type="number" id="numPersonas" class="form-control" min="1" max="20"
                                 placeholder="Número de personas">
                         </div>
                     </div>
                 </div>
-            </div>
+                <!-- Información adicional -->
+                <div class="mt-4">
+                    <label for="areaInput" class="form-label"><strong>Información adicional que desee añadir</strong></label>
+                    <textarea id="areaInput" class="form-control" rows="4" placeholder="Escribe aquí..."></textarea>
                 </div>
-            </div>
-            
-            <!-- Información adicional -->
-            <div class="row mt-3">
-                <div class="col-12 align-items-center">
-                    <h2>Información adicional que desee añadir</h2>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-12 align-items-center">
-                    <h2>PanelInfo</h2>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center mt-3">
-                <a href="confirmaReserva.php" class="btn btn-comun">SIGUIENTE</a>
+                <!-- Botón Siguiente -->
+                <div class="d-flex justify-content-center mt-3"><RESERVAR href="datosReserva.php"
+                class="btn btn-comun"/>RESERVAR</div>
             </div>
         </div>
     </main>
