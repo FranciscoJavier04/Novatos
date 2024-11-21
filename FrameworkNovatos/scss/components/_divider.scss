@@ -2,6 +2,17 @@
 // Divider
 // 
 
+.separator {
+    background-color: $white;
+    height: 1px;
+}
+
+.separador-user {
+    background-color: $dark;
+    height: 1px;
+    max-width: 800px;
+}
+
 .divider-custom {
     margin: 1.25rem 0 1.5rem;
     width: 100%;
