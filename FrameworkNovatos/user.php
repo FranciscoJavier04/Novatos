@@ -29,12 +29,12 @@
             <!-- Sección de información -->
             <div class="row justify-content-center border my-3">
                 <div class="col-md-12">
-                <div class="separator-login"></div>
+                
                     <form>
                         <h5>INFO</h5>
-
+                        <div class="separador-user mb-3"></div>
                         <div class="row">
-                            <div class="col-md-4 row">
+                            <div class="col-md-4 ">
                                 <div class="row-md-4">
                                     <label for="nombre" class="form-label">Nombre</label>
                                     <input type="text" class="form-control" id="nombre" value="Manuel">
@@ -49,7 +49,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4 row">
+                            <div class="col-md-4 ">
                                 <div class="row-md-4">
                                     <label for="email" class="form-label">Email</label>
                                     <input type="email" class="form-control" id="email" value="Fran@gmail.com">
@@ -64,7 +64,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4 row">
+                            <div class="col-md-4 ">
                                 <div class="row-md-4">
                                     <label for="dni" class="form-label">DNI</label>
                                     <input type="text" class="form-control" id="dni" value="51188977F">

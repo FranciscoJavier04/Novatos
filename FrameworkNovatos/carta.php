@@ -125,6 +125,45 @@
                     </div>
                 </div>
 
+                <!-- POSTRES -->
+                <h3 class="text-center subtitle-carta fw-bold">POSTRES</h3>
+
+                <div class="items-carta-postre d-flex flex-wrap justify-content-center gap-5">
+                <div class="item-carta-postre">
+                    <img src="assets/img/carta/tartaSantiago.webp" class="img-postres">
+                    <p>Tarta de Santiago.</p>
+                    <p>Con helado de vainilla y crema de almendras.</p>
+                    <p>Precio . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15 €</p>
+                </div>
+
+                <div class="item-carta-postre ">
+                    <img src="assets/img/carta/Coulant.webp" class="img-postres">
+                    <p>Coulant de Chocolate Negro.</p>
+                    <p>Con helado de frambuesa y crumble de avellanas.</p>
+                    <p>Precio . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16 €</p>
+                </div>
+
+                <div class="item-carta-postre">
+                    <img src="assets/img/carta/CremaCatalana.webp" class="img-postres">
+                    <p>Crema Catalana con Toffee Salado.</p>
+                    <p>Crujiente y suave a la vez.</p>
+                    <p>Precio . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14€</p>
+                </div>
+
+                <div class="item-carta-postre">
+                    <img src="assets/img/carta/Milhojas.webp" class="img-postres">
+                    <span>Milhojas de Crema de Mascarpone y Frutas Rojas.</span>
+                    <p>Precio . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14€</p>
+                </div>
+
+                <div class="item-carta-postre">
+                    <img src="assets/img/carta/Helado.webp" class="img-postres">
+                    <p>Helados Artesanales.</p>
+                    <p>Variedad de sabores de temporada.</p>
+                    <p>Precio . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12€</p>
+                </div>
+                </div>
+
                 <!-- BEBIDAS -->
                 <h3 class="text-center subtitle-carta fw-bold mt-5">BEBIDAS</h3>
                 <div class="items-carta d-flex">
@@ -171,12 +210,11 @@
                 </div>
 
                 <!-- ALERGENOS -->
-                <h3 class="subtitle-carta text-center mt-5 fw-bold">ALERGENOS</h3>
+                <h3 class="subtitle-carta-alergeno text-center mt-5 fw-bold">ALERGENOS</h3>
                 <div class="items-carta d-flex"> 
-                    <p class="alergeno-item-carta text-justify mx-auto mb-5">Informamos a nuestros clientes que algunos de nuestros 
+                    <p class="alergeno-item-carta mb-5">Informamos a nuestros clientes que algunos de nuestros 
                         platos contienen alérgenos tales como gluten, mariscos, frutos secos, lácteos, y otros. 
-                        Por favor, consulte con nuestro personal antes de realizar su pedido si tiene alguna alergia o 
-                        intolerancia alimentaria.</p>
+                        Por favor, consulte con nuestro personal antes de realizar su pedido si tiene alguna alergia o intolerancia alimentaria.</p>
                 </div>
             </div>
         </div>

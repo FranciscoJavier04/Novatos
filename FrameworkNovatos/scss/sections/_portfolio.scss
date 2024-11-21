@@ -1,9 +1,4 @@
 //MANU
-a {
-  color: blue;
-  text-decoration: none;
-}
-
 .index {
   background-color: $lightgray;
   color: $white;
@@ -40,16 +35,6 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-.separator {
-  background-color: $white;
-  height: 1px;
-}
-
-.separador-user{
-  background-color: $dark;
-  height: 1px;
 }
 
 .video {
@@ -152,7 +137,7 @@ $card-font-size: 25px;
 }
 
 .logo-carta {
-  max-width: 300px;
+  max-width: 350px;
   transform: translateY(180px);
 }
 
@@ -165,7 +150,7 @@ $card-font-size: 25px;
 }
 
 .title-carta {
-  margin-top: 200px;
+  margin-top: 250px;
   margin-bottom: 200px;
   font-family: $tipografia_titulos;
   font-weight: bold;
@@ -179,7 +164,7 @@ $card-font-size: 25px;
 
 .subtitle-carta-alergeno{
   font-family: $tipografia_titulos;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 
@@ -204,8 +189,9 @@ $card-font-size: 25px;
 
 .alergeno-item-carta {
   font-family: $tipografia_textos;
-  max-width: 600px;
-  font-size: 18px;
+  max-width: 550px;
+  font-size: 15px;
+  text-align: justify;
 }
 
 .section-header-carta {
@@ -218,3 +204,21 @@ $card-font-size: 25px;
   height: auto;
   background-color: #000000;
 }
+
+.img-postres{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.item-carta-postre{
+  text-align: justify;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  p{
+    margin-bottom: 0;
+  }
+}
+
+
