@@ -59,7 +59,6 @@
                 <div class="d-flex justify-content-center mt-3">
                     <a href="confReserva.php" class="btn btn-comun">RESERVAR</a>
                 </div>
-
             </div>
         </div>
     </main>
