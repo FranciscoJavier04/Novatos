@@ -6,18 +6,18 @@
   font-family: $tipografia_textos;
 }
 
-.profile-pic img{
+.profile-pic img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
 }
 
 .bg-login {
-    background-image: url('/assets/img/imagenInicio.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
+  background-image: url("/assets/img/imagenInicio.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
 }
 
 .logo-login img {
@@ -68,7 +68,7 @@ $card-font-size: 25px;
 #cardReserva .card-body {
   border: 3px solid $mybrown;
   border-radius: 10px;
-  background-color: $myyellow; 
+  background-color: $myyellow;
 }
 
 #bodyReserva {
@@ -79,18 +79,21 @@ $card-font-size: 25px;
 }
 //FRAN//datosReserva.php
 #cardFormulario {
-  width: 95%; // Ocupa casi todo el ancho
-  max-width: 1200px; // Para mantener un tamaño máximo en pantallas grandes
-  height: 85vh; // Ocupa el 85% de la altura de la pantalla
-  border-radius: 20px; // Bordes redondeados
-  background-color: #f9f9f9; // Fondo claro para destacar el contenido
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); // Sombra para darle profundidad
-  overflow: hidden; // Asegura que el contenido no se salga
+  width: 95%;
+  max-width: 1200px; 
+  border-radius: 20px; 
+  background-color: #f9f9f9; 
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  font-family: $tipografia_textos; 
+  font-style: $cursiva;
+  font-weight: $negrita;
+  
 
   h1.card-title {
-    font-size: 2.5rem; 
-    font-weight: $negrita;
-    color: $dark; 
+    font-size: 2.5rem;
+    color: $dark;
+    font-family: $tipografia_titulos;
   }
 
   hr {
@@ -98,33 +101,16 @@ $card-font-size: 25px;
   }
 
   .form-label {
-    font-size: 1.2rem; // Etiquetas más grandes
-    color: #555; 
+    font-size: 1.2rem;
+    color: #555;
+  }
+  img {
+    width: auto; 
+    object-fit: cover; 
+    filter: brightness(0.3);
   }
 
-  input,
-  select,
-  textarea {
-    padding: 0.8rem;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-  }
-
-  input:focus,
-  select:focus,
-  textarea:focus {
-    outline: none;
-    border-color: $mybrown;
-    box-shadow: 0 0 5px $mybrown; 
-  }
-
-  textarea {
-    resize: none; 
-  }
 }
-
-
-
 
 //ALEX
   //CARTA
@@ -302,7 +288,7 @@ $card-font-size: 25px;
   .titulo-PC{
     color: $text;
     font-family: $tipografia_titulos;
-    font-size:$tam_tit_grandes;
+    font-size: $tam_tit_grandes;
   }
 
   .items-PC{
@@ -314,5 +300,4 @@ $card-font-size: 25px;
     font-family: $tipografia_textos;
     font-size:$tam_text_medianos;
   }
-
 

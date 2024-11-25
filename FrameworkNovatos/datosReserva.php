@@ -8,27 +8,28 @@
 
 <body id="bodyReserva">
     <?php include("includes/navigation.php"); ?>
-    <main class="d-flex justify-content-center align-items-center vh-100">
-        <div class="card shadow-lg" id="cardFormulario">
+    <main class="d-flex justify-content-center align-items-center my-3">
+        <div class="card" id="cardFormulario">
             <div class="card-body d-flex flex-column justify-content-between p-4">
                 <div class="text-center">
                     <h1 class="card-title">DATOS DE LA RESERVA</h1>
                 </div>
                 <hr class="my-4">
                 <!-- Selección de Fecha -->
+
                 <div class="row">
-                    <div class="col align-items-center text-center">
+                    <div class="col-md align-items-center text-center">
                         <h2>Elige tu día</h2>
-                        <img src="/assets/img/LogoSinFondo.png" style="filter: brightness(0.3); width: 80px;">
+                        <img src="/assets/img/LogoSinFondo.png">
                     </div>
-                    <div class="col">
+                    <div class="col-md">
                         <div class="mb-4">
-                            <label for="dateInput" class="form-label"><strong>Selecciona una fecha</strong></label>
+                            <label for="dateInput" class="form-label">Selecciona una fecha</label>
                             <input type="date" class="form-control custom-date-input" id="dateInput">
                         </div>
                         <!-- Selección de hora -->
                         <div class="mb-4">
-                            <label for="timeSelect" class="form-label"><strong>Hora</strong></label>
+                            <label for="timeSelect" class="form-label">Hora</label>
                             <select id="timeSelect" class="form-select">
                                 <option selected>Selecciona una hora</option>
                                 <option value="12:00">12:00 PM</option>
@@ -43,7 +44,7 @@
                         </div>
                         <!-- Selección de Número de Personas -->
                         <div>
-                            <label for="numPersonas" class="form-label"><strong>Número de personas</strong></label>
+                            <label for="numPersonas" class="form-label">Número de personas</label>
                             <input type="number" id="numPersonas" class="form-control" min="1" max="20"
                                 placeholder="Número de personas">
                         </div>
@@ -51,12 +52,14 @@
                 </div>
                 <!-- Información adicional -->
                 <div class="mt-4">
-                    <label for="areaInput" class="form-label"><strong>Información adicional que desee añadir</strong></label>
+                    <label for="areaInput" class="form-label">Información adicional que desee añadir</label>
                     <textarea id="areaInput" class="form-control" rows="4" placeholder="Escribe aquí..."></textarea>
                 </div>
                 <!-- Botón Siguiente -->
-                <div class="d-flex justify-content-center mt-3"><RESERVAR href="datosReserva.php"
-                class="btn btn-comun"/>RESERVAR</div>
+                <div class="d-flex justify-content-center mt-3">
+                    <a href="confReserva.php" class="btn btn-comun">RESERVAR</a>
+                </div>
+
             </div>
         </div>
     </main>
