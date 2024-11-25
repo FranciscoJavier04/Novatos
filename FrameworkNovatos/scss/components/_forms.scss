@@ -1,12 +1,23 @@
-// 
+//
 // Forms
-// 
+//
 textarea {
-    resize: none;
-    height: 110px;
+  resize: none;
+  height: 110px;
 }
 
 a {
-    color: blue;
-    text-decoration: none;
+  color: blue;
+  text-decoration: none;
+}
+.form-control, .form-select {
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.form-control:focus, .form-select:focus {
+  outline: none;
+  border-color: $mybrown;
+  box-shadow: 0 0 5px $mybrown;
 }
