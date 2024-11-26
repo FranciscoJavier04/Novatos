@@ -49,9 +49,9 @@
 
             <!-- Aviso Legal y Políticas -->
             <div class="col-lg-3">
-                <a class="texto24 nav-link" id="avisoLegal" href="avisoL.php">Aviso Legal</a>
-                <a class="texto24 nav-link" id="polPri" href="politicaP.php">Política de Privacidad</a>
-                <a class="texto24 nav-link" id="polCo" href="politicaC.php">Política de Cookies</a>
+                <a class="texto24 nav-link" id="avisoLegal" href="avisoLegal.php">Aviso Legal</a>
+                <a class="texto24 nav-link" id="polPri" href="politicaPrivaidad.php">Política de Privacidad</a>
+                <a class="texto24 nav-link" id="polCo" href="politicaCookies.php">Política de Cookies</a>
             </div>
 
         </div>

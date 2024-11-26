@@ -112,107 +112,191 @@ $card-font-size: 25px;
 }
 
 //ALEX
-.body-carta {
-  background-image: url("/assets/img/carta/cartafondo.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  color: $text;
-}
-
-.logo-carta {
-  max-width: 300px;
-  transform: translateY(200px);
-}
-
-.container-carta {
-  background-color: $secondary;
-  width: 70%;
-  margin: 0 auto;
-  border-radius: 15px;
-  overflow: hidden;
-}
-
-.title-carta {
-  margin-top: 250px;
-  margin-bottom: 200px;
-  font-family: $tipografia_titulos;
-  font-weight: bold;
-  font-size: 60px;
-}
-
-.subtitle-carta {
-  font-family: $tipografia_titulos;
-  font-size: 35px;
-}
-
-.subtitle-carta-postre {
-  font-family: $tipografia_titulos;
-  font-size: 35px;
-  margin-top: 200px;
-}
-
-.subtitle-carta-bebidas {
-  font-family: $tipografia_titulos;
-  font-size: 35px;
-  margin-top: 200px;
-}
-
-.subtitle-carta-alergeno {
-  font-family: $tipografia_titulos;
-  font-size: 25px;
-  margin-top: 150px;
-}
-
-.items-carta {
-  font-family: $tipografia_textos;
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.item-carta {
-  text-align: justify;
-  max-width: 600px;
-  font-size: 20px;
-}
-
-.imagen-tipo-plato {
-  width: 250px;
-  height: 200px;
-}
-
-.alergeno-item-carta {
-  font-family: $tipografia_textos;
-  max-width: 550px;
-  font-size: 15px;
-  text-align: justify;
-}
-
-.section-header-carta {
-  gap: 6px; /* Espaciado entre los elementos */
-}
-
-.section-background-carta {
-  width: 50%;
-  max-width: 370px;
-  height: auto;
-  background-image: url("/assets/img/carta/a.png");
-}
-
-.img-postres {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-}
-
-.item-carta-postre {
-  text-align: justify;
-  max-width: 300px;
-  display: flex;
-  flex-direction: column;
-  p {
-    margin-bottom: 0;
+  //CARTA
+  .body-carta {
+    background-image: url("/assets/img/carta/cartafondo.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;  
+    color: $text;
   }
+
+  .logo-carta {
+    max-width: 300px;
+    transform: translateY(200px);
+  }
+
+  .container-carta {
+    background-color: $secondary;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .title-carta {
+    margin-top: 250px;
+    margin-bottom: 200px;
+    font-family: $tipografia_titulos;
+    font-weight: $negrita;
+    font-size: $tam_tit_grandes;
+  }
+
+  .subtitle-carta {
+    font-family: $tipografia_titulos;
+    font-size: $tam_tit_medianos;
+    font-weight: $negrita;
+  }
+
+  .subtitle-carta-postre{
+    font-family: $tipografia_titulos;
+    font-size: $tam_tit_medianos;
+    margin-top: 200px;
+    font-weight: $negrita;
+  }
+
+  .subtitle-carta-bebidas{
+    font-family: $tipografia_titulos;
+    font-size: $tam_tit_medianos;
+    margin-top: 200px;
+    font-weight: $negrita;
+  }
+
+  .subtitle-carta-alergeno{
+    font-family: $tipografia_titulos;
+    font-size: $tam_tit_pequenos;
+    margin-top: 150px;
+    font-weight: $negrita;
+  }
+
+  .items-carta {
+    font-family: $tipografia_textos;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item-carta {
+    text-align: justify; 
+    max-width: 600px; 
+    font-size: $tam_text_medianos;
+  }
+
+
+  .imagen-tipo-plato {
+    width: 250px;
+    height: 200px;
+  }
+
+  .alergeno-item-carta {
+    font-family: $tipografia_textos;
+    max-width: 550px;
+    font-size:$tam_text_pequenos;
+    text-align: justify;
+  }
+
+  .section-header-carta {
+    gap: 6px; /* Espaciado entre los elementos */
+  }
+
+  .section-background-carta {
+    width: 50%; 
+    max-width: 370px;
+    height: auto;
+    background-image: url("/assets/img/carta/a.png");
+  }
+
+  .img-postres{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .item-carta-postre{
+    text-align: justify;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    p{
+      margin-bottom: 0;
+    }
+  }
+
+  
+  //AVISO LEGAL
+  .body-AL {
+    background-image: url("/assets/img/LogoSinFondo2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain; 
+    background-position: center 100px;
+  }
+
+  .titulo-AL{
+    color: $text;
+    font-family: $tipografia_titulos;
+    font-size:$tam_tit_grandes;
+  }
+
+  .items-AL{
+    font-family: $tipografia_titulos;
+    font-size:$tam_tit_medianos;
+  }
+
+  .item-AL{
+    font-family: $tipografia_textos;
+    font-size:$tam_text_medianos;
+  }
+  
+  //POLITICA DE PRIVACIDAD
+  .body-PP {
+    background-image: url("/assets/img/LogoSinFondo2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain; 
+    background-position: center 100px;
 }
+
+
+  .titulo-PP{
+    color: $text;
+    font-family: $tipografia_titulos;
+    font-size:$tam_tit_grandes;
+  }
+
+  .items-PP{
+    font-family: $tipografia_titulos;
+    font-size:$tam_tit_medianos;
+  }
+
+  .item-PP{
+    font-family: $tipografia_textos;
+    font-size:$tam_text_medianos;
+  }
+
+  //POLITICA DE COOKIES
+  .body-PC {
+    background-image: url("/assets/img/LogoSinFondo2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain; 
+    background-position: center 100px;
+  }
+
+  .titulo-PC{
+    color: $text;
+    font-family: $tipografia_titulos;
+    font-size: $tam_tit_grandes;
+  }
+
+  .items-PC{
+    font-family: $tipografia_titulos;
+    font-size:$tam_tit_medianos;
+  }
+
+  .item-PC{
+    font-family: $tipografia_textos;
+    font-size:$tam_text_medianos;
+  }
+
