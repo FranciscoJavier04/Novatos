@@ -2,7 +2,7 @@
 .index {
   background-color: $lightgray;
   color: $white;
-  font-size: 25px;
+  font-size:$tam_tit_pequenos;
   font-family: $tipografia_textos;
 }
 
@@ -39,6 +39,12 @@
 
 .video {
   width: 300px;
+}
+
+@media (min-width: 768px) { 
+  .min-vh-md-100 {
+    min-height: 100vh;
+  }
 }
 
 //FRAN//reserva.php
