@@ -1,4 +1,4 @@
-<?php include("includes/a_config.php"); ?>
+<?php include("includes/a-config.php"); ?>
 <!DOCTYPE html>
 <html>
 
@@ -21,6 +21,9 @@
                 </div>
                 <div class="col-md-8 p-0">
                     <p>
+                        <?php
+                            echo "SCRIPT_NAME: " . $_SERVER["SCRIPT_NAME"]."<br>";
+                        ?>
                         Estoy seguro de que has visto el Padrino, uno de los nuestros o cualquier película de Mafiosos.
                         Pues hoy os traigo Comiendo en el RESTAURANTE DE LA MAFIA en Marbella.
                     </p>
