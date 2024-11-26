@@ -1,6 +1,6 @@
-// 
+//
 // Buttons
-// 
+//
 
 // Custom extra large button size
 .btn-xl {
@@ -24,24 +24,49 @@
 }
 
 .btn-google {
-    background-color: white;
-    color: #333;
-    border-radius: 15px;
-    border: 1px solid #ddd;
-    gap: 0.5rem;
-  }
+  background-color: white;
+  color: #333;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+  gap: 0.5rem;
+}
 
-
-  .btn-comun {
-    background-color:$primary;
-    color:$dark;
-    border-radius: 10px;
-    border: 1px solid $dark;
-    gap: 0.5rem;
-    font-family: $tipografia_textos;
-    font-weight: $negrita;
-    &:hover {
-      background-color:$secondary;
-      color: $primary;
-    }
+.btn-comun {
+  background-color: $primary;
+  color: $dark;
+  border-radius: 10px;
+  border: 1px solid $dark;
+  gap: 0.5rem;
+  font-family: $tipografia_textos;
+  font-weight: $negrita;
+  &:hover {
+    background-color: $secondary;
+    color: $primary;
   }
+}
+.btn-secondary {
+  background-color: $gray;
+  color: $pie;
+  border-radius: 10px;
+  border: 1px solid $dark;
+  gap: 0.5rem;
+  font-family: $tipografia_textos;
+  font-weight: $negrita;
+  &:hover {
+    color: white;
+  }
+}
+
+.btn-tertiary {
+  background-color: #4b3d3d;
+  color: $pie;
+  border-radius: 10px;
+  border: 1px solid $dark;
+  gap: 0.5rem;
+  font-family: $tipografia_textos;
+  font-weight: $negrita;
+  &:hover {
+    background-color: #4b3d3d;
+    color: white;
+  }
+}
