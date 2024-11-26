@@ -230,7 +230,7 @@ $card-font-size: 25px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain; 
-    background-position: center;
+    background-position: center 100px;
   }
 
   .titulo-AL{
@@ -255,9 +255,9 @@ $card-font-size: 25px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain; 
-    background-position: center;
+    background-position: center 100px;
+}
 
-  }
 
   .titulo-PP{
     color: $text;
@@ -281,7 +281,7 @@ $card-font-size: 25px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain; 
-    background-position: center;
+    background-position: center 100px;
   }
 
   .titulo-PC{
