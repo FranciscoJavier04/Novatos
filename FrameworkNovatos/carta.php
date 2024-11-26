@@ -210,7 +210,7 @@
                 </div>
 
                 <!-- ALERGENOS -->
-                <p class="subtitle-carta-alergeno mb-3 text-center">ALERGENOS</p>
+                <p class="subtitle-carta-alergeno mb-3 text-center">ALÉRGENOS</p>
                 <div class="items-carta d-flex"> 
                     <p class="alergeno-item-carta mb-5">Informamos a nuestros clientes que algunos de nuestros 
                         platos contienen alérgenos tales como gluten, mariscos, frutos secos, lácteos, y otros. 

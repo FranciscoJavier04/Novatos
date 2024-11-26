@@ -128,7 +128,7 @@ $card-font-size: 25px;
   }
 
   .container-carta {
-    background-color: $secondary;
+    background-color: $lightgray;
     width: 70%;
     margin: 0 auto;
     border-radius: 15px;
@@ -136,7 +136,7 @@ $card-font-size: 25px;
   }
 
   .title-carta {
-    margin-top: 250px;
+    margin-top: 270px;
     margin-bottom: 200px;
     font-family: $tipografia_titulos;
     font-weight: $negrita;
@@ -152,21 +152,21 @@ $card-font-size: 25px;
   .subtitle-carta-postre{
     font-family: $tipografia_titulos;
     font-size: $tam_tit_medianos;
-    margin-top: 200px;
+    margin-top: 150px;
     font-weight: $negrita;
   }
 
   .subtitle-carta-bebidas{
     font-family: $tipografia_titulos;
     font-size: $tam_tit_medianos;
-    margin-top: 200px;
+    margin-top: 150px;
     font-weight: $negrita;
   }
 
   .subtitle-carta-alergeno{
     font-family: $tipografia_titulos;
     font-size: $tam_tit_pequenos;
-    margin-top: 150px;
+    margin-top: 100px;
     font-weight: $negrita;
   }
 
@@ -300,3 +300,48 @@ $card-font-size: 25px;
     font-size:$tam_text_medianos;
   }
 
+  
+  //DELIVERY
+  .container-del {
+    padding: 10px;
+  }
+
+  .menu-item {
+      cursor: pointer;
+      margin: 15px 0;
+  }
+
+  .sidebar-del {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-left: 2px solid #ddd;
+    position: sticky; /* Sticky para que quede fijo */
+    top: 0; /* Anclado en la parte superior */
+  }
+
+  .carta-del img {
+      border-radius: 5px;
+      width: 150px;
+      height: 100px;
+  }
+
+  .carrito-del {
+      background-color: #f1f1f1;
+      padding: 20px;
+      border-left: 2px solid #ddd;
+      position: sticky; /* Sticky para que quede fijo */
+      top: 0; /* Anclado en la parte superior */
+  }
+
+  .carrito-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+  }
+
+  .total {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-top: 20px;
+      text-align: center;
+  }
