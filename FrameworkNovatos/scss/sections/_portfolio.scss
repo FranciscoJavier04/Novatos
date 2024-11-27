@@ -284,7 +284,7 @@ $card-font-size: 25px;
   
   //DELIVERY
   .container-del {
-    padding: 10px;
+    padding: 2%;
     overflow-x: hidden; /* Elimina el scroll horizontal */
   }
 
@@ -294,48 +294,59 @@ $card-font-size: 25px;
   }
 
   .sidebar-del {
-    background-color: #000000; /* Fondo limpio */
+    background-color: #d7ba15; /* Fondo limpio */
     padding: 20px;
     border-radius: 10px; /* Bordes redondeados */
     position: sticky;
-    top: 20px; /* Queda fijo con margen superior */
     max-height: calc(100vh - 40px); /* Limita altura en pantallas pequeñas */
     overflow-y: auto; /* Scroll si el contenido es largo */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra moderna */
-}
+  }
 
-.titulo-sidebar {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333; /* Color más oscuro */
-    margin-bottom: 20px;
-}
+  .titulo-sidebar {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333; /* Color más oscuro */
+      margin-bottom: 20px;
+  }
 
-.menu-item-del {
-    font-size: 1rem;
-    color: #555;
-    padding: 10px 15px;
-    margin: 5px 0;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out; /* Transición para el hover */
-}
+  .menu-item-del {
+      font-size: 1rem;
+      color: #555;
+      padding: 10px 15px;
+      margin: 5px 0;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out; /* Transición para el hover */
+  }
 
-.menu-item-del:hover {
-    background-color: #f7f7f7; /* Fondo claro al pasar el cursor */
-    color: #007bff; /* Azul vibrante */
-    transform: translateX(5px); /* Animación sutil */
-}
+  .menu-item-del:hover {
+      background-color: #f7f7f7; /* Fondo claro al pasar el cursor */
+      color: #007bff; /* Azul vibrante */
+      transform: translateX(5px); /* Animación sutil */
+  }
 
-.menu-item-del.active {
-    background-color: #007bff; /* Fondo azul para el activo */
-    color: #ffffff; /* Texto blanco */
-    font-weight: bold;
-}
-
+  .menu-item-del.active {
+      background-color: #007bff; /* Fondo azul para el activo */
+      color: #ffffff; /* Texto blanco */
+      font-weight: bold;
+  }
 
   .carta-del img {
-      border-radius: 5px;
-      width: 150px;
-      height: 100px;
+    width: 150px;
+    height: 100px;
+    border-radius: 25px;
+  }
+
+  .body-del {
+    background-image: url("/assets/img/fotop.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;  
+    color: $text;
+  }
+
+  .carta-del{
+    width: 70%;
   }
