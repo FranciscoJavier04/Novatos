@@ -1,4 +1,4 @@
-<?php include("includes/a_config.php"); ?>
+<?php include("includes/a-config.php"); ?>
 <!DOCTYPE html>
 <html>
 
@@ -25,7 +25,7 @@
                         <h2 class="fw-bold mt-2">REGISTRARSE</h2>
                         <p class="mt-3">Introduce tus datos para disfrutar de todas nuestras funciones.</p>
                     </div>
-                    <form>
+                    <form action="">
                         <div class="mb-3">
                             <label for="nombre" class="form-label">Nombre</label>
                             <input type="text" class="form-control" id="nombre" placeholder="Manuel">

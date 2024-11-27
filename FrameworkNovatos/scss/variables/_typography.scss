@@ -5,6 +5,9 @@ $tipografia_titulos: "serif",
 $tipografia_textos: "serif",
 "Playfair Display";
 
+$font-family-base:$tipografia_textos;
+$headings-font-family:$tipografia_titulos;
+
 // ESTILO TEXTOS
 $negrita: bold;
 $cursiva: italic;

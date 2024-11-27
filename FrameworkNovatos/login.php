@@ -1,4 +1,4 @@
-<?php include("includes/a_config.php"); ?>
+<?php include("includes/a-config.php"); ?>
 <!DOCTYPE html>
 <html>
 
@@ -9,10 +9,10 @@
 <body>
     <?php include("includes/navigation.php"); ?>
     <main class="container-fluid m-0">
-        <div class="row min-vh-100">
-            <div class="col-md-6 d-flex align-items-center justify-content-center ">
+        <div class="row min-vh-md-100">
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
                 <div class="login-container text-left">
-                    <div class="logo-login">
+                    <div class="logo-login mt-4">
                         <img class="rounded-4" src="/assets/img/logo-login.png" alt="Logo Óneo">
                     </div>
                     <h2 class="fw-bold text-center mt-4">BIENVENIDO DE NUEVO!</h2>
