@@ -1,25 +1,45 @@
 //MANU
 .index {
+  background-color: $lightgray;
+  color: $white;
   font-size:$tam_tit_pequenos;
 }
+
 .profile-pic img {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
 }
+
 .bg-login {
   background-image: url("/assets/img/imagenInicio.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  height: 100%;
 }
+
+.logo-login img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
 .p-5 {
   padding: 10% !important;
 }
+
 .portfolio-main {
   background-image: url("/assets/img/imgMain.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
+.video {
+  width: 300px;
+}
+
 @media (min-width: 768px) { 
   .min-vh-md-100 {
     min-height: 100vh;
@@ -32,8 +52,8 @@ $card-font-size: 25px;
 #cardReserva {
   border: none;
   font-size: $card-font-size;
-  font-weight: $negrita;
-  font-style: $cursiva;
+  font-weight: bold;
+  font-style: italic;
   color: $dark;
   height: 100%;
   background-color: transparent;
@@ -57,6 +77,15 @@ $card-font-size: 25px;
   background-attachment: fixed;
 }
 //FRAN//datosReserva.php
+#cardFormulario {
+
+  img {
+    object-fit: cover; 
+    filter: brightness(0.3);
+  }
+
+}
+/*
 #cardFormulario {
   width: 95%;
   max-width: 1200px; 
@@ -86,7 +115,7 @@ $card-font-size: 25px;
     filter: brightness(0.3);
   }
 
-}
+}*/
 
 //ALEX
   //CARTA
@@ -115,31 +144,31 @@ $card-font-size: 25px;
   .title-carta {
     margin-top: 270px;
     margin-bottom: 200px;
-    font-weight: $negrita;
+    font-weight: bold;
     font-size: $tam_tit_grandes;
   }
 
   .subtitle-carta {
     font-size: $tam_tit_medianos;
-    font-weight: $negrita;
+    font-weight: bold;
   }
 
   .subtitle-carta-postre{
     font-size: $tam_tit_medianos;
     margin-top: 150px;
-    font-weight: $negrita;
+    font-weight: bold;
   }
 
   .subtitle-carta-bebidas{
     font-size: $tam_tit_medianos;
     margin-top: 150px;
-    font-weight: $negrita;
+    font-weight: bold;
   }
 
   .subtitle-carta-alergeno{
     font-size: $tam_tit_pequenos;
     margin-top: 100px;
-    font-weight: $negrita;
+    font-weight: bold;
   }
 
   .items-carta {
@@ -264,7 +293,7 @@ $card-font-size: 25px;
   
   //DELIVERY
   .container-del {
-    padding: 10px;
+    padding: 2%;
     overflow-x: hidden; /* Elimina el scroll horizontal */
   }
 
@@ -274,48 +303,60 @@ $card-font-size: 25px;
   }
 
   .sidebar-del {
-    background-color: #000000; /* Fondo limpio */
+    background-color: #d7ba15; /* Fondo limpio */
     padding: 20px;
     border-radius: 10px; /* Bordes redondeados */
     position: sticky;
-    top: 20px; /* Queda fijo con margen superior */
     max-height: calc(100vh - 40px); /* Limita altura en pantallas pequeñas */
     overflow-y: auto; /* Scroll si el contenido es largo */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra moderna */
-}
+  }
 
-.titulo-sidebar {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333; /* Color más oscuro */
-    margin-bottom: 20px;
-}
+  .titulo-sidebar {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333; /* Color más oscuro */
+      margin-bottom: 20px;
+  }
 
-.menu-item-del {
-    font-size: 1rem;
-    color: #555;
-    padding: 10px 15px;
-    margin: 5px 0;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out; /* Transición para el hover */
-}
+  .menu-item-del {
+      font-size: 1rem;
+      color: #555;
+      padding: 10px 15px;
+      margin: 5px 0;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out; /* Transición para el hover */
+  }
 
-.menu-item-del:hover {
-    background-color: #f7f7f7; /* Fondo claro al pasar el cursor */
-    color: #007bff; /* Azul vibrante */
-    transform: translateX(5px); /* Animación sutil */
-}
+  .menu-item-del:hover {
+      background-color: #f7f7f7; /* Fondo claro al pasar el cursor */
+      color: #007bff; /* Azul vibrante */
+      transform: translateX(5px); /* Animación sutil */
+  }
 
-.menu-item-del.active {
-    background-color: #007bff; /* Fondo azul para el activo */
-    color: #ffffff; /* Texto blanco */
-    font-weight: bold;
-}
-
+  .menu-item-del.active {
+      background-color: #007bff; /* Fondo azul para el activo */
+      color: #ffffff; /* Texto blanco */
+      font-weight: bold;
+  }
 
   .carta-del img {
-      border-radius: 5px;
-      width: 150px;
-      height: 100px;
+    width: 150px;
+    height: 100px;
+    border-radius: 25px;
+  }
+
+  .body-del {
+    background-image: url("/assets/img/fotop.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;  
+    color: $text;
+    font-size: 15px;
+  }
+
+  .carta-del{
+    width: 70%;
   }
