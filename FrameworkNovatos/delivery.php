@@ -24,7 +24,7 @@
             </div>
 
             <!-- Contenido Principal -->
-            <div class="carta-del col-md-9 text-justify bg-secondary w-5 mx-auto rounded-3">
+            <div class="carta-del col-md-9 text-justify bg-info w-5 mx-auto rounded-3 text-paragraph">
                 <!-- ENTRANTES -->
                 <h1 class="subtitulo-carta text-center mb-5" id="entrantes" >Entrantes</h1>
                 <div class="row">
