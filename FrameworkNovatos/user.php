@@ -9,20 +9,19 @@
 <body>
     <?php include("includes/navigation.php"); ?>
     <main class="container-fluid">
-        <div class="container-fluid mt-5">
-            <div class="col-12 row justify-content-md-start text-md-start justify-content-center">
-                <div class="col-md-3 col-xl-2  text-center text-md-start">
-                    <div class="profile-pic mb-3">
-                        <img src="/assets/img/Logo.png" alt="Imagen Usuario" class="w-100 d-flex mx-auto">
-                        <h1>Manuel Romero</h1>
-                        <p>Cliente</p>
+        <div class="container-fluid mt-2">
+            <div class="col-md-12 col-8 row justify-content-md-start justify-content-center">
+                <div class="col-md-2  text-center text-md-start">
+                    <div class="profile-pic ">
+                        <img src="/assets/img/Logo.png" alt="Imagen Usuario" class="w-75">
+                        <div class="text-center text-md-start">
+                            <h2>Manuel Romero</h2>
+                            <p>Cliente</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-7 m-1 order-1 order-md-0 justify-content-md-start justify-content-center d-flex ">
-                    <button class="btn btn-comun mt-auto">Cargar Foto</button>
-                </div>
-                <div class="text-center order-0 order-md-1 text-md-start">
-                    
+                <div class="col-md-7 justify-content-md-start justify-content-center d-flex ">
+                    <button class="btn btn-comun my-auto px-4">Cargar Foto</button>
                 </div>
             </div>
 
@@ -30,7 +29,7 @@
             <!-- Sección de información -->
             <div class="row justify-content-center border my-3">
                 <div class="col-md-12">
-                
+
                     <form>
                         <h5>INFO</h5>
                         <div class="separador-user mb-3"></div>
