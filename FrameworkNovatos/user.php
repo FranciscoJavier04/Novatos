@@ -13,15 +13,16 @@
             <div class="col-12 row justify-content-md-start text-md-start justify-content-center">
                 <div class="col-md-3 col-xl-2  text-center text-md-start">
                     <div class="profile-pic mb-3">
-                        <img src="/assets/img/Logo.png" alt="Imagen Usuario" class="img-fluid">
+                        <img src="/assets/img/Logo.png" alt="Imagen Usuario" class="w-100 d-flex mx-auto">
+                        <h1>Manuel Romero</h1>
+                        <p>Cliente</p>
                     </div>
                 </div>
                 <div class="col-md-7 m-1 order-1 order-md-0 justify-content-md-start justify-content-center d-flex ">
                     <button class="btn btn-comun mt-auto">Cargar Foto</button>
                 </div>
                 <div class="text-center order-0 order-md-1 text-md-start">
-                    <h4>Manuel Romero</h4>
-                    <p>Cliente</p>
+                    
                 </div>
             </div>
 

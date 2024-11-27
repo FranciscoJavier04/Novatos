@@ -12,8 +12,8 @@
         <div class="row min-vh-md-100">
             <div class="col-md-6 d-flex justify-content-center align-items-center">
                 <div class="login-container text-left">
-                    <div class="logo-login mt-4">
-                        <img class="rounded-4" src="/assets/img/logo-login.png" alt="Logo Óneo">
+                    <div class="mt-4">
+                        <img class="rounded-4 w-100" src="/assets/img/logo-login.png" alt="Logo Óneo">
                     </div>
                     <h2 class="fw-bold text-center mt-4">BIENVENIDO DE NUEVO!</h2>
                     <p class="mt-4">Introduce tus datos para disfrutar de todas nuestras funciones.</p>
@@ -43,7 +43,7 @@
             </div>
 
             <div class="container-fluid col-md-6 d-none d-md-block p-0">
-                <div class="d-none bg-login rounded-3 rounded-end d-md-block"></div>
+                <div class="d-none bg-login h-100 rounded-3 rounded-end d-md-block"></div>
             </div>
         </div>
     </main>
