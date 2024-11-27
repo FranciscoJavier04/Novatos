@@ -9,7 +9,7 @@
 <body id="bodyReserva">
     <?php include("includes/navigation.php"); ?>
     <main class="d-flex justify-content-center align-items-center my-3">
-        <div class="card" id="cardFormulario">
+        <div class="card w-75 rounded-3 bg-light overflow-hidden fw-bold fst-italic" id="cardFormulario">
             <div class="card-body d-flex flex-column justify-content-between p-4">
                 <div class="text-center">
                     <img src="/assets/img/LogoSinFondo.png">

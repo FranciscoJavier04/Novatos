@@ -47,28 +47,6 @@
 }
 
 //FRAN//reserva.php
-$card-font-size: 25px;
-
-#cardReserva {
-  border: none;
-  font-size: $card-font-size;
-  font-weight: bold;
-  font-style: italic;
-  color: $dark;
-  height: 100%;
-  background-color: transparent;
-}
-
-#cardReserva .card-img-top {
-  border: 3px solid $myyellow;
-  border-radius: 10px;
-}
-
-#cardReserva .card-body {
-  border: 3px solid $mybrown;
-  border-radius: 10px;
-  background-color: $myyellow;
-}
 
 #bodyReserva {
   background-image: url("/assets/img/reserva/fondoreserva.webp");
@@ -76,46 +54,13 @@ $card-font-size: 25px;
   background-position: center;
   background-attachment: fixed;
 }
-//FRAN//datosReserva.php
 #cardFormulario {
-
   img {
     object-fit: cover; 
     filter: brightness(0.3);
   }
-
 }
-/*
-#cardFormulario {
-  width: 95%;
-  max-width: 1200px; 
-  border-radius: 20px; 
-  background-color: #f9f9f9; 
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  font-style: $cursiva;
-  font-weight: $negrita;
-  
-  h1.card-title {
-    font-size: 2.5rem;
-    color: $dark;
-  }
 
-  hr {
-    border-top: 2px solid #ddd;
-  }
-
-  .form-label {
-    font-size: 1.2rem;
-    color: #555;
-  }
-  img {
-    width: auto; 
-    object-fit: cover; 
-    filter: brightness(0.3);
-  }
-
-}*/
 
 //ALEX
   //CARTA

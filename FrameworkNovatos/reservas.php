@@ -14,9 +14,9 @@
             <div class="row justify-content-center">
                 <!-- Primera tarjeta -->
                 <div class="col-md-4 mb-3 d-flex">
-                    <div class="card" id="cardReserva">
-                        <img class="card-img-top" src="assets/img/reserva/terraza.png" alt="terraza">
-                        <div class="card-body text-center mt-3">
+                    <div class="card border-0 fw-bold fst-italic fs-4 bg-transparent" id="cardReserva">
+                        <img class="card-img-top border border-3 rounded-3 border-danger" src="assets/img/reserva/terraza.png" alt="terraza">
+                        <div class="card-body text-center mt-3 border border-3 rounded-3 border-danger bg-warning">
                             <h1 class="card-title" id="titulo">Terraza</h1>
                             <p class="card-text">Una terraza elegante al aire libre, decorada con mesas de comedor
                                 adornadas
@@ -35,9 +35,9 @@
 
                 <!-- Segunda tarjeta -->
                 <div class="col-md-4 mb-3 d-flex">
-                    <div class="card" id="cardReserva">
-                        <img class="card-img-top" src="assets/img/reserva/interior.png" alt="terraza">
-                        <div class="card-body text-center mt-3">
+                    <div class="card border-0 fw-bold fst-italic fs-4 bg-transparent" id="cardReserva">
+                        <img class="card-img-top border border-3 rounded-3 border-danger" src="assets/img/reserva/interior.png" alt="terraza">
+                        <div class="card-body text-center mt-3 border border-3 rounded-3 border-danger bg-warning">
                             <h1 class="card-title" id="titulo">Comedor</h1>
                             <p class="card-text">Un comedor lujoso con grandes candelabros de cristal que iluminan el
                                 espacio.
@@ -56,9 +56,9 @@
 
                 <!-- Tercera tarjeta -->
                 <div class="col-md-4 mb-3 d-flex">
-                    <div class="card" id="cardReserva">
-                        <img class="card-img-top" src="assets/img/reserva/salon.png" alt="terraza">
-                        <div class="card-body text-center mt-3">
+                    <div class="card border-0 fw-bold fst-italic fs-4 bg-transparent" id="cardReserva">
+                        <img class="card-img-top border border-3 rounded-3 border-danger" src="assets/img/reserva/salon.png" alt="terraza">
+                        <div class="card-body text-center mt-3 border border-3 rounded-3 border-danger bg-warning">
                             <h1 class="card-title" id="titulo">Salón</h1>
                             <p class="card-text">Un lujoso salón comedor con una gran mesa de madera oscura, rodeada de
                                 elegantes sillas acolchadas. El techo tiene detalles decorativos y están colgados varios
