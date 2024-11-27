@@ -12,13 +12,13 @@
         <div class="row min-vh-100">
 
             <div class="container-fluid col-md-6 d-none d-md-block p-0">
-                <div class="d-none bg-login rounded-3 rounded-start d-md-block"></div>
+                <div class="d-none bg-login h-100 rounded-3 rounded-start d-md-block"></div>
             </div>
 
             <div class="col-md-6 d-flex align-items-center justify-content-center my-5">
                 <div class="login-container text-left">
-                    <div class="logo-login">
-                        <img class="rounded-4" src="/assets/img/logo-login.png" alt="Logo Óneo">
+                    <div class="mt-4">
+                        <img class="rounded-4 w-100" src="/assets/img/logo-login.png" alt="Logo Óneo">
                     </div>
                     <div class="text-center">
 
