@@ -37,8 +37,7 @@
   border-radius: 10px;
   border: 1px solid $dark;
   gap: 0.5rem;
-  font-family: $tipografia_textos;
-  font-weight: $negrita;
+  font-weight: bold;
   &:hover {
     background-color: $secondary;
     color: $primary;
@@ -50,8 +49,7 @@
   border-radius: 10px;
   border: 1px solid $dark;
   gap: 0.5rem;
-  font-family: $tipografia_textos;
-  font-weight: $negrita;
+  font-weight: bold;
   &:hover {
     color: white;
   }
@@ -63,8 +61,7 @@
   border-radius: 10px;
   border: 1px solid $dark;
   gap: 0.5rem;
-  font-family: $tipografia_textos;
-  font-weight: $negrita;
+  font-weight: bold;
   &:hover {
     background-color: #4b3d3d;
     color: white;

@@ -52,8 +52,8 @@ $card-font-size: 25px;
 #cardReserva {
   border: none;
   font-size: $card-font-size;
-  font-weight: $negrita;
-  font-style: $cursiva;
+  font-weight: bold;
+  font-style: italic;
   color: $dark;
   height: 100%;
   background-color: transparent;
@@ -77,6 +77,15 @@ $card-font-size: 25px;
   background-attachment: fixed;
 }
 //FRAN//datosReserva.php
+#cardFormulario {
+
+  img {
+    object-fit: cover; 
+    filter: brightness(0.3);
+  }
+
+}
+/*
 #cardFormulario {
   width: 95%;
   max-width: 1200px; 
@@ -106,7 +115,7 @@ $card-font-size: 25px;
     filter: brightness(0.3);
   }
 
-}
+}*/
 
 //ALEX
   //CARTA
@@ -135,31 +144,31 @@ $card-font-size: 25px;
   .title-carta {
     margin-top: 270px;
     margin-bottom: 200px;
-    font-weight: $negrita;
+    font-weight: bold;
     font-size: $tam_tit_grandes;
   }
 
   .subtitle-carta {
     font-size: $tam_tit_medianos;
-    font-weight: $negrita;
+    font-weight: bold;
   }
 
   .subtitle-carta-postre{
     font-size: $tam_tit_medianos;
     margin-top: 150px;
-    font-weight: $negrita;
+    font-weight: bold;
   }
 
   .subtitle-carta-bebidas{
     font-size: $tam_tit_medianos;
     margin-top: 150px;
-    font-weight: $negrita;
+    font-weight: bold;
   }
 
   .subtitle-carta-alergeno{
     font-size: $tam_tit_pequenos;
     margin-top: 100px;
-    font-weight: $negrita;
+    font-weight: bold;
   }
 
   .items-carta {
