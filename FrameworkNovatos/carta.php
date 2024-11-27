@@ -19,7 +19,7 @@
         <!-- CARTA -->
         <div class="container-carta my-5 ">
             <div class="menu-section-carta">
-            <h2 class="title-carta text-center">CARTA</h2>
+            <h1 class="title-carta text-center">CARTA</h1>
 
 
                <!-- ENTRANTES -->
@@ -28,7 +28,7 @@
                     <div class="section-background-carta mt-5"></div>
                 </div>
 
-                <p class="text-center subtitle-carta mt-5 mb-3">ENTRANTES</p>
+                <h2 class="text-center subtitle-carta mt-5 mb-3">ENTRANTES</h2>
                 <div class="items-carta d-flex">
                 <div class="item-carta">
                     <span class="item-titulo">- Jamón Ibérico de Bellota. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35€ </span>
@@ -67,7 +67,7 @@
                     <div class="section-background-carta mt-5"></div>
                 </div>
 
-                <p class="text-center subtitle-carta mt-5 mb-3">PLATOS PRINCIPALES</p>
+                <h2 class="text-center subtitle-carta mt-5 mb-3">PLATOS PRINCIPALES</h2>
                 <div class="items-carta d-flex">
                     <div class="item-carta">
                         <span>- Cochinillo Asado a Baja Temperatura . . . . . . . . . . . . . . . . . . . . . . . . . 45€</span>
@@ -101,7 +101,7 @@
                     <div class="section-background-carta mt-5"></div>
                 </div>
 
-                <p class="text-center subtitle-carta mt-5 mb-3 ">ESPECIALIDADES</p>
+                <h2 class="text-center subtitle-carta mt-5 mb-3 ">ESPECIALIDADES</h2>
                 <div class="items-carta d-flex">
                     <div class="item-carta">
                         <span>- Paella de Mariscos Tradicional . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50€</span>
@@ -126,7 +126,7 @@
                 </div>
 
                 <!-- POSTRES -->
-                <p class="subtitle-carta-postre text-center mb-3">POSTRES</p>
+                <h2 class="subtitle-carta-postre text-center mb-3">POSTRES</h2>
 
                 <div class="items-carta-postre d-flex flex-wrap justify-content-center gap-5">
                 <div class="item-carta-postre">
@@ -165,7 +165,7 @@
                 </div>
 
                 <!-- BEBIDAS -->
-                <p class="text-center subtitle-carta-bebidas mb-3">BEBIDAS</p>
+                <h2 class="text-center subtitle-carta-bebidas mb-3">BEBIDAS</h2>
                 <div class="items-carta d-flex">
                     <div class="item-carta-bebida">
                         <span>Agua Mineral Premium . . . . . . . . . . . . . . . . . . . . . . . 6€</span>
@@ -182,7 +182,7 @@
                 </div>
 
                 <!-- VINOS BLANCOS -->
-                <p class="text-center subtitle-carta mt-5 mb-3">VINO BLANCO</p>
+                <h2 class="text-center subtitle-carta mt-5 mb-3">VINO BLANCO</h2>
                 <div class="items-carta d-flex">
                     <div class="item-carta-bebida">
                         <span>Albariño Rías Baixas . . . . . . . . . . . . . . . . . . . . . . . . 24€</span>
@@ -196,7 +196,7 @@
                 </div>
 
                 <!-- VINOS TINTOS -->
-                <p class="text-center subtitle-carta mt-5 mb-3">VINO TINTO</p>
+                <h2 class="text-center subtitle-carta mt-5 mb-3">VINO TINTO</h2>
                 <div class="items-carta d-flex">
                     <div class="item-carta-bebida">
                         <span>Rioja Reserva . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30€</span>
@@ -210,7 +210,7 @@
                 </div>
 
                 <!-- ALERGENOS -->
-                <p class="subtitle-carta-alergeno mb-3 text-center">ALÉRGENOS</p>
+                <h3 class="subtitle-carta-alergeno mb-3 text-center">ALÉRGENOS</h3>
                 <div class="items-carta d-flex"> 
                     <p class="alergeno-item-carta mb-5">Informamos a nuestros clientes que algunos de nuestros 
                         platos contienen alérgenos tales como gluten, mariscos, frutos secos, lácteos, y otros. 

@@ -304,6 +304,7 @@ $card-font-size: 25px;
   //DELIVERY
   .container-del {
     padding: 10px;
+    overflow-x: hidden; /* Elimina el scroll horizontal */
   }
 
   .menu-item {
@@ -312,36 +313,48 @@ $card-font-size: 25px;
   }
 
   .sidebar-del {
-    background-color: #f1f1f1;
+    background-color: #000000; /* Fondo limpio */
     padding: 20px;
-    border-left: 2px solid #ddd;
-    position: sticky; /* Sticky para que quede fijo */
-    top: 0; /* Anclado en la parte superior */
-  }
+    border-radius: 10px; /* Bordes redondeados */
+    position: sticky;
+    top: 20px; /* Queda fijo con margen superior */
+    max-height: calc(100vh - 40px); /* Limita altura en pantallas pequeñas */
+    overflow-y: auto; /* Scroll si el contenido es largo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra moderna */
+}
+
+.titulo-sidebar {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333; /* Color más oscuro */
+    margin-bottom: 20px;
+}
+
+.menu-item-del {
+    font-size: 1rem;
+    color: #555;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out; /* Transición para el hover */
+}
+
+.menu-item-del:hover {
+    background-color: #f7f7f7; /* Fondo claro al pasar el cursor */
+    color: #007bff; /* Azul vibrante */
+    transform: translateX(5px); /* Animación sutil */
+}
+
+.menu-item-del.active {
+    background-color: #007bff; /* Fondo azul para el activo */
+    color: #ffffff; /* Texto blanco */
+    font-weight: bold;
+}
+
 
   .carta-del img {
       border-radius: 5px;
       width: 150px;
       height: 100px;
-  }
-
-  .carrito-del {
-      background-color: #f1f1f1;
-      padding: 20px;
-      border-left: 2px solid #ddd;
-      position: sticky; /* Sticky para que quede fijo */
-      top: 0; /* Anclado en la parte superior */
-  }
-
-  .carrito-item {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 10px;
-  }
-
-  .total {
-      font-weight: bold;
-      font-size: 1.2em;
-      margin-top: 20px;
-      text-align: center;
   }
