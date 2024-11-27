@@ -8,7 +8,7 @@
 
 <body>
     <?php include("includes/navigation.php"); ?>
-    <main class="text-center index">
+    <main class="bg-info index text-white text-center">
         <div class="portfolio-main p-5">
             <button class="btn-xl">DESCÚBRENOS</button>
         </div>
@@ -17,13 +17,10 @@
             <!-- Primera tarjeta -->
             <div class="row align-items-center mb-3">
                 <div class="col-md-4 p-0">
-                    <img src="assets/img/Logo.png" alt="Imagen 1" class="img-fluid video">
+                    <img src="assets/img/Logo.png" alt="Imagen 1" class="w-75">
                 </div>
                 <div class="col-md-8 p-0">
                     <p>
-                        <?php
-                            echo "SCRIPT_NAME: " . $_SERVER["SCRIPT_NAME"]."<br>";
-                        ?>
                         Estoy seguro de que has visto el Padrino, uno de los nuestros o cualquier película de Mafiosos.
                         Pues hoy os traigo Comiendo en el RESTAURANTE DE LA MAFIA en Marbella.
                     </p>
@@ -34,7 +31,7 @@
             <!-- Segunda tarjeta (invertida) -->
             <div class="row align-items-center my-3">
                 <div class="col-md-4 order-md-1 p-0">
-                    <img src="assets/img/Logo.png" alt="Imagen 2" class="img-fluid video">
+                    <img src="assets/img/Logo.png" alt="Imagen 2" class="w-75">
                 </div>
                 <div class="col-md-8 order-md-0 p-0">
                     <p>
@@ -49,7 +46,7 @@
             <!-- Tercera tarjeta -->
             <div class="row align-items-center my-3">
                 <div class="col-md-4 p-0">
-                    <img src="assets/img/Logo.png" alt="Imagen 3" class="img-fluid video">
+                    <img src="assets/img/Logo.png" alt="Imagen 3" class="w-75">
                 </div>
                 <div class="col-md-8 p-0">
                     <p>
