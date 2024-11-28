@@ -32,7 +32,7 @@
                         </div>
                         <button type="submit" class="btn btn-comun w-100 mb-2">Iniciar Sesión</button>
                         <div class="text-center">
-                            <button type="button" class="btn btn-google m-3 p-2">
+                            <button type="button" class="btn rounded-3 btn-google m-3 p-2">
                                 <i class="fab fa-google"></i></i> Sign in with Google
                             </button>
                         </div>

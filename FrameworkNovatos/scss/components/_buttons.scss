@@ -8,7 +8,6 @@
   font-size: 1.25rem;
   letter-spacing: 0.25rem;
   background-color: $white;
-  border-radius: 15px;
   font-family: $tipografia_titulos;
 }
 
@@ -24,10 +23,7 @@
 }
 
 .btn-google {
-  background-color: white;
-  color: #333;
-  border-radius: 15px;
-  border: 1px solid #ddd;
+  border: 0.1rem solid #ddd;
   gap: 0.5rem;
 }
 
@@ -35,7 +31,7 @@
   background-color: $primary;
   color: $dark;
   border-radius: 10px;
-  border: 1px solid $dark;
+  border: 0.1rem solid $dark;
   gap: 0.5rem;
   font-weight: bold;
   &:hover {
@@ -47,11 +43,11 @@
   background-color: $gray;
   color: $pie;
   border-radius: 10px;
-  border: 1px solid $dark;
+  border: 0.1rem solid $dark;
   gap: 0.5rem;
   font-weight: bold;
   &:hover {
-    color: white;
+    color:$white;
   }
 }
 
@@ -64,6 +60,6 @@
   font-weight: bold;
   &:hover {
     background-color: #4b3d3d;
-    color: white;
+    color: $white;
   }
 }
