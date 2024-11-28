@@ -147,10 +147,10 @@
     position: sticky; /* Se fija en el viewport */
     top: 140px; /* Espaciado desde la parte superior */
     height: 35rem; /* Limita la altura del sidebar */
-    background: linear-gradient(135deg, #d7be88,#b3985e);
-    box-shadow: inset 0 0 10px rgba(67, 45, 2, 0.8);
-
+    background: linear-gradient(135deg, #c5ad7a,#b3985e);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
   }
+
  //SIDEBAR
   .carta-del img {
     width: 150px;
@@ -159,15 +159,25 @@
   }
 
   .body-del {
-    background-image: url("/assets/img/carta/cartafondo.png");
+    background-image: url("/assets/img/carta/fondodel.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;  
   }
 
-.carta-del {
-  width: 70%;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+  .carta-del {
+    width: 70%;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
 
-}
+  }
+
+  .menu-item-del {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .menu-item-del:hover {
+    background-color: #b3985e;
+    transform: scale(1.05); 
+  }
+
