@@ -8,29 +8,31 @@
 
 <body>
     <?php include("includes/navigation.php"); ?>
-    <main class="container-fluid">
-        <div class="container-fluid mt-2">
-            <div class="d-flex justify-content-center align-items-center">
-                <div class="col-md-12 col-8 row">
-                    <div class="col-md-3 text-center text-md-start">
-                        <div class="profile-pic">
-                            <img src="/assets/img/Logo.png" alt="Imagen Usuario" class="w-75 rounded-circle">
-                            <div class="text-center text-md-start">
-                                <p class="fs-2 fw-bold my-0">Manuel Romero</p>
-                                <p class="fs-4 fw-bold fst-italic opacity-75">Cliente</p>
+    <main class="container-fluid p-0">
+        <header>
+            <div class="container-fluid mt-2">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="col-md-12 col-8 row">
+                        <div class="col-md-2 text-center text-md-start">
+                            <div class="profile-pic">
+                                <img src="/assets/img/Logo.png" alt="Imagen Usuario" class="w-100 rounded-circle">
+                                <div class="text-center text-md-start">
+                                    <p class="fs-2 fw-bold my-0">Manuel Romero</p>
+                                    <p class="fs-4 fw-bold fst-italic opacity-75">Cliente</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-7 justify-content-md-start justify-content-center d-flex ">
-                        <button class="btn btn-comun my-auto px-5">Cargar Foto</button>
+                        <div class="col-md-7 justify-content-md-start justify-content-center d-flex ">
+                            <button class="btn btn-comun my-auto px-5">Cargar Foto</button>
+                        </div>
                     </div>
                 </div>
             </div>
-
-
+        </header>
+        <section>
             <!-- Sección de información -->
-            <div class="row justify-content-center border my-3">
-                <div class="col-md-12">
+            <div class="row justify-content-center border border-dark mx-md-1 my-3">
+                <div class="col-md-12 ">
 
                     <form>
                         <h5>INFO</h5>
@@ -83,10 +85,9 @@
                         </div>
                     </form>
                 </div>
-            </div>
-        </div>
+            </div> 
+        </section>
     </main>
-
     <?php include("includes/footer.php"); ?>
 </body>
 

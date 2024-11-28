@@ -1,5 +1,4 @@
 //MANU
-
 .bg-login {
   background-image: url("/assets/img/imagenInicio.png");
   background-size: cover;
@@ -20,12 +19,15 @@
 
 @media (min-width: 768px) {
   .min-vh-md-100 {
-    min-height: 100vh ;
+    min-height: 100vh !important;
   }
 }
 @media (max-width: 768px) {
   .quitar-rounded{
     border-radius: 0 !important;
+  }
+  .vh-max-100 {
+    width: 100% !important;
   }
 }
 
