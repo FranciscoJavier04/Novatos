@@ -9,7 +9,9 @@
 <body class="body-del align-items-center text-warning ">
 
     <?php include("includes/navigation.php"); ?>
-
+    <div>
+    <h1 class="text-center mb-4 mt-2 bg-secondary text-warning">DELIVERY</h1>
+    </div>
     <div class="container-del p-4 d-flex mb-4">
         <div class="row">
             <!-- Sidebar de Categorías -->
