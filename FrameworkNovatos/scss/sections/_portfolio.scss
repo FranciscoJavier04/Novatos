@@ -1,7 +1,4 @@
 //MANU
-.profile-pic img {
-  border-radius: 50%;
-}
 
 .bg-login {
   background-image: url("/assets/img/imagenInicio.png");
@@ -21,9 +18,9 @@
   padding: 10% !important;
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   .min-vh-md-100 {
-    min-height: 100vh;
+    min-height: 100vh ;
   }
 }
 
@@ -37,67 +34,103 @@
 }
 #cardFormulario {
   img {
-    object-fit: cover; 
+    object-fit: cover;
     filter: brightness(0.3);
   }
 }
 
-
 //ALEX
-  //CARTA
-  .body-carta {
-    background-image: url("/assets/img/carta/cartafondo.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;  
-  }
+//CARTA
+.body-carta {
+  background-image: url("/assets/img/carta/cartafondo.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
 
-  .logo-carta {
-    width: 20%;
-    transform: translateY(60%);
-  }
+.logo-carta {
+  max-width: 300px;
+  transform: translateY(200px);
+}
 
-  .w-70 {
-    width: 70%;
-  }
+.container-carta {
+  background-color: $lightgray;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 15px;
+  overflow: hidden;
+}
 
-  .title-carta {
-    margin-top: 17rem;
-    margin-bottom: 12rem;
-  }
+.title-carta {
+  margin-top: 270px;
+  margin-bottom: 200px;
+  font-weight: bold;
+  font-size: $tam_tit_grandes;
+}
 
-  .mt-6{
-    margin-top: 10rem;
-  }
+.subtitle-carta {
+  font-size: $tam_tit_medianos;
+  font-weight: bold;
+}
 
-  .mt-7{
-    margin-top: 5rem;
-  }
+.subtitle-carta-postre {
+  font-size: $tam_tit_medianos;
+  margin-top: 150px;
+  font-weight: bold;
+}
 
-  .item-carta {
-    max-width: 600px; 
-  }
+.subtitle-carta-bebidas {
+  font-size: $tam_tit_medianos;
+  margin-top: 150px;
+  font-weight: bold;
+}
 
-  .imagen-tipo-plato {
-    width: 250px;
-    height: 200px;
-  }
+.subtitle-carta-alergeno {
+  font-size: $tam_tit_pequenos;
+  margin-top: 100px;
+  font-weight: bold;
+}
 
-  .alergeno-item-carta {
-    max-width: 550px;
-  }
+.items-carta {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .section-background-carta {
-    width: 50%; 
-    max-width: 370px;
-    background-image: url("/assets/img/carta/a.png");
-  }
+.item-carta {
+  text-align: justify;
+  max-width: 600px;
+  font-size: $tam_text_medianos;
+}
 
-  .img-postres{
-    width: 300px;
-    height: 300px;
-  }
+.imagen-tipo-plato {
+  width: 250px;
+  height: 200px;
+}
+
+.alergeno-item-carta {
+  max-width: 550px;
+  font-size: $tam_text_pequenos;
+  text-align: justify;
+}
+
+.section-header-carta {
+  gap: 6px; /* Espaciado entre los elementos */
+}
+
+.section-background-carta {
+  width: 50%;
+  max-width: 370px;
+  height: auto;
+  background-image: url("/assets/img/carta/a.png");
+}
+
+.img-postres {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
 
   .item-carta-postre{
     text-align: justify;
@@ -134,28 +167,71 @@
   }
   
   //DELIVERY
+  .container-del {
+    padding: 2%;
+    overflow-x: hidden; /* Elimina el scroll horizontal */
+  }
 
-  //NAVBAR
+  .menu-item {
+      cursor: pointer;
+      margin: 15px 0;
+  }
+
   .sidebar-del {
-    position: sticky; /* Se fija en el viewport */
-    top: 100px; /* Espaciado desde la parte superior */
-    height: 20%; /* Limita la altura del sidebar */
-}
+    background-color: #d7ba15; /* Fondo limpio */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    position: sticky;
+    max-height: calc(100vh - 40px); /* Limita altura en pantallas pequeñas */
+    overflow-y: auto; /* Scroll si el contenido es largo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra moderna */
+  }
 
-  //NAVBAR
+  .titulo-sidebar {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333; /* Color más oscuro */
+      margin-bottom: 20px;
+  }
+
+  .menu-item-del {
+      font-size: 1rem;
+      color: #555;
+      padding: 10px 15px;
+      margin: 5px 0;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out; /* Transición para el hover */
+  }
+
+  .menu-item-del:hover {
+      background-color: #f7f7f7; /* Fondo claro al pasar el cursor */
+      color: #007bff; /* Azul vibrante */
+      transform: translateX(5px); /* Animación sutil */
+  }
+
+  .menu-item-del.active {
+      background-color: #007bff; /* Fondo azul para el activo */
+      color: #ffffff; /* Texto blanco */
+      font-weight: bold;
+  }
+
   .carta-del img {
     width: 150px;
     height: 100px;
+    border-radius: 25px;
   }
 
   .body-del {
-    background-image: url("/assets/img/fondo-del4.webp");
+    background-image: url("/assets/img/fotop.webp");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;  
+    //color: $text;
+    font-size: 15px;
   }
 
-  .carta-del{
-    width: 70%;
-  }
+.carta-del {
+  width: 70%;
+}

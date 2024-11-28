@@ -1,6 +1,6 @@
 <?php include("includes/a-config.php"); ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <?php include("includes/head-tag-contents.php"); ?>
@@ -11,13 +11,13 @@
     <main class="d-flex justify-content-center align-items-center my-3">
         <div class="card w-75 rounded-3 bg-light overflow-hidden fw-bold fst-italic" id="cardFormulario">
             <div class="card-body d-flex flex-column justify-content-between p-4">
-                <div class="text-center">
-                    <img src="/assets/img/LogoSinFondo.png">
+                <section class="text-center">
+                    <img src="/assets/img/LogoSinFondo.png" class="w-25">
                     <h1 class="card-title">Resumen de la Reserva</h1>
-                </div>
+                </section>
                 <hr class="my-4">
 
-                <div class="container text-center">
+                <section class="container text-center">
                     <div class="row">
                         <div class="col-md">
                             <div class="mb-4">
@@ -40,38 +40,31 @@
                             <div class="mb-4">
                                 <!--Ubicación-->
                                 <label class="form-label">Ubicación</label>
-                                <input type="text" class="form-control" id="nombreInput" value="Ubicación" disabled>
+                                <input type="text" class="form-control" id="ubicacionInput" value="Ubicación" disabled>
                             </div>
                             <div class="mb-4">
-                                <!--Nombre-->
+                                <!--Número de Personas-->
                                 <label class="form-label">Número de Personas</label>
                                 <input type="number" id="numPersonas" class="form-control" min="1" max="20" value="10"
                                     disabled>
                             </div>
-
-
                         </div>
                     </div>
+                </section>
+
+                <section class="mt-4">
                     <!-- Información adicional -->
-                    <div class="mt-4">
-                        <label for="areaInput" class="form-label">Información adicional que desee añadir</label>
-                        <textarea id="areaInput" class="form-control" rows="4" placeholder="" disabled>
+                    <label for="areaInput" class="form-label">Información adicional que desee añadir</label>
+                    <textarea id="areaInput" class="form-control" rows="4" placeholder="" disabled>
 Quisiera solicitar, por favor, una mesa cercana al balcón, acompañada de una botella de vino colocada en la mesa al momento de nuestra llegada. Agradezco de antemano su atención y consideración.
-                        </textarea>
-                    </div>
+                    </textarea>
+                </section>
 
-                </div>
-
-                <!-- Botón Siguiente -->
-                <div class="d-flex justify-content-center mt-3">
-                    <a href="#" class="btn btn-comun">EDITAR</a>
-                </div>
-                <div class="d-flex justify-content-center mt-3">
-                    <a href="#" class="btn btn-secondary">CONFIRMAR RESERVA</a>
-                </div>
-                <div class="d-flex justify-content-center mt-3">
-                    <a href="#" class="btn btn-tertiary">CANCELAR RESERVA</a>
-                </div>
+                <section class="d-flex flex-column align-items-center mt-3">
+                    <a href="#" class="btn btn-comun mb-2 w-auto">EDITAR</a>
+                    <a href="#" class="btn btn-secondary mb-2 w-auto">CONFIRMAR RESERVA</a>
+                    <a href="#" class="btn btn-tertiary w-auto">CANCELAR RESERVA</a>
+                </section>
 
             </div>
         </div>
