@@ -134,69 +134,26 @@
   }
   
   //DELIVERY
-  .container-del {
-    padding: 2%;
-    overflow-x: hidden; /* Elimina el scroll horizontal */
-  }
 
-  .menu-item {
-      cursor: pointer;
-      margin: 15px 0;
-  }
-
+  //NAVBAR
   .sidebar-del {
-    background-color: #d7ba15; /* Fondo limpio */
-    padding: 20px;
-    border-radius: 10px; /* Bordes redondeados */
-    position: sticky;
-    max-height: calc(100vh - 40px); /* Limita altura en pantallas pequeñas */
-    overflow-y: auto; /* Scroll si el contenido es largo */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra moderna */
-  }
+    position: sticky; /* Se fija en el viewport */
+    top: 100px; /* Espaciado desde la parte superior */
+    height: 20%; /* Limita la altura del sidebar */
+}
 
-  .titulo-sidebar {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #333; /* Color más oscuro */
-      margin-bottom: 20px;
-  }
-
-  .menu-item-del {
-      font-size: 1rem;
-      color: #555;
-      padding: 10px 15px;
-      margin: 5px 0;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: all 0.3s ease-in-out; /* Transición para el hover */
-  }
-
-  .menu-item-del:hover {
-      background-color: #f7f7f7; /* Fondo claro al pasar el cursor */
-      color: #007bff; /* Azul vibrante */
-      transform: translateX(5px); /* Animación sutil */
-  }
-
-  .menu-item-del.active {
-      background-color: #007bff; /* Fondo azul para el activo */
-      color: #ffffff; /* Texto blanco */
-      font-weight: bold;
-  }
-
+  //NAVBAR
   .carta-del img {
     width: 150px;
     height: 100px;
-    border-radius: 25px;
   }
 
   .body-del {
-    background-image: url("/assets/img/fotop.webp");
+    background-image: url("/assets/img/fondo-del4.webp");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;  
-    //color: $text;
-    font-size: 15px;
   }
 
   .carta-del{
