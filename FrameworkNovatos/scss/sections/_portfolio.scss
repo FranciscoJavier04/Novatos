@@ -23,6 +23,12 @@
     min-height: 100vh ;
   }
 }
+@media (max-width: 768px) {
+  .quitar-rounded{
+    border-radius: 0 !important;
+  }
+}
+
 
 //FRAN//reserva.php
 
