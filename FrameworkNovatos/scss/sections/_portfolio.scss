@@ -21,9 +21,9 @@
   padding: 10% !important;
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   .min-vh-md-100 {
-    min-height: 100vh;
+    min-height: 100vh ;
   }
 }
 
@@ -37,209 +37,205 @@
 }
 #cardFormulario {
   img {
-    object-fit: cover; 
+    object-fit: cover;
     filter: brightness(0.3);
   }
 }
 
-
 //ALEX
-  //CARTA
-  .body-carta {
-    background-image: url("/assets/img/carta/cartafondo.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;  
-  }
+//CARTA
+.body-carta {
+  background-image: url("/assets/img/carta/cartafondo.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
 
-  .logo-carta {
-    max-width: 300px;
-    transform: translateY(200px);
-    
-  }
+.logo-carta {
+  max-width: 300px;
+  transform: translateY(200px);
+}
 
-  .container-carta {
-    background-color: $lightgray;
-    width: 70%;
-    margin: 0 auto;
-    border-radius: 15px;
-    overflow: hidden;
-  }
+.container-carta {
+  background-color: $lightgray;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 15px;
+  overflow: hidden;
+}
 
-  .title-carta {
-    margin-top: 270px;
-    margin-bottom: 200px;
-    font-weight: bold;
-    font-size: $tam_tit_grandes;
-  }
+.title-carta {
+  margin-top: 270px;
+  margin-bottom: 200px;
+  font-weight: bold;
+  font-size: $tam_tit_grandes;
+}
 
-  .subtitle-carta {
-    font-size: $tam_tit_medianos;
-    font-weight: bold;
-  }
+.subtitle-carta {
+  font-size: $tam_tit_medianos;
+  font-weight: bold;
+}
 
-  .subtitle-carta-postre{
-    font-size: $tam_tit_medianos;
-    margin-top: 150px;
-    font-weight: bold;
-  }
+.subtitle-carta-postre {
+  font-size: $tam_tit_medianos;
+  margin-top: 150px;
+  font-weight: bold;
+}
 
-  .subtitle-carta-bebidas{
-    font-size: $tam_tit_medianos;
-    margin-top: 150px;
-    font-weight: bold;
-  }
+.subtitle-carta-bebidas {
+  font-size: $tam_tit_medianos;
+  margin-top: 150px;
+  font-weight: bold;
+}
 
-  .subtitle-carta-alergeno{
-    font-size: $tam_tit_pequenos;
-    margin-top: 100px;
-    font-weight: bold;
-  }
+.subtitle-carta-alergeno {
+  font-size: $tam_tit_pequenos;
+  margin-top: 100px;
+  font-weight: bold;
+}
 
-  .items-carta {
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-  }
+.items-carta {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .item-carta {
-    text-align: justify; 
-    max-width: 600px; 
-    font-size: $tam_text_medianos;
-  }
+.item-carta {
+  text-align: justify;
+  max-width: 600px;
+  font-size: $tam_text_medianos;
+}
 
+.imagen-tipo-plato {
+  width: 250px;
+  height: 200px;
+}
 
-  .imagen-tipo-plato {
-    width: 250px;
-    height: 200px;
-  }
+.alergeno-item-carta {
+  max-width: 550px;
+  font-size: $tam_text_pequenos;
+  text-align: justify;
+}
 
-  .alergeno-item-carta {
-    max-width: 550px;
-    font-size:$tam_text_pequenos;
-    text-align: justify;
-  }
+.section-header-carta {
+  gap: 6px; /* Espaciado entre los elementos */
+}
 
-  .section-header-carta {
-    gap: 6px; /* Espaciado entre los elementos */
-  }
+.section-background-carta {
+  width: 50%;
+  max-width: 370px;
+  height: auto;
+  background-image: url("/assets/img/carta/a.png");
+}
 
-  .section-background-carta {
-    width: 50%; 
-    max-width: 370px;
-    height: auto;
-    background-image: url("/assets/img/carta/a.png");
-  }
+.img-postres {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
 
-  .img-postres{
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
+.item-carta-postre {
+  text-align: justify;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  p {
+    margin-bottom: 0;
   }
+}
 
-  .item-carta-postre{
-    text-align: justify;
-    max-width: 300px;
-    display: flex;
-    flex-direction: column;
-    p{
-      margin-bottom: 0;
-    }
-  }
+//AVISO LEGAL
+.body-AL {
+  background-image: url("/assets/img/LogoSinFondo2.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center 100px;
+}
+//POLITICA DE PRIVACIDAD
+.body-PP {
+  background-image: url("/assets/img/LogoSinFondo2.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center 100px;
+}
+//POLITICA DE COOKIES
+.body-PC {
+  background-image: url("/assets/img/LogoSinFondo2.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center 100px;
+}
 
-  
-  //AVISO LEGAL
-  .body-AL {
-    background-image: url("/assets/img/LogoSinFondo2.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain; 
-    background-position: center 100px;
-  }
-  //POLITICA DE PRIVACIDAD
-  .body-PP {
-    background-image: url("/assets/img/LogoSinFondo2.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain; 
-    background-position: center 100px;
-  }
-  //POLITICA DE COOKIES
-  .body-PC {
-    background-image: url("/assets/img/LogoSinFondo2.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain; 
-    background-position: center 100px;
-  }
-  
-  //DELIVERY
-  .container-del {
-    padding: 2%;
-    overflow-x: hidden; /* Elimina el scroll horizontal */
-  }
+//DELIVERY
+.container-del {
+  padding: 2%;
+  overflow-x: hidden; /* Elimina el scroll horizontal */
+}
 
-  .menu-item {
-      cursor: pointer;
-      margin: 15px 0;
-  }
+.menu-item {
+  cursor: pointer;
+  margin: 15px 0;
+}
 
-  .sidebar-del {
-    background-color: #d7ba15; /* Fondo limpio */
-    padding: 20px;
-    border-radius: 10px; /* Bordes redondeados */
-    position: sticky;
-    max-height: calc(100vh - 40px); /* Limita altura en pantallas pequeñas */
-    overflow-y: auto; /* Scroll si el contenido es largo */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra moderna */
-  }
+.sidebar-del {
+  background-color: #d7ba15; /* Fondo limpio */
+  padding: 20px;
+  border-radius: 10px; /* Bordes redondeados */
+  position: sticky;
+  max-height: calc(100vh - 40px); /* Limita altura en pantallas pequeñas */
+  overflow-y: auto; /* Scroll si el contenido es largo */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra moderna */
+}
 
-  .titulo-sidebar {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #333; /* Color más oscuro */
-      margin-bottom: 20px;
-  }
+.titulo-sidebar {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333; /* Color más oscuro */
+  margin-bottom: 20px;
+}
 
-  .menu-item-del {
-      font-size: 1rem;
-      color: #555;
-      padding: 10px 15px;
-      margin: 5px 0;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: all 0.3s ease-in-out; /* Transición para el hover */
-  }
+.menu-item-del {
+  font-size: 1rem;
+  color: #555;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out; /* Transición para el hover */
+}
 
-  .menu-item-del:hover {
-      background-color: #f7f7f7; /* Fondo claro al pasar el cursor */
-      color: #007bff; /* Azul vibrante */
-      transform: translateX(5px); /* Animación sutil */
-  }
+.menu-item-del:hover {
+  background-color: #f7f7f7; /* Fondo claro al pasar el cursor */
+  color: #007bff; /* Azul vibrante */
+  transform: translateX(5px); /* Animación sutil */
+}
 
-  .menu-item-del.active {
-      background-color: #007bff; /* Fondo azul para el activo */
-      color: #ffffff; /* Texto blanco */
-      font-weight: bold;
-  }
+.menu-item-del.active {
+  background-color: #007bff; /* Fondo azul para el activo */
+  color: #ffffff; /* Texto blanco */
+  font-weight: bold;
+}
 
-  .carta-del img {
-    width: 150px;
-    height: 100px;
-    border-radius: 25px;
-  }
+.carta-del img {
+  width: 150px;
+  height: 100px;
+  border-radius: 25px;
+}
 
-  .body-del {
-    background-image: url("/assets/img/fotop.webp");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;  
-    //color: $text;
-    font-size: 15px;
-  }
+.body-del {
+  background-image: url("/assets/img/fotop.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  //color: $text;
+  font-size: 15px;
+}
 
-  .carta-del{
-    width: 70%;
-  }
+.carta-del {
+  width: 70%;
+}
