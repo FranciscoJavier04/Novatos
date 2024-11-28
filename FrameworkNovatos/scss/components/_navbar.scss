@@ -1,69 +1,11 @@
-// Variables comunes
-$navbar-font-size: 25px;
-$navbar-font-weight: bold;
-
 .navbar {
-  background-color: $secondary;
   font-family: $tipografia_titulos;
-  font-size: $navbar-font-size;
-  font-weight: $navbar-font-weight;
-  //color: $text;
-
   .navbar-brand {
-    font-size: $navbar-font-size;
-    //color: $text;
-
-    #titulo {
-      display: inline;
-    }
-
     img {
       width: 100px;
-      display: none;
-    }
-
-    @media (min-width: 800px) {
-      img {
-        display: inline;
-      }
-
-      #titulo {
-        display: none;
-      }
     }
   }
-
-  .navbar-nav {
-    .nav-link {
-      //color: $text;
-      font-size: $navbar-font-size;
-      margin-right: 15px;
-      margin-left: 15px;
-
-      &:hover {
-        //color: $text;
-      }
-    }
-  }
-
-  // Dropdown
-  .dropdown-menu {
-    font-size: $navbar-font-size;
-    background-color: $secondary !important;
-
-    .dropdown-item {
-      //color: $text !important;
-      &:hover {
-        background-color: transparent;
-        //color: $text !important;
-      }
-    }
-  }
-
   .navbar-toggler {
-    border: none;
-    color: $icons;
-
     .navbar-toggler-icon {
       filter: brightness(0) invert(1);
     }
