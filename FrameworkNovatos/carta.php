@@ -6,7 +6,7 @@
     <?php include("includes/head-tag-contents.php"); ?>
 </head>
 
-<body class="body-carta align-items-center ">
+<body class="body-carta align-items-center text-warning">
     <?php include("includes/navigation.php"); ?>
     
     <!-- MAIN -->

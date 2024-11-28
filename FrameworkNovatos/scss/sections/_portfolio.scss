@@ -70,12 +70,12 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: center;  
-    color: $text;
   }
 
   .logo-carta {
     max-width: 300px;
     transform: translateY(200px);
+    
   }
 
   .container-carta {
@@ -176,20 +176,6 @@
     background-size: contain; 
     background-position: center 100px;
   }
-
-  .titulo-AL{
-    color: $text;
-    font-size:$tam_tit_grandes;
-  }
-
-  .items-AL{
-    font-size:$tam_tit_medianos;
-  }
-
-  .item-AL{
-    font-size:$tam_text_medianos;
-  }
-  
   //POLITICA DE PRIVACIDAD
   .body-PP {
     background-image: url("/assets/img/LogoSinFondo2.png");
@@ -197,22 +183,7 @@
     background-attachment: fixed;
     background-size: contain; 
     background-position: center 100px;
-}
-
-
-  .titulo-PP{
-    color: $text;
-    font-size:$tam_tit_grandes;
   }
-
-  .items-PP{
-    font-size:$tam_tit_medianos;
-  }
-
-  .item-PP{
-    font-size:$tam_text_medianos;
-  }
-
   //POLITICA DE COOKIES
   .body-PC {
     background-image: url("/assets/img/LogoSinFondo2.png");
@@ -221,20 +192,6 @@
     background-size: contain; 
     background-position: center 100px;
   }
-
-  .titulo-PC{
-    color: $text;
-    font-size: $tam_tit_grandes;
-  }
-
-  .items-PC{
-    font-size:$tam_tit_medianos;
-  }
-
-  .item-PC{
-    font-size:$tam_text_medianos;
-  }
-
   
   //DELIVERY
   .container-del {
@@ -298,7 +255,7 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: center;  
-    color: $text;
+    //color: $text;
     font-size: 15px;
   }
 
