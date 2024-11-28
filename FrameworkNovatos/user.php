@@ -10,18 +10,20 @@
     <?php include("includes/navigation.php"); ?>
     <main class="container-fluid">
         <div class="container-fluid mt-2">
-            <div class="col-md-12 col-8 row justify-content-md-start justify-content-center">
-                <div class="col-md-2  text-center text-md-start">
-                    <div class="profile-pic ">
-                        <img src="/assets/img/Logo.png" alt="Imagen Usuario" class="w-75">
-                        <div class="text-center text-md-start">
-                            <h2>Manuel Romero</h2>
-                            <p>Cliente</p>
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="col-md-12 col-8 row">
+                    <div class="col-md-2 text-center text-md-start">
+                        <div class="profile-pic">
+                            <img src="/assets/img/Logo.png" alt="Imagen Usuario" class="w-75">
+                            <div class="text-center text-md-start">
+                                <h2>Manuel Romero</h2>
+                                <p>Cliente</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-7 justify-content-md-start justify-content-center d-flex ">
-                    <button class="btn btn-comun my-auto px-4">Cargar Foto</button>
+                    <div class="col-md-7 justify-content-md-start justify-content-center d-flex ">
+                        <button class="btn btn-comun my-auto px-5">Cargar Foto</button>
+                    </div>
                 </div>
             </div>
 
