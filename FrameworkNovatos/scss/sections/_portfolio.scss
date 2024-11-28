@@ -1,8 +1,4 @@
 //MANU
-.index {
-  font-size:$tam_tit_pequenos;
-}
-
 .profile-pic img {
   border-radius: 50%;
 }
@@ -14,15 +10,15 @@
   background-position: center;
 }
 
-.p-5 {
-  padding: 10% !important;
-}
-
 .portfolio-main {
   background-image: url("/assets/img/imgMain.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.p-5 {
+  padding: 10% !important;
 }
 
 @media (min-width: 768px) { 

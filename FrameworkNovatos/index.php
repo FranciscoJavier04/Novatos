@@ -8,7 +8,7 @@
 
 <body>
     <?php include("includes/navigation.php"); ?>
-    <main class="bg-info index text-white text-center">
+    <main class="bg-info text-white text-center">
         <div class="portfolio-main p-5">
             <button class="btn-xl">DESCÚBRENOS</button>
         </div>
