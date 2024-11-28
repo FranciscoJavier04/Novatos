@@ -12,12 +12,12 @@
         <div class="container-fluid mt-2">
             <div class="d-flex justify-content-center align-items-center">
                 <div class="col-md-12 col-8 row">
-                    <div class="col-md-2 text-center text-md-start">
+                    <div class="col-md-3 text-center text-md-start">
                         <div class="profile-pic">
-                            <img src="/assets/img/Logo.png" alt="Imagen Usuario" class="w-75">
+                            <img src="/assets/img/Logo.png" alt="Imagen Usuario" class="w-75 rounded-circle">
                             <div class="text-center text-md-start">
-                                <h2>Manuel Romero</h2>
-                                <p>Cliente</p>
+                                <p class="fs-2 fw-bold my-0">Manuel Romero</p>
+                                <p class="fs-4 fw-bold fst-italic opacity-75">Cliente</p>
                             </div>
                         </div>
                     </div>
