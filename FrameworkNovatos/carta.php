@@ -17,7 +17,7 @@
 
 
         <!-- CARTA -->
-        <div class="w-70 my-5 bg-info rounded-3 overflow-hidden mx-auto ">
+        <div class="carta-res w-70 my-5 bg-info rounded-3 overflow-hidden mx-auto ">
             <div class="menu-section-carta">
             <h1 class="h1-Pol title-carta text-center fw-bold">CARTA</h1>
 
@@ -152,7 +152,7 @@
 
                 <div class="item-carta-postre fs-6 d-flex flex-column ">
                     <img src="assets/img/carta/Milhojas.webp" class="img-postres">
-                    <span>Milhojas de Crema de Mascarpone y Frutas Rojas.</span>
+                    <span>Milhojas de Crema de Mascarpone y Frutos Rojas.</span>
                     <p>Precio . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14€</p>
                 </div>
 
