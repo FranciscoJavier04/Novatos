@@ -9,7 +9,7 @@
       <i class="fas fa-bars"></i>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbar">
+    <div class="collapse navbar-collapse text-end" id="navbar">
       <ul class="navbar-nav ms-auto me-2">
         <li class="nav-item">
           <a class="nav-link ms-3 me-3 fs-43 text-warning" href="carta.php">Carta</a>
