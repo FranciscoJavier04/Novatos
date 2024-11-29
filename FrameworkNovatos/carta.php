@@ -25,7 +25,7 @@
                 <!-- ENTRANTES -->
                 <div class="d-flex justify-content-center mb-4 mt-5 gap-2">
                     <img src="assets/img/carta/ENTRANTES.webp" class="imagen-tipo-plato mt-5">
-                    <div class="section-background-carta mt-5 h-auto"></div>
+                    <div class="section-background-carta w-50 mt-5 h-auto"></div>
                 </div>
 
                 <h2 class="text-center subtitle-carta mt-5 mb-3 fw-bold fs-1">ENTRANTES</h2>
@@ -71,7 +71,7 @@
                 <!-- PRINCIPALES -->
                 <div class="d-flex justify-content-center mb-4 mt-5 gap-2">
                     <img src="assets/img/carta/Principal.webp" class="imagen-tipo-plato mt-5">
-                    <div class="section-background-carta mt-5 h-auto"></div>
+                    <div class="section-background-carta w-50 mt-5 h-auto"></div>
                 </div>
 
                 <h2 class="text-center subtitle-carta mt-5 mb-3 fw-bold fs-1">PLATOS PRINCIPALES</h2>
@@ -110,7 +110,7 @@
                 <!-- ESPECIALIDADES -->
                 <div class="d-flex justify-content-center mb-4 mt-5 gap-2">
                     <img src="assets/img/carta/Especialidad.webp" class="imagen-tipo-plato mt-5">
-                    <div class="section-background-carta mt-5 h-auto"></div>
+                    <div class="section-background-carta w-50 mt-5 h-auto"></div>
                 </div>
 
                 <h2 class="text-center subtitle-carta mt-5 mb-3 fw-bold fs-1">ESPECIALIDADES</h2>
@@ -147,7 +147,7 @@
                 <div class="row">
                     <div class="items-carta-postre d-flex flex-wrap justify-content-center gap-5">
                         <div class="item-carta-postre fs-6 d-flex flex-column">
-                            <img src="assets/img/carta/tartaSantiago.webp" class="img-postres">
+                            <img src="assets/img/carta/tartaSantiago.webp" class="img-postres w-100 h-100">
                             <p>Tarta de Santiago.</p>
                             <p>Con helado de vainilla y crema de almendras.</p>
                             <p>Precio . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15 €</p>
