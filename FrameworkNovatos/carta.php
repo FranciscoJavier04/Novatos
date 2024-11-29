@@ -104,7 +104,7 @@
                 <h2 class="text-center subtitle-carta mt-5 mb-3 fw-bold fs-1">ESPECIALIDADES</h2>
                 <div class="items-carta d-flex align-items-center flex-column">
                     <div class="item-carta fs-5 ">
-                        <span>- Paella de Mariscos Tradicional . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50€</span>
+                        <span>- Paella de Mariscos Tradicional </span><span>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50€</span>
                         <p class="description-carta">Con gambas, mejillones, cigalas y azafrán.</p>
                     </div>
                     <div class="item-carta fs-5">
@@ -139,7 +139,7 @@
                 <div class="item-carta-postre fs-6 d-flex flex-column">
                     <img src="assets/img/carta/Coulant.webp" class="img-postres">
                     <p>Coulant de Chocolate Negro.</p>
-                    <p>Con helado de frambuesa y crumble de avellanas.</p>
+                    <p>Con helado de frambuesa y crumble.</p>
                     <p>Precio . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16 €</p>
                 </div>
 
