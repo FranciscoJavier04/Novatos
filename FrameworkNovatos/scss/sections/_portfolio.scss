@@ -185,4 +185,13 @@
     background-color: #b3985e;
     transform: scale(1.05); 
   }
+  .carta-res {
+    width: 80%;
+}
+
+@media (max-width: 1000px) {
+    .carta-res {
+        width: 90%;
+    }
+}
 
