@@ -9,13 +9,10 @@
 <body class="body-del align-items-center text-warning ">
 
     <?php include("includes/navigation.php"); ?>
-    <div>
-    <h1 class="text-center mb-4 mt-2 bg-secondary text-warning">DELIVERY</h1>
-    </div>
     <div class="container-del p-4 d-flex mb-4">
         <div class="row">
             <!-- Sidebar de Categorías -->
-            <div class="sidebar-del col-md-3 bg-warning p-3 rounded-3 text-dark">
+            <div class="sidebar-del col-md-3 bg-warning p-3 rounded-3 text-dark d-md-block d-none">
                 <h1 class="titulo-sidebar text-center mb-4">Categorías</h1>
                 <nav class="nav flex-column align-items-center">
                     <a class="menu-item-del fs-5 text-dark mb-4 rounded-3" href="#entrantes">Entrantes</a>
@@ -39,9 +36,8 @@
                             <p>Cortado a mano, acompañado de pan con tomate.</p>
                         </div>
                         <div class="col-md-2">
-                            <a href="carrito.php" class="btn btn-del">AÑADIR</a>
+                            <a href="carrito.php" class="btn btn-del ">AÑADIR</a>
                         </div>
-
                     </div>
 
                     <div class="row align-items-start mb-4 ms-3">
@@ -52,7 +48,7 @@
                             <span class="fw-bold">Tartar de Atún Rojo del Mediterráneo. 28€</span>
                             <p>Con aguacate, sésamo y emulsión de wasabi.</p>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 ml-md-3">
                             <a href="carrito.php" class="btn btn-del">AÑADIR</a>
                         </div>
                     </div>
@@ -127,7 +123,7 @@
                 <h1 class="subtitulo-carta mt-5 text-center mb-5" id="principales">Principales</h1>
                 <div class="row">
 
-                <div class="row align-items-start mb-4 ms-3">
+                    <div class="row align-items-start mb-4 ms-3">
                         <div class="col-md-4">
                             <img src="assets/img/carta/ESPECIALIDAD.webp" alt="Cochinillo Asado">
                         </div>
