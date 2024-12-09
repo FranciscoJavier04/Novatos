@@ -51,7 +51,7 @@
                     <img src="assets/img/Logo.png" alt="Imagen 3" class="w-75">
                 </div>
                 <div class="col-md-8 p-0">
-                    <p>
+                    <p id="google_translate_element">
                         La calidad y el buen servicio son nuestra razón de ser para que un cliente nos elija como su
                         restaurante de referencia. Una filosofía llevada a nuestro día a día.
                     </p>
@@ -60,7 +60,12 @@
             <div class="separator"></div>
         </div>
     </main>
-
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <?php include("includes/footer.php"); ?>
 </body>
 
