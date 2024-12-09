@@ -8,6 +8,7 @@
 
 <body id="bodyReserva">
     <?php include("includes/navigation.php"); ?>
+    <!--CF2: ¿Dónde está el container-->
     <main class="d-flex justify-content-center align-items-center my-3">
         <div class="card w-75 rounded-3 bg-light overflow-hidden fw-bold fst-italic" id="cardFormulario">
             <div class="card-body d-flex flex-column justify-content-between p-4">

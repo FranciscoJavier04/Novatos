@@ -10,6 +10,7 @@
     <?php include("includes/navigation.php"); ?>
 
     <!-- MAIN -->
+     <!--CF2: ¿Dónde está el container?-->
     <main class="main-carta">
         <div class="hero-logo-carta d-flex justify-content-center align-items-center mb-n3">
             <img src="assets/img/logo.png" class="logo-carta rounded-circle ">

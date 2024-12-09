@@ -8,8 +8,10 @@
 
 <body>
     <?php include("includes/navigation.php"); ?>
+<!--CF2: El container lo tiene que englobar todo-->
     <main class="bg-info text-white fs-4 text-center">
-        <div class="portfolio-main p-5">
+
+       <div class="portfolio-main p-5">
             <button class="btn-xl rounded-3">DESCÚBRENOS</button>
         </div>
 

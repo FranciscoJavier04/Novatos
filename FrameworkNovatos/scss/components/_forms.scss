@@ -1,11 +1,13 @@
 //
 // Forms
 //
+
+/*CF2: Todos los text area tendrán 110px de alto??*/
 textarea {
   resize: none;
   height: 110px;
 }
-
+/*CF2: ¿Y este color azul???*/
 a {
   color: blue;
   text-decoration: none;
@@ -21,6 +23,7 @@ a {
   box-shadow: 0 0 5px $mybrown;
 }
 
+/*CF2: Usar variables para los colores!*/
 .form-label {
   font-size: 1.2rem;
   color: #555;
