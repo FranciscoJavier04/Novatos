@@ -20,5 +20,6 @@
             </div>
         </div>
     </main>
+    <script src="/juegos/scripts/mapaInteractivo.js"></script>
 </body>
 </html>
