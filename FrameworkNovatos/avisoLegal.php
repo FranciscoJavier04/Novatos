@@ -40,6 +40,16 @@
             escrita previa está prohibida. Cualquier uso no autorizado será considerado una infracción de los derechos de propiedad.
         </p>
 
+        <p class="items-AL fs-4">- Licencia sobre recursos multimedia propios</p>
+        <p class="item-AL fs-5">
+            Los juegos interactivos disponibles en el sitio web han sido creados íntegramente por ÓNEO y, por tanto, están protegidos por derechos de autor (Copyright). Su reproducción, distribución o modificación queda estrictamente prohibida sin la autorización expresa de ÓNEO.
+        </p>
+
+        <p class="items-AL fs-4">- Contenido generado por IA</p>
+        <p class="item-AL fs-5">
+            Las imágenes utilizadas en este sitio web han sido generadas mediante herramientas de inteligencia artificial, como ChatGPT y Microsoft Copilot. Dichos contenidos carecen de derechos de autor conforme a la normativa vigente sobre propiedad intelectual. No obstante, ÓNEO se reserva el derecho sobre el uso y distribución de estas imágenes dentro de su plataforma.
+        </p>
+
         <p class="items-AL fs-2">3. Exención de Responsabilidad</p>
         <p class="item-AL fs-5">
             ÓNEO no asume responsabilidad por la información publicada en el sitio web cuando haya sido manipulada por terceros.
