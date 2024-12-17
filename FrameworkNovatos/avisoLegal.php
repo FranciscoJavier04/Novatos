@@ -11,8 +11,7 @@
 <?php include("includes/navigation.php"); ?>
 
     <div class="container">
-        <!--CF2: Esto no es un párrafo, es un h1-->
-        <p class="h1-Pol text-warning">AVISO LEGAL</p>
+        <h1 class="h1-Pol text-warning">AVISO LEGAL</h1>
 
         <p class="items-AL fs-2">LEY DE LOS SERVICIOS DE LA SOCIEDAD DE LA INFORMACIÓN (LSSI)</p>
         <p class="item-AL fs-5">
@@ -24,8 +23,7 @@
             El acceso al sitio web implica la aceptación del usuario de las disposiciones aquí establecidas. ÓNEO se reserva
             el derecho de modificar la información en cualquier momento, considerándose suficiente la publicación en el sitio web.
         </p>
-        <!--CF2: Esto es un h2-->
-        <p class="items-AL fs-2">1. Datos Identificativos</p>
+        <h2 class="items-AL fs-2">1. Datos Identificativos</h2>
         <ul>
             <li class="fs-5">Nombre de dominio: www.oneo.com</li>
             <li class="fs-5">Denominación social: ÓNEO RESTAURANTE S.L.</li>

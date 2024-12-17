@@ -10,8 +10,7 @@
     <?php include("includes/navigation.php"); ?>
 
     <div class="container">
-        <!--CF2: Esto es un h1-->
-        <p class="h1-Pol text-warning">POLÍTICA DE PRIVACIDAD</p>
+        <h1 class="h1-Pol text-warning">POLÍTICA DE PRIVACIDAD</h1>
 
         <p class="items-PP fs-2">1. Información al Usuario</p>
         <p class="item-PP fs-5">
