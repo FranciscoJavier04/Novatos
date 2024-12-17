@@ -51,6 +51,10 @@
                                 <input type="number" id="numPersonas" class="form-control" min="1" max="20"
                                     placeholder="Número de personas">
                             </div>
+                            <div>
+                                <label for="numPersonas" class="form-label">Seleccionar Mesa</label>
+                                <a href="mapaInteractivo.php"class="btn btn-comun">Seleccionar Mesa</a>
+                            </div>
                         </div>
                     </div>
                 </section>
