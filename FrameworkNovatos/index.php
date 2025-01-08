@@ -12,7 +12,7 @@
     <main class="bg-info text-white fs-4 text-center">
 
        <div class="portfolio-main p-5">
-            <button class="btn-xl rounded-3">DESCÚBRENOS</button>
+            <button class="btn-xl rounded-3"><a href="video.php">DESCÚBRENOS</a></button>
         </div>
 
         <div class="container py-5 ">
