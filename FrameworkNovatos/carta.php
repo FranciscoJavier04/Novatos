@@ -79,7 +79,7 @@
 
                     <!-- PRINCIPALES -->
                     <div class="d-flex justify-content-center mb-4 mt-5 gap-2">
-                        <img src="assets/img/carta/Principal.webp" class="imagen-tipo-plato mt-5">
+                        <img src="assets/img/carta/Principal.png" class="imagen-tipo-plato mt-5">
                         <div class="section-background-carta w-50 mt-5 h-auto"></div>
                     </div>
 
@@ -164,7 +164,7 @@
                     <div class="row">
                         <div class="items-carta-postre d-flex flex-wrap justify-content-center gap-5">
                             <div class="item-carta-postre fs-6 d-flex flex-column">
-                                <img src="assets/img/carta/tartaSantiago.webp" class="img-postres w-100 h-100">
+                                <img src="assets/img/carta/tartaSantiago.png" class="img-postres w-100 h-100">
                                 <p>Tarta de Santiago.</p>
                                 <p>Con helado de vainilla y crema de almendras.</p>
                                 <p>Precio . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15 €</p>
@@ -184,7 +184,7 @@
                         </div>
                         <div class="row justify-content-center my-5">
                             <div class="item-carta-postre fs-6 d-flex flex-column ">
-                                <img src="assets/img/carta/Milhojas.webp" class="img-postres">
+                                <img src="assets/img/carta/Milhojas.png" class="img-postres">
                                 <span>Milhojas de Crema de Mascarpone y Frutos Rojas.</span>
                                 <p>Precio . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14€</p>
                             </div>
