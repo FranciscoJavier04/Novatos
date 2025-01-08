@@ -138,7 +138,7 @@
 
                     <div class="row align-items-start mb-4 ms-3">
                         <div class="col-md-4">
-                            <img src="assets/img/carta/Solomillo.webp" alt="Solomillo de Buey">
+                            <img src="assets/img/carta/Solomillo.png" alt="Solomillo de Buey">
                         </div>
                         <div class="col-md-6 fs-5">
                             <span class="fw-bold">Solomillo de Buey con Salsa de Oporto. 48€</span>
@@ -190,7 +190,7 @@
 
                     <div class="row align-items-start mb-4 ms-3">
                         <div class="col-md-4">
-                            <img src="assets/img/carta/Ravioli.webp" alt="Ravioli de Bogavante">
+                            <img src="assets/img/carta/Ravioli.png" alt="Ravioli de Bogavante">
                         </div>
                         <div class="col-md-6 fs-5">
                             <span class="fw-bold">Ravioli de Bogavante. 40€</span>
@@ -207,7 +207,7 @@
                 <div class="row">
                     <div class="row align-items-start mb-4 ms-3">
                         <div class="col-md-4">
-                            <img src="assets/img/carta/Principal.webp" alt="Paella de Mariscos Tradicional">
+                            <img src="assets/img/carta/Principal.png" alt="Paella de Mariscos Tradicional">
                         </div>
                         <div class="col-md-6 fs-5">
                             <span class="fw-bold">Paella de Mariscos Tradicional. 50€</span>
@@ -233,7 +233,7 @@
 
                     <div class="row align-items-start mb-4 ms-3">
                         <div class="col-md-4">
-                            <img src="assets/img/carta/Presa.webp" alt="Presa Ibérica con Glaseado de Miel y Mostaza">
+                            <img src="assets/img/carta/Presa.png" alt="Presa Ibérica con Glaseado de Miel y Mostaza">
                         </div>
                         <div class="col-md-6 fs-5">
                             <span class="fw-bold">Presa Ibérica con Glaseado de Miel y Mostaza. 46€</span>
@@ -276,7 +276,7 @@
                 <div class="row">
                     <div class="row align-items-start mb-4 ms-3">
                         <div class="col-md-4">
-                            <img src="assets/img/carta/tartaSantiago.webp" alt="Paella de Mariscos Tradicional">
+                            <img src="assets/img/carta/tartaSantiago.png" alt="Paella de Mariscos Tradicional">
                         </div>
                         <div class="col-md-6 fs-5">
                             <span class="fw-bold">Tarta de Santiago. 15€</span>
@@ -315,7 +315,7 @@
 
                     <div class="row align-items-start mb-4 ms-3">
                         <div class="col-md-4">
-                            <img src="assets/img/carta/Milhojas.webp" alt="Cordero Lechal Confitado">
+                            <img src="assets/img/carta/Milhojas.png" alt="Cordero Lechal Confitado">
                         </div>
                         <div class="col-md-6 fs-5">
                             <span class="fw-bold">Milhojas de Crema de Mascarpone. 14€</span>
