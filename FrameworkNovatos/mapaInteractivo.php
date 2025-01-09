@@ -9,7 +9,7 @@
     <!-- Konva.js -->
     <script src="https://cdn.jsdelivr.net/npm/konva@9.2.0/konva.min.js"></script>
     <style>
-        #map-container {
+        #contenedor-mapa {
             width: 100%;
             height: 500px;
             border: 1px solid #ddd;
@@ -19,119 +19,185 @@
 </head>
 <body>
     <div class="container mt-4">
-        <h1 class="text-center mb-4">Reserva de Mesas</h1>
+        <h1 class="mb-4 text-center">Diseña tu sala</h1>
         <div class="row">
             <div class="col-md-8">
-                <div id="map-container"></div>
+                <div id="contenedor-mapa"></div>
+                <button id="boton-cambiar-modo" class="mt-3 btn btn-primary">Modo Actual: Mesas</button>
             </div>
             <div class="col-md-4">
-                <h3>Detalles de la Reserva</h3>
-                <ul class="list-group" id="reservation-list">
-                    <li class="list-group-item">No hay mesas añadidas.</li>
+                <h3>Detalles de la Sala</h3>
+                <ul class="list-group" id="lista-elementos">
+                    <li class="list-group-item">No hay elementos añadidos.</li>
                 </ul>
-                <button id="reset-btn" class="btn btn-danger mt-3">Reiniciar Mapa</button>
+                <button id="boton-reiniciar" class="mt-3 btn btn-danger">Reiniciar Mapa</button>
             </div>
         </div>
     </div>
 
     <script>
-        // Crear el escenario de Konva
-        const stage = new Konva.Stage({
-            container: 'map-container',
-            width: document.getElementById('map-container').offsetWidth,
-            height: document.getElementById('map-container').offsetHeight,
+        const escenario = new Konva.Stage({
+            container: 'contenedor-mapa',
+            width: document.getElementById('contenedor-mapa').offsetWidth,
+            height: document.getElementById('contenedor-mapa').offsetHeight,
         });
 
-        // Crear una capa
-        const layer = new Konva.Layer();
-        stage.add(layer);
+        const capa = new Konva.Layer();
+        escenario.add(capa);
 
-        const reservationList = document.getElementById('reservation-list');
+        const listaElementos = document.getElementById('lista-elementos');
+        const botonCambiarModo = document.getElementById('boton-cambiar-modo');
 
-        // Almacén de mesas
-        let tables = [];
-        let tableCounter = 1;
+        let mesas = [];
+        let paredes = [];
+        let contadorMesas = 1;
+        let modoDibujo = 'mesa'; // Alterna entre 'mesa' y 'pared'
 
-        // Función para actualizar la lista de reservas
-        function updateReservationList() {
-            reservationList.innerHTML = '';
-            if (tables.length === 0) {
-                reservationList.innerHTML = '<li class="list-group-item">No hay mesas añadidas.</li>';
+        function actualizarListaElementos() {
+            listaElementos.innerHTML = '';
+            if (mesas.length === 0 && paredes.length === 0) {
+                listaElementos.innerHTML = '<li class="list-group-item">No hay elementos añadidos.</li>';
                 return;
             }
-            tables.forEach(table => {
-                const li = document.createElement('li');
-                li.className = 'list-group-item d-flex justify-content-between align-items-center';
-                li.textContent = `Mesa ${table.id}`;
-                const deleteBtn = document.createElement('button');
-                deleteBtn.className = 'btn btn-sm btn-danger';
-                deleteBtn.textContent = 'Eliminar';
-                deleteBtn.addEventListener('click', () => {
-                    // Eliminar mesa
-                    const circle = layer.findOne(`#table-${table.id}`);
-                    circle.destroy();
-                    tables = tables.filter(t => t.id !== table.id);
-                    updateReservationList();
-                    layer.draw();
+
+            if (mesas.length > 0) {
+                const encabezadoMesas = document.createElement('li');
+                encabezadoMesas.className = 'list-group-item active';
+                encabezadoMesas.textContent = 'Mesas';
+                listaElementos.appendChild(encabezadoMesas);
+
+                mesas.forEach(mesa => {
+                    const li = document.createElement('li');
+                    li.className = 'list-group-item d-flex justify-content-between align-items-center';
+                    li.textContent = `Mesa ${mesa.id}`;
+                    const botonEliminar = document.createElement('button');
+                    botonEliminar.className = 'btn btn-sm btn-danger';
+                    botonEliminar.textContent = 'Eliminar';
+                    botonEliminar.addEventListener('click', () => {
+                        const circulo = capa.findOne(`#mesa-${mesa.id}`);
+                        circulo.destroy();
+                        mesas = mesas.filter(m => m.id !== mesa.id);
+                        actualizarListaElementos();
+                        capa.draw();
+                    });
+                    li.appendChild(botonEliminar);
+                    listaElementos.appendChild(li);
                 });
-                li.appendChild(deleteBtn);
-                reservationList.appendChild(li);
-            });
+            }
+
+            if (paredes.length > 0) {
+                const encabezadoParedes = document.createElement('li');
+                encabezadoParedes.className = 'list-group-item active';
+                encabezadoParedes.textContent = 'Paredes';
+                listaElementos.appendChild(encabezadoParedes);
+
+                paredes.forEach((pared, indice) => {
+                    const li = document.createElement('li');
+                    li.className = 'list-group-item d-flex justify-content-between align-items-center';
+                    li.textContent = `Pared ${indice + 1}`;
+                    const botonEliminar = document.createElement('button');
+                    botonEliminar.className = 'btn btn-sm btn-danger';
+                    botonEliminar.textContent = 'Eliminar';
+                    botonEliminar.addEventListener('click', () => {
+                        const linea = capa.findOne(`#pared-${indice}`);
+                        linea.destroy();
+                        paredes.splice(indice, 1);
+                        actualizarListaElementos();
+                        capa.draw();
+                    });
+                    li.appendChild(botonEliminar);
+                    listaElementos.appendChild(li);
+                });
+            }
         }
 
-        // Agregar una nueva mesa al hacer clic en el mapa
-        stage.on('click', (e) => {
-            // Comprobar si el clic es en el escenario (fondo)
-            if (e.target === stage) {
-                const pos = stage.getPointerPosition();
-                const newTable = {
-                    id: tableCounter++,
-                    x: pos.x,
-                    y: pos.y,
-                    radius: 30,
-                    status: 'free',
-                };
-                tables.push(newTable);
+        escenario.on('click', (e) => {
+            if (e.target === escenario) {
+                const posicion = escenario.getPointerPosition();
 
-                const circle = new Konva.Circle({
-                    id: `table-${newTable.id}`,
-                    x: newTable.x,
-                    y: newTable.y,
-                    radius: newTable.radius,
-                    fill: 'green',
-                    stroke: 'black',
-                    strokeWidth: 2,
-                    draggable: true,
-                });
+                if (modoDibujo === 'mesa') {
+                    const nuevaMesa = {
+                        id: contadorMesas++,
+                        x: posicion.x,
+                        y: posicion.y,
+                        radio: 30,
+                        estado: 'libre',
+                    };
+                    mesas.push(nuevaMesa);
 
-                circle.on('click', () => {
-                    if (newTable.status === 'free') {
-                        newTable.status = 'reserved';
-                        circle.fill('red');
-                    } else {
-                        newTable.status = 'free';
-                        circle.fill('green');
-                    }
-                    circle.draw();
-                    updateReservationList();
-                });
+                    const circulo = new Konva.Circle({
+                        id: `mesa-${nuevaMesa.id}`,
+                        x: nuevaMesa.x,
+                        y: nuevaMesa.y,
+                        radius: nuevaMesa.radio,
+                        fill: 'green',
+                        stroke: 'black',
+                        strokeWidth: 2,
+                        draggable: true,
+                    });
 
-                layer.add(circle);
-                layer.draw();
-                updateReservationList();
+                    circulo.on('click', () => {
+                        if (nuevaMesa.estado === 'libre') {
+                            nuevaMesa.estado = 'reservada';
+                            circulo.fill('red');
+                        } else {
+                            nuevaMesa.estado = 'libre';
+                            circulo.fill('green');
+                        }
+                        circulo.draw();
+                        actualizarListaElementos();
+                    });
+
+                    capa.add(circulo);
+                } else if (modoDibujo === 'pared') {
+                    const inicioPared = posicion;
+                    let linea = null;
+
+                    escenario.on('mousemove.pared', (eventoMover) => {
+                        if (!linea) {
+                            linea = new Konva.Line({
+                                id: `pared-${paredes.length}`,
+                                points: [inicioPared.x, inicioPared.y, eventoMover.evt.offsetX, eventoMover.evt.offsetY],
+                                stroke: 'black',
+                                strokeWidth: 4,
+                            });
+                            capa.add(linea);
+                        } else {
+                            linea.points([inicioPared.x, inicioPared.y, eventoMover.evt.offsetX, eventoMover.evt.offsetY]);
+                            linea.draw();
+                        }
+                    });
+
+                    escenario.on('mouseup.pared', () => {
+                        paredes.push({
+                            id: paredes.length,
+                            puntos: linea.points(),
+                        });
+                        escenario.off('.pared');
+                        actualizarListaElementos();
+                    });
+                }
+
+                capa.draw();
+                actualizarListaElementos();
             }
         });
 
-        // Botón para reiniciar el mapa
-        document.getElementById('reset-btn').addEventListener('click', () => {
-            tables = [];
-            tableCounter = 1;
-            layer.destroyChildren();
-            layer.draw();
-            updateReservationList();
+        botonCambiarModo.addEventListener('click', () => {
+            modoDibujo = modoDibujo === 'mesa' ? 'pared' : 'mesa';
+            botonCambiarModo.textContent = `Modo Actual: ${modoDibujo === 'mesa' ? 'Mesas' : 'Paredes'}`;
         });
 
-        updateReservationList();
+        document.getElementById('boton-reiniciar').addEventListener('click', () => {
+            mesas = [];
+            paredes = [];
+            contadorMesas = 1;
+            capa.destroyChildren();
+            capa.draw();
+            actualizarListaElementos();
+        });
+
+        actualizarListaElementos();
     </script>
 
     <!-- Bootstrap JS -->

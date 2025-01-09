@@ -19,18 +19,18 @@
 
 
             <!-- CARTA -->
-            <div class="carta-res w-70 my-5 bg-info rounded-3 overflow-hidden mx-auto ">
+            <div class="mx-auto my-5 overflow-hidden carta-res w-70 bg-info rounded-3 ">
                 <div class="menu-section-carta">
-                    <h1 class="h1-Pol title-carta text-center fw-bold">CARTA</h1>
+                    <h1 class="text-center h1-Pol title-carta fw-bold">CARTA</h1>
 
 
                     <!-- ENTRANTES -->
-                    <div class="d-flex justify-content-center mb-4 mt-5 gap-2">
-                        <img src="assets/img/carta/ENTRANTES.webp" class="imagen-tipo-plato mt-5">
-                        <div class="section-background-carta w-50 mt-5 h-auto"></div>
+                    <div class="gap-2 mt-5 mb-4 d-flex justify-content-center">
+                        <img src="assets/img/carta/ENTRANTES.png" class="mt-5 imagen-tipo-plato">
+                        <div class="h-auto mt-5 section-background-carta w-50"></div>
                     </div>
 
-                    <h2 class="text-center subtitle-carta mt-5 mb-3 fw-bold fs-1">ENTRANTES</h2>
+                    <h2 class="mt-5 mb-3 text-center subtitle-carta fw-bold fs-1">ENTRANTES</h2>
                     <div class="items-carta d-flex align-items-center flex-column">
                         <div class="item-carta fs-5">
                             <span class="item-titulo">- Jamón Ibérico de Bellota. . . . . . . . . . . . . . . . . . . .
@@ -78,12 +78,12 @@
 
 
                     <!-- PRINCIPALES -->
-                    <div class="d-flex justify-content-center mb-4 mt-5 gap-2">
-                        <img src="assets/img/carta/Principal.png" class="imagen-tipo-plato mt-5">
-                        <div class="section-background-carta w-50 mt-5 h-auto"></div>
+                    <div class="gap-2 mt-5 mb-4 d-flex justify-content-center">
+                        <img src="assets/img/carta/Principal.png" class="mt-5 imagen-tipo-plato">
+                        <div class="h-auto mt-5 section-background-carta w-50"></div>
                     </div>
 
-                    <h2 class="text-center subtitle-carta mt-5 mb-3 fw-bold fs-1">PLATOS PRINCIPALES</h2>
+                    <h2 class="mt-5 mb-3 text-center subtitle-carta fw-bold fs-1">PLATOS PRINCIPALES</h2>
                     <div class="items-carta d-flex align-items-center flex-column">
                         <div class="item-carta fs-5">
                             <span>- Cochinillo Asado a Baja Temperatura . . . . . . . . . . . . . . . . . . . . . . . .
@@ -122,12 +122,12 @@
                     </div>
 
                     <!-- ESPECIALIDADES -->
-                    <div class="d-flex justify-content-center mb-4 mt-5 gap-2">
-                        <img src="assets/img/carta/Especialidad.webp" class="imagen-tipo-plato mt-5">
-                        <div class="section-background-carta w-50 mt-5 h-auto"></div>
+                    <div class="gap-2 mt-5 mb-4 d-flex justify-content-center">
+                        <img src="assets/img/carta/Especialidad.png" class="mt-5 imagen-tipo-plato">
+                        <div class="h-auto mt-5 section-background-carta w-50"></div>
                     </div>
 
-                    <h2 class="text-center subtitle-carta mt-5 mb-3 fw-bold fs-1">ESPECIALIDADES</h2>
+                    <h2 class="mt-5 mb-3 text-center subtitle-carta fw-bold fs-1">ESPECIALIDADES</h2>
                     <div class="items-carta d-flex align-items-center flex-column">
                         <div class="item-carta fs-5 ">
                             <span>- Paella de Mariscos Tradicional </span><span>. . . . . . . . . . . . . . . . . . . .
@@ -160,9 +160,9 @@
                     </div>
 
                     <!-- POSTRES -->
-                    <h2 class="subtitle-carta-postre text-center mb-3 fw-bold fs-1 mt-6">POSTRES</h2>
+                    <h2 class="mt-6 mb-3 text-center subtitle-carta-postre fw-bold fs-1">POSTRES</h2>
                     <div class="row">
-                        <div class="items-carta-postre d-flex flex-wrap justify-content-center gap-5">
+                        <div class="flex-wrap gap-5 items-carta-postre d-flex justify-content-center">
                             <div class="item-carta-postre fs-6 d-flex flex-column">
                                 <img src="assets/img/carta/tartaSantiago.png" class="img-postres w-100 h-100">
                                 <p>Tarta de Santiago.</p>
@@ -170,7 +170,7 @@
                                 <p>Precio . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15 €</p>
                             </div>
                             <div class="item-carta-postre fs-6 d-flex flex-column">
-                                <img src="assets/img/carta/Coulant.webp" class="img-postres">
+                                <img src="assets/img/carta/Coulant.png" class="img-postres">
                                 <p>Coulant de Chocolate Negro.</p>
                                 <p>Con helado de frambuesa y crumble.</p>
                                 <p>Precio . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16 €</p>
@@ -182,14 +182,14 @@
                                 <p>Precio . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14€</p>
                             </div>
                         </div>
-                        <div class="row justify-content-center my-5">
+                        <div class="my-5 row justify-content-center">
                             <div class="item-carta-postre fs-6 d-flex flex-column ">
                                 <img src="assets/img/carta/Milhojas.png" class="img-postres">
                                 <span>Milhojas de Crema de Mascarpone y Frutos Rojas.</span>
                                 <p>Precio . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14€</p>
                             </div>
                             <div class="item-carta-postre fs-6 d-flex flex-column">
-                                <img src="assets/img/carta/Helado.webp" class="img-postres">
+                                <img src="assets/img/carta/Helado.png" class="img-postres">
                                 <p>Helados Artesanales.</p>
                                 <p>Variedad de sabores de temporada.</p>
                                 <p>Precio . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12€</p>
@@ -197,7 +197,7 @@
                         </div>
 
                         <!-- BEBIDAS -->
-                        <h2 class="text-center subtitle-carta-bebidas mb-3 fw-bold fs-1 mt-6">BEBIDAS</h2>
+                        <h2 class="mt-6 mb-3 text-center subtitle-carta-bebidas fw-bold fs-1">BEBIDAS</h2>
                         <div class="items-carta d-flex align-items-center flex-column">
                             <div class="item-carta-bebida fs-5">
                                 <span>Agua Mineral Premium . . . . . . . . . . . . . . . . . . . . . . . 6€</span>
@@ -215,7 +215,7 @@
                         </div>
 
                         <!-- VINOS BLANCOS -->
-                        <h2 class="text-center subtitle-carta mt-5 mb-3 fw-bold fs-1">VINO BLANCO</h2>
+                        <h2 class="mt-5 mb-3 text-center subtitle-carta fw-bold fs-1">VINO BLANCO</h2>
                         <div class="items-carta d-flex align-items-center flex-column">
                             <div class="item-carta-bebida fs-5">
                                 <span>Albariño Rías Baixas . . . . . . . . . . . . . . . . . . . . . . . . 24€</span>
@@ -229,7 +229,7 @@
                         </div>
 
                         <!-- VINOS TINTOS -->
-                        <h2 class="text-center subtitle-carta mt-5 mb-3 fw-bold fs-1">VINO TINTO</h2>
+                        <h2 class="mt-5 mb-3 text-center subtitle-carta fw-bold fs-1">VINO TINTO</h2>
                         <div class="items-carta d-flex align-items-center flex-column">
                             <div class="item-carta-bebida fs-5">
                                 <span>Rioja Reserva . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -244,9 +244,9 @@
                         </div>
 
                         <!-- ALERGENOS -->
-                        <h3 class="subtitle-carta-alergeno mb-3 text-center fw-bold fs-4 mt-7">ALÉRGENOS</h3>
+                        <h3 class="mb-3 text-center subtitle-carta-alergeno fw-bold fs-4 mt-7">ALÉRGENOS</h3>
                         <div class="items-carta d-flex align-items-center flex-column">
-                            <p class="alergeno-item-carta fs-6 mb-5">Informamos a nuestros clientes que algunos de
+                            <p class="mb-5 alergeno-item-carta fs-6">Informamos a nuestros clientes que algunos de
                                 nuestros
                                 platos contienen alérgenos tales como gluten, mariscos, frutos secos, lácteos, y otros.
                                 Por favor, consulte con nuestro personal antes de realizar su pedido, y asegurese si
