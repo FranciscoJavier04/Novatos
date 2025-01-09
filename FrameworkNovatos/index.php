@@ -8,11 +8,11 @@
 
 <body>
     <?php include("includes/navigation.php"); ?>
-<!--CF2: El container lo tiene que englobar todo-->
+    <!--CF2: El container lo tiene que englobar todo-->
     <main class="bg-info text-white fs-4 text-center">
 
-       <div class="portfolio-main p-5">
-            <button class="btn-xl rounded-3"><a href="video.php">DESCÚBRENOS</a></button>
+        <div class="portfolio-main p-5">
+            <button class="btn-xl rounded-3"><a href="laberinto.php">DESCÚBRENOS</a></button>
         </div>
 
         <div class="container py-5 ">
@@ -65,7 +65,8 @@
             new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
         }
     </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <?php include("includes/footer.php"); ?>
 </body>
 

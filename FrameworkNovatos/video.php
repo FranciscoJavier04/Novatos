@@ -18,10 +18,9 @@
         allowfullscreen>
     </iframe>
 
-    <!-- Controles personalizados -->
+    <!-- Control personalizado -->
     <div id="custom-controls">
-        <button id="play-btn">Play</button>
-        <button id="pause-btn">Pause</button>
+        <button id="toggle-btn">Play</i></button>
     </div>
 
     <!-- Script para la API de YouTube -->
@@ -38,16 +37,18 @@
         }
 
         function onPlayerReady(event) {
-            document.getElementById('play-btn').addEventListener('click', () => {
-                player.playVideo();
-            });
+            const toggleBtn = document.getElementById('toggle-btn');
+            let isPlaying = false;
 
-            document.getElementById('pause-btn').addEventListener('click', () => {
-                player.pauseVideo();
-            });
-
-            document.getElementById('stop-btn').addEventListener('click', () => {
-                player.stopVideo();
+            toggleBtn.addEventListener('click', () => {
+                if (isPlaying) {
+                    player.pauseVideo();
+                    toggleBtn.textContent = "Play";
+                } else {
+                    player.playVideo();
+                    toggleBtn.textContent = "Pause";
+                }
+                isPlaying = !isPlaying;
             });
         }
     </script>
