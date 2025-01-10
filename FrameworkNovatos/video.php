@@ -20,7 +20,9 @@
 
     <!-- Control personalizado -->
     <div id="custom-controls">
-        <button id="toggle-btn">Play</i></button>
+        <button id="toggle-btn">
+            <i id="play-icon" class="fas fa-play"></i>
+        </button>
     </div>
 
     <!-- Script para la API de YouTube -->
