@@ -1,22 +1,3 @@
-<?php
-// Procesar los datos cuando se envía el plato
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Obtener los datos enviados
-    $data = json_decode(file_get_contents("php://input"), true);
-    $response = "Error al procesar los datos.";
-
-    // Validar y guardar los ingredientes
-    if (isset($data['ingredients'])) {
-        $ingredients = implode(", ", $data['ingredients']);
-        // Guardar en un archivo local
-        file_put_contents("saved_pizzas.txt", "Nueva pizza: " . $ingredients . "\n", FILE_APPEND);
-        $response = "¡Pizza guardada con éxito! Ingredientes: " . $ingredients;
-    }
-    echo $response;
-    exit();
-}
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -26,9 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <script src="https://unpkg.com/konva@8/konva.min.js"></script>
     <style>
         body {
-            font-family: Arial, sans-serif;
             text-align: center;
-            margin: 0;
             background-color: #f7f7f7;
         }
         #container {
@@ -71,94 +50,148 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <!-- Salsas -->
     <div id="salsas">
-        <h3>Salsas:</h3>
-        <button onclick="changeSauce('salsa_tomate.jpg', 'Salsa de Tomate')">Salsa de Tomate</button>
-        <button onclick="changeSauce('salsa_bbq.jpg', 'Salsa Barbacoa')">Salsa Barbacoa</button>
-        <button onclick="changeSauce('salsa_carbonara.jpg', 'Salsa Carbonara')">Salsa Carbonara</button>
-        <button onclick="changeSauce('salsa_pesto.jpg', 'Salsa de Pesto')">Salsa de Pesto</button>
-
+        <button onclick="changeSauce('juegos/img/s-tomate.webp', 'Salsa de Tomate')">Salsa de Tomate</button>
+        <button onclick="changeSauce('juegos/img/s-barbacoa.jpg', 'Salsa Barbacoa')">Salsa Barbacoa</button>
+        <button onclick="changeSauce('juegos/img/s-carbonara.jpg', 'Salsa Carbonara')">Salsa Carbonara</button>
     </div>
 
     <!-- Botón para enviar el plato -->
     <button onclick="savePlate()">Guardar Pizza</button>
 
     <script>
-        // Crear el escenario de Konva
-        const stage = new Konva.Stage({
-            container: 'container',
-            width: 600,
-            height: 400
+    // Crear el escenario de Konva
+    const stage = new Konva.Stage({
+        container: 'container',
+        width: 600,
+        height: 400
+    });
+
+    // Capa principal
+    const layer = new Konva.Layer();
+    stage.add(layer);
+
+    // Crear la imagen de fondo (mesa.png)
+    const backgroundImage = new Konva.Image({
+        x: 0,
+        y: 0,
+        width: stage.width(),
+        height: stage.height()
+    });
+
+    // Cargar la imagen desde la fuente
+    const bgImageObj = new Image();
+    bgImageObj.src = 'juegos/img/mesa.png'; // Ruta de tu imagen
+    bgImageObj.onload = () => {
+        backgroundImage.image(bgImageObj); // Asignar la imagen cuando se carga
+        layer.draw(); // Redibujar la capa para mostrar la imagen
+    };
+
+    // Agregar la imagen de fondo a la capa
+    layer.add(backgroundImage);
+
+    // Crear un grupo para clippear la imagen dentro del círculo
+    const pizzaGroup = new Konva.Group({
+        x: stage.width() / 2,
+        y: stage.height() / 2,
+        clipFunc: function(ctx) {
+            ctx.arc(0, 0, 150, 0, Math.PI * 2, false); // Limitar al círculo
+        }
+    });
+
+    // Agregar el grupo a la capa
+    layer.add(pizzaGroup);
+
+    // Fondo de la pizza (marrón claro)
+    const pizzaBase = new Konva.Circle({
+        x: 0, // Centrado en el grupo
+        y: 0,
+        radius: 150,
+        fill: '#D2B48C', // Marrón claro
+        stroke: '#8B4513', // Borde marrón oscuro
+        strokeWidth: 6
+    });
+
+    // Agregar la base de la pizza al grupo
+    pizzaGroup.add(pizzaBase);
+
+    // Imagen de la salsa
+    let sauceImage = new Konva.Image({
+        x: -150, // Centrado respecto al grupo
+        y: -150,
+        width: 300,
+        height: 300
+    });
+
+    pizzaGroup.add(sauceImage);
+
+    // Borde del plato (marrón oscuro)
+    const plateBorder = new Konva.Circle({
+        x: stage.width() / 2,
+        y: stage.height() / 2,
+        radius: 150,
+        stroke: '#8B4513', // Borde marrón oscuro
+        strokeWidth: 6
+    });
+
+    layer.add(plateBorder);
+
+    // Lista de ingredientes seleccionados
+    let selectedIngredients = [];
+
+    // Función para agregar ingredientes
+    function addIngredient(emoji, name) {
+        const ingredient = new Konva.Text({
+            x: Math.random() * (stage.width() - 50),
+            y: Math.random() * (stage.height() - 50),
+            text: emoji,
+            fontSize: 40,
+            draggable: true
         });
 
-        // Capa principal
-        const layer = new Konva.Layer();
-        stage.add(layer);
-
-        // Plato base
-        const plate = new Konva.Circle({
-            x: stage.width() / 2,
-            y: stage.height() / 2,
-            radius: 150,
-            fill: '#eee', // Color inicial
-            stroke: '#333',
-            strokeWidth: 4
+        ingredient.on('dragend', () => {
+            const pos = ingredient.position();
+            console.log(`Ingrediente ${name} colocado en (${pos.x}, ${pos.y})`);
         });
-        layer.add(plate);
 
-        // Lista de ingredientes seleccionados
-        let selectedIngredients = [];
+        ingredient.on('click', () => {
+            alert(`Este es ${name}`);
+        });
 
-        // Función para agregar ingredientes
-        function addIngredient(emoji, name) {
-            const ingredient = new Konva.Text({
-                x: Math.random() * (stage.width() - 50),
-                y: Math.random() * (stage.height() - 50),
-                text: emoji,
-                fontSize: 40,
-                draggable: true
-            });
-
-            ingredient.on('dragend', () => {
-                const pos = ingredient.position();
-                console.log(`Ingrediente ${name} colocado en (${pos.x}, ${pos.y})`);
-            });
-
-            ingredient.on('click', () => {
-                alert(`Este es ${name}`);
-            });
-
-            selectedIngredients.push(name);
-            layer.add(ingredient);
-            layer.draw();
-        }
-
-        // Función para cambiar la salsa (color del plato)
-        function changeSauce(imageSrc, sauceName) {
-            plateImageObj.src = imageSrc; // Cargar nueva imagen de salsa
-            plateImageObj.onload = () => {
-                plate.image(plateImageObj); // Actualizar imagen en Konva
-                layer.draw();
-            };
-
-            selectedIngredients.push(sauceName); // Guardar la salsa seleccionada
-        }
-
-        // Guardar la pizza
-        function savePlate() {
-            fetch('', { // Mismo archivo PHP
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ ingredients: selectedIngredients })
-            })
-            .then(response => response.text())
-            .then(data => {
-                alert('Respuesta del servidor: ' + data);
-            });
-        }
-
+        selectedIngredients.push(name);
+        layer.add(ingredient);
         layer.draw();
-    </script>
+    }
+
+    // Función para cambiar la salsa (imagen dentro del círculo)
+    function changeSauce(imageSrc, sauceName) {
+        const imageObj = new Image();
+        imageObj.src = imageSrc;
+
+        imageObj.onload = () => {
+            sauceImage.image(imageObj);
+            layer.draw();
+        };
+
+        selectedIngredients.push(sauceName);
+    }
+
+    // Guardar la pizza
+    function savePlate() {
+        fetch('', { // Mismo archivo PHP
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ ingredients: selectedIngredients })
+        })
+        .then(response => response.text())
+        .then(data => {
+            alert('Respuesta del servidor: ' + data);
+        });
+    }
+
+    layer.draw();
+</script>
+
 </body>
 </html>

@@ -9,27 +9,27 @@
 <body class="body-del align-items-center text-warning ">
 
     <?php include("includes/navigation.php"); ?>
-    <div class="container-del p-4 d-flex mb-4">
+    <div class="p-4 mb-4 container-del d-flex">
         <div class="row">
             <!-- Sidebar de Categorías -->
-            <div class="sidebar-del col-md-3 bg-warning p-3 rounded-3 text-dark d-md-block d-none">
-                <h1 class="titulo-sidebar text-center mb-4">Categorías</h1>
+            <div class="p-3 sidebar-del col-md-3 bg-warning rounded-3 text-dark d-md-block d-none">
+                <h1 class="mb-4 text-center titulo-sidebar">Categorías</h1>
                 <nav class="nav flex-column align-items-center">
-                    <a class="menu-item-del fs-5 text-dark mb-4 rounded-3" href="#entrantes">Entrantes</a>
-                    <a class="menu-item-del fs-5 text-dark mb-4 rounded-3" href="#principales">Principales</a>
-                    <a class="menu-item-del fs-5 text-dark mb-4 rounded-3" href="#especialidades">Especialidades</a>
+                    <a class="mb-4 menu-item-del fs-5 text-dark rounded-3" href="#entrantes">Entrantes</a>
+                    <a class="mb-4 menu-item-del fs-5 text-dark rounded-3" href="#principales">Principales</a>
+                    <a class="mb-4 menu-item-del fs-5 text-dark rounded-3" href="#especialidades">Especialidades</a>
                     <a class="menu-item-del fs-5 text-dark" href="#postres">Postres</a>
                 </nav>
             </div>
 
             <!-- Contenido Principal -->
-            <div class="carta-del col-md-9 text-justify bg-info w-5 mx-auto rounded-3 text-paragraph p-3">
+            <div class="w-5 p-3 mx-auto text-justify carta-del col-md-9 bg-info rounded-3 text-paragraph">
                 <!-- ENTRANTES -->
-                <h1 class="subtitulo-carta text-center mb-5" id="entrantes" >Entrantes</h1>
+                <h1 class="mb-5 text-center subtitulo-carta" id="entrantes" >Entrantes</h1>
                 <div class="row">
-                    <div class="row align-items-start mb-4 ms-3 ">
+                    <div class="mb-4 row align-items-start ms-3 ">
                         <div class="col-md-4">
-                            <img src="assets/img/carta/ENTRANTES.webp">
+                            <img src="assets/img/carta/ENTRANTES.png">
                         </div>
                         <div class="col-md-6 fs-5">
                             <span class="fw-bold">Jamón Ibérico de Bellota. 35€</span>
@@ -40,7 +40,7 @@
                         </div>
                     </div>
 
-                    <div class="row align-items-start mb-4 ms-3">
+                    <div class="mb-4 row align-items-start ms-3">
                         <div class="col-md-4">
                             <img src="assets/img/carta/Tartar.png">
                         </div>
@@ -53,7 +53,7 @@
                         </div>
                     </div>
 
-                    <div class="row align-items-start mb-4 ms-3">
+                    <div class="mb-4 row align-items-start ms-3">
                         <div class="col-md-4">
                             <img src="assets/img/carta/Carpaccio.png" alt="Carpaccio de Wagyu">
                         </div>
@@ -66,7 +66,7 @@
                         </div>
                     </div>
 
-                    <div class="row align-items-start mb-4 ms-3">
+                    <div class="mb-4 row align-items-start ms-3">
                         <div class="col-md-4">
                             <img src="assets/img/carta/Vieiras.png" alt="Vieiras a la Plancha">
                         </div>
@@ -79,7 +79,7 @@
                         </div>
                     </div>
 
-                    <div class="row align-items-start mb-4 ms-3">
+                    <div class="mb-4 row align-items-start ms-3">
                         <div class="col-md-4">
                             <img src="assets/img/carta/Foie.png" alt="Foie Gras Mi-cuit">
                         </div>
@@ -92,7 +92,7 @@
                         </div>
                     </div>
 
-                    <div class="row align-items-start mb-4 ms-3">
+                    <div class="mb-4 row align-items-start ms-3">
                         <div class="col-md-4">
                             <img src="assets/img/carta/Pulpo.png" alt="Pulpo a la Brasa">
                         </div>
@@ -105,9 +105,9 @@
                         </div>
                     </div>
 
-                    <div class="row align-items-start mb-4 ms-3">
+                    <div class="mb-4 row align-items-start ms-3">
                         <div class="col-md-4">
-                            <img src="assets/img/carta/Ceviche.webp" alt="Ceviche de Lubina y Maracuyá">
+                            <img src="assets/img/carta/Ceviche.png" alt="Ceviche de Lubina y Maracuyá">
                         </div>
                         <div class="col-md-6 fs-5">
                             <span class="fw-bold">Ceviche de Lubina y Maracuyá. 26€</span>
@@ -120,12 +120,12 @@
                 </div>
 
                 <!-- PRINCIPALES -->
-                <h1 class="subtitulo-carta mt-5 text-center mb-5" id="principales">Principales</h1>
+                <h1 class="mt-5 mb-5 text-center subtitulo-carta" id="principales">Principales</h1>
                 <div class="row">
 
-                    <div class="row align-items-start mb-4 ms-3">
+                    <div class="mb-4 row align-items-start ms-3">
                         <div class="col-md-4">
-                            <img src="assets/img/carta/ESPECIALIDAD.webp" alt="Cochinillo Asado">
+                            <img src="assets/img/carta/ESPECIALIDAD.png" alt="Cochinillo Asado">
                         </div>
                         <div class="col-md-6 fs-5">
                             <span class="fw-bold">Cochinillo Asado a Baja Temperatura. 45€</span>
@@ -136,7 +136,7 @@
                         </div>
                     </div>
 
-                    <div class="row align-items-start mb-4 ms-3">
+                    <div class="mb-4 row align-items-start ms-3">
                         <div class="col-md-4">
                             <img src="assets/img/carta/Solomillo.png" alt="Solomillo de Buey">
                         </div>
@@ -149,7 +149,7 @@
                         </div>
                     </div>
 
-                    <div class="row align-items-start mb-4 ms-3">
+                    <div class="mb-4 row align-items-start ms-3">
                         <div class="col-md-4">
                             <img src="assets/img/carta/Merluza.webp" alt="Merluza a la Koskera">
                         </div>
@@ -162,7 +162,7 @@
                         </div>
                     </div>
 
-                    <div class="row align-items-start mb-4 ms-3">
+                    <div class="mb-4 row align-items-start ms-3">
                         <div class="col-md-4">
                             <img src="assets/img/carta/arroz.webp" alt="Arroz Negro">
                         </div>
@@ -175,9 +175,9 @@
                         </div>
                     </div>
 
-                    <div class="row align-items-start mb-4 ms-3">
+                    <div class="mb-4 row align-items-start ms-3">
                         <div class="col-md-4">
-                            <img src="assets/img/carta/Carrillera.webp" alt="Carrilleras de Ternera">
+                            <img src="assets/img/carta/Carrillera.png" alt="Carrilleras de Ternera">
                         </div>
                         <div class="col-md-6 fs-5">
                             <span class="fw-bold">Carrilleras de Ternera al Vino Tinto. 44€</span>
@@ -188,7 +188,7 @@
                         </div>
                     </div>
 
-                    <div class="row align-items-start mb-4 ms-3">
+                    <div class="mb-4 row align-items-start ms-3">
                         <div class="col-md-4">
                             <img src="assets/img/carta/Ravioli.png" alt="Ravioli de Bogavante">
                         </div>
@@ -203,9 +203,9 @@
                 </div>
 
                 <!-- ESPECIALIDADES -->
-                <h1 class="subtitulo-carta mt-5 text-center mb-5" id="especialidades">Especialidades</h1>
+                <h1 class="mt-5 mb-5 text-center subtitulo-carta" id="especialidades">Especialidades</h1>
                 <div class="row">
-                    <div class="row align-items-start mb-4 ms-3">
+                    <div class="mb-4 row align-items-start ms-3">
                         <div class="col-md-4">
                             <img src="assets/img/carta/Principal.png" alt="Paella de Mariscos Tradicional">
                         </div>
@@ -218,7 +218,7 @@
                         </div>
                     </div>
 
-                    <div class="row align-items-start mb-4 ms-3">
+                    <div class="mb-4 row align-items-start ms-3">
                         <div class="col-md-4">
                             <img src="assets/img/carta/Lubina.webp" alt="Lubina Salvaje al Horno">
                         </div>
@@ -231,7 +231,7 @@
                         </div>
                     </div>
 
-                    <div class="row align-items-start mb-4 ms-3">
+                    <div class="mb-4 row align-items-start ms-3">
                         <div class="col-md-4">
                             <img src="assets/img/carta/Presa.png" alt="Presa Ibérica con Glaseado de Miel y Mostaza">
                         </div>
@@ -244,9 +244,9 @@
                         </div>
                     </div>
 
-                    <div class="row align-items-start mb-4 ms-3">
+                    <div class="mb-4 row align-items-start ms-3">
                         <div class="col-md-4">
-                            <img src="assets/img/carta/Cordero.webp" alt="Cordero Lechal Confitado">
+                            <img src="assets/img/carta/Cordero.png" alt="Cordero Lechal Confitado">
                         </div>
                         <div class="col-md-6 fs-5">
                             <span class="fw-bold">Cordero Lechal Confitado. 52€</span>
@@ -257,7 +257,7 @@
                         </div>
                     </div>
 
-                    <div class="row align-items-start mb-4 ms-3">
+                    <div class="mb-4 row align-items-start ms-3">
                         <div class="col-md-4">
                             <img src="assets/img/carta/Bacalao.webp" alt="Bacalao a la Brasa con Crema de Guisantes">
                         </div>
@@ -272,9 +272,9 @@
                 </div>
 
                 <!-- POSTRES -->
-                <h1 class="subtitulo-carta mt-5 text-center mb-5" id="postres">Postres</h1>
+                <h1 class="mt-5 mb-5 text-center subtitulo-carta" id="postres">Postres</h1>
                 <div class="row">
-                    <div class="row align-items-start mb-4 ms-3">
+                    <div class="mb-4 row align-items-start ms-3">
                         <div class="col-md-4">
                             <img src="assets/img/carta/tartaSantiago.png" alt="Paella de Mariscos Tradicional">
                         </div>
@@ -287,9 +287,9 @@
                         </div>
                     </div>
 
-                    <div class="row align-items-start mb-4 ms-3">
+                    <div class="mb-4 row align-items-start ms-3">
                         <div class="col-md-4">
-                            <img src="assets/img/carta/Coulant.webp" alt="Lubina Salvaje al Horno">
+                            <img src="assets/img/carta/Coulant.png" alt="Lubina Salvaje al Horno">
                         </div>
                         <div class="col-md-6 fs-5">
                             <span class="fw-bold">Coulant de Chocolate Negro. 16€</span>
@@ -300,9 +300,9 @@
                         </div>
                     </div>
 
-                    <div class="row align-items-start mb-4 ms-3">
+                    <div class="mb-4 row align-items-start ms-3">
                         <div class="col-md-4">
-                            <img src="assets/img/carta/CremaCatalana.webp" alt="Presa Ibérica con Glaseado de Miel y Mostaza">
+                            <img src="assets/img/carta/CremaCatalana.png" alt="Presa Ibérica con Glaseado de Miel y Mostaza">
                         </div>
                         <div class="col-md-6 fs-5">
                             <span class="fw-bold">Crema Catalana con Toffee Salado. 14€</span>
@@ -313,7 +313,7 @@
                         </div>
                     </div>
 
-                    <div class="row align-items-start mb-4 ms-3">
+                    <div class="mb-4 row align-items-start ms-3">
                         <div class="col-md-4">
                             <img src="assets/img/carta/Milhojas.png" alt="Cordero Lechal Confitado">
                         </div>
@@ -326,9 +326,9 @@
                         </div>
                     </div>
 
-                    <div class="row align-items-start mb-4 ms-3">
+                    <div class="mb-4 row align-items-start ms-3">
                         <div class="col-md-4">
-                            <img src="assets/img/carta/Helado.webp" alt="Bacalao a la Brasa con Crema de Guisantes">
+                            <img src="assets/img/carta/Helado.png" alt="Bacalao a la Brasa con Crema de Guisantes">
                         </div>
                         <div class="col-md-6 fs-5">
                             <span class="fw-bold">Helados Artesanales. 12€</span>
