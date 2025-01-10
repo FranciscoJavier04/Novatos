@@ -275,6 +275,74 @@
             Este documento de Política de Privacidad de un sitio web ha sido creado mediante el generador de plantilla
             de política de privacidad web gratis online el día 09/01/2025.
         </p>
+
+        <p class="items-PP fs-2">3. USO LEGAL DE RECURSOS MULTIMEDIA </p>
+        <table border="2" style="border-collapse: collapse; width: 100%; text-align: left;">
+            <thead>
+                <tr>
+                    <th style="padding: 10px;">Página donde aparece</th>
+                    <th style="padding: 10px;">Nombre del recurso</th>
+                    <th style="padding: 10px;">Fuente de procedencia</th>
+                    <th style="padding: 10px;">Términos de licencia</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 10px;">Página de inicio</td>
+                    <td style="padding: 10px;">Imagen de fondo</td>
+                    <td style="padding: 10px;">IA - ChatGPT</td>
+                    <td style="padding: 10px;">Contenido generado por IA (sin derechos de autor)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Página de inicio</td>
+                    <td style="padding: 10px;">Videos</td>
+                    <td style="padding: 10px;">YouTube</td>
+                    <td style="padding: 10px;">Dependiendo de la licencia del video en YouTube* <img
+                            src="assets/img/cc.png" class="cc ">
+
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Carta</td>
+                    <td style="padding: 10px;">Imágenes</td>
+                    <td style="padding: 10px;">IA - ChatGPT</td>
+                    <td style="padding: 10px;">Contenido generado por IA (sin derechos de autor)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Reservas</td>
+                    <td style="padding: 10px;">Imágenes</td>
+                    <td style="padding: 10px;">IA - ChatGPT</td>
+                    <td style="padding: 10px;">Contenido generado por IA (sin derechos de autor)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Delivery</td>
+                    <td style="padding: 10px;">Imágenes</td>
+                    <td style="padding: 10px;">IA - ChatGPT</td>
+                    <td style="padding: 10px;">Contenido generado por IA (sin derechos de autor)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Usuario</td>
+                    <td style="padding: 10px;">Imágenes</td>
+                    <td style="padding: 10px;">IA - ChatGPT</td>
+                    <td style="padding: 10px;">Contenido generado por IA (sin derechos de autor)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Carrito</td>
+                    <td style="padding: 10px;">Imágenes</td>
+                    <td style="padding: 10px;">IA - ChatGPT</td>
+                    <td style="padding: 10px;">Contenido generado por IA (sin derechos de autor)</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="item-PP fs-5">
+            Las imágenes utilizadas en este sitio han sido generadas mediante inteligencia artificial y son
+            completamente libres de derechos ("royalty-free").
+        </p>
+        <p class="item-PP fs-5">
+            Esto significa que contamos con amplios derechos para utilizarlas, incluso con fines comerciales, sin
+            necesidad de atribución obligatoria. Si en algún momento decidimos otorgarles una licencia adicional (como
+            CC BY o CC0) para permitir que otros las utilicen, será a nuestra discreción y según nuestras políticas de
+            administración.
+        </p>
     </div>
 
     <?php include("includes/footer.php"); ?>
