@@ -176,7 +176,7 @@
                                 <p>Precio . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16 €</p>
                             </div>
                             <div class="item-carta-postre fs-6 d-flex flex-column">
-                                <img src="assets/img/carta/CremaCatalana.webp" class="img-postres">
+                                <img src="assets/img/carta/CremaCatalana.png" class="img-postres">
                                 <p>Crema Catalana con Toffee Salado.</p>
                                 <p>Crujiente y suave a la vez.</p>
                                 <p>Precio . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14€</p>
