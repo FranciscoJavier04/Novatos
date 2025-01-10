@@ -1,6 +1,6 @@
 {
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "konva": "^9.3.16"
+    "konva": "^9.3.18"
   }
 }
