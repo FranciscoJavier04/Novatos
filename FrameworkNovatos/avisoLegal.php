@@ -94,9 +94,10 @@
         </p>
         <p class="item-AL fs-5">
             ÓNEO RESTAURANTE S.L. se reserva el derecho de retirar todos aquellos comentarios y aportaciones que
-            vulneren la ley, el respeto a la dignidad de la persona, que sean discriminatorios, xenófobos, racistas, pornográficos,
+            vulneren la ley, el respeto a la dignidad de la persona, que sean discriminatorios, xenófobos, racistas,
+            pornográficos,
             spamming, que atenten contra la juventud o la infancia, el orden o la seguridad pública o que, a su juicio,
-            no  resultaran adecuados para su publicación.
+            no resultaran adecuados para su publicación.
         </p>
         <p class="item-AL fs-5">
             En cualquier caso, ÓNEO RESTAURANTE S.L. no será responsable de las opiniones vertidas por los Usuarios a

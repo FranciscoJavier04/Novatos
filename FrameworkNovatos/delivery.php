@@ -151,7 +151,7 @@
 
                     <div class="mb-4 row align-items-start ms-3">
                         <div class="col-md-4">
-                            <img src="assets/img/carta/Merluza.webp" alt="Merluza a la Koskera">
+                            <img src="assets/img/carta/Merluza.png" alt="Merluza a la Koskera">
                         </div>
                         <div class="col-md-6 fs-5">
                             <span class="fw-bold">Merluza a la Koskera. 42€</span>
@@ -164,7 +164,7 @@
 
                     <div class="mb-4 row align-items-start ms-3">
                         <div class="col-md-4">
-                            <img src="assets/img/carta/arroz.webp" alt="Arroz Negro">
+                            <img src="assets/img/carta/arroz.png" alt="Arroz Negro">
                         </div>
                         <div class="col-md-6 fs-5">
                             <span class="fw-bold">Arroz Negro con Calamar y Alioli de Ajo Negro. 38€</span>
@@ -220,7 +220,7 @@
 
                     <div class="mb-4 row align-items-start ms-3">
                         <div class="col-md-4">
-                            <img src="assets/img/carta/Lubina.webp" alt="Lubina Salvaje al Horno">
+                            <img src="assets/img/carta/Lubina.png" alt="Lubina Salvaje al Horno">
                         </div>
                         <div class="col-md-6 fs-5">
                             <span class="fw-bold">Lubina Salvaje al Horno. 55€</span>
@@ -259,7 +259,7 @@
 
                     <div class="mb-4 row align-items-start ms-3">
                         <div class="col-md-4">
-                            <img src="assets/img/carta/Bacalao.webp" alt="Bacalao a la Brasa con Crema de Guisantes">
+                            <img src="assets/img/carta/Bacalao.png" alt="Bacalao a la Brasa con Crema de Guisantes">
                         </div>
                         <div class="col-md-6 fs-5">
                             <span class="fw-bold">Bacalao a la Brasa con Crema de Guisantes. 47€</span>

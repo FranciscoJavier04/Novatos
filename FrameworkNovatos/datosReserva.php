@@ -52,8 +52,8 @@
                                     placeholder="Número de personas">
                             </div>
                             <div>
-                                <label for="numPersonas" class="form-label">Seleccionar Mesa</label>
-                                <a href="mapaInteractivo.php"class="btn btn-comun">Seleccionar Mesa</a>
+                                <label for="numPersonas" class="form-label">Diseña tu sala</label>
+                                <a href="mapaInteractivo.php"class="btn btn-comun">Sala</a>
                             </div>
                         </div>
                     </div>

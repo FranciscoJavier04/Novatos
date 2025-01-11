@@ -16,7 +16,7 @@
                         <div class="row align-items-center justify-content-center text-center text-md-start">
                             <!-- Imagen -->
                             <div class="col-6 col-md-2 mb-3 mb-md-0">
-                                <img src="/assets/img/carta/Principal.webp" class="img-fluid rounded-circle"
+                                <img src="/assets/img/carta/Principal.png" class="img-fluid rounded-circle"
                                     alt="Jamón Ibérico">
                             </div>
                             <!-- Descripción -->
@@ -49,7 +49,7 @@
                     <div class="bg-secondary w-100 fs-4 rounded-3 quitar-rounded p-3 p-md-4">
                         <div class="row align-items-center justify-content-center text-center text-md-start">
                             <div class="col-6 col-md-2 mb-3 mb-md-0">
-                                <img src="/assets/img/carta/Cordero.webp" class="img-fluid rounded-circle"
+                                <img src="/assets/img/carta/Cordero.png" class="img-fluid rounded-circle"
                                     alt="Jamón Ibérico">
                             </div>
                             <!-- Descripción -->
@@ -81,7 +81,7 @@
                         <div class="row align-items-center justify-content-center text-center text-md-start">
                             <!-- Imagen -->
                             <div class="col-6 col-md-2 mb-3 mb-md-0">
-                                <img src="/assets/img/carta/Bacalao.webp" class="img-fluid rounded-circle"
+                                <img src="/assets/img/carta/Bacalao.png" class="img-fluid rounded-circle"
                                     alt="Bacalao a la Brasa con Crema de Guisantes">
                             </div>
                             <!-- Descripción -->
