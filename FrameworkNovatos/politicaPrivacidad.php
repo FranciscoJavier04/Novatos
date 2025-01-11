@@ -297,8 +297,7 @@
                     <td style="padding: 10px;">Página de inicio</td>
                     <td style="padding: 10px;">Videos</td>
                     <td style="padding: 10px;">YouTube</td>
-                    <td style="padding: 10px;">Dependiendo de la licencia del video en YouTube* <img
-                            src="assets/img/cc.png" class="cc ">
+                    <td style="padding: 10px;">Contenido con derecho de autor <img src="assets/img/c.png" class="c ">
 
                 </tr>
                 <tr>
@@ -330,6 +329,13 @@
                     <td style="padding: 10px;">Imágenes</td>
                     <td style="padding: 10px;">IA - ChatGPT</td>
                     <td style="padding: 10px;">Contenido generado por IA (sin derechos de autor)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">JuegoPlato</td>
+                    <td style="padding: 10px;">Imagen de Fondo</td>
+                    <td style="padding: 10px;">Google</td>
+                    <td style="padding: 10px;">Sin derechos de autor <img src="assets/img/cc.png" class="cc ">
+
                 </tr>
             </tbody>
         </table>
