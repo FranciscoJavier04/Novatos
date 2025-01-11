@@ -194,3 +194,53 @@
   }
 
 
+
+//DRECUBRENOS
+
+.juegos {
+  text-align: center;
+  padding: 20px;
+}
+
+.juegos-botones {
+  display: flex;
+  justify-content: center;
+  gap: 40px; 
+  flex-wrap: wrap; 
+}
+
+.juego-item {
+  text-align: center;
+}
+
+.juego-boton {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.juego-boton img {
+  width: 300px; 
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .juego-boton img {
+    width: 250px;
+  }
+}
+
+.body-descubrenos {
+  background-image: url("/assets/img/descubrenos/fondoDescubrenos.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.descubrenos-fon{
+  width: 80%;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
