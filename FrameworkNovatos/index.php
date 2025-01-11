@@ -142,6 +142,8 @@
         </div>
     </main>
     <?php include("includes/footer.php"); ?>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="juegos/scripts/videos.js"></script>
 </body>
 
 </html>
