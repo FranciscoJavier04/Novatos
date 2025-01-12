@@ -18,8 +18,35 @@ stage.add(layer);
 
 // Configuración de los niveles
 const levels = [
-    {
-        name: "Nivel 1",
+    {             
+            name: "Nivel 1",
+            maze: [
+                { x: 0, y: 0, width: 800, height: 20 },
+                { x: 0, y: 580, width: 800, height: 20 },
+                { x: 0, y: 0, width: 20, height: 600 },
+                { x: 780, y: 0, width: 20, height: 600 },
+            ],
+            obstacles: [
+                { x: 250, y: 110, radius: 20, dx: 0, dy: -5 },
+                { x: 300, y: 130, radius: 20, dx: 0, dy: -5 },
+                { x: 350, y: 150, radius: 20, dx: 0, dy: -5 },
+                { x: 400, y: 170, radius: 20, dx: 0, dy: -5 },
+                { x: 450, y: 190, radius: 20, dx: 0, dy: -5 },
+                { x: 500, y: 210, radius: 20, dx: 0, dy: -5 },
+                { x: 550, y: 230, radius: 20, dx: 0, dy: -5 },
+                { x: 600, y: 250, radius: 20, dx: 0, dy: -5},
+                { x: 650, y: 270, radius: 20, dx: 0, dy: -5 },
+
+            ],
+            coins: [
+                { x: 200, y: 200 },
+                { x: 400, y: 300 },
+            ],
+            goal: { x: 720, y: 520, width: 50, height: 50 },
+            startPosition: { x: 50, y: 50 },
+        },
+        {
+        name: "Nivel 2",
         maze: [
             { x: 0, y: 0, width: 800, height: 20 },   // Pared superior
             { x: 0, y: 580, width: 800, height: 20 }, // Pared inferior
@@ -47,26 +74,7 @@ const levels = [
         goal: { x: 740, y: 520, width: 40, height: 40 },
         startPosition: { x: 40, y: 40 },
     },
-    {
-        name: "Nivel 2",
-        maze: [
-            { x: 0, y: 0, width: 800, height: 20 },
-            { x: 0, y: 580, width: 800, height: 20 },
-            { x: 0, y: 0, width: 20, height: 600 },
-            { x: 780, y: 0, width: 20, height: 600 },
-            { x: 300, y: 0, width: 20, height: 600 },
-        ],
-        obstacles: [
-            { x: 350, y: 150, radius: 20, dx: 0, dy: 6 },
-            { x: 400, y: 400, radius: 20, dx: 0, dy: -6 },
-        ],
-        coins: [
-            { x: 200, y: 200 },
-            { x: 400, y: 300 },
-        ],
-        goal: { x: 720, y: 520, width: 50, height: 50 },
-        startPosition: { x: 50, y: 50 },
-    },
+    
 ];
 
 let currentLevelIndex = 0;
@@ -305,15 +313,33 @@ function animateObstacles() {
 
 
 // Comprobar si el jugador llega a la meta
+// Comprobar si el jugador llega a la meta
+// Comprobar si el jugador llega a la meta
 function checkWin() {
     if (!gameRunning) return;
 
     if (Konva.Util.haveIntersection(player.getClientRect(), goal.getClientRect())) {
         gameRunning = false;
         alert('¡Ganaste!');
-        location.reload(); // Reiniciar la página
+
+        // Si estamos en el último nivel, recargar el nivel actual
+        if (currentLevelIndex === 1) {
+            loadLevel(currentLevelIndex);  
+            collectedCoins = 0; // Restablecer las monedas recolectadas
+            gameRunning = true; 
+            alert("¡Has completado todos los niveles!");
+        } else if (currentLevelIndex < levels.length - 1) {
+            // Si no es el último nivel, cargar el siguiente nivel
+            loadLevel(currentLevelIndex + 1);
+            collectedCoins = 0; // Restablecer las monedas recolectadas
+            gameRunning = true; // Continuar el juego
+        } else {
+            alert("¡Has completado todos los niveles!");
+        }
     }
 }
+
+
 
 
 layer.on('draw', checkWin);
