@@ -11,10 +11,8 @@
     <header class="container d-flex justify-content-center align-items-center">
         <button class="btn btn-comun my-auto px-5">Nivel Anterior</button>
         <a href="index.php" class="col-1 p-2"><img src="assets/img/LogoSinFondo.png" class="w-100" alt=""></a>
-
         <button class="btn btn-comun my-auto px-5">Siguiente Nivel</button>
     </header>
-
 
     <main class="d-flex justify-content-center align-items-center">
         <div id="container"></div>
