@@ -6,13 +6,18 @@
   background-position: center;
 }
 
-.video{
-  width: 600px;
-  height: 315px; 
+.video {
+  width: 100%; /* Ajusta el ancho al contenedor */
+  height: auto; /* Mantén la proporción del video */
+  aspect-ratio: 16 / 9; /* Garantiza la relación de aspecto */
+  max-width: 100%; /* Evita que crezca más allá del contenedor */
 }
 
-.controles{
-  width: 600px;
+
+.video-controls{
+  width: 100%; /* Ajusta el ancho al contenedor */
+  height: auto; /* Mantén la proporción del video */
+  max-width: 100%; /* Evita que crezca más allá del contenedor */
 }
 
 .portfolio-main {

@@ -26,7 +26,7 @@
                         allowfullscreen>
                     </iframe>
                     <div id="controls-1"
-                        class="px-1 controles my-0 d-flex align-items-center gap-2 flex-wrap bg-secondary text-primary">
+                        class="px-1 video-controls my-0 d-flex align-items-center gap-2 flex-wrap bg-secondary text-primary">
                         <button class="toggle-btn btn btn-primary d-flex align-items-center">
                             <i class="play-icon fas fa-play"></i>
                         </button>
@@ -67,7 +67,7 @@
                         allowfullscreen>
                     </iframe>
                     <div id="controls-2"
-                        class="px-1 controles my-0 d-flex align-items-center gap-2 flex-wrap bg-secondary text-primary">
+                        class="px-1 video-controls d-flex align-items-center gap-2 flex-wrap bg-secondary text-primary">
                         <button class="toggle-btn btn btn-primary d-flex align-items-center">
                             <i class="play-icon fas fa-play"></i>
                         </button>
@@ -109,7 +109,7 @@
                         allowfullscreen>
                     </iframe>
                     <div id="controls-3"
-                        class="px-1 controles my-0 d-flex align-items-center gap-2 flex-wrap bg-secondary text-primary">
+                        class="px-1 video-controls d-flex align-items-center gap-2 flex-wrap bg-secondary text-primary">
                         <button class="toggle-btn btn btn-primary d-flex align-items-center">
                             <i class="play-icon fas fa-play"></i>
                         </button>
