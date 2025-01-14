@@ -13,8 +13,7 @@
   max-width: 100%; /* Evita que crezca más allá del contenedor */
 }
 
-
-.video-controls{
+.video-controls {
   width: 100%; /* Ajusta el ancho al contenedor */
   height: auto; /* Mantén la proporción del video */
   max-width: 100%; /* Evita que crezca más allá del contenedor */
@@ -37,14 +36,13 @@
   }
 }
 @media (max-width: 768px) {
-  .quitar-rounded{
+  .quitar-rounded {
     border-radius: 0 !important;
   }
   .vh-max-100 {
     width: 100% !important;
   }
 }
-
 
 //FRAN//reserva.php
 
@@ -60,154 +58,155 @@
     filter: brightness(0.3);
   }
 }
-
+#contenedor-mapa {
+  width: 100%;
+  height: 500px;
+  border: 1px solid #ddd;
+}
 //ALEX
-  //CARTA
-  .body-carta {
-    background-image: url("/assets/img/carta/cartafondo.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-  }
+//CARTA
+.body-carta {
+  background-image: url("/assets/img/carta/cartafondo.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
 
-  .logo-carta {
-    max-width: 20%;
-    transform: translateY(200px);
-  }
+.logo-carta {
+  max-width: 20%;
+  transform: translateY(200px);
+}
 
-  .w-70 {
-    width: 70%;
-  }
-  
-  .carta-res{
-    box-shadow: inset 0 0 20px $dark;
-  }
+.w-70 {
+  width: 70%;
+}
 
-  .title-carta {
-    margin-top: 270px;
-    margin-bottom: 200px;
-  }
+.carta-res {
+  box-shadow: inset 0 0 20px $dark;
+}
 
-  .subtitle-carta-postre {
-    margin-top: 150px;
-  }
+.title-carta {
+  margin-top: 270px;
+  margin-bottom: 200px;
+}
 
-  .subtitle-carta-bebidas {
-    margin-top: 150px;
-  }
+.subtitle-carta-postre {
+  margin-top: 150px;
+}
 
-  .subtitle-carta-alergeno {
-    margin-top: 100px;
-  }
+.subtitle-carta-bebidas {
+  margin-top: 150px;
+}
 
-  .item-carta {
-    text-align: justify;
-    max-width: 600px;
-  }
+.subtitle-carta-alergeno {
+  margin-top: 100px;
+}
 
-  .imagen-tipo-plato {
-    width: 20%;
-    height: 15%;
-  }
+.item-carta {
+  text-align: justify;
+  max-width: 600px;
+}
 
-  .alergeno-item-carta {
-    max-width: 550px;
-    text-align: justify;
-  }
+.imagen-tipo-plato {
+  width: 20%;
+  height: 15%;
+}
 
+.alergeno-item-carta {
+  max-width: 550px;
+  text-align: justify;
+}
 
-  .section-background-carta {
-    max-width: 370px;
-    background-image: url("/assets/img/carta/a.png");
-  }
+.section-background-carta {
+  max-width: 370px;
+  background-image: url("/assets/img/carta/a.png");
+}
 
-  .item-carta-postre{
-    text-align: justify;
-    max-width: 300px;
-    p{
-      margin-bottom: 0;
-    }
+.item-carta-postre {
+  text-align: justify;
+  max-width: 300px;
+  p {
+    margin-bottom: 0;
   }
+}
+.carta-res {
+  width: 80%;
+}
+
+@media (max-width: 1000px) {
   .carta-res {
-    width: 80%;
+    width: 90%;
   }
+}
 
-  @media (max-width: 1000px) {
-      .carta-res {
-          width: 90%;
-      }
-  }
+//AVISO LEGAL
+.body-AL {
+  background-image: url("/assets/img/LogoSinFondo2.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center 100px;
+}
+//POLITICA DE PRIVACIDAD
+.body-PP {
+  background-image: url("/assets/img/LogoSinFondo2.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center 100px;
+}
+.cc,
+.c {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+//POLITICA DE COOKIES
+.body-PC {
+  background-image: url("/assets/img/LogoSinFondo2.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center 100px;
+}
 
-  
-  //AVISO LEGAL
-  .body-AL {
-    background-image: url("/assets/img/LogoSinFondo2.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain; 
-    background-position: center 100px;
-  }
-  //POLITICA DE PRIVACIDAD
-  .body-PP {
-    background-image: url("/assets/img/LogoSinFondo2.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain; 
-    background-position: center 100px;
-  }
-  .cc,.c{
-    width: 16px; 
-    height: 16px; 
-    vertical-align: middle;
-  }
-  //POLITICA DE COOKIES
-  .body-PC {
-    background-image: url("/assets/img/LogoSinFondo2.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain; 
-    background-position: center 100px;
-  }
-  
-  //DELIVERY
-  .sidebar-del {
-    position: sticky; /* Se fija en el viewport */
-    top: 140px; /* Espaciado desde la parte superior */
-    height: 53rem; /* Limita la altura del sidebar */
-    background: linear-gradient(135deg, #c5ad7a,#b3985e);
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
-  }
+//DELIVERY
+.sidebar-del {
+  position: sticky; /* Se fija en el viewport */
+  top: 140px; /* Espaciado desde la parte superior */
+  height: 53rem; /* Limita la altura del sidebar */
+  background: linear-gradient(135deg, #c5ad7a, #b3985e);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
 
-  .carta-del img {
-    width: 150px;
-    height: 100px;
-    border-radius: 25px;
-  }
+.carta-del img {
+  width: 150px;
+  height: 100px;
+  border-radius: 25px;
+}
 
-  .body-del {
-    background-image: url("/assets/img/carta/fondodel.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;  
-  }
+.body-del {
+  background-image: url("/assets/img/carta/fondodel.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
 
-  .carta-del {
-    width: 70%;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
-  }
+.carta-del {
+  width: 70%;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
 
-  .menu-item-del {
-    transition: all 0.3s ease-in-out;
-  }
+.menu-item-del {
+  transition: all 0.3s ease-in-out;
+}
 
-  .menu-item-del:hover {
-    background-color: #b3985e;
-    transform: scale(1.05); 
-  }
-
-
+.menu-item-del:hover {
+  background-color: #b3985e;
+  transform: scale(1.05);
+}
 
 //DRECUBRENOS
 
@@ -219,8 +218,8 @@
 .juegos-botones {
   display: flex;
   justify-content: center;
-  gap: 40px; 
-  flex-wrap: wrap; 
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .juego-item {
@@ -234,7 +233,7 @@
 }
 
 .juego-boton img {
-  width: 300px; 
+  width: 300px;
   height: auto;
   border-radius: 10px;
 }
@@ -254,7 +253,7 @@
   color: white;
 }
 
-.descubrenos-fon{
+.descubrenos-fon {
   width: 80%;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
 }
