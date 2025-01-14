@@ -1,23 +1,15 @@
+<?php include("includes/a-config.php"); ?>
 <!DOCTYPE html>
 <head>
-    <title>Mapa Interactivo de Restaurante</title>
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <?php include("includes/head-tag-contents.php"); ?>
     <!-- Konva.js -->
     <script src="https://cdn.jsdelivr.net/npm/konva@9.2.0/konva.min.js"></script>
-    <style>
-        /* Contenedor principal del mapa interactivo */
-        #contenedor-mapa {
-            width: 100%;
-            height: 500px;
-            border: 1px solid #ddd;
-            background-color: #f8f9fa;
-        }
-    </style>
 </head>
-<body>
+<body class="bg-info">
+<?php include("includes/navigation.php"); ?>
     <!-- Contenedor principal con diseño Bootstrap -->
     <div class="container mt-4">
-        <h1 class="mb-4 text-center">Diseña tu sala</h1>
+        <h1 class="mb-4 text-center text-danger">Diseña tu sala</h1>
         <div class="row">
             <!-- Columna para el mapa interactivo -->
             <div class="col-md-8">
@@ -27,7 +19,7 @@
             </div>
             <!-- Columna para los detalles de la sala -->
             <div class="col-md-4">
-                <h3>Detalles de la Sala</h3>
+                <h2 class="text-danger">Detalles de la Sala</h2>
                 <!-- Lista dinámica para mostrar elementos añadidos (mesas y paredes) -->
                 <ul class="list-group" id="lista-elementos">
                     <li class="list-group-item">No hay elementos añadidos.</li>
@@ -71,7 +63,7 @@
             // Mostrar mesas en la lista
             if (mesas.length > 0) {
                 const encabezadoMesas = document.createElement('li');
-                encabezadoMesas.className = 'list-group-item active';
+                encabezadoMesas.className = 'list-group-item active text-dark';
                 encabezadoMesas.textContent = 'Mesas';
                 listaElementos.appendChild(encabezadoMesas);
 
@@ -98,7 +90,7 @@
             // Mostrar paredes en la lista
             if (paredes.length > 0) {
                 const encabezadoParedes = document.createElement('li');
-                encabezadoParedes.className = 'list-group-item active';
+                encabezadoParedes.className = 'list-group-item active text-dark';
                 encabezadoParedes.textContent = 'Paredes';
                 listaElementos.appendChild(encabezadoParedes);
 

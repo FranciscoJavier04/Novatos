@@ -9,9 +9,9 @@
 <body id="bodyReserva">
     <?php include("includes/navigation.php"); ?>
     <!--CF2: ¿Dónde está el container-->
-    <main class="d-flex justify-content-center align-items-center my-3">
-        <div class="card w-75 rounded-3 bg-light overflow-hidden fw-bold fst-italic" id="cardFormulario">
-            <div class="card-body d-flex flex-column justify-content-between p-4">
+    <main class="my-3 d-flex justify-content-center align-items-center">
+        <div class="overflow-hidden card w-75 rounded-3 bg-light fw-bold fst-italic" id="cardFormulario">
+            <div class="p-4 card-body d-flex flex-column justify-content-between">
                 <div class="text-center">
                     <h1 class="card-title">DATOS DE LA RESERVA</h1>
                 </div>
@@ -20,9 +20,9 @@
                 <!-- Selección de Fecha, Hora y Número de Personas -->
                 <section class="container">
                     <div class="row">
-                        <div class="col-md align-items-center text-center">
+                        <div class="text-center col-md align-items-center">
                             <h2>Elige tu día</h2>
-                            <img src="/assets/img/LogoSinFondo.png" class="w-25 mt-4">
+                            <img src="/assets/img/LogoSinFondo.png" class="mt-4 w-25">
                         </div>
                         <div class="col-md">
                             <!-- Selección de Fecha -->
@@ -66,7 +66,7 @@
                 </section>
 
                 <!-- Botón Siguiente -->
-                <div class="d-flex justify-content-center mt-3">
+                <div class="mt-3 d-flex justify-content-center">
                     <a href="confReserva.php" class="btn btn-comun">SIGUIENTE</a>
                 </div>
             </div>

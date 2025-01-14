@@ -12,6 +12,10 @@ switch ($_SERVER["SCRIPT_NAME"]) {
 		$CURRENT_PAGE = "Juego del Laberinto";
 		$PAGE_TITLE = "Juego del Laberinto";
 		break;
+	case "/mapaInteractivo.php":
+		$CURRENT_PAGE = "Diseña tu sala";
+		$PAGE_TITLE = "Diseña tu sala";
+		break;
 	case "/avisoLegal.php":
 		$CURRENT_PAGE = "Aviso Legal";
 		$PAGE_TITLE = "Aviso Legal Óneo";
