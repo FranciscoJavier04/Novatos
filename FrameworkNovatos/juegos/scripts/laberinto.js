@@ -340,6 +340,7 @@ function checkWin() {
             gameRunning = true; // Continuar el juego
         } else {
             alert("¡Has completado todos los niveles!");
+            gameRunning = true;
         }
         resetKeysPressed();
 
