@@ -234,6 +234,11 @@ function openBarrier() {
     }
 }
 
+function resetKeysPressed() {
+    for (const key in keysPressed) {
+        keysPressed[key] = false;
+    }
+}
 
 
 function movePlayer() {
@@ -335,7 +340,10 @@ function checkWin() {
             gameRunning = true; // Continuar el juego
         } else {
             alert("¡Has completado todos los niveles!");
+            gameRunning = true;
         }
+        resetKeysPressed();
+
     }
 }
 
