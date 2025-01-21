@@ -1,4 +1,7 @@
-<?php include("includes/a-config.php"); ?>
+<?php
+session_start();
+include("includes/a-config.php");
+?>
 <!DOCTYPE html>
 <html>
 
@@ -7,6 +10,7 @@
 </head>
 
 <body>
+
     <?php include("includes/navigation.php"); ?>
     <main class="container-fluid m-0">
         <div class="row min-vh-md-100">
@@ -18,14 +22,21 @@
                     <!--CF2: ¿Dónde está el h1?-->
                     <h2 class="fw-bold text-center mt-4">BIENVENIDO DE NUEVO!</h2>
                     <p class="mt-4">Introduce tus datos para disfrutar de todas nuestras funciones.</p>
+                    <?php
+                    if (isset($_SESSION['error'])) {
+                        echo "<span class='text-info'>" . $_SESSION['error'] . "</span>";
+                    }
+                    ?>
                     <form method="POST" action="controllers/loguearse.php">
                         <div class="mb-3 mt-3">
                             <label for="email" class="form-label">Correo Electrónico</label>
-                            <input type="email" class="form-control" id="email" required placeholder="fran@gmail.com">
+                            <input type="email" class="form-control" name="email" id="email" required
+                                placeholder="fran@gmail.com">
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" required id="password" placeholder="********">
+                            <input type="password" class="form-control" required name="password" id="password"
+                                placeholder="********">
                         </div>
                         <div class="mb-3 text-end">
                             <input type="checkbox" id="rememberMe">

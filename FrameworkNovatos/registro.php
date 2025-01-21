@@ -25,36 +25,47 @@
                         <h2 class="fw-bold mt-2">REGISTRARSE</h2>
                         <p class="mt-3">Introduce tus datos para disfrutar de todas nuestras funciones.</p>
                     </div>
-                    <form action="">
+                    <form method="POST" action="controllers/registrarse.php">
                         <div class="mb-3">
                             <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Manuel">
+                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Manuel">
                         </div>
                         <div class="mb-3">
                             <label for="apellidos" class="form-label">Apellidos</label>
-                            <input type="text" class="form-control" id="apellidos" placeholder="Romero Reyes">
+                            <input type="text" class="form-control" name="apellidos" id="apellidos"
+                                placeholder="Romero Reyes">
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Correo Electrónico</label>
-                            <input type="email" class="form-control" id="email" placeholder="fran@gmail.com">
+                            <input type="email" class="form-control" name="email" id="email"
+                                placeholder="fran@gmail.com">
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" id="password" placeholder="********">
+                            <input type="password" class="form-control" name="password" id="password"
+                                placeholder="********">
                         </div>
                         <div class="mb-3 row">
                             <div class="col-6">
                                 <label for="telefono" class="form-label">Teléfono</label>
-                                <input type="text" class="form-control" id="telefono" placeholder="000000000">
+                                <input type="text" class="form-control" name="telefono" id="telefono"
+                                    placeholder="000000000">
                             </div>
                             <div class="col-6">
-                                <label for="dni" class="form-label">DNI</label>
-                                <input type="text" class="form-control" id="dni" placeholder="12345678A">
+                                <label for="fecha_nac" class="form-label">Fecha Nacimiento</label>
+                                <input type="date" class="form-control" name="fecha_nac" id="fecha_nac">
                             </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="direccion" class="form-label">Dirección</label>
-                            <input type="text" class="form-control" id="direccion" placeholder="Calle, número, ciudad">
+                        <div class="mb-3 row">
+                            <div class="col-6">
+                                <label for="pais" class="form-label">Pais</label>
+                                <input type="text" class="form-control" name="pais" id="pais" placeholder="España">
+                            </div>
+                            <div class="col-6">
+                                <label for="cod_postal" class="form-label">Código Postal</label>
+                                <input type="text" class="form-control" name="cod_postal" id="cod_postal"
+                                    placeholder="14900">
+                            </div>
                         </div>
                         <button type="submit" class="btn btn-comun w-100 mt-3">Registrarse</button>
                         <p class="mt-3">¿Ya tienes cuenta? <a href="login.php">Iniciar Sesión</a></p>
