@@ -63,17 +63,7 @@
             if ($resultado->num_rows > 0) {
                 echo '<table>';
                 echo '<thead>';
-                echo '<tr>';
-                echo '<th><input type="submit" name="insertar" value="Insertar" class="btn btn-modificar"></input> </th>';
-                echo '<th>Nombre: <input type="text" name="nombre"></th>';
-                echo '<th>Password: <input type="text" name="password"></th>';
-                echo '<th>Apellidos: <input type="text" name="apellidos"></th>';
-                echo '<th>Fecha de Nacimiento <input type="date" name="fecha_nacimiento"></th>';
-                echo '<th>País <input type="text" name="pais"></th>';
-                echo '<th>Código Postal <input type="text" name="cod_postal"></th>';
-                echo '<th>Teléfono <input type="text" name="telefono"></th>';
-                echo '<th>Rol <input type="text" name="rol"></th>';
-                echo '</tr>';
+
                 echo '<tr>';
                 echo '<th>ID</th>';
                 echo '<th>Nombre</th>';
