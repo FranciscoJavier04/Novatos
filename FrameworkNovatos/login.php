@@ -18,7 +18,7 @@
                     <!--CF2: ¿Dónde está el h1?-->
                     <h2 class="fw-bold text-center mt-4">BIENVENIDO DE NUEVO!</h2>
                     <p class="mt-4">Introduce tus datos para disfrutar de todas nuestras funciones.</p>
-                    <form method="POST" action="user.php">
+                    <form method="POST" action="controllers/loguearse.php">
                         <div class="mb-3 mt-3">
                             <label for="email" class="form-label">Correo Electrónico</label>
                             <input type="email" class="form-control" id="email" required placeholder="fran@gmail.com">
