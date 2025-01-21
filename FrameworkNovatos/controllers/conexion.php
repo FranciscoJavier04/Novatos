@@ -1,5 +1,5 @@
 <?php
-class ConexionDB
+class ConexionDB extends mysqli
 {
     private $servidor = "localhost";
     private $usuario = "root";
