@@ -29,26 +29,25 @@ try {
                     header("Location: ../index.php");
                     exit();
                 } else {
-                    $_SESSION['error'] = "Contraseña incorrecta.";
+                    header("Location: ../login.php?error=202");
+                    exit();
                 }
             } else {
-                $_SESSION['error'] = "Correo electrónico no registrado.";
+                header("Location: ../login.php?error=202");
+                exit();
             }
         } else {
-            $_SESSION['error'] = [101, "Error en la consulta. Por favor, inténtalo más tarde."];
-            header("Location: ../index.php");
+            header("Location: ../login.php?error=999");
             exit();
         }
-
-        header("Location: ../login.php");
-        exit();
     }
 
-
+    //Si no se accede por Post se redirige a Login
     header("Location: ../login.php");
     exit();
 
 } catch (Exception $e) {
-    echo '<p>Error: ' . $e->getMessage() . '</p>';
+    header("Location: ../login.php?error=999");
+    exit();
 }
 ?>

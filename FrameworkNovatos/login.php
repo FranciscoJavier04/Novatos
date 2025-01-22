@@ -23,8 +23,15 @@ include("includes/a-config.php");
                     <h2 class="fw-bold text-center mt-4">BIENVENIDO DE NUEVO!</h2>
                     <p class="mt-4">Introduce tus datos para disfrutar de todas nuestras funciones.</p>
                     <?php
-                    if (isset($_SESSION['error'])) {
-                        echo "<span class='text-info'>" . $_SESSION['error'] . "</span>";
+                    if (isset($_GET['error'])) {
+                        switch ($_GET['error']) {
+                            case '202':
+                                echo '<p class="error">Credenciales incorrectas</p>';
+                                break;
+                            case '999':
+                                echo '<p class="error">No se pudo completar el logueo. Por favor, inténtalo más tarde.</p>';
+                                break;
+                        }
                     }
                     ?>
                     <form method="POST" action="controllers/loguearse.php">
@@ -39,7 +46,7 @@ include("includes/a-config.php");
                                 placeholder="********">
                         </div>
                         <div class="mb-3 text-end">
-                            <input type="checkbox" id="rememberMe">
+                            <input type="checkbox" id="rememberMe" name="rememberMe">
                             <label>Recuérdame</label>
                         </div>
                         <button type="submit" class="btn btn-comun w-100 mb-2">Iniciar Sesión</button>

@@ -24,6 +24,21 @@
 
                         <h2 class="fw-bold mt-2">REGISTRARSE</h2>
                         <p class="mt-3">Introduce tus datos para disfrutar de todas nuestras funciones.</p>
+                        <?php
+                        if (isset($_GET['error'])) {
+                            switch ($_GET['error']) {
+                                case '111':
+                                    echo '<p class="error">Las contraseñas no coinciden </p>';
+                                    break;
+                                case '101':
+                                    echo '<p class="error">Ese correo ya esta registrado </p>';
+                                    break;
+                                case '999':
+                                    echo '<p class="error">No se pudo completar el registro. Por favor, inténtalo más tarde.</p>';
+                                    break;
+                            }
+                        }
+                        ?>
                     </div>
                     <form method="POST" action="controllers/registrarse.php">
                         <div class="mb-3">
@@ -43,6 +58,11 @@
                         <div class="mb-3">
                             <label for="password" class="form-label">Contraseña</label>
                             <input type="password" class="form-control" name="password" id="password"
+                                placeholder="********">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Confirmar Contraseña</label>
+                            <input type="password" class="form-control" name="conf_password" id="conf_password"
                                 placeholder="********">
                         </div>
                         <div class="mb-3 row">

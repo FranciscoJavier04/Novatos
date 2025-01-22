@@ -2,19 +2,24 @@
 // Forms
 //
 
-/*CF2: Todos los text area tendrán 110px de alto??*/
+
 textarea {
   resize: none;
   height: 110px;
 }
-/*CF2: ¿Y este color azul???*/
+
+.error{
+  color: $error;
+  font-weight: bold;
+}
+
 a {
-  color: blue;
+  color: $link;
   text-decoration: none;
 }
 .form-control, .form-select {
   border-radius: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid $info;
 }
 
 .form-control:focus, .form-select:focus {
@@ -26,5 +31,5 @@ a {
 /*CF2: Usar variables para los colores!*/
 .form-label {
   font-size: 1.2rem;
-  color: #555;
+  color:$info;
 }
