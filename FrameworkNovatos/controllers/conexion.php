@@ -42,4 +42,9 @@ class ConexionDB extends mysqli
     {
         $this->conexion->close();
     }
+
+    public function getConexion()
+    {
+        return $this->conexion;
+    }
 }
