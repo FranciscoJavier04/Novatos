@@ -8,7 +8,7 @@
 
 <body class="body-descubrenos">
     <?php include("includes/navigation.php"); ?>
-    <div class="mt-2 mb-2 p-3 mx-auto text-justify descubrenos-fon bg-info rounded-3 text-paragraph">
+    <div class="p-3 mx-auto mt-2 mb-2 text-justify descubrenos-fon bg-info rounded-3 text-paragraph">
         <section id="acercaDe mb-5">
             <div class="container">
                 <h1 class="h1-Pol text-warning">Acerca de Óneo</h1>
@@ -43,7 +43,7 @@
             </div>
         </section>
 
-        <section class="juegos mt-5">
+        <section class="mt-5 juegos">
             <div class="container">
                 <h1 class="h2-Pol text-warning">Juegos Óneo</h1>
 
@@ -59,6 +59,12 @@
                         <p class="fs-3">Crear Pizza</p>
                         <button class="juego-boton" onclick="window.location.href='juegoPlato.php'">
                             <img src="juegos/img/juego2.png" alt="Juego Plato">
+                        </button>
+                    </div>
+                    <div class="juego-item">
+                        <p class="fs-3">Diseña tu sala</p>
+                        <button class="juego-boton" onclick="window.location.href='mapaInteractivo.php'">
+                            <img src="juegos/img/juego3.png" alt="Juego Plato">
                         </button>
                     </div>
                 </div>
