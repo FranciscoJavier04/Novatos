@@ -12,15 +12,15 @@ include("includes/a-config.php");
 <body>
 
     <?php include("includes/navigation.php"); ?>
-    <main class="container-fluid m-0">
+    <main class="m-0 container-fluid">
         <div class="row min-vh-md-100">
             <div class="col-md-6 d-flex justify-content-center align-items-center">
-                <div class="login-container text-left">
+                <div class="text-left login-container">
                     <div class="mt-4">
                         <img class="rounded-4 w-100" src="/assets/img/logo-login.png" alt="Logo Óneo">
                     </div>
                     <!--CF2: ¿Dónde está el h1?-->
-                    <h2 class="fw-bold text-center mt-4">BIENVENIDO DE NUEVO!</h2>
+                    <h2 class="mt-4 text-center fw-bold">BIENVENIDO DE NUEVO!</h2>
                     <p class="mt-4">Introduce tus datos para disfrutar de todas nuestras funciones.</p>
                     <?php
                     if (isset($_GET['error'])) {
@@ -35,7 +35,7 @@ include("includes/a-config.php");
                     }
                     ?>
                     <form method="POST" action="controllers/loguearse.php">
-                        <div class="mb-3 mt-3">
+                        <div class="mt-3 mb-3">
                             <label for="email" class="form-label">Correo Electrónico</label>
                             <input type="email" class="form-control" name="email" id="email" required
                                 placeholder="fran@gmail.com">
@@ -49,9 +49,9 @@ include("includes/a-config.php");
                             <input type="checkbox" id="rememberMe" name="rememberMe">
                             <label>Recuérdame</label>
                         </div>
-                        <button type="submit" class="btn btn-comun w-100 mb-2">Iniciar Sesión</button>
+                        <button type="submit" class="mb-2 btn btn-comun w-100">Iniciar Sesión</button>
                         <div class="text-center">
-                            <button type="button" class="btn rounded-3 btn-google m-3 p-2">
+                            <button type="button" class="p-2 m-3 btn rounded-3 btn-google">
                                 <i class="fab fa-google"></i></i> Sign in with Google
                             </button>
                         </div>
@@ -61,7 +61,7 @@ include("includes/a-config.php");
                 </div>
             </div>
 
-            <div class="container-fluid col-md-6 d-none d-md-block p-0">
+            <div class="p-0 container-fluid col-md-6 d-none d-md-block">
                 <div class="d-none bg-login h-100 rounded-3 rounded-end d-md-block"></div>
             </div>
         </div>
