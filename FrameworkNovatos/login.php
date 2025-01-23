@@ -37,13 +37,13 @@ include("includes/a-config.php");
                     <form method="POST" action="controllers/loguearse.php">
                         <div class="mb-3 mt-3">
                             <label for="email" class="form-label">Correo Electrónico</label>
-                            <input type="email" class="form-control" name="email" id="email" required
-                                placeholder="fran@gmail.com">
+                            <input type="email" class="form-control" name="email" id="email" value="<?php if (isset($_COOKIE['user']))
+                                echo $_COOKIE['user']; ?>" required placeholder="fran@gmail.com">
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" required name="password" id="password"
-                                placeholder="********">
+                            <input type="password" class="form-control" required name="password" id="password" value="<?php if (isset($_COOKIE['pass']))
+                                echo $_COOKIE['pass']; ?>" placeholder="********">
                         </div>
                         <div class="mb-3 text-end">
                             <input type="checkbox" id="rememberMe" name="rememberMe">

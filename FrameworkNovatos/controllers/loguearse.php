@@ -5,12 +5,11 @@ try {
 
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
         // Obtener los datos del formulario
-        print_r($_POST);
         $email = $_POST['email'];
         $password = $_POST['password'];
 
         // Preparar consulta para verificar el usuario
-        $sql = "SELECT id_user, password, nombre, rol FROM usuarios WHERE email = '$email' LIMIT 1";
+        $sql = "SELECT * FROM usuarios WHERE email = '$email' LIMIT 1";
 
         $conn = new ConexionDB();
 
@@ -21,10 +20,15 @@ try {
                 // Verificar la contraseña
                 if (md5($password) === $user["password"]) {
                     // Iniciar sesión
-                    $_SESSION['user_id'] = $user['id_user'];
-                    $_SESSION['nombre'] = $user['nombre'];
-                    $_SESSION['rol'] = $user['rol'];
+                    echo $user['email'];
+                    $usuario = new Usuario($user['email'], $user['password'], $user['nombre'], $user['apellidos'], $user['fechaNac'], $user['pais'], $user['codPostal'], $user['telefono']);
+                    echo $usuario;
+                    $_SESSION['user'] = $usuario;
 
+                    if (true) {
+                        setcookie('email', $usuario->getEmail(), time() + 31 * 24 * 3600, "/");
+                        setcookie('pass', $usuario->getPassword(), time() + 31 * 24 * 3600, "/");
+                    }
                     // Redirigir al usuario autenticado
                     header("Location: ../index.php");
                     exit();
@@ -41,7 +45,6 @@ try {
             exit();
         }
     }
-
     //Si no se accede por Post se redirige a Login
     header("Location: ../login.php");
     exit();
