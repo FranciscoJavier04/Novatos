@@ -1,4 +1,7 @@
-<?php include("includes/a-config.php"); ?>
+<?php
+session_start();
+include("includes/a-config.php");
+?>
 <!DOCTYPE html>
 <html>
 
@@ -7,6 +10,7 @@
 </head>
 
 <body>
+
     <?php include("includes/navigation.php"); ?>
     <main class="container-fluid m-0">
         <div class="row min-vh-md-100">
@@ -18,17 +22,31 @@
                     <!--CF2: ¿Dónde está el h1?-->
                     <h2 class="fw-bold text-center mt-4">BIENVENIDO DE NUEVO!</h2>
                     <p class="mt-4">Introduce tus datos para disfrutar de todas nuestras funciones.</p>
-                    <form method="POST" action="user.php">
+                    <?php
+                    if (isset($_GET['error'])) {
+                        switch ($_GET['error']) {
+                            case '202':
+                                echo '<p class="error">Credenciales incorrectas</p>';
+                                break;
+                            case '999':
+                                echo '<p class="error">No se pudo completar el logueo. Por favor, inténtalo más tarde.</p>';
+                                break;
+                        }
+                    }
+                    ?>
+                    <form method="POST" action="controllers/loguearse.php">
                         <div class="mb-3 mt-3">
                             <label for="email" class="form-label">Correo Electrónico</label>
-                            <input type="email" class="form-control" id="email" required placeholder="fran@gmail.com">
+                            <input type="email" class="form-control" name="email" id="email" required
+                                placeholder="fran@gmail.com">
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" required id="password" placeholder="********">
+                            <input type="password" class="form-control" required name="password" id="password"
+                                placeholder="********">
                         </div>
                         <div class="mb-3 text-end">
-                            <input type="checkbox" id="rememberMe">
+                            <input type="checkbox" id="rememberMe" name="rememberMe">
                             <label>Recuérdame</label>
                         </div>
                         <button type="submit" class="btn btn-comun w-100 mb-2">Iniciar Sesión</button>
