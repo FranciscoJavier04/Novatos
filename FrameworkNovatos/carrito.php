@@ -1,10 +1,13 @@
-<?php include("includes/a-config.php"); ?>
+<?php
+require 'vendor/autoload.php';
+include("includes/a-config.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <?php include("includes/head-tag-contents.php"); ?>
 </head>
+
 <body class="bg-warning ">
     <?php include("includes/navigation.php"); ?>
     <div class="container w-100 p-0 my-3">
@@ -22,8 +25,8 @@
                             <!-- Descripción -->
                             <div class="col-12 col-md-5 fw-bold fst-italic my-3">
                                 <p class="mb-1">Especialidades</p>
-                                <p class="mb-1">Paella de Mariscos Tradicional 
-                                Con gambas, mejillones, cigalas y azafrán.
+                                <p class="mb-1">Paella de Mariscos Tradicional
+                                    Con gambas, mejillones, cigalas y azafrán.
                                 </p>
                             </div>
                             <!-- Botones -->
@@ -55,7 +58,8 @@
                             <!-- Descripción -->
                             <div class="col-12 col-md-5 fw-bold fst-italic my-3">
                                 <p class="mb-1">Especialidades</p>
-                                <p class="mb-1">Cordero Lechal Confitado. Con reducción de vino de Rioja y espinacas salteadas.
+                                <p class="mb-1">Cordero Lechal Confitado. Con reducción de vino de Rioja y espinacas
+                                    salteadas.
                                 </p>
                             </div>
                             <!-- Botones -->
@@ -87,7 +91,8 @@
                             <!-- Descripción -->
                             <div class="col-12 col-md-5 fw-bold fst-italic my-3">
                                 <p class="mb-1">Entrantes</p>
-                                <p class="mb-1">Bacalao a la Brasa con Crema de Guisantes. Con cebollas caramelizadas y un toque de jamón ibérico.
+                                <p class="mb-1">Bacalao a la Brasa con Crema de Guisantes. Con cebollas caramelizadas y
+                                    un toque de jamón ibérico.
                                 </p>
                             </div>
                             <!-- Botones -->
@@ -108,7 +113,8 @@
 
         <section>
             <div class="d-flex justify-content-center align-items-center">
-                <div class="text-primary rounded-5 fw-bold quitar-rounded fs-2 bg-secondary w-50 vh-max-100 w-lg-50 p-4">
+                <div
+                    class="text-primary rounded-5 fw-bold quitar-rounded fs-2 bg-secondary w-50 vh-max-100 w-lg-50 p-4">
                     <div class="text-center">
                         <p class="my-2">
                             <span class="fst-italic">PRECIO FINAL: 140€</span>

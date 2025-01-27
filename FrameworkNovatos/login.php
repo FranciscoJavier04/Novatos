@@ -1,4 +1,5 @@
 <?php
+require 'vendor/autoload.php';
 include("includes/a-config.php");
 include("includes/loginGoogle.php");
 if (isset($_SESSION['user'])) {
@@ -45,9 +46,8 @@ if (isset($_SESSION['user'])) {
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" required name="password" id="password"
-                                value="<?php if (isset($_COOKIE['pass']))
-                                    echo $_COOKIE['pass']; ?>" placeholder="********">
+                            <input type="password" class="form-control" required name="password" id="password" value="<?php if (isset($_COOKIE['pass']))
+                                echo $_COOKIE['pass']; ?>" placeholder="********">
                         </div>
                         <div class="mb-3 text-end">
                             <input type="checkbox" id="rememberMe" name="rememberMe" <?php if (isset($_COOKIE['rememberMe']))

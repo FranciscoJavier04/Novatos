@@ -1,4 +1,6 @@
-<?php include("includes/a-config.php"); ?>
+<?php
+require 'vendor/autoload.php';
+include("includes/a-config.php"); ?>
 <!DOCTYPE html>
 <html>
 
