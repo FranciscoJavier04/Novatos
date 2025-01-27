@@ -1,4 +1,5 @@
 <?php
+require 'vendor/autoload.php';
 include("includes/a-config.php");
 include("includes/loginGoogle.php");
 ?>
@@ -37,15 +38,13 @@ include("includes/loginGoogle.php");
                     <form method="POST" action="controllers/loguearse.php">
                         <div class="mt-3 mb-3">
                             <label for="email" class="form-label">Correo Electrónico</label>
-                            <input type="email" class="form-control" name="email" id="email"
-                                value="<?php if (isset($_COOKIE['user']))
-                                    echo $_COOKIE['user']; ?>" required placeholder="fran@gmail.com">
+                            <input type="email" class="form-control" name="email" id="email" value="<?php if (isset($_COOKIE['user']))
+                                echo $_COOKIE['user']; ?>" required placeholder="fran@gmail.com">
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" required name="password" id="password"
-                                value="<?php if (isset($_COOKIE['pass']))
-                                    echo $_COOKIE['pass']; ?>" placeholder="********">
+                            <input type="password" class="form-control" required name="password" id="password" value="<?php if (isset($_COOKIE['pass']))
+                                echo $_COOKIE['pass']; ?>" placeholder="********">
                         </div>
                         <div class="mb-3 text-end">
                             <input type="checkbox" id="rememberMe" name="rememberMe">
