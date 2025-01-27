@@ -1,4 +1,6 @@
-<?php include("includes/a-config.php"); ?>
+<?php
+require 'vendor/autoload.php';
+include("includes/a-config.php"); ?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -24,12 +26,17 @@
 
             <!-- Contenido Principal -->
             <div class="w-5 p-3 mx-auto text-justify carta-del col-md-9 bg-info rounded-3 text-paragraph">
-                <!-- ENTRANTES -->
                 <div class="row">
 
-                    <!-- Gestión de Usuarios -->
+                    <!-- GESTIÓN DE USUARIOS -->
                     <h1 class="mt-3" id="usuarios">Gestión de Usuarios</h1>
-                    <a href="insertar_usuario.php" class="btn btn-insertar">Insertar Usuario</a>
+
+                    <!-- Botón para abrir el modal de Insertar Usuario -->
+                    <button type="button" class="btn btn-insertar" id="abrirModalInsertar" data-bs-toggle="modal"
+                        data-bs-target="#modalUsuario">
+                        Insertar Usuario
+                    </button>
+
                     <?php
                     try {
                         include("controllers/conexion.php");
@@ -63,13 +70,16 @@
                                 echo '<td>' . $fila['pais'] . '</td>';
                                 echo '<td>' . $fila['telefono'] . '</td>';
                                 echo '<td>' . $fila['rol'] . '</td>';
+
                                 echo '<td>';
-                                echo '<a href="modificar_usuario.php?id=' . $fila['id_user'] . '" class="btn btn-modificar">Modificar</a> ';
+                                echo '<button type="button" class="btn-modificar" onclick="abrirModalModificar('
+                                    . $fila['id_user'] . ', \'' . $fila['email'] . '\', \'' . $fila['nombre'] . '\', \''
+                                    . $fila['apellidos'] . '\', \'' . $fila['pais'] . '\', \'' . $fila['telefono'] . '\', \'' . $fila['rol']
+                                    . '\')">Modificar</button>';
                                 echo '<form action="controllers/eliminarUsuario.php" method="POST">';
                                 echo '<input type="hidden" name="eliminar_id" value="' . $fila['id_user'] . '">';
-                                echo '<button type="submit" class="btn-eliminar" name="eliminar_id">Eliminar</button>';
+                                echo '<button type="submit" class="btn-eliminar">Eliminar</button>';
                                 echo '</form>';
-                                echo '</td>';
                                 echo '</td>';
                                 echo '</tr>';
                             }
@@ -85,7 +95,93 @@
                         echo '<p>Error: ' . $e->getMessage() . '</p>';
                     }
                     ?>
-                    <!-- Gestión de Platos -->
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="modalUsuario" tabindex="-1" aria-labelledby="modalUsuarioLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalUsuarioLabel">Insertar Usuario</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <form id="formUsuario" action="controllers/insertarModificarUsuario.php" method="POST">
+                                    <div class="modal-body">
+                                        <input type="hidden" id="modificarId" name="modificar_id" value="">
+
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="email" name="email" required>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="nombre" class="form-label">Nombre</label>
+                                            <input type="text" class="form-control" id="nombre" name="nombre" required>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="apellidos" class="form-label">Apellidos</label>
+                                            <input type="text" class="form-control" id="apellidos" name="apellidos"
+                                                required>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="pais" class="form-label">País</label>
+                                            <input type="text" class="form-control" id="pais" name="pais" required>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="telefono" class="form-label">Teléfono</label>
+                                            <input type="tel" class="form-control" id="telefono" name="telefono"
+                                                required>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="rol" class="form-label">Rol</label>
+                                            <select class="form-select" id="rol" name="rol" required>
+                                                <option value="Usuario">Usuario</option>
+                                                <option value="Admin">Admin</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="submit" id="submitBtn" name="insertar"
+                                            class="btn btn-primary">Guardar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bootstrap JS -->
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                    <script>
+                        const modalTitle = document.getElementById('modalUsuarioLabel');
+                        const formUsuario = document.getElementById('formUsuario');
+                        const modificarId = document.getElementById('modificarId');
+                        const submitBtn = document.getElementById('submitBtn');
+
+                        // Función para abrir el modal en modo modificar
+                        function abrirModalModificar(id, email, nombre, apellidos, pais, telefono, rol) {
+                            modalTitle.textContent = 'Modificar Usuario';
+                            modificarId.value = id;
+                            document.getElementById('email').value = email;
+                            document.getElementById('nombre').value = nombre;
+                            document.getElementById('apellidos').value = apellidos;
+                            document.getElementById('pais').value = pais;
+                            document.getElementById('telefono').value = telefono;
+                            document.getElementById('rol').value = rol;
+                            submitBtn.name = 'modificar';
+                            const modal = new bootstrap.Modal(document.getElementById('modalUsuario'));
+                            modal.show();
+                        }
+                    </script>
+
+
+                    <!-- GESTIÓN DE PLATOS -->
                     <h1 class="mt-3" id="platos">Gestión de Platos</h1>
                     <a href="insertar_plato.php" class="btn btn-insertar">Insertar Plato</a>
                     <?php

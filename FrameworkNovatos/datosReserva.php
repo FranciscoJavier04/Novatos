@@ -1,4 +1,6 @@
-<?php include("includes/a-config.php"); ?>
+<?php
+require 'vendor/autoload.php';
+include("includes/a-config.php"); ?>
 <!DOCTYPE html>
 <html>
 
@@ -53,7 +55,7 @@
                             </div>
                             <div>
                                 <label for="numPersonas" class="form-label">Diseña tu sala</label>
-                                <a href="mapaInteractivo.php"class="btn btn-comun">Sala</a>
+                                <a href="mapaInteractivo.php" class="btn btn-comun">Sala</a>
                             </div>
                         </div>
                     </div>

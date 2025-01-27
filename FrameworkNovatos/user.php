@@ -1,4 +1,6 @@
-<?php include("includes/a-config.php"); ?>
+<?php
+require 'vendor/autoload.php';
+include("includes/a-config.php"); ?>
 <!DOCTYPE html>
 <html>
 
@@ -85,7 +87,7 @@
                         </div>
                     </form>
                 </div>
-            </div> 
+            </div>
         </section>
     </main>
     <?php include("includes/footer.php"); ?>

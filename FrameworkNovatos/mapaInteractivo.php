@@ -1,12 +1,16 @@
-<?php include("includes/a-config.php"); ?>
+<?php
+require 'vendor/autoload.php';
+include("includes/a-config.php"); ?>
 <!DOCTYPE html>
+
 <head>
     <?php include("includes/head-tag-contents.php"); ?>
     <!-- Konva.js -->
     <script src="https://cdn.jsdelivr.net/npm/konva@9.2.0/konva.min.js"></script>
 </head>
+
 <body class="bg-info">
-<?php include("includes/navigation.php"); ?>
+    <?php include("includes/navigation.php"); ?>
     <!-- Contenedor principal con diseño Bootstrap -->
     <div class="container mt-4">
         <h1 class="mb-4 text-center text-danger">Diseña tu sala</h1>
@@ -214,4 +218,5 @@
         actualizarListaElementos();
     </script>
 </body>
+
 </html>
