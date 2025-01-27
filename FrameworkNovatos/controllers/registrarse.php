@@ -1,6 +1,9 @@
 <?php
+
+
 session_start();
 include("conexion.php");
+include_once("Usuario.php");
 
 try {
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -17,6 +20,8 @@ try {
         $pais = trim($_POST['pais']);
         $cod_postal = trim($_POST['cod_postal']);
         $telefono = trim($_POST['telefono']);
+
+        $user = new Usuario($email, $password, $nombre, $apellidos, $fecha_nac, $pais, $cod_postal, $telefono);
 
         if ($password !== $confirm_password) {
             header("Location: ../registro.php?error=111");
@@ -42,7 +47,8 @@ try {
                        VALUES ('$email', '$password_hashed', '$nombre', '$apellidos', '$fecha_nac', '$pais', '$cod_postal', '$telefono', 'user')";
         echo $sql_insert;
         if ($conn->ejecutarConsulta($sql_insert)) {
-            header("Location: ../login.php");
+            $_SESSION['user'] = $user;
+            header("Location: ./index.php");
             exit();
         } else {
             throw new Exception("No se pudo completar el registro. Por favor, inténtalo más tarde.");
