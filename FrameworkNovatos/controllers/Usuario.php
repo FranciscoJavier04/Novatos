@@ -122,6 +122,16 @@ class Usuario
         $this->rol = $rol;
     }
 
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    public function toString()
+    {
+        return $this->email . " " . $this->password . " " . $this->nombre . " " . $this->apellidos . " " . $this->fechaNac . " " . $this->pais . " " . $this->codPostal . " " . $this->telefono . " " . $this->rol;
+    }
+
     // Métodos adicionales
     /*
     public function saveToDatabase($conn) {

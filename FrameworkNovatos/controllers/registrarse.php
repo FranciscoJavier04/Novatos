@@ -1,9 +1,7 @@
 <?php
-
-
-session_start();
 include("conexion.php");
 include_once("Usuario.php");
+session_start();
 
 try {
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -48,7 +46,7 @@ try {
         echo $sql_insert;
         if ($conn->ejecutarConsulta($sql_insert)) {
             $_SESSION['user'] = $user;
-            header("Location: ./index.php");
+            header("Location: ../index.php");
             exit();
         } else {
             throw new Exception("No se pudo completar el registro. Por favor, inténtalo más tarde.");

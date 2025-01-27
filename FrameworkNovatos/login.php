@@ -1,6 +1,8 @@
 <?php
-session_start();
 include("includes/a-config.php");
+if (isset($_SESSION['user'])) {
+    header('location: index.php');
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -37,8 +39,8 @@ include("includes/a-config.php");
                     <form method="POST" action="controllers/loguearse.php">
                         <div class="mt-3 mb-3">
                             <label for="email" class="form-label">Correo Electrónico</label>
-                            <input type="email" class="form-control" name="email" id="email" value="<?php if (isset($_COOKIE['user']))
-                                echo $_COOKIE['user']; ?>" required placeholder="fran@gmail.com">
+                            <input type="email" class="form-control" name="email" id="email" value="<?php if (isset($_COOKIE['email']))
+                                echo $_COOKIE['email']; ?>" required placeholder="fran@gmail.com">
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">Contraseña</label>
@@ -46,7 +48,8 @@ include("includes/a-config.php");
                                 echo $_COOKIE['pass']; ?>" placeholder="********">
                         </div>
                         <div class="mb-3 text-end">
-                            <input type="checkbox" id="rememberMe" name="rememberMe">
+                            <input type="checkbox" id="rememberMe" name="rememberMe" <?php if (isset($_COOKIE['rememberMe']))
+                                echo "checked"; ?>>
                             <label>Recuérdame</label>
                         </div>
                         <button type="submit" class="mb-2 btn btn-comun w-100">Iniciar Sesión</button>
