@@ -25,7 +25,7 @@
             <!-- Contenido Principal -->
             <div class="w-5 p-3 mx-auto text-justify carta-del col-md-9 bg-info rounded-3 text-paragraph">
                 <!-- ENTRANTES -->
-                <h1 class="mb-5 text-center subtitulo-carta" id="entrantes" >Entrantes</h1>
+                <h1 class="mb-5 text-center subtitulo-carta" id="entrantes">Entrantes</h1>
                 <div class="row">
                     <div class="mb-4 row align-items-start ms-3 ">
                         <div class="col-md-4">
@@ -302,7 +302,8 @@
 
                     <div class="mb-4 row align-items-start ms-3">
                         <div class="col-md-4">
-                            <img src="assets/img/carta/CremaCatalana.png" alt="Presa Ibérica con Glaseado de Miel y Mostaza">
+                            <img src="assets/img/carta/CremaCatalana.png"
+                                alt="Presa Ibérica con Glaseado de Miel y Mostaza">
                         </div>
                         <div class="col-md-6 fs-5">
                             <span class="fw-bold">Crema Catalana con Toffee Salado. 14€</span>
@@ -330,7 +331,7 @@
                         <div class="col-md-4">
                             <img src="assets/img/carta/Helado.png" alt="Bacalao a la Brasa con Crema de Guisantes">
                         </div>
-                        <div class="col-md-6 fs-5">
+                        <div class="col-md-6 fs-5">W
                             <span class="fw-bold">Helados Artesanales. 12€</span>
                             <p>Variedad de sabores de temporada.</p>
                         </div>
@@ -343,6 +344,7 @@
         </div>
     </div>
 
-<?php include("includes/footer.php"); ?>
+    <?php include("includes/footer.php"); ?>
 </body>
+
 </html>
