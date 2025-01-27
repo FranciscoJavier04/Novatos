@@ -83,7 +83,7 @@ $google_client->addScope('email');
 $google_client->addScope('profile');
 
 include_once("./controllers/Usuario.php");
-session_start();
+
 
 Session_start();
 $login_button = '';
