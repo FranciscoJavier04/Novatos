@@ -8,7 +8,7 @@ include_once("./controllers/Usuario.php");
       <span id="titulo" class="d-inline d-md-none">ÓNEO</span>
     </a>
     <?php if (isset($_SESSION['user'])) {
-      echo $_SESSION['user']->getNombre() . " / ";
+      echo "<a href='../user.php'>" . $_SESSION['user']->getNombre() . "</a> / ";
       echo "<a href='../controllers/cerrarSesion.php'>Cerrar sesión</a>";
     }
     ?>

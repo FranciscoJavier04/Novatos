@@ -3,6 +3,7 @@ include("conexion.php");
 include_once("Usuario.php");
 session_start();
 try {
+
     if (empty($_POST['rememberMe'])) {
         setcookie("email", "", time() - 1, "/");
         setcookie("pass", "", time() - 1, "/");
