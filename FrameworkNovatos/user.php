@@ -1,6 +1,10 @@
 <?php
 require 'vendor/autoload.php';
-include("includes/a-config.php"); ?>
+include("includes/a-config.php");
+if ($_SESSION['user'] == null) {
+    header('location: login.php');
+}
+?>
 <!DOCTYPE html>
 <html>
 
@@ -19,8 +23,19 @@ include("includes/a-config.php"); ?>
                             <div class="profile-pic">
                                 <img src="/assets/img/Logo.png" alt="Imagen Usuario" class="w-100 rounded-circle">
                                 <div class="text-center text-md-start">
-                                    <p class="fs-2 fw-bold my-0">Manuel Romero</p>
-                                    <p class="fs-4 fw-bold fst-italic opacity-75">Cliente</p>
+                                    <p class="fs-2 fw-bold my-0">
+                                        <?php
+                                        echo $_SESSION['user']->getNombre() . ' ' . $_SESSION['user']->getApellidos();
+                                        ?>
+                                    </p>
+                                    <p class="fs-4 fw-bold fst-italic opacity-75">
+                                        <?php
+                                        if ($_SESSION['user']->getRol() == 'user') {
+                                            echo "Cliente";
+                                        } else
+                                            echo "Administrador";
+                                        ?>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -43,22 +58,25 @@ include("includes/a-config.php"); ?>
                             <div class="col-md-4 ">
                                 <div class="row-md-4">
                                     <label for="nombre" class="form-label">Nombre</label>
-                                    <input type="text" class="form-control" id="nombre" value="Manuel">
+                                    <input type="text" class="form-control" id="nombre"
+                                        value="<?php echo $_SESSION['user']->getNombre(); ?>">
                                 </div>
                                 <div class="row-md-4">
                                     <label for="apellidos" class="form-label">Apellidos</label>
-                                    <input type="text" class="form-control" id="apellidos" value="Romero Reyes">
+                                    <input type="text" class="form-control" id="apellidos"
+                                        value="<?php echo $_SESSION['user']->getApellidos(); ?>">
                                 </div>
                                 <div class="row-md-4">
                                     <label for="direccion" class="form-label">Dirección</label>
-                                    <input type="text" class="form-control" id="direccion" value="C/ Correos nº8 2º">
+                                    <input type="text" class="form-control" id="direccion" value="">
                                 </div>
                             </div>
 
                             <div class="col-md-4 ">
                                 <div class="row-md-4">
                                     <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" value="Fran@gmail.com">
+                                    <input type="email" class="form-control" id="email"
+                                        value="<?php echo $_SESSION['user']->getEmail(); ?>">
                                 </div>
                                 <div class="row-md-4">
                                     <label for="contraseña" class="form-label">Contraseña</label>
@@ -66,7 +84,8 @@ include("includes/a-config.php"); ?>
                                 </div>
                                 <div class="row-md-4">
                                     <label for="telefono" class="form-label">Teléfono</label>
-                                    <input type="tel" class="form-control" id="telefono" value="665588377">
+                                    <input type="tel" class="form-control" id="telefono"
+                                        value="<?php echo $_SESSION['user']->getTelefono(); ?>">
                                 </div>
                             </div>
 
