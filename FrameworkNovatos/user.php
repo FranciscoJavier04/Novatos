@@ -4,6 +4,7 @@ include("includes/a-config.php");
 if ($_SESSION['user'] == null) {
     header('location: login.php');
 }
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -26,6 +27,8 @@ if ($_SESSION['user'] == null) {
                                     <p class="fs-2 fw-bold my-0">
                                         <?php
                                         echo $_SESSION['user']->getNombre() . ' ' . $_SESSION['user']->getApellidos();
+                                        print_r($_SESSION['user']);
+
                                         ?>
                                     </p>
                                     <p class="fs-4 fw-bold fst-italic opacity-75">
@@ -67,8 +70,9 @@ if ($_SESSION['user'] == null) {
                                         value="<?php echo $_SESSION['user']->getApellidos(); ?>">
                                 </div>
                                 <div class="row-md-4">
-                                    <label for="direccion" class="form-label">Dirección</label>
-                                    <input type="text" class="form-control" id="direccion" value="">
+                                    <label for="direccion" class="form-label">Fecha nacimiento</label>
+                                    <input type="date" class="form-control" id="direccion"
+                                        value="<?php echo $_SESSION['user']->getFechaNac(); ?>">
                                 </div>
                             </div>
 
@@ -79,8 +83,17 @@ if ($_SESSION['user'] == null) {
                                         value="<?php echo $_SESSION['user']->getEmail(); ?>">
                                 </div>
                                 <div class="row-md-4">
-                                    <label for="contraseña" class="form-label">Contraseña</label>
-                                    <input type="password" class="form-control" id="contraseña" value="********">
+                                    <div>
+                                        <label for="pais" class="form-label">Pais</label>
+                                        <input type="text" class="form-control" id="pais"
+                                            value="<?php echo $_SESSION['user']->getPais(); ?>">
+                                    </div>
+                                    <div>
+                                        <label for="codPostal" class="form-label">Codigo Postal</label>
+                                        <input type="text" class="form-control" id="codPostal"
+                                            value="<?php echo $_SESSION['user']->getCodPostal(); ?>">
+                                    </div>
+
                                 </div>
                                 <div class="row-md-4">
                                     <label for="telefono" class="form-label">Teléfono</label>
@@ -90,11 +103,7 @@ if ($_SESSION['user'] == null) {
                             </div>
 
                             <div class="col-md-4 ">
-                                <div class="row-md-4">
-                                    <label for="dni" class="form-label">DNI</label>
-                                    <input type="text" class="form-control" id="dni" value="51188977F">
-                                </div>
-                                <div class="row-md-8">
+                                <div class="row-md-12">
                                     <label for="sobre-mi" class="form-label">Sobre Mí</label>
                                     <textarea class="form-control" id="sobre-mi"
                                         rows="3">Me gusta que los comercios se sepan mi nombre y se dirijan a mí con el para un mejor trato.</textarea>

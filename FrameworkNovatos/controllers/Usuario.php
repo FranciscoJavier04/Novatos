@@ -25,6 +25,11 @@ class Usuario
         $this->rol = $rol;
     }
 
+    public function __get($name)
+    {
+        return $this->$name;
+    }
+
     // Getters
     public function getId()
     {
