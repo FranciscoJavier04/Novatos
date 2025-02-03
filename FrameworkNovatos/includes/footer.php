@@ -52,7 +52,14 @@
                 <a class="fs-4 nav-link " id="avisoLegal" href="avisoLegal.php">Aviso Legal</a>
                 <a class="fs-4 nav-link" id="polPri" href="politicaPrivacidad.php">Política de Privacidad</a>
                 <a class="fs-4 nav-link" id="polCo" href="politicaCookies.php">Política de Cookies</a>
-                <a class="fs-4 nav-link " id="backend" href="backend.php">Backend</a>
+                <?php
+                if (isset($_SESSION['user']) && $_SESSION['user']->getRol() === 'admin') {
+                    echo '<div class="mt-4">';
+                    echo '<div class="lineao"></div>';
+                    echo '<a class="fs-4 nav-link mt-4" id="backend" href="backend.php">Backend</a>';
+                    echo '</div>';
+                }
+                ?>
             </div>
 
 
