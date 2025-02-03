@@ -30,7 +30,7 @@ try {
                 if (md5($password) === $user["password"]) {
                     // Iniciar sesión
 
-                    $usuario = new Usuario($user['email'], $password, $user['nombre'], $user['apellidos'], $user['fechaNac'], $user['pais'], $user['codPostal'], $user['telefono']);
+                    $usuario = new Usuario($user['email'], $password, $user['nombre'], $user['apellidos'], $user['fechaNac'], $user['pais'], $user['codPostal'], $user['telefono'], $user['rol']);
                     $usuario->setId($user['id']);
                     $_SESSION['user'] = $usuario;
 

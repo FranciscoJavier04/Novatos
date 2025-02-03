@@ -18,8 +18,9 @@ try {
         $pais = trim($_POST['pais']);
         $cod_postal = trim($_POST['cod_postal']);
         $telefono = trim($_POST['telefono']);
+        $rol = trim($_POST['rol']);
 
-        $user = new Usuario($email, $password, $nombre, $apellidos, $fecha_nac, $pais, $cod_postal, $telefono);
+        $user = new Usuario($email, $password, $nombre, $apellidos, $fecha_nac, $pais, $cod_postal, $telefono, $rol);
 
         if ($password !== $confirm_password) {
             header("Location: ../registro.php?error=111");
@@ -42,7 +43,7 @@ try {
         echo "Preparando la insercion";
         $password_hashed = md5($password); // Encriptar contraseña
         $sql_insert = "INSERT INTO usuarios (email, password, nombre, apellidos, fecha_nac, pais, cod_postal, telefono, rol) 
-                       VALUES ('$email', '$password_hashed', '$nombre', '$apellidos', '$fecha_nac', '$pais', '$cod_postal', '$telefono', 'user')";
+                       VALUES ('$email', '$password_hashed', '$nombre', '$apellidos', '$fecha_nac', '$pais', '$cod_postal', '$telefono', '$rol')";
         echo $sql_insert;
         if ($conn->ejecutarConsulta($sql_insert)) {
             $_SESSION['user'] = $user;

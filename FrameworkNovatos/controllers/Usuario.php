@@ -12,7 +12,7 @@ class Usuario
     private $telefono;
     private $rol;
 
-    public function __construct($email, $password, $nombre, $apellidos, $fechaNac, $pais, $codPostal, $telefono, $rol = 'user')
+    public function __construct($email, $password, $nombre, $apellidos, $fechaNac, $pais, $codPostal, $telefono, $rol)
     {
         $this->email = $email;
         $this->password = $password;
@@ -75,7 +75,6 @@ class Usuario
     {
         return $this->telefono;
     }
-
     public function getRol()
     {
         return $this->rol;
