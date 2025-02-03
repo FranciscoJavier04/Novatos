@@ -48,7 +48,7 @@ if (isset($_GET["code"])) {
 
     $conn = new ConexionDB();
 
-    $sql = "SELECT iduser FROM user WHERE email = '$email'";
+    $sql = "SELECT id_user FROM usuarios WHERE email = '$email'";
 
     if (!$resultado = $conn->query($sql)) {
       // ¡Oh, no! La consulta falló. 

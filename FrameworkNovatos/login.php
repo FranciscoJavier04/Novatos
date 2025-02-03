@@ -41,8 +41,9 @@ if (isset($_SESSION['user'])) {
                     <form method="POST" action="controllers/loguearse.php">
                         <div class="mt-3 mb-3">
                             <label for="email" class="form-label">Correo Electrónico</label>
-                            <input type="email" class="form-control" name="email" id="email" value="<?php if (isset($_COOKIE['user']))
-                                echo $_COOKIE['user']; ?>" required placeholder="fran@gmail.com">
+                            <input type="email" class="form-control" name="email" id="email" value="<?php if (isset($_COOKIE['email'])) {
+                                echo $_COOKIE['email'];
+                            } ?>" required placeholder="fran@gmail.com">
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">Contraseña</label>
