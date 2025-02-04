@@ -18,7 +18,7 @@ try {
         $pais = trim($_POST['pais']);
         $cod_postal = trim($_POST['cod_postal']);
         $telefono = trim($_POST['telefono']);
-        $rol = trim($_POST['rol']);
+        $rol = "user";
 
         $user = new Usuario($email, $password, $nombre, $apellidos, $fecha_nac, $pais, $cod_postal, $telefono, $rol);
 
