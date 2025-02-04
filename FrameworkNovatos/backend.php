@@ -286,7 +286,7 @@ include("includes/a-config.php"); ?>
                                 echo '<td>' . number_format($fila['precio'], 2) . ' €</td>';
                                 echo '<td><img src="images/' . $fila['imagen'] . '" alt="Imagen de ' . $fila['nombre_plato'] . '" class="imagen-plato"></td>';
                                 echo '<td>';
-                                echo '<button type="button" class="btn-modificar" onclick="abrirModalModificarPlato(' . $fila['id_plato'] . ', \'' . $fila['nombre_plato'] . '\', \'' . $fila['categoria'] . '\', ' . $fila['precio'] . ', \'' . $fila['imagen'] . '\')">Modificar</button>';
+                                echo '<button type="button" class="btn-modificar" onclick="abrirModalModificarPlato(' . $fila['id_plato'] . ', \'' . $fila['nombre_plato'] . '\', \'' . $fila['descripcion'] . '\', \'' . $fila['categoria'] . '\', ' . $fila['precio'] . ', \'' . $fila['imagen'] . '\')">Modificar</button>';
                                 echo '<form action="controllers/eliminarPlato.php" method="POST">';
                                 echo '<input type="hidden" name="eliminar_id_plato" value="' . $fila['id_plato'] . '">';
                                 echo '<button type="submit" class="btn-eliminar">Eliminar</button>';
@@ -326,6 +326,11 @@ include("includes/a-config.php"); ?>
                                             <label for="nombre_plato" class="form-label">Nombre del Plato</label>
                                             <input type="text" class="form-control" id="nombre_plato"
                                                 name="nombre_plato" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="descripcion" class="form-label">Descripcion del Plato</label>
+                                            <input type="text" class="form-control" id="descripcion" name="descripcion"
+                                                required>
                                         </div>
 
                                         <div class="mb-3">
@@ -391,10 +396,11 @@ include("includes/a-config.php"); ?>
                         const modificarIdP = document.getElementById('modificarId');
                         const submitBtnP = document.getElementById('submitBtnP');
 
-                        function abrirModalModificarPlato(id, nombre, categoria, precio, imagen) {
+                        function abrirModalModificarPlato(id, nombre, descripcion, categoria, precio, imagen) {
                             modalTitleP.textContent = 'Modificar Plato';
                             modificarIdP.value = id;
                             document.getElementById('nombre_plato').value = nombre;
+                            document.getElementById('descripcion').value = descripcion;
                             document.getElementById('categoria').value = categoria;
                             document.getElementById('precio').value = precio;
 
