@@ -71,11 +71,12 @@ include("controllers/conexion.php"); // Asegúrate de que la ruta sea correcta
                                     <div class="modal-body">
                                         <form action="insertarModificarValoracion.php" method="POST">
                                             <input type="hidden" name="id_plato" value="<?php echo $fila['id_plato']; ?>">
-                                            <input type="hidden" name="id_user" value="<?php echo $_SESSION['id_user']; ?>">
+                                            <input type="hidden" name="id_user"
+                                                value="<?php echo $_SESSION['user']->getId(); ?>">
                                             <div class="mb-3">
                                                 <label for="opinion<?php echo $fila['id_plato']; ?>" class="form-label">Tu
                                                     opinión</label>
-                                                <textarea class="form-control" name="opinion"
+                                                <textarea class="form-control" name="comentario"
                                                     id="opinion<?php echo $fila['id_plato']; ?>" rows="3"></textarea>
                                             </div>
                                             <div class="mb-3">
@@ -87,7 +88,8 @@ include("controllers/conexion.php"); // Asegúrate de que la ruta sea correcta
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary"
                                                     data-bs-dismiss="modal">Cerrar</button>
-                                                <button type="submit" class="btn btn-primary">Enviar</button>
+                                                <button type="submit" name="insertar"
+                                                    class="btn btn-primary">Enviar</button>
                                             </div>
                                         </form>
                                     </div>
