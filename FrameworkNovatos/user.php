@@ -72,6 +72,11 @@ if ($_SESSION['user'] == null) {
                                     <input type="date" class="form-control" id="direccion"
                                         value="<?php echo $_SESSION['user']->getFechaNac(); ?>">
                                 </div>
+                                <div class="row-md-4">
+                                    <label for="telefono" class="form-label">Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono"
+                                        value="<?php echo $_SESSION['user']->getTelefono(); ?>">
+                                </div>
                             </div>
 
                             <div class="col-md-6">
@@ -81,35 +86,48 @@ if ($_SESSION['user'] == null) {
                                         value="<?php echo $_SESSION['user']->getEmail(); ?>">
                                 </div>
                                 <div class="row-md-4">
-                                    <div>
-                                        <label for="pais" class="form-label">Pais</label>
-                                        <input type="text" class="form-control" id="pais"
-                                            value="<?php echo $_SESSION['user']->getPais(); ?>">
-                                    </div>
-                                    <div>
-                                        <label for="codPostal" class="form-label">Codigo Postal</label>
-                                        <input type="text" class="form-control" id="codPostal"
-                                            value="<?php echo $_SESSION['user']->getCodPostal(); ?>">
-                                    </div>
-
+                                    <label for="pais" class="form-label">Pais</label>
+                                    <input type="text" class="form-control" id="pais"
+                                        value="<?php echo $_SESSION['user']->getPais(); ?>">
                                 </div>
                                 <div class="row-md-4">
-                                    <label for="telefono" class="form-label">Teléfono</label>
-                                    <input type="tel" class="form-control" id="telefono"
-                                        value="<?php echo $_SESSION['user']->getTelefono(); ?>">
+                                    <label for="codPostal" class="form-label">Codigo Postal</label>
+                                    <input type="text" class="form-control" id="codPostal"
+                                        value="<?php echo $_SESSION['user']->getCodPostal(); ?>">
                                 </div>
-                            </div>
-                            <div class="text-end my-3">
-                                <button type="submit" class="btn btn-comun">Guardar</button>
+                                <div class="row-md-4 text-end">
+                                    <button type="submit" class="btn mt-5 btn-comun">Guardar</button>
+                                </div>
                             </div>
                         </div>
                     </form>
                 </div>
-                <div class="col-md-4 ">
-                    <div class="row-md-12">
-                        <label for="sobre-mi" class="form-label">Sobre Mí</label>
-                        <textarea class="form-control" id="sobre-mi"
-                            rows="3">Me gusta que los comercios se sepan mi nombre y se dirijan a mí con el para un mejor trato.</textarea>
+                <div class="col-md-4 d-flex align-items-center">
+
+                    <div class="separador-pass border-end me-3">
+                        <!-- Estilo para el separador -->
+                    </div>
+
+                    <div class="w-100">
+                        <h5>Cambiar Contraseña</h5>
+                        <form method="POST" action="cambiar_contraseña.php">
+                            <div>
+                                <label for="current_password" class="form-label">Contraseña actual</label>
+                                <input type="password" class="form-control" id="current_password"
+                                    name="current_password" required>
+                            </div>
+                            <div>
+                                <label for="new_password" class="form-label">Nueva contraseña</label>
+                                <input type="password" class="form-control" id="new_password" name="new_password"
+                                    required>
+                            </div>
+                            <div>
+                                <label for="confirm_new_password" class="form-label">Repite nueva contraseña</label>
+                                <input type="password" class="form-control" id="confirm_new_password"
+                                    name="confirm_new_password" required>
+                            </div>
+                            <button type="submit" class="btn btn-comun">Guardar</button>
+                        </form>
                     </div>
                 </div>
             </div>
