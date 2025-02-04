@@ -68,6 +68,7 @@ if (isset($_GET["code"])) {
         $_SESSION['id_user'] = $usuario['id_user'];
       } else
         $resultado->free();
+      header("Location: registro.php");
     }
   }
 }
