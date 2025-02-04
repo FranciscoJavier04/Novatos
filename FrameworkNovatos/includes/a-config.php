@@ -87,3 +87,24 @@ include_once("./controllers/Usuario.php");
 
 Session_start();
 $login_button = '';
+
+?>
+<div class="modal fade" id="cookieModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="cookieModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="cookieModalLabel">Uso de Cookies</h5>
+			</div>
+			<div class="modal-body">
+				<p>Este sitio web utiliza cookies para mejorar tu experiencia de navegación, personalizar contenido y analizar nuestro tráfico.
+					Al hacer clic en 'Aceptar', consientes el uso de cookies. Puedes cambiar tus preferencias en cualquier momento.
+					Más información en nuestra <a href="politicaCookies.php">Política de Cookies</a>.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" id="acceptCookies">Aceptar</button>
+				<button type="button" class="btn btn-primary" id="rejectCookies">Rechazar</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="../controllers/cookiealert.js"></script>

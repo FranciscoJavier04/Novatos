@@ -7,11 +7,6 @@ include_once("./controllers/Usuario.php");
       <img src="assets/img/LogoSinFondo.png" alt="Logo" id="logo" class="d-none d-md-inline">
       <span id="titulo" class="d-inline d-md-none">ÓNEO</span>
     </a>
-    <?php if (isset($_SESSION['user'])) {
-      echo "<a href='../user.php'>" . $_SESSION['user']->getNombre() . "</a> / ";
-      echo "<a href='../controllers/cerrarSesion.php'>Cerrar sesión</a>";
-    }
-    ?>
     <button class="navbar-toggler border-0 fs-4 text-danger" type="button" data-bs-toggle="collapse"
       data-bs-target="#navbar">
       <i class="fas fa-bars"></i>
@@ -46,6 +41,19 @@ include_once("./controllers/Usuario.php");
           if (!isset($_SESSION['user'])) {
             ?>
             <a class="nav-link ms-3 me-3 fs-4 text-danger" href="login.php"><i class="fas fa-user"></i></a><?php
+          } else {
+            $imagen_base64 = base64_encode($_SESSION['user']->imagen);
+
+            echo "
+              <div class='dropdown'>
+                  <button class='btn btn-secondary dropdown-toggle' type='button' id='dropdownMenuButton' data-bs-toggle='dropdown' aria-expanded='false'>
+                      <img src='data:image/png;base64,{$imagen_base64}' class='img-nav rounded-circle' alt='Imagen del Usuario' style='width: 40px; height: 40px;' />
+                  </button>
+                  <ul class='dropdown-menu' aria-labelledby='dropdownMenuButton'>
+                      <li><a class='dropdown-item' href='../user.php'>Perfil</a></li>
+                      <li><a class='dropdown-item' href='../controllers/cerrarSesion.php'>Cerrar sesión</a></li>
+                  </ul>
+              </div>";
           }
           ?>
         </li>

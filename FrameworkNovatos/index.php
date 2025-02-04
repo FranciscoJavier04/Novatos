@@ -52,6 +52,9 @@ include("includes/a-config.php"); ?>
                 </div>
                 <div class="col-md-6 p-0">
                     <p>
+                        <?php
+                        print_r($_SESSION['user']->toString());
+                        ?>
                         Estoy seguro de que has visto el Padrino, uno de los nuestros o cualquier película de Mafiosos.
                         Pues hoy os traigo Comiendo en el RESTAURANTE DE LA MAFIA en Marbella.
                     </p>
