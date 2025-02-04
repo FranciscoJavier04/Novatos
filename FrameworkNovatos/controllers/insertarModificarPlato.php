@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $imagen = "";
         if (isset($_FILES['imagen']) && $_FILES['imagen']['error'] == 0) {
-            $imagen = "uploads/" . basename($_FILES['imagen']['name']);
+            $imagen = "assets/img/carta/" . basename($_FILES['imagen']['name']);
             move_uploaded_file($_FILES['imagen']['tmp_name'], "../" . $imagen);
         }
 

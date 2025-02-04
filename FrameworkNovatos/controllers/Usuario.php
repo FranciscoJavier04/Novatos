@@ -12,7 +12,9 @@ class Usuario
     private $telefono;
     private $rol;
 
-    public function __construct($email, $password, $nombre, $apellidos, $fechaNac, $pais, $codPostal, $telefono, $rol)
+    private $imagen;
+
+    public function __construct($email, $password, $nombre, $apellidos, $fechaNac, $pais, $codPostal, $telefono, $rol, $imagen)
     {
         $this->email = $email;
         $this->password = $password;
@@ -23,11 +25,17 @@ class Usuario
         $this->codPostal = $codPostal;
         $this->telefono = $telefono;
         $this->rol = $rol;
+        $this->imagen = $imagen;
     }
 
     public function __get($name)
     {
         return $this->$name;
+    }
+
+    public function __set($name, $value)
+    {
+        return $this->$name = $value;
     }
 
     // Getters
