@@ -27,8 +27,6 @@ if ($_SESSION['user'] == null) {
                                     <p class="fs-2 fw-bold my-0">
                                         <?php
                                         echo $_SESSION['user']->getNombre() . ' ' . $_SESSION['user']->getApellidos();
-                                        print_r($_SESSION['user']);
-
                                         ?>
                                     </p>
                                     <p class="fs-4 fw-bold fst-italic opacity-75">
@@ -52,13 +50,13 @@ if ($_SESSION['user'] == null) {
         <section>
             <!-- Sección de información -->
             <div class="row justify-content-center border border-dark mx-md-1 my-3">
-                <div class="col-md-12 ">
+                <div class="col-md-8 ">
 
                     <form>
                         <h5>INFO</h5>
                         <div class="separador-user mb-3"></div>
                         <div class="row">
-                            <div class="col-md-4 ">
+                            <div class="col-md-6">
                                 <div class="row-md-4">
                                     <label for="nombre" class="form-label">Nombre</label>
                                     <input type="text" class="form-control" id="nombre"
@@ -76,7 +74,7 @@ if ($_SESSION['user'] == null) {
                                 </div>
                             </div>
 
-                            <div class="col-md-4 ">
+                            <div class="col-md-6">
                                 <div class="row-md-4">
                                     <label for="email" class="form-label">Email</label>
                                     <input type="email" class="form-control" id="email"
@@ -101,19 +99,18 @@ if ($_SESSION['user'] == null) {
                                         value="<?php echo $_SESSION['user']->getTelefono(); ?>">
                                 </div>
                             </div>
-
-                            <div class="col-md-4 ">
-                                <div class="row-md-12">
-                                    <label for="sobre-mi" class="form-label">Sobre Mí</label>
-                                    <textarea class="form-control" id="sobre-mi"
-                                        rows="3">Me gusta que los comercios se sepan mi nombre y se dirijan a mí con el para un mejor trato.</textarea>
-                                </div>
+                            <div class="text-end my-3">
+                                <button type="submit" class="btn btn-comun">Guardar</button>
                             </div>
                         </div>
-                        <div class="text-end my-3">
-                            <button type="submit" class="btn btn-comun">Guardar</button>
-                        </div>
                     </form>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="row-md-12">
+                        <label for="sobre-mi" class="form-label">Sobre Mí</label>
+                        <textarea class="form-control" id="sobre-mi"
+                            rows="3">Me gusta que los comercios se sepan mi nombre y se dirijan a mí con el para un mejor trato.</textarea>
+                    </div>
                 </div>
             </div>
         </section>
