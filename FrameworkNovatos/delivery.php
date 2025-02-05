@@ -54,47 +54,8 @@ include("controllers/conexion.php"); // Asegúrate de que la ruta sea correcta
                             <div class="col-md-2">
                                 <a href="carrito.php" class="btn btn-del">AÑADIR</a>
                             </div>
-                        </div>
 
-                        <!-- Modal -->
-                        <div class="modal fade" id="modalOpinion<?php echo $fila['id_plato']; ?>" tabindex="-1"
-                            aria-labelledby="modalLabel<?php echo $fila['id_plato']; ?>" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="modalLabel<?php echo $fila['id_plato']; ?>">Opina sobre
-                                            <?php echo $fila['nombre_plato']; ?>
-                                        </h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form action="insertarModificarValoracion.php" method="POST">
-                                            <input type="hidden" name="id_plato" value="<?php echo $fila['id_plato']; ?>">
-                                            <input type="hidden" name="id_user"
-                                                value="<?php echo $_SESSION['user']->getId(); ?>">
-                                            <div class="mb-3">
-                                                <label for="opinion<?php echo $fila['id_plato']; ?>" class="form-label">Tu
-                                                    opinión</label>
-                                                <textarea class="form-control" name="comentario"
-                                                    id="opinion<?php echo $fila['id_plato']; ?>" rows="3"></textarea>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="valoracion<?php echo $fila['id_plato']; ?>"
-                                                    class="form-label">Valoración (1-10)</label>
-                                                <input type="number" class="form-control" name="valoracion"
-                                                    id="valoracion<?php echo $fila['id_plato']; ?>" min="1" max="10">
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary"
-                                                    data-bs-dismiss="modal">Cerrar</button>
-                                                <button type="submit" name="insertar"
-                                                    class="btn btn-primary">Enviar</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     <?php } ?>
                 </div>
