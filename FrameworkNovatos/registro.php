@@ -13,21 +13,21 @@ if (isset($_SESSION['user'])) {
 
 <body>
     <?php include("includes/navigation.php"); ?>
-    <main class="container-fluid m-0">
+    <main class="m-0 container-fluid">
         <div class="row min-vh-100">
 
-            <div class="container-fluid col-md-6 d-none d-md-block p-0">
+            <div class="p-0 container-fluid col-md-6 d-none d-md-block">
                 <div class="d-none bg-login h-100 rounded-3 rounded-start d-md-block"></div>
             </div>
 
-            <div class="col-md-6 d-flex align-items-center justify-content-center my-5">
-                <div class="login-container text-left">
+            <div class="my-5 col-md-6 d-flex align-items-center justify-content-center">
+                <div class="text-left login-container">
                     <div class="mt-4">
                         <img class="rounded-4 w-100" src="/assets/img/logo-login.png" alt="Logo Óneo">
                     </div>
                     <div class="text-center">
 
-                        <h2 class="fw-bold mt-2">REGISTRARSE</h2>
+                        <h2 class="mt-2 fw-bold">REGISTRARSE</h2>
                         <p class="mt-3">Introduce tus datos para disfrutar de todas nuestras funciones.</p>
                         <?php
                         if (isset($_GET['error'])) {
@@ -92,7 +92,15 @@ if (isset($_SESSION['user'])) {
                                     placeholder="14900">
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-comun w-100 mt-3">Registrarse</button>
+                        <div class="mb-3">
+                            <div class="col-6">
+                                <label for="captcha">Introduce el CAPTCHA:</label>
+                                <img src="generatecaptcha.php" alt="CAPTCHA" class="img-fluid w-50" /> <!-- Utiliza clases de Bootstrap para ajustar el tamaño -->
+                                <br>
+                                <input type="text" name="captcha" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="mt-3 btn btn-comun w-100">Registrarse</button>
                         <p class="mt-3">¿Ya tienes cuenta? <a href="login.php">Iniciar Sesión</a></p>
 
                     </form>
