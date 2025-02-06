@@ -3,7 +3,8 @@ require 'vendor/autoload.php';
 include("includes/a-config.php");
 if (isset($_SESSION['user'])) {
     header('location: index.php');
-} ?>
+}
+?>
 <!DOCTYPE html>
 <html>
 
@@ -40,6 +41,9 @@ if (isset($_SESSION['user'])) {
                                     break;
                                 case '999':
                                     echo '<p class="error">No se pudo completar el registro. Por favor, inténtalo más tarde.</p>';
+                                    break;
+                                case '232':
+                                    echo '<p class="error">El captcha no coincide</p>';
                                     break;
                             }
                         }
@@ -95,12 +99,12 @@ if (isset($_SESSION['user'])) {
                         <div class="mb-3">
                             <div class="col-6">
                                 <label for="captcha">Introduce el CAPTCHA:</label>
-                                <img src="generatecaptcha.php" alt="CAPTCHA" class="img-fluid w-50" /> <!-- Utiliza clases de Bootstrap para ajustar el tamaño -->
-                                <br>
-                                <input type="text" name="captcha" required>
+                                <img src="generatecaptcha.php" alt="CAPTCHA" class="img-fluid w-50" />
+                                <input type="text" id="captcha" name="captcha_challenge" pattern="[A-Z]{6}">
                             </div>
                         </div>
-                        <button type="submit" class="mt-3 btn btn-comun w-100">Registrarse</button>
+                        <button type="submit" id="submitBtn" class="mt-3 btn btn-comun w-100">Registrarse</button>
+
                         <p class="mt-3">¿Ya tienes cuenta? <a href="login.php">Iniciar Sesión</a></p>
 
                     </form>
