@@ -1,4 +1,6 @@
 <?php
+include_once("conexion.php");
+session_start();
 class Usuario
 {
     private $id_user;
@@ -26,6 +28,39 @@ class Usuario
         $this->telefono = $telefono;
         $this->rol = $rol;
         $this->imagen = $imagen;
+    }
+
+    public static function recuperarSesion($id)
+    {
+        $sql = "SELECT * FROM usuarios WHERE id_user = $id";
+
+        $conn = new ConexionDB();
+
+        if ($result = $conn->ejecutarConsulta($sql)) {
+            $conn->cerrarConexion();
+            if ($result->num_rows === 1) {
+                $user = $result->fetch_assoc();
+
+                // Iniciar sesión
+
+                $usuario = new Usuario(
+                    $user['email'],
+                    $user['password'],
+                    $user['nombre'],
+                    $user['apellidos'],
+                    $user['fecha_nac'],
+                    $user['pais'],
+                    $user['cod_postal'],
+                    $user['telefono'],
+                    $user['rol'],
+                    $user['imagen']
+                );
+
+                $usuario->id_user = $user['id_user'];
+                $_SESSION['user'] = $usuario;
+            }
+        }
+        return $user;
     }
 
     public function __get($name)

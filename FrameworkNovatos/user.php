@@ -34,7 +34,7 @@ $imagen_base64 = base64_encode($_SESSION['user']->imagen);
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-7 justify-content-md-start justify-content-center d-flex">
+                        <div class="col-md-7 justify-content-md-end justify-content-end ">
                             <input type="file" id="fileInput" accept="image/*" class="d-none">
                             <button class="btn btn-primary"
                                 onclick="document.getElementById('fileInput').click()">Seleccionar Foto</button>
