@@ -7,21 +7,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     document.getElementById("acceptCookies").addEventListener("click", function () {
-        setCookie("aceptarCookie", "true", 365); // Guardamos la cookie con valor "true"
+        setCookie("aceptarCookie", "true"); // Guardamos la cookie de sesión
         cookieModal.hide(); // Ocultamos el modal
     });
 
     document.getElementById("rejectCookies").addEventListener("click", function () {
-        setCookie("aceptarCookie", "false", 365); // Guardamos la cookie con valor "false"
+        setCookie("aceptarCookie", "false"); // Guardamos la cookie de sesión
         cookieModal.hide(); // Ocultamos el modal
     });
 
-    // Función para establecer cookies
-    function setCookie(cname, cvalue, exdays) {
-        var d = new Date();
-        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000)); // Establecemos la fecha de expiración
-        var expires = "expires=" + d.toUTCString();
-        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/"; // Guardamos la cookie
+    // Función para establecer cookies (sin expiración para que sea de sesión)
+    function setCookie(cname, cvalue) {
+        document.cookie = cname + "=" + cvalue + ";path=/"; // Guardamos la cookie sin expiración
     }
 
     // Función para obtener cookies
@@ -30,10 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var decodedCookie = decodeURIComponent(document.cookie);
         var ca = decodedCookie.split(';');
         for (var i = 0; i < ca.length; i++) {
-            var c = ca[i];
-            while (c.charAt(0) === ' ') {
-                c = c.substring(1); // Eliminamos el espacio extra al inicio
-            }
+            var c = ca[i].trim();
             if (c.indexOf(name) === 0) {
                 return c.substring(name.length, c.length); // Retornamos el valor de la cookie
             }
