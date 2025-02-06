@@ -41,7 +41,7 @@ class Usuario
     // Getters
     public function getId()
     {
-        return $this->id;
+        return $this->id_user;
     }
 
     public function getEmail()
