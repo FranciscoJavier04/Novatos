@@ -1,5 +1,6 @@
 <?php
 require 'vendor/autoload.php';
+include("controllers/conexion.php");
 include("includes/a-config.php");
 
 // SI NO EXISTE UNA SESION O ESTA ES DE ROL "USER" NO SE PODRA ACCEDER A EL BACKEND, SOLO PODRA ENTRAR EL ROL "ADMIN"
@@ -47,7 +48,6 @@ if (!isset($_SESSION['user']) || $_SESSION['user']->getRol() == 'user') {
 
                     <?php
                     try {
-                        include("controllers/conexion.php");
                         $db = new ConexionDB();
 
                         $sql = "SELECT * FROM usuarios";
