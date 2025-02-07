@@ -46,8 +46,6 @@ try {
                     $usuario->id_user = $user['id_user'];
                     $_SESSION['user'] = $usuario;
 
-                    print_r($usuario);
-                    print_r($_SESSION['user']);
                     if (!empty($_POST['rememberMe'])) {
                         setcookie('email', $usuario->getEmail(), time() + 31 * 24 * 3600, "/");
                         setcookie('pass', $password, time() + 31 * 24 * 3600, "/");

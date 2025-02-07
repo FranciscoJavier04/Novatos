@@ -26,7 +26,7 @@ $imagen_base64 = base64_encode($_SESSION['user']->imagen);
                                 <?php echo "<img src='data:image/png;base64,{$imagen_base64}' class='w-100 rounded-circle' alt='Imagen del Usuario' />"; ?>
                                 <div class="text-center text-md-start">
                                     <p class="fs-2 fw-bold my-0">
-                                        <?php echo $_SESSION['user']->getNombre() . ' ' . $_SESSION['user']->getApellidos(); ?>
+                                        <?php echo $_SESSION['user']->id_user . ' ' . $_SESSION['user']->getNombre() . ' ' . $_SESSION['user']->getApellidos(); ?>
                                     </p>
                                     <p class="fs-4 fw-bold fst-italic opacity-75">
                                         <?php echo ($_SESSION['user']->getRol() == 'user') ? "Cliente" : "Administrador"; ?>
@@ -34,8 +34,12 @@ $imagen_base64 = base64_encode($_SESSION['user']->imagen);
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-7 justify-content-md-start justify-content-center d-flex">
-                            <button class="btn btn-comun my-auto px-5">Cargar Foto</button>
+                        <div class="col-md-7 justify-content-md-end justify-content-end ">
+                            <input type="file" id="fileInput" accept="image/*" class="d-none">
+                            <button class="btn btn-primary"
+                                onclick="document.getElementById('fileInput').click()">Seleccionar Foto</button>
+                            <p id="fileName" class="mt-2"></p>
+                            <button class="btn btn-success mt-3" onclick="uploadImage()">Subir Foto</button>
                         </div>
                     </div>
                 </div>
@@ -123,6 +127,7 @@ $imagen_base64 = base64_encode($_SESSION['user']->imagen);
             </div>
         </section>
     </main>
+    <script src="juegos/scripts/subirFoto.js"></script>
     <?php include("includes/footer.php"); ?>
 </body>
 
