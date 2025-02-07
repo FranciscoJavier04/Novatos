@@ -3,8 +3,8 @@ include_once("conexion.php");
 include_once("Usuario.php");
 session_start();
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+/*error_reporting(E_ALL);
+ini_set('display_errors', 1);*/
 
 // Verificar si se subió correctamente el archivo
 if ($_FILES['image']['error'] !== UPLOAD_ERR_OK) {
