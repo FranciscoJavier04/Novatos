@@ -185,6 +185,13 @@ img-nav {
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
+.sidebar-back {
+  position: sticky; /* Se fija en el viewport */
+  top: 140px; /* Espaciado desde la parte superior */
+  height: 53rem; /* Limita la altura del sidebar */
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
 .carta-del img {
   width: 150px;
   height: 100px;
@@ -199,6 +206,13 @@ img-nav {
   background-position: center;
 }
 
+.body-back {
+  background-image: url("/assets/img/1.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
 .carta-del {
   width: 70%;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
@@ -271,35 +285,17 @@ img-nav {
   border: 1px solid black;
 }
 
-td {
+.tdback {
   padding: 5px;
   text-align: center;
   border: 1px solid black;
 }
 
-th {
+.thback {
   padding: 5px;
   text-align: center;
   border: 1px solid black;
   background-color: #f4f4f4;
 }
 
-.btn {
-  padding: 5px 10px;
-  text-decoration: none;
-  color: white;
-  border-radius: 5px;
-  margin: 2px;
-}
 
-.btn-modificar {
-  background-color: #007bff;
-}
-
-.btn-eliminar {
-  background-color: #dc3545;
-}
-
-.btn-insertar {
-  background-color: #28a745;
-}

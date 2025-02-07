@@ -1,6 +1,14 @@
 <?php
 require 'vendor/autoload.php';
-include("includes/a-config.php"); ?>
+include("includes/a-config.php");
+
+// SI NO EXISTE UNA SESION O ESTA ES DE ROL "USER" NO SE PODRA ACCEDER A EL BACKEND, SOLO PODRA ENTRAR EL ROL "ADMIN"
+if (!isset($_SESSION['user']) || $_SESSION['user']->getRol() == 'user') {
+    header("Location: index.php");
+    exit();
+}
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -9,23 +17,23 @@ include("includes/a-config.php"); ?>
 
 </head>
 
-<body class="body-del align-items-center text-warning ">
+<body class="body-back align-items-center text-black ">
 
     <?php include("includes/navigation.php"); ?>
     <div class="p-4 mb-4 container-del d-flex">
         <div class="row">
             <!-- Sidebar de Categorías -->
-            <div class="p-3 sidebar-del col-md-3 bg-warning rounded-3 text-dark d-md-block d-none">
+            <div class="p-3 sidebar-back col-md-3 bg-info rounded-3 text-warning d-md-block d-none">
                 <h1 class="mb-4 text-center titulo-sidebar">Backend</h1>
                 <nav class="nav flex-column align-items-center">
-                    <a class="mb-4 menu-item-del fs-5 text-dark rounded-3" href="#usuarios">Usuarios</a>
-                    <a class="mb-4 menu-item-del fs-5 text-dark rounded-3" href="#platos">Platos</a>
-                    <a class="mb-4 menu-item-del fs-5 text-dark rounded-3" href="#valoraciones">Valoraciones</a>
+                    <a class="mb-4 menu-item-del fs-5 text-warning rounded-3" href="#usuarios">Usuarios</a>
+                    <a class="mb-4 menu-item-del fs-5 text-warning rounded-3" href="#platos">Platos</a>
+                    <a class="mb-4 menu-item-del fs-5 text-warning rounded-3" href="#valoraciones">Valoraciones</a>
                 </nav>
             </div>
 
             <!-- Contenido Principal -->
-            <div class="w-5 p-3 mx-auto text-justify carta-del col-md-9 bg-info rounded-3 text-paragraph">
+            <div class="w-5 p-3 mx-auto text-justify carta-del col-md-9 bg-warning rounded-3 text-paragraph">
                 <div class="row">
 
                     <!-- GESTIÓN DE USUARIOS -->
@@ -49,29 +57,29 @@ include("includes/a-config.php"); ?>
                             echo '<table class="tabla-backend">';
                             echo '<thead>';
                             echo '<tr>';
-                            echo '<th>ID</th>';
-                            echo '<th>Email</th>';
-                            echo '<th>Nombre</th>';
-                            echo '<th>Apellidos</th>';
-                            echo '<th>País</th>';
-                            echo '<th>Teléfono</th>';
-                            echo '<th>Rol</th>';
-                            echo '<th>Acciones</th>';
+                            echo '<th class="thback">ID</th>';
+                            echo '<th class="thback">Email</th>';
+                            echo '<th class="thback">Nombre</th>';
+                            echo '<th class="thback">Apellidos</th>';
+                            echo '<th class="thback">País</th>';
+                            echo '<th class="thback">Teléfono</th>';
+                            echo '<th class="thback">Rol</th>';
+                            echo '<th class="thback">Acciones</th>';
                             echo '</tr>';
                             echo '</thead>';
                             echo '<tbody>';
 
                             while ($fila = $resultado->fetch_assoc()) {
                                 echo '<tr>';
-                                echo '<td>' . $fila['id_user'] . '</td>';
-                                echo '<td>' . $fila['email'] . '</td>';
-                                echo '<td>' . $fila['nombre'] . '</td>';
-                                echo '<td>' . $fila['apellidos'] . '</td>';
-                                echo '<td>' . $fila['pais'] . '</td>';
-                                echo '<td>' . $fila['telefono'] . '</td>';
-                                echo '<td>' . $fila['rol'] . '</td>';
+                                echo '<td class="tdback">' . $fila['id_user'] . '</td>';
+                                echo '<td class="tdback">' . $fila['email'] . '</td>';
+                                echo '<td class="tdback">' . $fila['nombre'] . '</td>';
+                                echo '<td class="tdback">' . $fila['apellidos'] . '</td>';
+                                echo '<td class="tdback">' . $fila['pais'] . '</td>';
+                                echo '<td class="tdback">' . $fila['telefono'] . '</td>';
+                                echo '<td class="tdback">' . $fila['rol'] . '</td>';
 
-                                echo '<td>';
+                                echo '<td class="tdback">';
                                 echo '<button type="button" class="btn-modificar" onclick="abrirModalModificarUsuario('
                                     . $fila['id_user'] . ', \'' . $fila['email'] . '\', \'' . $fila['nombre'] . '\', \'' . $fila['apellidos']
                                     . '\', \'' . $fila['pais'] . '\', \'' . $fila['telefono'] . '\', \'' . $fila['fecha_nac'] . '\', \''
@@ -251,7 +259,7 @@ include("includes/a-config.php"); ?>
 
 
                     <!-- GESTIÓN DE PLATOS -->
-                    <h1 class="mt-3" id="platos">Gestión de Platos</h1>
+                    <h1 class="mt-5" id="platos">Gestión de Platos</h1>
                     <!-- Botón para abrir el modal de Insertar Usuario -->
                     <button type="button" class="btn btn-insertar" id="abrirModalInsertar" data-bs-toggle="modal"
                         data-bs-target="#modalPlato">
@@ -268,24 +276,24 @@ include("includes/a-config.php"); ?>
                             echo '<table class="tabla-backend">';
                             echo '<thead>';
                             echo '<tr>';
-                            echo '<th>ID</th>';
-                            echo '<th>Nombre</th>';
-                            echo '<th>Categoría</th>';
-                            echo '<th>Precio</th>';
-                            echo '<th>Imagen</th>';
-                            echo '<th>Acciones</th>';
+                            echo '<th class="thback">ID</th>';
+                            echo '<th class="thback">Nombre</th>';
+                            echo '<th class="thback">Categoría</th>';
+                            echo '<th class="thback">Precio</th>';
+                            echo '<th class="thback">Imagen</th>';
+                            echo '<th class="thback">Acciones</th>';
                             echo '</tr>';
                             echo '</thead>';
                             echo '<tbody>';
 
                             while ($fila = $resultado->fetch_assoc()) {
                                 echo '<tr>';
-                                echo '<td>' . $fila['id_plato'] . '</td>';
-                                echo '<td>' . $fila['nombre_plato'] . '</td>';
-                                echo '<td>' . $fila['categoria'] . '</td>';
-                                echo '<td>' . number_format($fila['precio'], 2) . ' €</td>';
-                                echo '<td><img src="images/' . $fila['imagen'] . '" alt="Imagen de ' . $fila['nombre_plato'] . '" class="imagen-plato"></td>';
-                                echo '<td>';
+                                echo '<td class="tdback">' . $fila['id_plato'] . '</td>';
+                                echo '<td class="tdback">' . $fila['nombre_plato'] . '</td>';
+                                echo '<td class="tdback">' . $fila['categoria'] . '</td>';
+                                echo '<td class="tdback">' . number_format($fila['precio'], 2) . ' €</td>';
+                                echo '<td class="tdback"><img src="' . $fila['imagen'] . '" alt="Imagen de ' . $fila['nombre_plato'] . '" class="imagen-plato"></td>';
+                                echo '<td class="tdback">';
                                 echo '<button type="button" class="btn-modificar" onclick="abrirModalModificarPlato(' . $fila['id_plato'] . ', \'' . $fila['nombre_plato'] . '\', \'' . $fila['descripcion'] . '\', \'' . $fila['categoria'] . '\', ' . $fila['precio'] . ', \'' . $fila['imagen'] . '\')">Modificar</button>';
                                 echo '<form action="controllers/eliminarPlato.php" method="POST">';
                                 echo '<input type="hidden" name="eliminar_id_plato" value="' . $fila['id_plato'] . '">';
@@ -320,8 +328,7 @@ include("includes/a-config.php"); ?>
                                 <form id="formPlato" action="controllers/insertarModificarPlato.php" method="POST"
                                     enctype="multipart/form-data">
                                     <div class="modal-body">
-                                        <input type="hidden" id="modificarId" name="modificar_id">
-
+                                        <input type="hidden" id="modificarIdP" name="modificar_id">
                                         <div class="mb-3">
                                             <label for="nombre_plato" class="form-label">Nombre del Plato</label>
                                             <input type="text" class="form-control" id="nombre_plato"
@@ -340,7 +347,6 @@ include("includes/a-config.php"); ?>
                                                 <option value="Principal">Principal</option>
                                                 <option value="Especialidad">Especialidad</option>
                                                 <option value="Postre">Postre</option>
-                                                <option value="Bebidas">Bebidas</option>
                                             </select>
                                         </div>
 
@@ -354,13 +360,13 @@ include("includes/a-config.php"); ?>
                                             <label for="imagen" class="form-label">Imagen</label>
                                             <input type="file" class="form-control" id="imagen" name="imagen"
                                                 accept="image/*">
+                                            <input type="hidden" name="imagen_actual" id="imagen_actual">
                                         </div>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
                                             data-bs-dismiss="modal">Cerrar</button>
-                                        <button type="submit" id="submitBtnP" name="insertar"
-                                            class="btn btn-primary">Guardar</button>
+                                        <button type="submit" id="submitBtnP" class="btn btn-primary">Guardar</button>
                                     </div>
                                 </form>
                             </div>
@@ -393,7 +399,7 @@ include("includes/a-config.php"); ?>
 
                         const modalTitleP = document.getElementById('modalPlatoLabel');
                         const formPlato = document.getElementById('formPlato');
-                        const modificarIdP = document.getElementById('modificarId');
+                        const modificarIdP = document.getElementById('modificarIdP');
                         const submitBtnP = document.getElementById('submitBtnP');
 
                         function abrirModalModificarPlato(id, nombre, descripcion, categoria, precio, imagen) {
@@ -403,8 +409,9 @@ include("includes/a-config.php"); ?>
                             document.getElementById('descripcion').value = descripcion;
                             document.getElementById('categoria').value = categoria;
                             document.getElementById('precio').value = precio;
+                            document.getElementById('imagen_actual').value = imagen;
 
-                            submitBtnP.name = 'modificar';
+                            submitBtnP.name = 'modificarP';
                             const modal = new bootstrap.Modal(document.getElementById('modalPlato'));
                             modal.show();
                         }
@@ -412,7 +419,7 @@ include("includes/a-config.php"); ?>
 
 
                     <!-- GESTIÓN DE VALORACIONES -->
-                    <h1 class="mt-3" id="valoraciones">Gestión de Valoraciones</h1>
+                    <h1 class="mt-5" id="valoraciones">Gestión de Valoraciones</h1>
                     <button type="button" class="btn btn-insertar" id="abrirModalInsertarValoracion"
                         data-bs-toggle="modal" data-bs-target="#modalValoracion">
                         Insertar Valoración
@@ -434,27 +441,27 @@ include("includes/a-config.php"); ?>
                             echo '<table class="tabla-backend">';
                             echo '<thead>';
                             echo '<tr>';
-                            echo '<th>ID</th>';
-                            echo '<th>ID Usuario</th>';
-                            echo '<th>ID Plato</th>';
-                            echo '<th>Comentario</th>';
-                            echo '<th>Valoración</th>';
-                            echo '<th>Acciones</th>';
+                            echo '<th class="thback">ID</th>';
+                            echo '<th class="thback">ID Usuario</th>';
+                            echo '<th class="thback">ID Plato</th>';
+                            echo '<th class="thback">Comentario</th>';
+                            echo '<th class="thback">Valoración</th>';
+                            echo '<th class="thback">Acciones</th>';
                             echo '</tr>';
                             echo '</thead>';
                             echo '<tbody>';
 
                             while ($fila = $resultado->fetch_assoc()) {
                                 echo '<tr>';
-                                echo '<td>' . $fila['id_valoracion'] . '</td>';
-                                echo '<td>' . $fila['id_user'] . '</td>';
-                                echo '<td>' . $fila['id_plato'] . '</td>';
-                                echo '<td>' . $fila['comentario'] . '</td>';
-                                echo '<td>' . $fila['valoracion'] . '/10</td>';
-                                echo '<td>';
+                                echo '<td class="tdback">' . $fila['id_valoracion'] . '</td>';
+                                echo '<td class="tdback">' . $fila['id_user'] . '</td>';
+                                echo '<td class="tdback">' . $fila['id_plato'] . '</td>';
+                                echo '<td class="tdback">' . $fila['comentario'] . '</td>';
+                                echo '<td class="tdback">' . $fila['valoracion'] . '/10</td>';
+                                echo '<td class="tdback">';
 
                                 echo '<button type="button" class="btn-modificar" onclick="abrirModalModificarValoracion(' . $fila['id_valoracion'] . ', ' . $fila['id_user'] . ', ' . $fila['id_plato'] . ', \'' . $fila['comentario'] . '\', ' . $fila['valoracion'] . ')">Modificar</button>';
-                                echo '<form action="controllers/eliminarPlato.php" method="POST">';
+                                echo '<form action="controllers/eliminarValoracion.php" method="POST">';
                                 echo '<input type="hidden" name="eliminar_id_valoracion" value="' . $fila['id_valoracion'] . '">';
                                 echo '<button type="submit" class="btn-eliminar">Eliminar</button>';
                                 echo '</form>';

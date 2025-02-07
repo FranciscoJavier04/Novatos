@@ -3,8 +3,15 @@ include("conexion.php");
 include_once("Usuario.php");
 session_start();
 
+exit();
+
+
 try {
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
+        if ($_SESSION['captcha_text'] != $_POST['captcha_challenge']) {
+            header("Location:../registro.php?error=232");
+            exit();
+        }
 
         // Obtener y validar los datos del formulario
         $email = trim($_POST['email']);
@@ -86,4 +93,3 @@ try {
     header("Location: ../registro.php?error=999");
     exit();
 }
-?>
