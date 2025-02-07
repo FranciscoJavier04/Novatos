@@ -101,7 +101,7 @@ if (isset($_SESSION['user'])) {
                                 <label for="captcha">Introduce el CAPTCHA:</label>
                                 <div class="d-flex align-items-center">
                                     <img src="generatecaptcha.php" alt="CAPTCHA" class="captcha-image img-fluid w-50" />
-                                    <button type="button" id="refreshCaptcha" class="btn btn-outline-secondary ms-2">
+                                    <button type="button" id="refreshCaptcha" class="btn btn-comun ms-2">
                                         <i class="fas fa-redo"></i>
                                     </button>
                                 </div>
