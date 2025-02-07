@@ -1,6 +1,6 @@
 <?php
 require '../vendor/autoload.php';
-include("../includes/a-config.php");
+//include("../includes/a-config.php");
 include("conexion.php");
 
 // controlador eliminarValoraciones

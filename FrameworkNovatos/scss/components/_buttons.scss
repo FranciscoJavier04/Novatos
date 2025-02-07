@@ -51,6 +51,17 @@
   }
 }
 
+.btn-primary {
+  background-color: $primary;
+  border-radius: 10px;
+  border: 0.1rem solid $dark;
+  gap: 0.5rem;
+  font-weight: bold;
+  &:hover {
+    color: $black;
+  }
+}
+
 .btn-tertiary {
   background-color: #4b3d3d;
   color: $pie;
@@ -77,4 +88,22 @@
     color: $dark;
     opacity: 90%;
   }
+}
+
+.btn-modificar {
+  background-color: #007bff;
+}
+
+.btn-eliminar {
+  background-color: #dc3545;
+  
+}
+
+.btn-insertar {
+  background-color: #28a745;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  margin: 2px;
 }
