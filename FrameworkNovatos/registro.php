@@ -99,10 +99,16 @@ if (isset($_SESSION['user'])) {
                         <div class="mb-3">
                             <div class="col-6">
                                 <label for="captcha">Introduce el CAPTCHA:</label>
-                                <img src="generatecaptcha.php" alt="CAPTCHA" class="img-fluid w-50" />
-                                <input type="text" id="captcha" name="captcha_challenge" pattern="[A-Z]{6}">
+                                <div class="d-flex align-items-center">
+                                    <img src="generatecaptcha.php" alt="CAPTCHA" class="captcha-image img-fluid w-50" />
+                                    <button type="button" id="refreshCaptcha" class="btn btn-outline-secondary ms-2">
+                                        <i class="fas fa-redo"></i>
+                                    </button>
+                                </div>
+                                <input type="text" id="captcha" name="captcha_challenge" pattern="[A-Z]{6}" class="mt-2 form-control">
                             </div>
                         </div>
+
                         <button type="submit" id="submitBtn" class="mt-3 btn btn-comun w-100">Registrarse</button>
 
                         <p class="mt-3">¿Ya tienes cuenta? <a href="login.php">Iniciar Sesión</a></p>
@@ -113,6 +119,16 @@ if (isset($_SESSION['user'])) {
         </div>
     </main>
     <?php include("includes/footer.php"); ?>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var refreshButton = document.getElementById("refreshCaptcha");
+            if (refreshButton) {
+                refreshButton.addEventListener("click", function() {
+                    document.querySelector(".captcha-image").src = 'generatecaptcha.php?' + Date.now();
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
