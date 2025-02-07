@@ -26,7 +26,7 @@ $imagen_base64 = base64_encode($_SESSION['user']->imagen);
                                 <?php echo "<img src='data:image/png;base64,{$imagen_base64}' class='w-100 rounded-circle' alt='Imagen del Usuario' />"; ?>
                                 <div class="text-center text-md-start">
                                     <p class="fs-2 fw-bold my-0">
-                                        <?php echo $_SESSION['user']->id_user . ' ' . $_SESSION['user']->getNombre() . ' ' . $_SESSION['user']->getApellidos(); ?>
+                                        <?php echo $_SESSION['user']->getNombre() . ' ' . $_SESSION['user']->getApellidos(); ?>
                                     </p>
                                     <p class="fs-4 fw-bold fst-italic opacity-75">
                                         <?php echo ($_SESSION['user']->getRol() == 'user') ? "Cliente" : "Administrador"; ?>
@@ -48,50 +48,52 @@ $imagen_base64 = base64_encode($_SESSION['user']->imagen);
         <section>
             <div class="row justify-content-center border border-dark mx-md-1 my-3 p-3">
                 <div class="col-md-8">
-                    <form>
+                    <form action="controllers/insertarModificarUsuario.php" method="POST">
                         <h5 class="text-center">Información Personal</h5>
                         <div class="separador-user mb-3"></div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="mb-3">
                                     <label for="nombre" class="form-label">Nombre</label>
-                                    <input type="text" class="form-control" id="nombre"
+                                    <input type="text" class="form-control" id="nombre" name="nombre"
                                         value="<?php echo $_SESSION['user']->getNombre(); ?>">
                                 </div>
                                 <div class="mb-3">
                                     <label for="apellidos" class="form-label">Apellidos</label>
-                                    <input type="text" class="form-control" id="apellidos"
+                                    <input type="text" class="form-control" id="apellidos" name="apellidos"
                                         value="<?php echo $_SESSION['user']->getApellidos(); ?>">
                                 </div>
                                 <div class="mb-3">
                                     <label for="direccion" class="form-label">Fecha nacimiento</label>
-                                    <input type="date" class="form-control" id="direccion"
+                                    <input type="date" class="form-control" id="direccion" name="fecha_nac"
                                         value="<?php echo $_SESSION['user']->getFechaNac(); ?>">
                                 </div>
                                 <div class="mb-3">
                                     <label for="telefono" class="form-label">Teléfono</label>
-                                    <input type="tel" class="form-control" id="telefono"
+                                    <input type="tel" class="form-control" id="telefono" name="telefono"
                                         value="<?php echo $_SESSION['user']->getTelefono(); ?>">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="mb-3">
                                     <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email"
+                                    <input type="email" class="form-control" id="email" name="email"
                                         value="<?php echo $_SESSION['user']->getEmail(); ?>">
                                 </div>
                                 <div class="mb-3">
                                     <label for="pais" class="form-label">País</label>
-                                    <input type="text" class="form-control" id="pais"
+                                    <input type="text" class="form-control" id="pais" name="pais"
                                         value="<?php echo $_SESSION['user']->getPais(); ?>">
                                 </div>
                                 <div class="mb-3">
                                     <label for="codPostal" class="form-label">Código Postal</label>
-                                    <input type="text" class="form-control" id="codPostal"
+                                    <input type="text" class="form-control" id="codPostal" name="codPostal"
                                         value="<?php echo $_SESSION['user']->getCodPostal(); ?>">
                                 </div>
+                                <input type="hidden" id="modificarId" name="modificar_id"
+                                    value="<?php echo $_SESSION['user']->id_user; ?>">
                                 <div class="text-center">
-                                    <button type="submit" class="btn btn-comun">Guardar</button>
+                                    <button type="submit" name="modificar" class="btn btn-comun">Guardar</button>
                                 </div>
                             </div>
                         </div>
