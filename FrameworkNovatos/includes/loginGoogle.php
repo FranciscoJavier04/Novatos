@@ -1,27 +1,31 @@
 <?php
-//Cuando el index.php es llamado desde Google tras la autenticación
-//nos pasa el parámetro "code" mediante una petición get.    
+// Include necessary files for Google OAuth and database connection
+require_once 'vendor/autoload.php';
+require_once 'controllers/conexion.php';
+
+// When the index.php is called from Google after authentication,
+// the "code" parameter is passed via a GET request.
 if (isset($_GET["code"])) {
-  //Obtenemos el objeto token
+  // Obtain the token object
   $token = $google_client->fetchAccessTokenWithAuthCode($_GET["code"]);
 
-  //Si ha habido algún error en la autenticación, el array asociativo $token 
-  //contendrá la variable "error", en caso contrario hay éxito y 
-  //ya podemos recuperar los datos del perfil del usuario
+  // If there was no error in authentication, the associative array $token
+  // will not contain the "error" key, meaning success.
   if (!isset($token['error'])) {
-    //Set the access token used for requests
+    // Set the access token for subsequent requests
     $google_client->setAccessToken($token['access_token']);
 
-    //Store "access_token" value in $_SESSION variable for future use.
+    // Store the access token in the session for future use
     $_SESSION['access_token'] = $token['access_token'];
 
-    //Create Object of Google Service OAuth 2 class
+    // Create an object of Google_Service_Oauth2 class
     $google_service = new Google_Service_Oauth2($google_client);
 
-    //Get user profile data from google
+
+    // Retrieve user profile data from Google
     $data = $google_service->userinfo->get();
 
-    //Below you can find Get profile data and store into $_SESSION variable
+    // Store user profile information into session variables
     if (!empty($data['given_name'])) {
       $_SESSION['user_first_name'] = $data['given_name'];
     }
@@ -33,29 +37,17 @@ if (isset($_GET["code"])) {
     if (!empty($data['email'])) {
       $_SESSION['user_email_address'] = $data['email'];
     }
-
-    if (!empty($data['gender'])) {
-      $_SESSION['user_gender'] = $data['gender'];
-    }
-
-    if (!empty($data['picture'])) {
-      $_SESSION['user_image'] = $data['picture'];
-    }
     $email = $data['email'];
 
-    //A continuación recuperamos el usuario de la base de datos
-    //Su id quedará almacenado en la sesión para uso posterior.
-
+    // Check the database for an existing user by email
     $conn = new ConexionDB();
-
     $sql = "SELECT id_user FROM usuarios WHERE email = '$email'";
 
     if (!$resultado = $conn->query($sql)) {
-      // ¡Oh, no! La consulta falló. 
+      // If the query fails, display an error message
       echo "Lo sentimos, este sitio web está experimentando problemas.";
 
-      // De nuevo, no hacer esto en un sitio público, aunque nosotros mostraremos
-      // cómo obtener información del error
+      // Display error details (not recommended to show publicly)
       echo "Error: La ejecución de la consulta falló debido a: \n";
       echo "Query: " . $sql . "\n";
       echo "Errno: " . $conn->errno . "\n";
@@ -63,18 +55,24 @@ if (isset($_GET["code"])) {
       mysqli_close($conn);
       exit;
     } else {
+      // If a user is found, store the user ID in the session
       if ($resultado->num_rows > 0) {
         $usuario = $resultado->fetch_assoc();
-        $_SESSION['id_user'] = $usuario['id_user'];
-      } else
+        $_SESSION['user']->id_user = $usuario['id_user'];
+      } else {
+        // If no user is found, free the result and proceed to registration
         $resultado->free();
-      header("Location: registro.php");
+        header("Location: registro.php?email=" . urlencode($email) .
+          "&first_name=" . urlencode($first_name) .
+          "&last_name=" . urlencode($last_name));
+        exit;
+      }
     }
   }
 }
 
-//Si no se ha hecho el login con Google correctamente mostramos un botón para logarse.
+// If the user is not authenticated, show the login button to redirect them to Google
 if (!isset($_SESSION['access_token'])) {
-  //Create a URL to obtain user authorization
+  // Create a URL to obtain user authorization
   $login_button =  $google_client->createAuthUrl();
 }

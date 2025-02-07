@@ -65,7 +65,7 @@ switch ($_SERVER["SCRIPT_NAME"]) {
 }
 
 //Include Google Client Library for PHP autoload file
-//require 'vendor/autoload.php';
+require 'vendor/autoload.php';
 
 //Make object of Google API Client for call Google API
 $google_client = new Google_Client();
@@ -77,7 +77,7 @@ $google_client->setClientId('213764320892-hha7vahf4tdjgu50so0hr6pfv801bk9s.apps.
 $google_client->setClientSecret('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');
 
 //Set the OAuth 2.0 Redirect URI
-$google_client->setRedirectUri('http://localhost:8080/index.php');
+$google_client->setRedirectUri('http://localhost:8080/registro.php');
 
 
 $google_client->addScope('email');
