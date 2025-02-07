@@ -1,7 +1,7 @@
 <?php
 require 'vendor/autoload.php';
-include("includes/a-config.php");
 include("controllers/conexion.php");
+include("includes/a-config.php");
 ?>
 <!DOCTYPE html>
 <html lang="es">
