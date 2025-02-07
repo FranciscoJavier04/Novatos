@@ -34,11 +34,10 @@ $stmt->send_long_data("0", $imageData);
 
 // Ejecutar consulta
 if ($stmt->execute()) {
-    echo "Imagen Insertada correctamente";
     Usuario::recuperarSesion($user_id);
 
 } else {
-    echo "Imagen NO Insertada correctamente";
+    echo "ERROR AL CAMBIAR IMAGEN";
 }
 
 ?>

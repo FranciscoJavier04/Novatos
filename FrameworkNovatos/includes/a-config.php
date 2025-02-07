@@ -1,4 +1,6 @@
 <?php
+include_once("./controllers/Usuario.php");
+session_start();
 switch ($_SERVER["SCRIPT_NAME"]) {
 	case "/index.php":
 		$CURRENT_PAGE = "Inicio";
@@ -82,10 +84,10 @@ $google_client->addScope('email');
 
 $google_client->addScope('profile');
 
-include_once("./controllers/Usuario.php");
 
 
-Session_start();
+
+
 $login_button = '';
 
 ?>
