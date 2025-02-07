@@ -1,6 +1,5 @@
 <?php
 include_once("conexion.php");
-session_start();
 class Usuario
 {
     private $id_user;
@@ -236,4 +235,3 @@ class Usuario
     }
     */
 }
-?>
