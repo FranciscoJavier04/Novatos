@@ -3,7 +3,6 @@ include("conexion.php");
 include_once("Usuario.php");
 session_start();
 
-exit();
 
 
 try {

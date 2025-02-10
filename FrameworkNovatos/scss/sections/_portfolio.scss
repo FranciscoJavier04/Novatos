@@ -6,6 +6,18 @@
   background-position: center;
 }
 
+.password-container {
+  position: relative;
+}
+.password-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(70%);
+  cursor: pointer;
+  color: #6c757d;
+}
+
 img-nav {
   width: 40px;
   height: 40px;
@@ -297,5 +309,3 @@ img-nav {
   border: 1px solid black;
   background-color: #f4f4f4;
 }
-
-

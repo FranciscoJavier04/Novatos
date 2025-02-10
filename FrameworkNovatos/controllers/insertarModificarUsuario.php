@@ -88,6 +88,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Redirigir al backend tras modificar
         header('Location: ../backend.php');
         exit();
+    } elseif (isset($_POST['modificar2'])) {
+        // Valores para modificar
+        $id = intval($_POST['modificar_id']);
+        $email = $_POST['email'] ?? 'modificado_email@ejemplo.com';
+        $nombre = $_POST['nombre'] ?? 'Nombre Modificado';
+        $apellidos = $_POST['apellidos'] ?? 'Apellidos Modificados';
+        $pais = $_POST['pais'] ?? 'País Modificado';
+        $telefono = $_POST['telefono'] ?? '987654321';
+        $rol = $_POST['rol'] ?? 'Admin';
+        $fecha_nacimiento = $_POST['fecha_nac'] ?? '1990-01-01';
+        $codigo_postal = $_POST['cod_postal'] ?? '11111';
+
+        modificarUsuario($id, $email, $nombre, $apellidos, $pais, $telefono, $fecha_nacimiento, $codigo_postal, $rol);
+
+        // Redirigir al backend tras modificar
+        header('Location: cargarSesion.php');
+        exit();
     }
 }
 ?>

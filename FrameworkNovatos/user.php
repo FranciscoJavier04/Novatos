@@ -64,7 +64,7 @@ $imagen_base64 = base64_encode($_SESSION['user']->imagen);
                                         value="<?php echo $_SESSION['user']->getApellidos(); ?>">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="direccion" class="form-label">Fecha nacimiento</label>
+                                    <label for="fecha_nac" class="form-label">Fecha nacimiento</label>
                                     <input type="date" class="form-control" id="direccion" name="fecha_nac"
                                         value="<?php echo $_SESSION['user']->getFechaNac(); ?>">
                                 </div>
@@ -87,13 +87,13 @@ $imagen_base64 = base64_encode($_SESSION['user']->imagen);
                                 </div>
                                 <div class="mb-3">
                                     <label for="codPostal" class="form-label">Código Postal</label>
-                                    <input type="text" class="form-control" id="codPostal" name="codPostal"
+                                    <input type="text" class="form-control" id="codPostal" name="cod_postal"
                                         value="<?php echo $_SESSION['user']->getCodPostal(); ?>">
                                 </div>
                                 <input type="hidden" id="modificarId" name="modificar_id"
                                     value="<?php echo $_SESSION['user']->id_user; ?>">
                                 <div class="text-center">
-                                    <button type="submit" name="modificar" class="btn btn-comun">Guardar</button>
+                                    <button type="submit" name="modificar2" class="btn btn-comun">Guardar</button>
                                 </div>
                             </div>
                         </div>

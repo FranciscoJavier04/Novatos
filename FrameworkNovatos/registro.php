@@ -4,7 +4,12 @@ include("includes/a-config.php");
 if (isset($_SESSION['user'])) {
     header('location: index.php');
 }
-?>
+$email = $_GET['email'] ?? '';
+$first_name = $_GET['first_name'] ?? '';
+$last_name = $_GET['last_name'] ?? '';
+
+echo "Hola" . $email
+    ?>
 <!DOCTYPE html>
 <html>
 
@@ -52,27 +57,32 @@ if (isset($_SESSION['user'])) {
                     <form method="POST" action="controllers/registrarse.php">
                         <div class="mb-3">
                             <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Manuel">
+                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Manuel"
+                                value="<?php echo $first_name; ?>">
                         </div>
                         <div class="mb-3">
                             <label for="apellidos" class="form-label">Apellidos</label>
                             <input type="text" class="form-control" name="apellidos" id="apellidos"
-                                placeholder="Romero Reyes">
+                                placeholder="Romero Reyes" value="<?php echo $last_name; ?>">
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Correo Electrónico</label>
                             <input type="email" class="form-control" name="email" id="email"
-                                placeholder="fran@gmail.com">
+                                placeholder="fran@gmail.com" value="<?php echo $email; ?>">
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3 password-container">
                             <label for="password" class="form-label">Contraseña</label>
                             <input type="password" class="form-control" name="password" id="password"
                                 placeholder="********">
+                            <i class="fas fa-eye password-icon" id="togglePassword"
+                                onclick="mostrarPass('password')"></i>
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3 password-container">
                             <label for="password" class="form-label">Confirmar Contraseña</label>
                             <input type="password" class="form-control" name="conf_password" id="conf_password"
                                 placeholder="********">
+                            <i class="fas fa-eye password-icon" id="togglePassword"
+                                onclick="mostrarPass('conf_password')"></i>
                         </div>
                         <div class="mb-3 row">
                             <div class="col-6">
@@ -99,10 +109,17 @@ if (isset($_SESSION['user'])) {
                         <div class="mb-3">
                             <div class="col-6">
                                 <label for="captcha">Introduce el CAPTCHA:</label>
-                                <img src="generatecaptcha.php" alt="CAPTCHA" class="img-fluid w-50" />
-                                <input type="text" id="captcha" name="captcha_challenge" pattern="[A-Z]{6}">
+                                <div class="d-flex align-items-center">
+                                    <img src="generatecaptcha.php" alt="CAPTCHA" class="captcha-image img-fluid w-50" />
+                                    <button type="button" id="refreshCaptcha" class="btn btn-comun ms-2">
+                                        <i class="fas fa-redo"></i>
+                                    </button>
+                                </div>
+                                <input type="text" id="captcha" name="captcha_challenge" pattern="[A-Z]{6}"
+                                    class="mt-2 form-control">
                             </div>
                         </div>
+
                         <button type="submit" id="submitBtn" class="mt-3 btn btn-comun w-100">Registrarse</button>
 
                         <p class="mt-3">¿Ya tienes cuenta? <a href="login.php">Iniciar Sesión</a></p>
@@ -113,6 +130,7 @@ if (isset($_SESSION['user'])) {
         </div>
     </main>
     <?php include("includes/footer.php"); ?>
+    <script src="/controllers/formularios.js"></script>
 </body>
 
 </html>
