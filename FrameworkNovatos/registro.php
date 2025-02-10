@@ -4,6 +4,11 @@ include("includes/a-config.php");
 if (isset($_SESSION['user'])) {
     header('location: index.php');
 }
+$email = $_GET['email'] ?? '';
+$first_name = $_GET['first_name'] ?? '';
+$last_name = $_GET['last_name'] ?? '';
+
+echo "Hola" . $email
 ?>
 <!DOCTYPE html>
 <html>
@@ -52,17 +57,17 @@ if (isset($_SESSION['user'])) {
                     <form method="POST" action="controllers/registrarse.php">
                         <div class="mb-3">
                             <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Manuel">
+                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Manuel" value="<?php echo $first_name; ?>">
                         </div>
                         <div class="mb-3">
                             <label for="apellidos" class="form-label">Apellidos</label>
                             <input type="text" class="form-control" name="apellidos" id="apellidos"
-                                placeholder="Romero Reyes">
+                                placeholder="Romero Reyes" value="<?php echo $last_name; ?>">
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Correo Electrónico</label>
                             <input type="email" class="form-control" name="email" id="email"
-                                placeholder="fran@gmail.com">
+                                placeholder="fran@gmail.com" value="<?php echo $email; ?>">
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">Contraseña</label>
