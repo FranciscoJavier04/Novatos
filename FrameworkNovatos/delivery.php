@@ -28,19 +28,23 @@ include("includes/a-config.php");
 
             <!-- Contenido Principal -->
             <div class="w-5 p-3 mx-auto text-justify carta-del col-md-9 bg-info rounded-3 text-paragraph">
+                <!-- ENTRANTES -->
                 <?php
                 $db = new ConexionDB();
 
                 // Consulta para obtener los entrantes
-                $sql = "SELECT id_plato, nombre_plato, precio, imagen, descripcion FROM platos WHERE categoria = 'Entrantes'";
+                $sql = "SELECT id_plato, nombre_plato, precio, imagen, descripcion, (SELECT AVG(valoracion) FROM valoraciones WHERE valoraciones.id_plato = platos.id_plato) AS media_valoracion FROM platos WHERE categoria = 'Entrantes'";
+
                 $resultado = $db->ejecutarConsulta($sql);
                 ?>
                 <div class="mb-4 row align-items-start ms-3 ">
                     <div class="col-md-2 ">
-                        <h1 class="mb-5 text-center subtitulo-carta" id="valoracion">Valorar</h1>
+                        <h1 class="mb-5 me-4 text-center subtitulo-carta" id="valoracion">Valorar</h1>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-7">
                         <h1 class="mb-5 text-center subtitulo-carta" id="entrantes">Entrantes</h1>
+                    </div>
+                    <div class="col-md-3">
                     </div>
                 </div>
                 <div class="row">
@@ -53,7 +57,10 @@ include("includes/a-config.php");
                                     <img src="<?php echo $fila['imagen']; ?>" alt="<?php echo $fila['nombre_plato']; ?>"
                                         class="img-fluid">
                                 </button>
-
+                                <p class="mt-1 ms-5">
+                                    <?php echo number_format($fila['media_valoracion'], 1) ?? 'Sin valoraciones'; ?>/10
+                                    <i class="fas fa-star text-warning"></i>
+                                </p>
                             </div>
                             <div class="col-md-6 fs-5">
                                 <span class="fw-bold"><?php echo $fila['nombre_plato'] . ". " . $fila['precio']; ?>€</span>
@@ -137,12 +144,13 @@ include("includes/a-config.php");
 
                 </script>
 
-
+                <!-- PRINCIPALES -->
                 <?php
                 $db = new ConexionDB();
 
                 // Consulta para obtener los principales
-                $sql = "SELECT id_plato, nombre_plato, precio, imagen, descripcion FROM platos WHERE categoria = 'Principal'";
+                $sql = "SELECT id_plato, nombre_plato, precio, imagen, descripcion, (SELECT AVG(valoracion) FROM valoraciones WHERE valoraciones.id_plato = platos.id_plato) AS media_valoracion FROM platos WHERE categoria = 'Principal'";
+
                 $resultado = $db->ejecutarConsulta($sql);
                 ?>
                 <h1 class="mb-5 text-center subtitulo-carta" id="principales">Principales</h1>
@@ -156,7 +164,10 @@ include("includes/a-config.php");
                                     <img src="<?php echo $fila['imagen']; ?>" alt="<?php echo $fila['nombre_plato']; ?>"
                                         class="img-fluid">
                                 </button>
-
+                                <p class="mt-1 ms-5">
+                                    <?php echo number_format($fila['media_valoracion'], 1) ?? 'Sin valoraciones'; ?>/10
+                                    <i class="fas fa-star text-warning"></i>
+                                </p>
                             </div>
                             <div class="col-md-6 fs-5">
                                 <span class="fw-bold"><?php echo $fila['nombre_plato'] . ". " . $fila['precio']; ?>€</span>
@@ -240,11 +251,13 @@ include("includes/a-config.php");
 
                 </script>
 
+                <!-- ESPECIALIDADES -->
                 <?php
                 $db = new ConexionDB();
 
                 // Consulta para obtener las especialidades
-                $sql = "SELECT id_plato, nombre_plato, precio, imagen, descripcion FROM platos WHERE categoria = 'Especialidad'";
+                $sql = "SELECT id_plato, nombre_plato, precio, imagen, descripcion, (SELECT AVG(valoracion) FROM valoraciones WHERE valoraciones.id_plato = platos.id_plato) AS media_valoracion FROM platos WHERE categoria = 'Especialidad'";
+
                 $resultado = $db->ejecutarConsulta($sql);
                 ?>
                 <h1 class="mb-5 text-center subtitulo-carta" id="especialidades">Especialidades</h1>
@@ -258,7 +271,10 @@ include("includes/a-config.php");
                                     <img src="<?php echo $fila['imagen']; ?>" alt="<?php echo $fila['nombre_plato']; ?>"
                                         class="img-fluid">
                                 </button>
-
+                                <p class="mt-1 ms-5">
+                                    <?php echo number_format($fila['media_valoracion'], 1) ?? 'Sin valoraciones'; ?>/10
+                                    <i class="fas fa-star text-warning"></i>
+                                </p>
                             </div>
                             <div class="col-md-6 fs-5">
                                 <span class="fw-bold"><?php echo $fila['nombre_plato'] . ". " . $fila['precio']; ?>€</span>
@@ -342,11 +358,10 @@ include("includes/a-config.php");
 
                 </script>
 
+                <!-- POSTRES -->
                 <?php
                 $db = new ConexionDB();
-
-                // Consulta para obtener los entrantes
-                $sql = "SELECT id_plato, nombre_plato, precio, imagen, descripcion FROM platos WHERE categoria = 'Postre'";
+                $sql = "SELECT id_plato, nombre_plato, precio, imagen, descripcion, (SELECT AVG(valoracion) FROM valoraciones WHERE valoraciones.id_plato = platos.id_plato) AS media_valoracion FROM platos WHERE categoria = 'Postre'";
                 $resultado = $db->ejecutarConsulta($sql);
                 ?>
                 <h1 class="mb-5 text-center subtitulo-carta" id="postres">Postres</h1>
@@ -360,7 +375,10 @@ include("includes/a-config.php");
                                     <img src="<?php echo $fila['imagen']; ?>" alt="<?php echo $fila['nombre_plato']; ?>"
                                         class="img-fluid">
                                 </button>
-
+                                <p class="mt-1 ms-5">
+                                    <?php echo number_format($fila['media_valoracion'], 1) ?? 'Sin valoraciones'; ?>/10
+                                    <i class="fas fa-star text-warning"></i>
+                                </p>
                             </div>
                             <div class="col-md-6 fs-5">
                                 <span class="fw-bold"><?php echo $fila['nombre_plato'] . ". " . $fila['precio']; ?>€</span>
@@ -372,6 +390,8 @@ include("includes/a-config.php");
                         </div>
                     <?php } ?>
                 </div>
+
+                <?php $db->cerrarConexion(); ?>
 
                 <!-- Modal Valoración -->
                 <div class="modal fade" id="modalValoracion" tabindex="-1" aria-labelledby="modalValoracionLabel"
@@ -389,9 +409,9 @@ include("includes/a-config.php");
                                     <input type="hidden" id="id_plato" name="id_plato">
 
                                     <div class="mb-3">
-                                        <label for="comentario" class="form-label">Comentario</label>
-                                        <textarea class="form-control" id="comentario" name="comentario"
-                                            required></textarea>
+                                        <label for="editor-container" class="form-label">Comentario</label>
+                                        <div id="editor-container" style="height: 150px;"></div>
+                                        <input type="hidden" id="comentario" name="comentario">
                                     </div>
 
                                     <div class="mb-3">
@@ -411,16 +431,10 @@ include("includes/a-config.php");
                     </div>
                 </div>
 
-                <?php
-                $db->cerrarConexion();
-                ?>
-
                 <!-- Script de Validación -->
                 <script>
                     document.getElementById("formValoracion").addEventListener("submit", function (event) {
                         let valid = true;
-
-
 
                         if (!valid) {
                             event.preventDefault();

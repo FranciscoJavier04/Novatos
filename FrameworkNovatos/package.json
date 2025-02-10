@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "konva": "^9.3.18"
+    "konva": "^9.3.18",
+    "quill": "^2.0.3"
   }
 }
