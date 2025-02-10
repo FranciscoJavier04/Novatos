@@ -12,3 +12,12 @@ function mostrarPass(inputId) {
         icon.classList.add('fa-eye');
     }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    var refreshButton = document.getElementById("refreshCaptcha");
+    if (refreshButton) {
+        refreshButton.addEventListener("click", function () {
+            document.querySelector(".captcha-image").src = 'generatecaptcha.php?' + Date.now();
+        });
+    }
+});
