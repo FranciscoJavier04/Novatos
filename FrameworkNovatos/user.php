@@ -104,7 +104,7 @@ $imagen_base64 = base64_encode($_SESSION['user']->imagen);
                 </div>
 
                 <div class="col-md-3">
-                    <form method="POST" action="cambiar_contraseña.php">
+                    <form method="POST" action="./controllers/insertarModificarUsuario.php">
                         <h5 class="text-center">Cambiar Contraseña</h5>
                         <div class="separador-user mb-3"></div>
                         <div class="text-center mb-3">
@@ -122,8 +122,20 @@ $imagen_base64 = base64_encode($_SESSION['user']->imagen);
                                 name="confirm_new_password" required>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn btn-comun">Guardar</button>
+                            <button name="modificarContraseña" type="submit" class="btn btn-comun">Guardar</button>
                         </div>
+                        <?php
+                        if (isset($_GET['error'])) {
+                            switch ($_GET['error']) {
+                                case '22':
+                                    echo '<p class="error">Las nuevas contraseñas no coinciden</p>';
+                                    break;
+                                case '21':
+                                    echo '<p class="error">Esa no es tu contraseña Actualmente</p>';
+                                    break;
+                            }
+                        }
+                        ?>
                     </form>
                 </div>
             </div>
