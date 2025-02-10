@@ -1,7 +1,8 @@
 <?php
 // Include necessary files for Google OAuth and database connection
-require_once 'vendor/autoload.php';
-require_once 'controllers/conexion.php';
+require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../controllers/conexion.php';
+
 
 // When the index.php is called from Google after authentication,
 // the "code" parameter is passed via a GET request.
@@ -74,5 +75,5 @@ if (isset($_GET["code"])) {
 // If the user is not authenticated, show the login button to redirect them to Google
 if (!isset($_SESSION['access_token'])) {
   // Create a URL to obtain user authorization
-  $login_button =  $google_client->createAuthUrl();
+  $login_button = $google_client->createAuthUrl();
 }
