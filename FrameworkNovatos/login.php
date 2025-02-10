@@ -45,10 +45,12 @@ if (isset($_SESSION['user'])) {
                                 echo $_COOKIE['email'];
                             } ?>" required placeholder="fran@gmail.com">
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3 password-container">
                             <label for="password" class="form-label">Contraseña</label>
                             <input type="password" class="form-control" required name="password" id="password" value="<?php if (isset($_COOKIE['pass']))
                                 echo $_COOKIE['pass']; ?>" placeholder="********">
+                            <i class="fas fa-eye password-icon" id="togglePassword"
+                                onclick="mostrarPass('password')"></i>
                         </div>
                         <div class="mb-3 text-end">
                             <input type="checkbox" id="rememberMe" name="rememberMe" <?php if (isset($_COOKIE['rememberMe']))
@@ -74,6 +76,7 @@ if (isset($_SESSION['user'])) {
         </div>
     </main>
     <?php include("includes/footer.php"); ?>
+    <script src="/controllers/formularios.js"></script>
 </body>
 
 </html>
