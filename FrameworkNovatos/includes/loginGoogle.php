@@ -3,8 +3,6 @@
 require_once 'vendor/autoload.php';
 require_once 'controllers/conexion.php';
 
-session_start();
-
 // When the index.php is called from Google after authentication,
 // the "code" parameter is passed via a GET request.
 if (isset($_GET["code"])) {
@@ -63,20 +61,10 @@ if (isset($_GET["code"])) {
         $_SESSION['user']->id_user = $usuario['id_user'];
       } else {
         // If no user is found, free the result and proceed to registration
-        // Si no se encontró un usuario, redirigir a registro.php con los datos obtenidos de Google
-        if ($resultado->num_rows === 0) {
-          $resultado->free();
-
-          // Asegurar que los valores existen antes de pasarlos en la URL
-          $first_name = isset($_SESSION['user_first_name']) ? urlencode($_SESSION['user_first_name']) : '';
-          $last_name = isset($_SESSION['user_last_name']) ? urlencode($_SESSION['user_last_name']) : '';
-
-          // Redirigir con parámetros correctamente codificados en la URL
-          header("Location: registro.php?email=" . urlencode($email) . "&first_name=" . $first_name . "&last_name=" . $last_name);
-          exit;
-        }
-
-
+        $resultado->free();
+        header("Location: registro.php?email=" . urlencode($email) .
+          "&first_name=" . urlencode($first_name) .
+          "&last_name=" . urlencode($last_name));
         exit;
       }
     }
