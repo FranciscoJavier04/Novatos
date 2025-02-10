@@ -9,7 +9,7 @@ $first_name = $_GET['first_name'] ?? '';
 $last_name = $_GET['last_name'] ?? '';
 
 echo "Hola" . $email
-?>
+    ?>
 <!DOCTYPE html>
 <html>
 
@@ -57,7 +57,8 @@ echo "Hola" . $email
                     <form method="POST" action="controllers/registrarse.php">
                         <div class="mb-3">
                             <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Manuel" value="<?php echo $first_name; ?>">
+                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Manuel"
+                                value="<?php echo $first_name; ?>">
                         </div>
                         <div class="mb-3">
                             <label for="apellidos" class="form-label">Apellidos</label>
@@ -69,15 +70,19 @@ echo "Hola" . $email
                             <input type="email" class="form-control" name="email" id="email"
                                 placeholder="fran@gmail.com" value="<?php echo $email; ?>">
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3 password-container">
                             <label for="password" class="form-label">Contraseña</label>
                             <input type="password" class="form-control" name="password" id="password"
                                 placeholder="********">
+                            <i class="fas fa-eye password-icon" id="togglePassword"
+                                onclick="mostrarPass('password')"></i>
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3 password-container">
                             <label for="password" class="form-label">Confirmar Contraseña</label>
                             <input type="password" class="form-control" name="conf_password" id="conf_password"
                                 placeholder="********">
+                            <i class="fas fa-eye password-icon" id="togglePassword"
+                                onclick="mostrarPass('conf_password')"></i>
                         </div>
                         <div class="mb-3 row">
                             <div class="col-6">
@@ -110,7 +115,8 @@ echo "Hola" . $email
                                         <i class="fas fa-redo"></i>
                                     </button>
                                 </div>
-                                <input type="text" id="captcha" name="captcha_challenge" pattern="[A-Z]{6}" class="mt-2 form-control">
+                                <input type="text" id="captcha" name="captcha_challenge" pattern="[A-Z]{6}"
+                                    class="mt-2 form-control">
                             </div>
                         </div>
 
@@ -124,16 +130,7 @@ echo "Hola" . $email
         </div>
     </main>
     <?php include("includes/footer.php"); ?>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var refreshButton = document.getElementById("refreshCaptcha");
-            if (refreshButton) {
-                refreshButton.addEventListener("click", function() {
-                    document.querySelector(".captcha-image").src = 'generatecaptcha.php?' + Date.now();
-                });
-            }
-        });
-    </script>
+    <script src="/controllers/formularios.js"></script>
 </body>
 
 </html>
