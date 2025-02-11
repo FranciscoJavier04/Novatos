@@ -65,7 +65,7 @@ switch ($_SERVER["SCRIPT_NAME"]) {
 }
 
 //Include Google Client Library for PHP autoload file
-require 'vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 //Make object of Google API Client for call Google API
 $google_client = new Google_Client();
