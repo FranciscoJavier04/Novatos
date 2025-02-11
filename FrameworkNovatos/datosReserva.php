@@ -1,6 +1,11 @@
 <?php
 require 'vendor/autoload.php';
-include("includes/a-config.php"); ?>
+include("includes/a-config.php");
+
+if (!isset($_SESSION['user'])) {
+    header('location: login.php?error=321');
+}
+?>
 <!DOCTYPE html>
 <html>
 

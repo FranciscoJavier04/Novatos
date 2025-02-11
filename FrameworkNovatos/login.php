@@ -5,6 +5,10 @@ include("includes/loginGoogle.php");
 if (isset($_SESSION['user'])) {
     header('location: index.php');
 }
+if ($_COOKIE['aceptarCookie'] == "false") {
+    header("Location:index.php");
+}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -35,6 +39,9 @@ if (isset($_SESSION['user'])) {
                             case '999':
                                 echo '<p class="error">No se pudo completar el logueo. Por favor, inténtalo más tarde.</p>';
                                 break;
+                            case '321':
+                                echo '<p class="error">Debes de iniciar sesión para hacer una reserva.</p>';
+                                break;
                         }
                     }
                     ?>
@@ -42,19 +49,19 @@ if (isset($_SESSION['user'])) {
                         <div class="mt-3 mb-3">
                             <label for="email" class="form-label">Correo Electrónico</label>
                             <input type="email" class="form-control" name="email" id="email" value="<?php if (isset($_COOKIE['email'])) {
-                                echo $_COOKIE['email'];
-                            } ?>" required placeholder="fran@gmail.com">
+                                                                                                        echo $_COOKIE['email'];
+                                                                                                    } ?>" required placeholder="fran@gmail.com">
                         </div>
                         <div class="mb-3 password-container">
                             <label for="password" class="form-label">Contraseña</label>
                             <input type="password" class="form-control" required name="password" id="password" value="<?php if (isset($_COOKIE['pass']))
-                                echo $_COOKIE['pass']; ?>" placeholder="********">
+                                                                                                                            echo $_COOKIE['pass']; ?>" placeholder="********">
                             <i class="fas fa-eye password-icon" id="togglePassword"
                                 onclick="mostrarPass('password')"></i>
                         </div>
                         <div class="mb-3 text-end">
                             <input type="checkbox" id="rememberMe" name="rememberMe" <?php if (isset($_COOKIE['rememberMe']))
-                                echo "checked"; ?>>
+                                                                                            echo "checked"; ?>>
                             <label>Recuérdame</label>
                         </div>
                         <button type="submit" class="mb-2 btn btn-comun w-100">Iniciar Sesión</button>

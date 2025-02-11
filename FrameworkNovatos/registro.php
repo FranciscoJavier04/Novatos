@@ -5,11 +5,9 @@ include("includes/loginGoogle.php");
 if (isset($_SESSION['user'])) {
     header('location: index.php');
 }
-$email = $_GET['email'] ?? '';
-$first_name = $_GET['first_name'] ?? '';
-$last_name = $_GET['last_name'] ?? '';
-
-
+if ($_COOKIE['aceptarCookie'] == "false") {
+    header("Location:index.php");
+}
 ?>
 <!DOCTYPE html>
 <html>
