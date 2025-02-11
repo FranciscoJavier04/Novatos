@@ -1,7 +1,7 @@
 <?php
 require 'vendor/autoload.php';
 include("includes/a-config.php");
-if ($_SESSION['user'] == null) {
+if (!isset($_SESSION['user']) || $_SESSION['user'] == null) {
     header('location: login.php');
 }
 
