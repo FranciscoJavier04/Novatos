@@ -1,6 +1,7 @@
 <?php
 require 'vendor/autoload.php';
 include("includes/a-config.php");
+include("includes/loginGoogle.php");
 if (isset($_SESSION['user'])) {
     header('location: index.php');
 }
@@ -8,7 +9,7 @@ $email = $_GET['email'] ?? '';
 $first_name = $_GET['first_name'] ?? '';
 $last_name = $_GET['last_name'] ?? '';
 
-echo "Hola" . $_SESSION['user_email_address']
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -58,17 +59,23 @@ echo "Hola" . $_SESSION['user_email_address']
                         <div class="mb-3">
                             <label for="nombre" class="form-label">Nombre</label>
                             <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Manuel"
-                                value="<?php echo $first_name; ?>">
+                                value="<?php if (isset($_SESSION['user_first_name'])) {
+                                            echo $_SESSION['user_first_name'];
+                                        } ?>">
                         </div>
                         <div class="mb-3">
                             <label for="apellidos" class="form-label">Apellidos</label>
                             <input type="text" class="form-control" name="apellidos" id="apellidos"
-                                placeholder="Romero Reyes" value="<?php echo $last_name; ?>">
+                                placeholder="Romero Reyes" value="<?php if (isset($_SESSION['user_last_name'])) {
+                                                                        echo $_SESSION['user_last_name'];
+                                                                    } ?>">
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Correo Electrónico</label>
                             <input type="email" class="form-control" name="email" id="email"
-                                placeholder="fran@gmail.com" value="<?php echo $email; ?>">
+                                placeholder="fran@gmail.com" value="<?php if (isset($_SESSION['user_email_address'])) {
+                                                                        echo $_SESSION['user_email_address'];
+                                                                    } ?>">
                         </div>
                         <div class="mb-3 password-container">
                             <label for="password" class="form-label">Contraseña</label>

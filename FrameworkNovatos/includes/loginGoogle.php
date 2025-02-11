@@ -3,7 +3,6 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 require_once __DIR__ . '/../controllers/conexion.php';
 
-
 // When the index.php is called from Google after authentication,
 // the "code" parameter is passed via a GET request.
 if (isset($_GET["code"])) {
@@ -45,7 +44,7 @@ if (isset($_GET["code"])) {
     $conn = new ConexionDB();
     $sql = "SELECT id_user FROM usuarios WHERE email = '$email'";
 
-    if (!$resultado = $conn->query($sql)) {
+    if (!$resultado = $conn->ejecutarConsulta($sql)) {
       // If the query fails, display an error message
       echo "Lo sentimos, este sitio web está experimentando problemas.";
 
@@ -54,19 +53,18 @@ if (isset($_GET["code"])) {
       echo "Query: " . $sql . "\n";
       echo "Errno: " . $conn->errno . "\n";
       echo "Error: " . $conn->error . "\n";
-      mysqli_close($conn);
+      $conn->close();
       exit();
     } else {
       // If a user is found, store the user ID in the session
       if ($resultado->num_rows > 0) {
         $usuario = $resultado->fetch_assoc();
-        $_SESSION['user']->id_user = $usuario['id_user'];
+        $_SESSION['id'] = $usuario['id_user'];
+        header("Location: ../controllers/cargarSesion.php");
       } else {
         // If no user is found, free the result and proceed to registration
         $resultado->free();
-        header("Location: registro.php?email=" . $email .
-          "&first_name=" . $first_name .
-          "&last_name=" . $last_name);
+        header("Location: registro.php");
         exit();
       }
     }

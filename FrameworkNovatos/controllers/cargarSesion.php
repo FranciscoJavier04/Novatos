@@ -2,10 +2,12 @@
 include_once("conexion.php");
 include_once("Usuario.php");
 session_start();
+if (isset($_SESSION['user'])) {
+    $id = $_SESSION['user']->id_user;
+} else {
+    $id = $_SESSION['id'];
+}
 
-
-$id = $_SESSION['user']->id_user;
-echo $id;
 $sql = "SELECT * FROM usuarios WHERE id_user = $id";
 
 $conn = new ConexionDB();
@@ -37,10 +39,6 @@ try {
 
     header("Location: ../user.php?cc=" . $_GET['cc']);
     exit();
-
 } catch (Exception $e) {
     echo $e->getMessage();
 }
-
-
-?>
