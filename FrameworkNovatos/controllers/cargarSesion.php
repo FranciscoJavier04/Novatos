@@ -34,8 +34,10 @@ try {
             $_SESSION['user'] = $usuario;
         }
     }
-    header("Location: ../user.php");
+
+    header("Location: ../user.php?cc=" . $_GET['cc']);
     exit();
+
 } catch (Exception $e) {
     echo $e->getMessage();
 }

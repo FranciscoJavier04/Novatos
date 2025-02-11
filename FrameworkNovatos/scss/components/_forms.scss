@@ -2,14 +2,20 @@
 // Forms
 //
 
-
 textarea {
   resize: none;
   height: 110px;
 }
 
-.error{
+.error {
   color: $error;
+  text-align: center;
+  font-weight: bold;
+}
+
+.success {
+  color: $link;
+  text-align: center;
   font-weight: bold;
 }
 
@@ -17,12 +23,14 @@ a {
   color: $link;
   text-decoration: none;
 }
-.form-control, .form-select {
+.form-control,
+.form-select {
   border-radius: 10px;
   border: 1px solid $info;
 }
 
-.form-control:focus, .form-select:focus {
+.form-control:focus,
+.form-select:focus {
   outline: none;
   border-color: $mybrown;
   box-shadow: 0 0 5px $mybrown;
@@ -31,5 +39,5 @@ a {
 /*CF2: Usar variables para los colores!*/
 .form-label {
   font-size: 1.2rem;
-  color:$info;
+  color: $info;
 }

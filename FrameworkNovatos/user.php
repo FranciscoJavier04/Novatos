@@ -95,6 +95,11 @@ $imagen_base64 = base64_encode($_SESSION['user']->imagen);
                                 <div class="text-center">
                                     <button type="submit" name="modificar2" class="btn btn-comun">Guardar</button>
                                 </div>
+                                <?php
+                                if (isset($_GET['cc']) && $_GET['cc'] == 66) {
+                                    echo '<p class="success">Datos del Usuario Modificados</p>';
+                                }
+                                ?>
                             </div>
                         </div>
                     </form>
@@ -134,6 +139,9 @@ $imagen_base64 = base64_encode($_SESSION['user']->imagen);
                                     echo '<p class="error">Esa no es tu contraseña Actualmente</p>';
                                     break;
                             }
+                        }
+                        if (isset($_GET['cc']) && $_GET['cc'] == 77) {
+                            echo '<p class="success">Contraseña cambiada con exito</p>';
                         }
                         ?>
                     </form>

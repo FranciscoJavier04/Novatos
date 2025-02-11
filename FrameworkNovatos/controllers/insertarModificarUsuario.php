@@ -1,7 +1,8 @@
 <?php
 require '../vendor/autoload.php';
-include("../includes/a-config.php");
-include("conexion.php");
+include_once("Usuario.php");
+include_once("conexion.php");
+session_start();
 
 function insertarUsuario($email, $nombre, $apellidos, $pais, $telefono, $rol, $fecha_nacimiento, $password, $codigo_postal)
 {
@@ -107,8 +108,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         modificarUsuario($id, $email, $nombre, $apellidos, $pais, $telefono, $fecha_nacimiento, $codigo_postal, $rol);
 
-        // Redirigir al backend tras modificar
-        header('Location: cargarSesion.php');
+        header('Location: cargarSesion.php?cc=66');
         exit();
     } elseif (isset($_POST['modificarContraseña'])) {
         // Asegúrate de que la clase ConexionDB esté incluida correctamente y funcionando.
@@ -136,14 +136,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt->close();
 
             // Verificar la contraseña actual
-            if (md5($contraseña_actual) === $usuario['contraseña']) {
+            if (md5($contraseña_actual) === $usuario['password']) {
 
                 // Verificar si las nuevas contraseñas coinciden
                 if ($nueva_contraseña === $confirmar_nueva_contraseña) {
                     $nueva_contraseña_hash = md5($nueva_contraseña);
 
                     // Actualizar la contraseña en la base de datos
-                    $sql_update = "UPDATE usuarios SET password = ? WHERE id = ?";
+                    $sql_update = "UPDATE usuarios SET password = ? WHERE id_user = ?";
                     $stmt_update = $db->getConexion()->prepare($sql_update);
                     $stmt_update->bind_param("si", $nueva_contraseña_hash, $id);
 
@@ -157,16 +157,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 } else {
                     header("Location: ../user.php?error=22");
+                    exit();
                 }
             } else {
                 header("Location: ../user.php?error=21");
+                exit();
             }
         } else {
             echo "<p>Usuario no encontrado.</p>";
         }
 
         $db->cerrarConexion();
-        header('Location: cargarSesion.php');
+        header('Location: cargarSesion.php?cc=77');
         exit();
     }
 }
