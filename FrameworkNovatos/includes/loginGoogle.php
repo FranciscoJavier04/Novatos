@@ -7,6 +7,7 @@ require_once __DIR__ . '/../controllers/conexion.php';
 // When the index.php is called from Google after authentication,
 // the "code" parameter is passed via a GET request.
 if (isset($_GET["code"])) {
+  session_start();
   // Obtain the token object
   $token = $google_client->fetchAccessTokenWithAuthCode($_GET["code"]);
 
@@ -54,7 +55,7 @@ if (isset($_GET["code"])) {
       echo "Errno: " . $conn->errno . "\n";
       echo "Error: " . $conn->error . "\n";
       mysqli_close($conn);
-      exit;
+      exit();
     } else {
       // If a user is found, store the user ID in the session
       if ($resultado->num_rows > 0) {
@@ -63,10 +64,10 @@ if (isset($_GET["code"])) {
       } else {
         // If no user is found, free the result and proceed to registration
         $resultado->free();
-        header("Location: registro.php?email=" . urlencode($email) .
-          "&first_name=" . urlencode($first_name) .
-          "&last_name=" . urlencode($last_name));
-        exit;
+        header("Location: registro.php?email=" . $email .
+          "&first_name=" . $first_name .
+          "&last_name=" . $last_name);
+        exit();
       }
     }
   }
