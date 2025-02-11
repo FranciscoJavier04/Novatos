@@ -28,6 +28,7 @@ include("includes/a-config.php");
 
             <!-- Contenido Principal -->
             <div class="w-5 p-3 mx-auto text-justify carta-del col-md-9 bg-info rounded-3 text-paragraph">
+
                 <!-- ENTRANTES -->
                 <?php
                 $db = new ConexionDB();
@@ -42,9 +43,10 @@ include("includes/a-config.php");
                         <h1 class="mb-5 me-4 text-center subtitulo-carta" id="valoracion">Valorar</h1>
                     </div>
                     <div class="col-md-7">
-                        <h1 class="mb-5 text-center subtitulo-carta" id="entrantes">Entrantes</h1>
+                        <h1 class="mb-5 mt-5 text-center subtitulo-carta" id="entrantes">Entrantes</h1>
                     </div>
                     <div class="col-md-3">
+                        <h1 class="mb-5 ms-4 text-center subtitulo-carta" id="entrantes">Carrito</h1>
                     </div>
                 </div>
                 <div class="row">
@@ -72,77 +74,6 @@ include("includes/a-config.php");
                         </div>
                     <?php } ?>
                 </div>
-
-                <!-- Modal Valoración -->
-                <div class="modal fade" id="modalValoracion" tabindex="-1" aria-labelledby="modalValoracionLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="modalValoracionLabel">Realizar Valoración</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <form id="formValoracion" action="controllers/valoracion.php" method="POST">
-                                <div class="modal-body">
-                                    <input type="hidden" id="id_user" name="id_user">
-                                    <input type="hidden" id="id_plato" name="id_plato">
-
-                                    <div class="mb-3">
-                                        <label for="comentario" class="form-label">Comentario</label>
-                                        <textarea class="form-control" id="comentario" name="comentario"
-                                            required></textarea>
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <label for="valoracion" class="form-label">Valoración (1-10)</label>
-                                        <input type="number" class="form-control" id="valoracion" name="valoracion"
-                                            min="1" max="10" required>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Cerrar</button>
-                                    <button type="submit" id="submitBtnV" name="insertar"
-                                        class="btn btn-primary">Guardar</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-                <?php
-                $db->cerrarConexion();
-                ?>
-
-                <!-- Script de Validación -->
-                <script>
-                    document.getElementById("formValoracion").addEventListener("submit", function (event) {
-                        let valid = true;
-
-
-
-                        if (!valid) {
-                            event.preventDefault();
-                        }
-                    });
-
-                    function mostrarModalValoracion(id_user, id_plato, comentario, valoracion) {
-                        document.getElementById('id_user').value = id_user;
-                        document.getElementById('id_plato').value = id_plato;
-                        document.getElementById('comentario').value = comentario;
-                        document.getElementById('valoracion').value = valoracion;
-                    }
-
-                    function verificarSesion() {
-                        <?php if (!isset($_SESSION['user'])) { ?>
-                            alert("Debes iniciar sesión para añadir productos al carrito.");
-                        <?php } else { ?>
-                            window.location.href = "carrito.php";
-                        <?php } ?>
-                    }
-
-                </script>
 
                 <!-- PRINCIPALES -->
                 <?php
@@ -180,77 +111,6 @@ include("includes/a-config.php");
                     <?php } ?>
                 </div>
 
-                <!-- Modal Valoración -->
-                <div class="modal fade" id="modalValoracion" tabindex="-1" aria-labelledby="modalValoracionLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="modalValoracionLabel">Realizar Valoración</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <form id="formValoracion" action="controllers/valoracion.php" method="POST">
-                                <div class="modal-body">
-                                    <input type="hidden" id="id_user" name="id_user">
-                                    <input type="hidden" id="id_plato" name="id_plato">
-
-                                    <div class="mb-3">
-                                        <label for="comentario" class="form-label">Comentario</label>
-                                        <textarea class="form-control" id="comentario" name="comentario"
-                                            required></textarea>
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <label for="valoracion" class="form-label">Valoración (1-10)</label>
-                                        <input type="number" class="form-control" id="valoracion" name="valoracion"
-                                            min="1" max="10" required>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Cerrar</button>
-                                    <button type="submit" id="submitBtnV" name="insertar"
-                                        class="btn btn-primary">Guardar</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-                <?php
-                $db->cerrarConexion();
-                ?>
-
-                <!-- Script de Validación -->
-                <script>
-                    document.getElementById("formValoracion").addEventListener("submit", function (event) {
-                        let valid = true;
-
-
-
-                        if (!valid) {
-                            event.preventDefault();
-                        }
-                    });
-
-                    function mostrarModalValoracion(id_user, id_plato, comentario, valoracion) {
-                        document.getElementById('id_user').value = id_user;
-                        document.getElementById('id_plato').value = id_plato;
-                        document.getElementById('comentario').value = comentario;
-                        document.getElementById('valoracion').value = valoracion;
-                    }
-
-                    function verificarSesion() {
-                        <?php if (!isset($_SESSION['user'])) { ?>
-                            alert("Debes iniciar sesión para añadir productos al carrito.");
-                        <?php } else { ?>
-                            window.location.href = "carrito.php";
-                        <?php } ?>
-                    }
-
-                </script>
-
                 <!-- ESPECIALIDADES -->
                 <?php
                 $db = new ConexionDB();
@@ -287,76 +147,6 @@ include("includes/a-config.php");
                     <?php } ?>
                 </div>
 
-                <!-- Modal Valoración -->
-                <div class="modal fade" id="modalValoracion" tabindex="-1" aria-labelledby="modalValoracionLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="modalValoracionLabel">Realizar Valoración</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <form id="formValoracion" action="controllers/valoracion.php" method="POST">
-                                <div class="modal-body">
-                                    <input type="hidden" id="id_user" name="id_user">
-                                    <input type="hidden" id="id_plato" name="id_plato">
-
-                                    <div class="mb-3">
-                                        <label for="comentario" class="form-label">Comentario</label>
-                                        <textarea class="form-control" id="comentario" name="comentario"
-                                            required></textarea>
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <label for="valoracion" class="form-label">Valoración (1-10)</label>
-                                        <input type="number" class="form-control" id="valoracion" name="valoracion"
-                                            min="1" max="10" required>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Cerrar</button>
-                                    <button type="submit" id="submitBtnV" name="insertar"
-                                        class="btn btn-primary">Guardar</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-                <?php
-                $db->cerrarConexion();
-                ?>
-
-                <!-- Script de Validación -->
-                <script>
-                    document.getElementById("formValoracion").addEventListener("submit", function (event) {
-                        let valid = true;
-
-
-
-                        if (!valid) {
-                            event.preventDefault();
-                        }
-                    });
-
-                    function mostrarModalValoracion(id_user, id_plato, comentario, valoracion) {
-                        document.getElementById('id_user').value = id_user;
-                        document.getElementById('id_plato').value = id_plato;
-                        document.getElementById('comentario').value = comentario;
-                        document.getElementById('valoracion').value = valoracion;
-                    }
-
-                    function verificarSesion() {
-                        <?php if (!isset($_SESSION['user'])) { ?>
-                            alert("Debes iniciar sesión para añadir productos al carrito.");
-                        <?php } else { ?>
-                            window.location.href = "carrito.php";
-                        <?php } ?>
-                    }
-
-                </script>
 
                 <!-- POSTRES -->
                 <?php
@@ -393,6 +183,8 @@ include("includes/a-config.php");
 
                 <?php $db->cerrarConexion(); ?>
 
+
+
                 <!-- Modal Valoración -->
                 <div class="modal fade" id="modalValoracion" tabindex="-1" aria-labelledby="modalValoracionLabel"
                     aria-hidden="true">
@@ -409,8 +201,8 @@ include("includes/a-config.php");
                                     <input type="hidden" id="id_plato" name="id_plato">
 
                                     <div class="mb-3">
-                                        <label for="editor-container" class="form-label">Comentario</label>
-                                        <div id="editor-container" style="height: 150px;"></div>
+                                        <label for="comentario" class="form-label">Comentario</label>
+                                        <div class="form-label" id="editor-container"></div>
                                         <input type="hidden" id="comentario" name="comentario">
                                     </div>
 
@@ -431,9 +223,24 @@ include("includes/a-config.php");
                     </div>
                 </div>
 
-                <!-- Script de Validación -->
+                <!-- Scripts para Quill -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/quill/1.3.6/quill.snow.min.css" />
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/quill/1.3.6/quill.min.js"></script>
                 <script>
+                    var quill = new Quill('#editor-container', {
+                        theme: 'snow',
+                        modules: {
+                            toolbar: [
+                                [{ 'font': [] }, { 'size': [] }],
+                                ['bold', 'italic', 'underline', 'strike'],
+                                [{ 'color': [] }, { 'background': [] }]
+                            ]
+                        },
+                        placeholder: 'Escribe tu comentario aquí...'
+                    });
+
                     document.getElementById("formValoracion").addEventListener("submit", function (event) {
+                        document.getElementById("comentario").value = quill.root.innerHTML;
                         let valid = true;
 
                         if (!valid) {
@@ -444,7 +251,7 @@ include("includes/a-config.php");
                     function mostrarModalValoracion(id_user, id_plato, comentario, valoracion) {
                         document.getElementById('id_user').value = id_user;
                         document.getElementById('id_plato').value = id_plato;
-                        document.getElementById('comentario').value = comentario;
+                        quill.root.innerHTML = comentario;
                         document.getElementById('valoracion').value = valoracion;
                     }
 
@@ -455,7 +262,6 @@ include("includes/a-config.php");
                             window.location.href = "carrito.php";
                         <?php } ?>
                     }
-
                 </script>
             </div>
         </div>
