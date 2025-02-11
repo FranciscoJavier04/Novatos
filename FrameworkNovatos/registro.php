@@ -8,8 +8,8 @@ $email = $_GET['email'] ?? '';
 $first_name = $_GET['first_name'] ?? '';
 $last_name = $_GET['last_name'] ?? '';
 
-echo "Hola" . $email
-    ?>
+echo "Hola" . $_SESSION['user_email_address']
+?>
 <!DOCTYPE html>
 <html>
 
