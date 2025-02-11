@@ -52,6 +52,11 @@ function modificarUsuario($id, $email, $nombre, $apellidos, $pais, $telefono, $f
     }
 }
 
+function modificarPass($id, $newPass)
+{
+
+}
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['insertar'])) {
@@ -105,6 +110,65 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Redirigir al backend tras modificar
         header('Location: cargarSesion.php');
         exit();
+    } elseif (isset($_POST['modificarContraseña'])) {
+        // Asegúrate de que la clase ConexionDB esté incluida correctamente y funcionando.
+
+        $contraseña_actual = $_POST['current_password'];
+        $nueva_contraseña = $_POST['new_password'];
+        $confirmar_nueva_contraseña = $_POST['confirm_new_password'];
+
+        $id = $_SESSION['user']->id_user; // Asegúrate de que el ID del usuario esté en la sesión.
+
+        // Crear instancia de la conexión
+        $db = new ConexionDB();
+        $sql = "SELECT password FROM usuarios WHERE id_user = ?";
+
+        // Preparar y ejecutar la consulta
+        $stmt = $db->getConexion()->prepare($sql);
+        $stmt->bind_param("i", $id);
+        $stmt->execute();
+        $result = $stmt->get_result(); // Obtener el resultado de la consulta
+
+        // Verificar si se obtuvo un resultado
+        if ($result->num_rows > 0) {
+            $usuario = $result->fetch_assoc(); // Obtener la fila del usuario
+
+            $stmt->close();
+
+            // Verificar la contraseña actual
+            if (md5($contraseña_actual) === $usuario['contraseña']) {
+
+                // Verificar si las nuevas contraseñas coinciden
+                if ($nueva_contraseña === $confirmar_nueva_contraseña) {
+                    $nueva_contraseña_hash = md5($nueva_contraseña);
+
+                    // Actualizar la contraseña en la base de datos
+                    $sql_update = "UPDATE usuarios SET password = ? WHERE id = ?";
+                    $stmt_update = $db->getConexion()->prepare($sql_update);
+                    $stmt_update->bind_param("si", $nueva_contraseña_hash, $id);
+
+                    if ($stmt_update->execute()) {
+                        echo "<p>Contraseña modificada exitosamente.</p>";
+                    } else {
+                        echo "<p>Error al modificar la contraseña: " . $stmt_update->error . "</p>";
+                    }
+
+                    $stmt_update->close();
+
+                } else {
+                    header("Location: ../user.php?error=22");
+                }
+            } else {
+                header("Location: ../user.php?error=21");
+            }
+        } else {
+            echo "<p>Usuario no encontrado.</p>";
+        }
+
+        $db->cerrarConexion();
+        header('Location: cargarSesion.php');
+        exit();
     }
 }
+
 ?>
