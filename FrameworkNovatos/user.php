@@ -112,19 +112,25 @@ $imagen_base64 = base64_encode($_SESSION['user']->imagen);
                     <form method="POST" action="./controllers/insertarModificarUsuario.php">
                         <h5 class="text-center">Cambiar Contraseña</h5>
                         <div class="separador-user mb-3"></div>
-                        <div class="text-center mb-3">
+                        <div class="text-center mb-3 password-container">
                             <label for="current_password" class="form-label">Contraseña actual</label>
                             <input type="password" class="form-control" id="current_password" name="current_password"
                                 required>
+                            <i class="fas fa-eye password-icon" id="togglePasswordCurrent"
+                                onclick="mostrarPass('current_password','togglePasswordCurrent')"></i>
                         </div>
-                        <div class="text-center mb-3">
+                        <div class="text-center mb-3 password-container">
                             <label for="new_password" class="form-label">Nueva contraseña</label>
                             <input type="password" class="form-control" id="new_password" name="new_password" required>
+                            <i class="fas fa-eye password-icon" id="togglePasswordNew"
+                                onclick="mostrarPass('new_password','togglePasswordNew')"></i>
                         </div>
-                        <div class="text-center mb-3">
+                        <div class="text-center mb-3 password-container">
                             <label for="confirm_new_password" class="form-label">Repite nueva contraseña</label>
                             <input type="password" class="form-control" id="confirm_new_password"
                                 name="confirm_new_password" required>
+                            <i class="fas fa-eye password-icon" id="togglePasswordConfirm"
+                                onclick="mostrarPass('confirm_new_password','togglePasswordConfirm')"></i>
                         </div>
                         <div class="text-center">
                             <button name="modificarContraseña" type="submit" class="btn btn-comun">Guardar</button>
@@ -150,6 +156,7 @@ $imagen_base64 = base64_encode($_SESSION['user']->imagen);
         </section>
     </main>
     <script src="juegos/scripts/subirFoto.js"></script>
+    <script src="/controllers/formularios.js"></script>
     <?php include("includes/footer.php"); ?>
 </body>
 
