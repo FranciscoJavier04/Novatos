@@ -1,4 +1,7 @@
 <?php
+
+use phpseclib3\Math\BinaryField\Integer;
+
 require '../vendor/autoload.php';
 include_once("Usuario.php");
 include_once("conexion.php");
@@ -53,9 +56,26 @@ function modificarUsuario($id, $email, $nombre, $apellidos, $pais, $telefono, $f
     }
 }
 
-function modificarPass($id, $newPass)
+function comprobarEmailRepetido($email)
 {
-
+    try {
+        if ($email == $_SESSION['user']->email) {
+            return false;
+        }
+        $db = new ConexionDB();
+        $sql = "SELECT * FROM usuarios WHERE email = ?";
+        $stmt = $db->getConexion()->prepare($sql);
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        if ($result->num_rows > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    } catch (Exception $e) {
+        echo '<p>Error: ' . $e->getMessage() . '</p>';
+    }
 }
 
 
@@ -105,9 +125,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $rol = $_POST['rol'] ?? 'Admin';
         $fecha_nacimiento = $_POST['fecha_nac'] ?? '1990-01-01';
         $codigo_postal = $_POST['cod_postal'] ?? '11111';
+        if (comprobarEmailRepetido($email)) {
+            header("Location: ../user.php?error=662");
+            exit();
+        }
 
         modificarUsuario($id, $email, $nombre, $apellidos, $pais, $telefono, $fecha_nacimiento, $codigo_postal, $rol);
-
         header('Location: cargarSesion.php?cc=66');
         exit();
     } elseif (isset($_POST['modificarContraseña'])) {

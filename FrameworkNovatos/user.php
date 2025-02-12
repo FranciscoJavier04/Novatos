@@ -97,7 +97,9 @@ $imagen_base64 = base64_encode($_SESSION['user']->imagen);
                                 </div>
                                 <?php
                                 if (isset($_GET['cc']) && $_GET['cc'] == 66) {
-                                    echo '<p class="success">Datos del Usuario Modificados</p>';
+                                    echo '<p class="success">Datos del Usuario Guardados</p>';
+                                } else if (isset($_GET['error']) && $_GET['error'] == 662) {
+                                    echo '<p class="error">Ese email ya esta registrado, no se pueden modificar los datos</p>';
                                 }
                                 ?>
                             </div>
