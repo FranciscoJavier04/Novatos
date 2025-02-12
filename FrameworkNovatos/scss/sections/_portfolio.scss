@@ -80,6 +80,11 @@ img-nav {
   height: 500px;
   border: 1px solid #ddd;
 }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+
 //ALEX
 //CARTA
 .body-carta {
