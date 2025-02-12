@@ -58,36 +58,36 @@ if ($_COOKIE['aceptarCookie'] == "false") {
                             <label for="nombre" class="form-label">Nombre</label>
                             <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Manuel"
                                 value="<?php if (isset($_SESSION['user_first_name'])) {
-                                            echo $_SESSION['user_first_name'];
-                                        } ?>">
+                                    echo $_SESSION['user_first_name'];
+                                } ?>">
                         </div>
                         <div class="mb-3">
                             <label for="apellidos" class="form-label">Apellidos</label>
                             <input type="text" class="form-control" name="apellidos" id="apellidos"
                                 placeholder="Romero Reyes" value="<?php if (isset($_SESSION['user_last_name'])) {
-                                                                        echo $_SESSION['user_last_name'];
-                                                                    } ?>">
+                                    echo $_SESSION['user_last_name'];
+                                } ?>">
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Correo Electrónico</label>
                             <input type="email" class="form-control" name="email" id="email"
                                 placeholder="fran@gmail.com" value="<?php if (isset($_SESSION['user_email_address'])) {
-                                                                        echo $_SESSION['user_email_address'];
-                                                                    } ?>">
+                                    echo $_SESSION['user_email_address'];
+                                } ?>">
                         </div>
                         <div class="mb-3 password-container">
                             <label for="password" class="form-label">Contraseña</label>
                             <input type="password" class="form-control" name="password" id="password"
                                 placeholder="********">
                             <i class="fas fa-eye password-icon" id="togglePassword"
-                                onclick="mostrarPass('password')"></i>
+                                onclick="mostrarPass('password','togglePassword')"></i>
                         </div>
                         <div class="mb-3 password-container">
                             <label for="password" class="form-label">Confirmar Contraseña</label>
                             <input type="password" class="form-control" name="conf_password" id="conf_password"
                                 placeholder="********">
-                            <i class="fas fa-eye password-icon" id="togglePassword"
-                                onclick="mostrarPass('conf_password')"></i>
+                            <i class="fas fa-eye password-icon" id="togglePasswordConfirm"
+                                onclick="mostrarPass('conf_password','togglePasswordConfirm')"></i>
                         </div>
                         <div class="mb-3 row">
                             <div class="col-6">

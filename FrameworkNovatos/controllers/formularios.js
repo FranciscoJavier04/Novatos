@@ -1,6 +1,6 @@
-function mostrarPass(inputId) {
+function mostrarPass(inputId,iconId) {
     let passwordInput = document.getElementById(inputId);
-    let icon = document.querySelector(`#togglePassword`);
+    let icon = document.getElementById(iconId);
     
     if (passwordInput.type === "password") {
         passwordInput.type = "text";
