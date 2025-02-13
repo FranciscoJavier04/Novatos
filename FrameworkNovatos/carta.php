@@ -16,7 +16,7 @@ include("includes/a-config.php"); ?>
     <main class="main-carta">
         <div class="container">
             <div class="hero-logo-carta d-flex justify-content-center align-items-center mb-n3">
-                <img src="assets/img/logo.png" class="logo-carta rounded-circle ">
+                <img src="assets/img/logo.png" class="logo-carta rounded-circle " alt="logo-carta">
             </div>
 
 
@@ -28,7 +28,7 @@ include("includes/a-config.php"); ?>
 
                     <!-- ENTRANTES -->
                     <div class="gap-2 mt-5 mb-4 d-flex justify-content-center">
-                        <img src="assets/img/carta/ENTRANTES.png" class="mt-5 imagen-tipo-plato">
+                        <img src="assets/img/carta/ENTRANTES.png" class="mt-5 imagen-tipo-plato" alt="entrantes">
                         <div class="h-auto mt-5 section-background-carta w-50"></div>
                     </div>
 
@@ -81,7 +81,7 @@ include("includes/a-config.php"); ?>
 
                     <!-- PRINCIPALES -->
                     <div class="gap-2 mt-5 mb-4 d-flex justify-content-center">
-                        <img src="assets/img/carta/Principal.png" class="mt-5 imagen-tipo-plato">
+                        <img src="assets/img/carta/Principal.png" class="mt-5 imagen-tipo-plato" alt="platoPrincipal">
                         <div class="h-auto mt-5 section-background-carta w-50"></div>
                     </div>
 
@@ -125,7 +125,7 @@ include("includes/a-config.php"); ?>
 
                     <!-- ESPECIALIDADES -->
                     <div class="gap-2 mt-5 mb-4 d-flex justify-content-center">
-                        <img src="assets/img/carta/Especialidad.png" class="mt-5 imagen-tipo-plato">
+                        <img src="assets/img/carta/Especialidad.png" class="mt-5 imagen-tipo-plato" alt="especialidad">
                         <div class="h-auto mt-5 section-background-carta w-50"></div>
                     </div>
 
@@ -166,19 +166,19 @@ include("includes/a-config.php"); ?>
                     <div class="row">
                         <div class="flex-wrap gap-5 items-carta-postre d-flex justify-content-center">
                             <div class="item-carta-postre fs-6 d-flex flex-column">
-                                <img src="assets/img/carta/tartaSantiago.png" class="img-postres w-100 h-100">
+                                <img src="assets/img/carta/tartaSantiago.png" class="img-postres w-100 h-100" alt="tartaSantiago">
                                 <p>Tarta de Santiago.</p>
                                 <p>Con helado de vainilla y crema de almendras.</p>
                                 <p>Precio . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15 €</p>
                             </div>
                             <div class="item-carta-postre fs-6 d-flex flex-column">
-                                <img src="assets/img/carta/Coulant.png" class="img-postres">
+                                <img src="assets/img/carta/Coulant.png" class="img-postres" alt="coulant">
                                 <p>Coulant de Chocolate Negro.</p>
                                 <p>Con helado de frambuesa y crumble.</p>
                                 <p>Precio . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16 €</p>
                             </div>
                             <div class="item-carta-postre fs-6 d-flex flex-column">
-                                <img src="assets/img/carta/CremaCatalana.png" class="img-postres">
+                                <img src="assets/img/carta/CremaCatalana.png" class="img-postres" alt="cremaCatalana">
                                 <p>Crema Catalana con Toffee Salado.</p>
                                 <p>Crujiente y suave a la vez.</p>
                                 <p>Precio . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14€</p>
@@ -186,12 +186,12 @@ include("includes/a-config.php"); ?>
                         </div>
                         <div class="my-5 row justify-content-center">
                             <div class="item-carta-postre fs-6 d-flex flex-column ">
-                                <img src="assets/img/carta/Milhojas.png" class="img-postres">
+                                <img src="assets/img/carta/Milhojas.png" class="img-postres" alt="milHojas">
                                 <span>Milhojas de Crema de Mascarpone y Frutos Rojas.</span>
                                 <p>Precio . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14€</p>
                             </div>
                             <div class="item-carta-postre fs-6 d-flex flex-column">
-                                <img src="assets/img/carta/Helado.png" class="img-postres">
+                                <img src="assets/img/carta/Helado.png" class="img-postres" alt="helado">
                                 <p>Helados Artesanales.</p>
                                 <p>Variedad de sabores de temporada.</p>
                                 <p>Precio . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12€</p>
