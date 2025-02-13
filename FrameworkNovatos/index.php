@@ -89,7 +89,7 @@ include("includes/a-config.php"); ?>
                         <button class="rewind-btn btn-secondary d-flex align-items-center">
                             <i class="fas fa-backward"></i><span class="d-none">Avanzar 15 segundos</span>
                         </button>
-                        <label>15s</label>
+                        <span>15s</span>
                         <button class="forward-btn btn-secondary d-flex align-items-center"><span
                                 class="d-none">Retroceder 15 segundos</span>
                             <i class="fas fa-forward"></i>
@@ -136,7 +136,7 @@ include("includes/a-config.php"); ?>
                         <button class="rewind-btn btn-secondary d-flex align-items-center">
                             <i class="fas fa-backward"></i><span class="d-none">Avanzar 15 segundos</span>
                         </button>
-                        <label>15s</label>
+                        <span>15s</span>
                         <button class="forward-btn btn-secondary d-flex align-items-center"><span
                                 class="d-none">Retroceder 15 segundos</span>
                             <i class="fas fa-forward"></i>
@@ -184,7 +184,7 @@ include("includes/a-config.php"); ?>
                         <button class="rewind-btn btn-secondary d-flex align-items-center">
                             <i class="fas fa-backward"></i><span class="d-none">Avanzar 15 segundos</span>
                         </button>
-                        <label>15s</label>
+                        <span>15s</span>
                         <button class="forward-btn btn-secondary d-flex align-items-center"><span
                                 class="d-none">Retroceder 15 segundos</span>
                             <i class="fas fa-forward"></i>
