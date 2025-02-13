@@ -8,7 +8,7 @@ if (!isset($_SESSION['user']) || $_SESSION['user'] == null) {
 $imagen_base64 = base64_encode($_SESSION['user']->imagen);
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <?php include("includes/head-tag-contents.php"); ?>

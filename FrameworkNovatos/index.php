@@ -2,7 +2,7 @@
 require 'vendor/autoload.php';
 include("includes/a-config.php"); ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <?php include("includes/head-tag-contents.php"); ?>
@@ -24,33 +24,40 @@ include("includes/a-config.php"); ?>
                         <div class="carousel-inner">
                             <!-- Primera novedad -->
                             <div class="carousel-item active">
-                                <img src="assets/img/carta/tartaSantiago.png" class="d-block w-100 img-fluid" alt="Tarta Santiago">
+                                <img src="assets/img/carta/tartaSantiago.png" class="d-block w-100 img-fluid"
+                                    alt="Tarta Santiago">
                                 <p class="mt-2 text-center">Postres al 50% de descuento esta semana</p>
                             </div>
                             <!-- Segunda novedad -->
                             <div class="carousel-item">
-                                <img src="assets/img/carta/Carrillera.png" class="d-block w-100 img-fluid" alt="Café Especial">
-                                <p class="mt-2 text-center">Prueba nuestro nuestra carrillera de ternera al vino tinto</p>
+                                <img src="assets/img/carta/Carrillera.png" class="d-block w-100 img-fluid"
+                                    alt="Café Especial">
+                                <p class="mt-2 text-center">Prueba nuestro nuestra carrillera de ternera al vino tinto
+                                </p>
                             </div>
                             <!-- Tercera novedad -->
                             <div class="carousel-item">
-                                <img src="assets/img/carta/Merluza.png" class="d-block w-100 img-fluid" alt="Promo Desayuno">
+                                <img src="assets/img/carta/Merluza.png" class="d-block w-100 img-fluid"
+                                    alt="Promo Desayuno">
                                 <p class="mt-2 text-center"> Merluza a la Koskera rebajada por temporada ¡Aprovecha!</p>
                             </div>
                         </div>
                         <!-- Controles del carrusel -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselNovedades" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselNovedades"
+                            data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Anterior</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselNovedades" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselNovedades"
+                            data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Siguiente</span>
                         </button>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" id="aceptarNovedades" data-bs-dismiss="modal">Aceptar</button>
+                    <button type="button" class="btn btn-secondary" id="aceptarNovedades"
+                        data-bs-dismiss="modal">Aceptar</button>
                 </div>
             </div>
         </div>

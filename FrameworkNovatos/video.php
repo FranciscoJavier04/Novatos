@@ -2,7 +2,7 @@
 require 'vendor/autoload.php';
 include("includes/a-config.php"); ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <?php include("includes/head-tag-contents.php"); ?>

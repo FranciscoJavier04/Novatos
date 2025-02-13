@@ -11,7 +11,7 @@ if ($_COOKIE['aceptarCookie'] == "false") {
 
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <?php include("includes/head-tag-contents.php"); ?>

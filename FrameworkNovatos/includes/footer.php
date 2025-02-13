@@ -4,8 +4,8 @@
             <!-- ÓNEO y Dirección -->
             <div class="col-lg-5">
                 <div class="d-flex justify-content-center mb-3">
-                    <img src="assets/img/LogoSinFondo.png" class="logo me-2">
-                    <p class="fs7 mb-0">ÓNEO</p>
+                    <img src="assets/img/LogoSinFondo.png" class="logo me-2" alt="Imagen del Logo">
+                    <h1 class="fs7 mb-0">ÓNEO</h1>
                 </div>
                 <p class="descFooter text-justify">
                     Óneo es un restaurante moderno y lujoso que ofrece una experiencia gastronómica exclusiva,
