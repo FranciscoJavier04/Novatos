@@ -82,24 +82,30 @@ include("includes/a-config.php"); ?>
                     </iframe>
                     <div id="controls-1"
                         class="flex-wrap gap-2 px-1 my-0 video-controls d-flex align-items-center bg-secondary text-primary">
-                        <button class="toggle-btn btn btn-primary d-flex align-items-center">
+                        <button class="toggle-btn btn btn-primary d-flex align-items-center"><span class="d-none">Boton
+                                de Play</span>
                             <i class="play-icon fas fa-play"></i>
                         </button>
                         <button class="rewind-btn btn-secondary d-flex align-items-center">
-                            <i class="fas fa-backward"></i>
+                            <i class="fas fa-backward"></i><span class="d-none">Avanzar 15 segundos</span>
                         </button>
                         <label>15s</label>
-                        <button class="forward-btn btn-secondary d-flex align-items-center">
+                        <button class="forward-btn btn-secondary d-flex align-items-center"><span
+                                class="d-none">Retroceder 15 segundos</span>
                             <i class="fas fa-forward"></i>
                         </button>
                         <section class="gap-2 progress-container d-flex align-items-center flex-grow-1">
                             <span class="current-time text-nowrap">0:00</span>
-                            <input type="range" class="progress-bar form-range flex-grow-1" min="0" max="100" value="0">
+                            <span id="labelProgreso" class="d-none">Barra de Progreso</span>
+                            <input type="range" class="progress-bar form-range flex-grow-1" min="0" max="100" value="0"
+                                aria-labelledby="labelProgreso">
                             <span class="total-time text-nowrap">0:00</span>
                         </section>
                         <section class="gap-2 d-flex align-items-center">
                             <i class="fas fa-volume-up"></i>
-                            <input type="range" class="volume-control form-range" min="0" max="100" value="50">
+                            <span id="labelVolumen" class="d-none">Volumen</span>
+                            <input type="range" class="volume-control form-range" min="0" max="100" value="50"
+                                aria-labelledby="labelVolumen">
                         </section>
                     </div>
                 </div>
@@ -123,24 +129,30 @@ include("includes/a-config.php"); ?>
                     </iframe>
                     <div id="controls-2"
                         class="flex-wrap gap-2 px-1 video-controls d-flex align-items-center bg-secondary text-primary">
-                        <button class="toggle-btn btn btn-primary d-flex align-items-center">
+                        <button class="toggle-btn btn btn-primary d-flex align-items-center"><span class="d-none">Boton
+                                de Play</span>
                             <i class="play-icon fas fa-play"></i>
                         </button>
                         <button class="rewind-btn btn-secondary d-flex align-items-center">
-                            <i class="fas fa-backward"></i>
+                            <i class="fas fa-backward"></i><span class="d-none">Avanzar 15 segundos</span>
                         </button>
                         <label>15s</label>
-                        <button class="forward-btn btn-secondary d-flex align-items-center">
+                        <button class="forward-btn btn-secondary d-flex align-items-center"><span
+                                class="d-none">Retroceder 15 segundos</span>
                             <i class="fas fa-forward"></i>
                         </button>
                         <section class="gap-2 progress-container d-flex align-items-center flex-grow-1">
                             <span class="current-time text-nowrap">0:00</span>
-                            <input type="range" class="progress-bar form-range flex-grow-1" min="0" max="100" value="0">
+                            <span id="labelProgreso" class="d-none">Barra de Progreso</span>
+                            <input type="range" class="progress-bar form-range flex-grow-1" min="0" max="100" value="0"
+                                aria-labelledby="labelProgreso">
                             <span class="total-time text-nowrap">0:00</span>
                         </section>
                         <section class="gap-2 d-flex align-items-center">
                             <i class="fas fa-volume-up"></i>
-                            <input type="range" class="volume-control form-range" min="0" max="100" value="50">
+                            <span id="labelVolumen" class="d-none">Volumen</span>
+                            <input type="range" class="volume-control form-range" min="0" max="100" value="50"
+                                aria-labelledby="labelVolumen">
                         </section>
                     </div>
                 </div>
@@ -165,24 +177,30 @@ include("includes/a-config.php"); ?>
                     </iframe>
                     <div id="controls-3"
                         class="flex-wrap gap-2 px-1 video-controls d-flex align-items-center bg-secondary text-primary">
-                        <button class="toggle-btn btn btn-primary d-flex align-items-center">
+                        <button class="toggle-btn btn btn-primary d-flex align-items-center"><span class="d-none">Boton
+                                de Play</span>
                             <i class="play-icon fas fa-play"></i>
                         </button>
                         <button class="rewind-btn btn-secondary d-flex align-items-center">
-                            <i class="fas fa-backward"></i>
+                            <i class="fas fa-backward"></i><span class="d-none">Avanzar 15 segundos</span>
                         </button>
                         <label>15s</label>
-                        <button class="forward-btn btn-secondary d-flex align-items-center">
+                        <button class="forward-btn btn-secondary d-flex align-items-center"><span
+                                class="d-none">Retroceder 15 segundos</span>
                             <i class="fas fa-forward"></i>
                         </button>
                         <section class="gap-2 progress-container d-flex align-items-center flex-grow-1">
                             <span class="current-time text-nowrap">0:00</span>
-                            <input type="range" class="progress-bar form-range flex-grow-1" min="0" max="100" value="0">
+                            <span id="labelProgreso" class="d-none">Barra de Progreso</span>
+                            <input type="range" class="progress-bar form-range flex-grow-1" min="0" max="100" value="0"
+                                aria-labelledby="labelProgreso">
                             <span class="total-time text-nowrap">0:00</span>
                         </section>
                         <section class="gap-2 d-flex align-items-center">
                             <i class="fas fa-volume-up"></i>
-                            <input type="range" class="volume-control form-range" min="0" max="100" value="50">
+                            <span id="labelVolumen" class="d-none">Volumen</span>
+                            <input type="range" class="volume-control form-range" min="0" max="100" value="50"
+                                aria-labelledby="labelVolumen">
                         </section>
                     </div>
                 </div>
