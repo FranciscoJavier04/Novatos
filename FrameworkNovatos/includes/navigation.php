@@ -4,10 +4,10 @@ include_once("./controllers/Usuario.php");
 <nav class="navbar navbar-expand-md sticky-top bg-secondary fs-4 fw-bold text-danger">
   <div class="container-fluid">
     <a class="navbar-brand me-auto fs-4 text-danger" href="Index.php">
-      <img src="assets/img/LogoSinFondo.png" alt="Logo" id="logo" class="d-none d-md-inline">
+      <img src="assets/img/LogoSinFondo.png" alt="LogoNavbar" id="logo" class="d-none d-md-inline">
       <span id="titulo" class="d-inline d-md-none">ÓNEO</span>
     </a>
-    <button class="navbar-toggler border-0 fs-4 text-danger" type="button" data-bs-toggle="collapse"
+    <button class="border-0 navbar-toggler fs-4 text-danger" type="button" data-bs-toggle="collapse"
       data-bs-target="#navbar"><span class="d-none">Hamburguesa Menu navbar</span>
       <i class="fas fa-bars"></i>
     </button>
@@ -39,13 +39,13 @@ include_once("./controllers/Usuario.php");
           <?php
 
           if (!isset($_SESSION['user'])) {
-            ?>
+          ?>
             <a class="nav-link ms-3 me-3 fs-4 text-danger" href="login.php"><span class="d-none">Inicio
                 Sesion/Login</span><i class="fas fa-user"></i></a><?php
-          } else {
-            $imagen_base64 = base64_encode($_SESSION['user']->imagen);
+                                                                } else {
+                                                                  $imagen_base64 = base64_encode($_SESSION['user']->imagen);
 
-            echo "
+                                                                  echo "
               <div class='dropdown'>
                   <button class='btn btn-secondary dropdown-toggle' type='button' id='dropdownMenuButton' data-bs-toggle='dropdown' aria-expanded='false'>
                       <img src='data:image/png;base64,{$imagen_base64}' class='img-nav rounded-circle' alt='Imagen del Usuario' style='width: 40px; height: 40px;' />
@@ -55,8 +55,8 @@ include_once("./controllers/Usuario.php");
                       <li><a class='dropdown-item' href='../controllers/cerrarSesion.php'>Cerrar sesión</a></li>
                   </ul>
               </div>";
-          }
-          ?>
+                                                                }
+                                                                  ?>
         </li>
         <li class="nav-item">
           <a class="nav-link ms-3 me-3 fs-4 text-danger" href="carrito.php"><span class="d-none">Carro</span><i
