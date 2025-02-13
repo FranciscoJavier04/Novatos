@@ -40,7 +40,7 @@ include("includes/a-config.php"); ?>
                 <div class="col-md-4 mb-3 d-flex">
                     <div class="card border-0 fw-bold fst-italic fs-4 bg-transparent" id="cardReserva">
                         <img class="card-img-top border border-3 rounded-3 border-danger"
-                            src="assets/img/reserva/interior.png" alt="terraza">
+                            src="assets/img/reserva/interior.png" alt="Comedor">
                         <div class="card-body text-center mt-3 border border-3 rounded-3 border-danger bg-warning">
                             <h1 class="card-title" id="titulo">Comedor</h1>
                             <p class="card-text">Un comedor lujoso con grandes candelabros de cristal que iluminan el
@@ -62,7 +62,7 @@ include("includes/a-config.php"); ?>
                 <div class="col-md-4 mb-3 d-flex">
                     <div class="card border-0 fw-bold fst-italic fs-4 bg-transparent" id="cardReserva">
                         <img class="card-img-top border border-3 rounded-3 border-danger"
-                            src="assets/img/reserva/salon.png" alt="terraza">
+                            src="assets/img/reserva/salon.png" alt="Salón">
                         <div class="card-body text-center mt-3 border border-3 rounded-3 border-danger bg-warning">
                             <h1 class="card-title" id="titulo">Salón</h1>
                             <p class="card-text">Un lujoso salón comedor con una gran mesa de madera oscura, rodeada de

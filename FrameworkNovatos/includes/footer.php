@@ -22,7 +22,7 @@
 
             <!-- Redes Sociales e Información -->
             <div class="col-lg-3">
-                <p class="fs-4">Redes Sociales</p>
+                <h2 class="fs-4">Redes Sociales</h2>
 
                 <div class="d-flex mb-2">
                     <span class="social-icon me-3 fs-6"><i class="fab fa-instagram"></i> Óneo_Official</span>
@@ -37,7 +37,7 @@
                     <span class="social-icon fs-6"><i class="fab fa-twitter"></i> Óneo_Official</span>
                 </div>
 
-                <p class="fs-4">Información</p>
+                <h2 class="fs-4">Información</h2>
 
                 <div class="d-flex mb-2">
                     <span><i class="fas fa-phone-alt"></i> 635582372</span>

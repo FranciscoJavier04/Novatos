@@ -8,7 +8,7 @@ include_once("./controllers/Usuario.php");
       <span id="titulo" class="d-inline d-md-none">ÓNEO</span>
     </a>
     <button class="navbar-toggler border-0 fs-4 text-danger" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbar"><span class="d-none">Hamburguesa Menu navbar</span>
+      data-bs-target="#navbar"><span class="d-none">Hamburguesa</span>
       <i class="fas fa-bars"></i>
     </button>
 
