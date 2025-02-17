@@ -61,7 +61,7 @@ if ($_COOKIE['aceptarCookie'] == "false") {
                         </div>
                         <div class="mb-3 text-end">
                             <input type="checkbox" id="rememberMe" name="rememberMe" <?php if (isset($_COOKIE['rememberMe']))
-                                                                                            echo "checked"; ?> aria-labelledby="rememberMe">
+                                                                                            echo "checked"; ?> aria-labelledby="recuerdame">
                             <label>Recuérdame</label>
                         </div>
                         <button type="submit" class="mb-2 btn btn-comun w-100">Iniciar Sesión</button>
