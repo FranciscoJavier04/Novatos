@@ -58,22 +58,22 @@ if ($_COOKIE['aceptarCookie'] == "false") {
                             <label for="nombre" class="form-label">Nombre</label>
                             <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Manuel"
                                 value="<?php if (isset($_SESSION['user_first_name'])) {
-                                    echo $_SESSION['user_first_name'];
-                                } ?>">
+                                            echo $_SESSION['user_first_name'];
+                                        } ?>">
                         </div>
                         <div class="mb-3">
                             <label for="apellidos" class="form-label">Apellidos</label>
                             <input type="text" class="form-control" name="apellidos" id="apellidos"
                                 placeholder="Romero Reyes" value="<?php if (isset($_SESSION['user_last_name'])) {
-                                    echo $_SESSION['user_last_name'];
-                                } ?>">
+                                                                        echo $_SESSION['user_last_name'];
+                                                                    } ?>">
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Correo Electrónico</label>
                             <input type="email" class="form-control" name="email" id="email"
                                 placeholder="fran@gmail.com" value="<?php if (isset($_SESSION['user_email_address'])) {
-                                    echo $_SESSION['user_email_address'];
-                                } ?>">
+                                                                        echo $_SESSION['user_email_address'];
+                                                                    } ?>">
                         </div>
                         <div class="mb-3 password-container">
                             <label for="password" class="form-label">Contraseña</label>
@@ -83,7 +83,7 @@ if ($_COOKIE['aceptarCookie'] == "false") {
                                 onclick="mostrarPass('password','togglePassword')"></i>
                         </div>
                         <div class="mb-3 password-container">
-                            <label for="password" class="form-label">Confirmar Contraseña</label>
+                            <label for="conf_password" class="form-label">Confirmar Contraseña</label>
                             <input type="password" class="form-control" name="conf_password" id="conf_password"
                                 placeholder="********">
                             <i class="fas fa-eye password-icon" id="togglePasswordConfirm"
@@ -116,7 +116,7 @@ if ($_COOKIE['aceptarCookie'] == "false") {
                                 <label for="captcha">Introduce el CAPTCHA:</label>
                                 <div class="d-flex align-items-center">
                                     <img src="generatecaptcha.php" alt="CAPTCHA" class="captcha-image img-fluid w-50" />
-                                    <button type="button" id="refreshCaptcha" class="btn btn-comun ms-2">
+                                    <button type="button" id="refreshCaptcha" class="btn btn-comun ms-2" aria-label="RefreshCaptcha">
                                         <i class="fas fa-redo"></i>
                                     </button>
                                 </div>
