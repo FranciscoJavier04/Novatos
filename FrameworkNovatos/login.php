@@ -27,8 +27,7 @@ if ($_COOKIE['aceptarCookie'] == "false") {
                     <div class="mt-4">
                         <img class="rounded-4 w-100" src="/assets/img/logo-login.png" alt="Logo Óneo">
                     </div>
-                    <!--CF2: ¿Dónde está el h1?-->
-                    <h2 class="mt-4 text-center fw-bold">BIENVENIDO DE NUEVO!</h2>
+                    <h1 class="mt-4 text-center fw-bold">BIENVENIDO DE NUEVO!</h1>
                     <p class="mt-4">Introduce tus datos para disfrutar de todas nuestras funciones.</p>
                     <?php
                     if (isset($_GET['error'])) {
