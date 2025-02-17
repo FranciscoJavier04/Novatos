@@ -13,7 +13,7 @@ include("includes/a-config.php"); ?>
     <?php include("includes/navigation.php"); ?>
 
     <div class="container">
-        <h1 class="h1-Pol text-warning">AVISO LEGAL</h1>
+        <h1 class="h1-Pol text-dark">AVISO LEGAL</h1>
 
         <p class="items-AL fs-2">LEY DE LOS SERVICIOS DE LA SOCIEDAD DE LA INFORMACIÓN (LSSI)</p>
         <p class="item-AL fs-5">

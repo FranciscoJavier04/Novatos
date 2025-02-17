@@ -12,7 +12,7 @@ include("includes/a-config.php"); ?>
     <?php include("includes/navigation.php"); ?>
 
     <div class="container">
-        <h1 class="h1-Pol text-warning">POLÍTICA DE PRIVACIDAD</h1>
+        <h1 class="h1-Pol text-dark">POLÍTICA DE PRIVACIDAD</h1>
 
         <p class="items-PP fs-2">1. Política de Privacidad y Protección de Datos</p>
         <p class="item-PP fs-5">
@@ -299,7 +299,8 @@ include("includes/a-config.php"); ?>
                     <td style="padding: 10px;">Página de inicio</td>
                     <td style="padding: 10px;">Videos</td>
                     <td style="padding: 10px;">YouTube</td>
-                    <td style="padding: 10px;">Contenido con derecho de autor <img src="assets/img/c.png" class="c ">
+                    <td style="padding: 10px;">Contenido con derecho de autor <img src="assets/img/c.png" class="c "
+                            alt="img copy">
 
                 </tr>
                 <tr>
@@ -336,7 +337,8 @@ include("includes/a-config.php"); ?>
                     <td style="padding: 10px;">JuegoPlato</td>
                     <td style="padding: 10px;">Imagen de Fondo</td>
                     <td style="padding: 10px;">Google</td>
-                    <td style="padding: 10px;">Sin derechos de autor <img src="assets/img/cc.png" class="cc ">
+                    <td style="padding: 10px;">Sin derechos de autor <img src="assets/img/cc.png" class="cc "
+                            alt="img cc">
 
                 </tr>
             </tbody>

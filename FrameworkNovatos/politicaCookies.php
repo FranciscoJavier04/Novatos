@@ -12,7 +12,7 @@ include("includes/a-config.php"); ?>
     <?php include("includes/navigation.php"); ?>
 
     <div class="container">
-        <h1 class="h1-Pol text-warning">POLÍTICA DE COOKIES</h1>
+        <h1 class="h1-Pol text-dark">POLÍTICA DE COOKIES</h1>
 
         <p class="items-PC fs-2">Información sobre Cookies</p>
         <p class="item-PC fs-5">
