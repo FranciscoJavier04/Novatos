@@ -32,7 +32,7 @@ if ($_COOKIE['aceptarCookie'] == "false") {
                     </div>
                     <div class="text-center">
 
-                        <h2 class="mt-2 fw-bold">REGISTRARSE</h2>
+                        <h1 class="mt-2 fw-bold">REGISTRARSE</h1>
                         <p class="mt-3">Introduce tus datos para disfrutar de todas nuestras funciones.</p>
                         <?php
                         if (isset($_GET['error'])) {
