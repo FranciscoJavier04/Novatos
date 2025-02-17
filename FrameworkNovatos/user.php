@@ -16,79 +16,80 @@ $imagen_base64 = base64_encode($_SESSION['user']->imagen);
 
 <body>
     <?php include("includes/navigation.php"); ?>
-    <main class="container-fluid p-0">
+    <main class="p-0 container-fluid">
         <header>
-            <div class="container-fluid mt-2">
+            <div class="mt-2 container-fluid">
                 <div class="d-flex justify-content-center align-items-center">
                     <div class="col-md-12 col-8 row">
-                        <div class="col-md-2 text-center text-md-start">
+                        <div class="text-center col-md-2 text-md-start">
                             <div class="profile-pic">
                                 <?php echo "<img src='data:image/png;base64,{$imagen_base64}' class='w-100 rounded-circle' alt='Imagen del Usuario' />"; ?>
                                 <div class="text-center text-md-start">
-                                    <p class="fs-2 fw-bold my-0">
+                                    <p class="my-0 fs-2 fw-bold">
                                         <?php echo $_SESSION['user']->getNombre() . ' ' . $_SESSION['user']->getApellidos(); ?>
                                     </p>
-                                    <p class="fs-4 fw-bold fst-italic opacity-75">
+                                    <p class="opacity-75 fs-4 fw-bold fst-italic">
                                         <?php echo ($_SESSION['user']->getRol() == 'user') ? "Cliente" : "Administrador"; ?>
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-7 justify-content-md-end justify-content-end ">
-                            <input type="file" id="fileInput" accept="image/*" class="d-none">
+                            <input type="file" id="fileInput" accept="image/*" class="d-none" aria-labelledby="fileInput">
+
                             <button class="btn btn-primary"
                                 onclick="document.getElementById('fileInput').click()">Seleccionar Foto</button>
                             <p id="fileName" class="mt-2"></p>
-                            <button class="btn btn-success mt-3" onclick="uploadImage()">Subir Foto</button>
+                            <button class="mt-3 btn btn-success" onclick="uploadImage()">Subir Foto</button>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
         <section>
-            <div class="row justify-content-center border border-dark mx-md-1 my-3 p-3">
+            <div class="p-3 my-3 border row justify-content-center border-dark mx-md-1">
                 <div class="col-md-8">
                     <form action="controllers/insertarModificarUsuario.php" method="POST">
                         <h5 class="text-center">Información Personal</h5>
-                        <div class="separador-user mb-3"></div>
+                        <div class="mb-3 separador-user"></div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="mb-3">
                                     <label for="nombre" class="form-label">Nombre</label>
                                     <input type="text" class="form-control" id="nombre" name="nombre"
-                                        value="<?php echo $_SESSION['user']->getNombre(); ?>">
+                                        value="<?php echo $_SESSION['user']->getNombre(); ?>" aria-label="Nombre">
                                 </div>
                                 <div class="mb-3">
                                     <label for="apellidos" class="form-label">Apellidos</label>
                                     <input type="text" class="form-control" id="apellidos" name="apellidos"
-                                        value="<?php echo $_SESSION['user']->getApellidos(); ?>">
+                                        value="<?php echo $_SESSION['user']->getApellidos(); ?>" aria-label="Apellidos">
                                 </div>
                                 <div class="mb-3">
                                     <label for="fecha_nac" class="form-label">Fecha nacimiento</label>
-                                    <input type="date" class="form-control" id="direccion" name="fecha_nac"
-                                        value="<?php echo $_SESSION['user']->getFechaNac(); ?>">
+                                    <input type="date" class="form-control" id="fecha_nac" name="fecha_nac"
+                                        value="<?php echo $_SESSION['user']->getFechaNac(); ?>" aria-label="Fecha_nacimiento">
                                 </div>
                                 <div class="mb-3">
                                     <label for="telefono" class="form-label">Teléfono</label>
                                     <input type="tel" class="form-control" id="telefono" name="telefono"
-                                        value="<?php echo $_SESSION['user']->getTelefono(); ?>">
+                                        value="<?php echo $_SESSION['user']->getTelefono(); ?>" aria-label="Telefono">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="mb-3">
                                     <label for="email" class="form-label">Email</label>
                                     <input type="email" class="form-control" id="email" name="email"
-                                        value="<?php echo $_SESSION['user']->getEmail(); ?>">
+                                        value="<?php echo $_SESSION['user']->getEmail(); ?>" aria-label="Email">
                                 </div>
                                 <div class="mb-3">
                                     <label for="pais" class="form-label">País</label>
                                     <input type="text" class="form-control" id="pais" name="pais"
-                                        value="<?php echo $_SESSION['user']->getPais(); ?>">
+                                        value="<?php echo $_SESSION['user']->getPais(); ?>" aria-label="Pais">
                                 </div>
                                 <div class="mb-3">
                                     <label for="codPostal" class="form-label">Código Postal</label>
                                     <input type="text" class="form-control" id="codPostal" name="cod_postal"
-                                        value="<?php echo $_SESSION['user']->getCodPostal(); ?>">
+                                        value="<?php echo $_SESSION['user']->getCodPostal(); ?>" aria-label="Codigo Postal">
                                 </div>
                                 <input type="hidden" id="modificarId" name="modificar_id"
                                     value="<?php echo $_SESSION['user']->id_user; ?>">
@@ -113,24 +114,24 @@ $imagen_base64 = base64_encode($_SESSION['user']->imagen);
                 <div class="col-md-3">
                     <form method="POST" action="./controllers/insertarModificarUsuario.php">
                         <h5 class="text-center">Cambiar Contraseña</h5>
-                        <div class="separador-user mb-3"></div>
-                        <div class="text-center mb-3 password-container">
+                        <div class="mb-3 separador-user"></div>
+                        <div class="mb-3 text-center password-container">
                             <label for="current_password" class="form-label">Contraseña actual</label>
                             <input type="password" class="form-control" id="current_password" name="current_password"
-                                required>
+                                required aria-label="Contraseña Actual">
                             <i class="fas fa-eye password-icon" id="togglePasswordCurrent"
                                 onclick="mostrarPass('current_password','togglePasswordCurrent')"></i>
                         </div>
-                        <div class="text-center mb-3 password-container">
+                        <div class="mb-3 text-center password-container">
                             <label for="new_password" class="form-label">Nueva contraseña</label>
-                            <input type="password" class="form-control" id="new_password" name="new_password" required>
+                            <input type="password" class="form-control" id="new_password" name="new_password" required aria-label="Nueva Contraseña">
                             <i class="fas fa-eye password-icon" id="togglePasswordNew"
                                 onclick="mostrarPass('new_password','togglePasswordNew')"></i>
                         </div>
-                        <div class="text-center mb-3 password-container">
+                        <div class="mb-3 text-center password-container">
                             <label for="confirm_new_password" class="form-label">Repite nueva contraseña</label>
                             <input type="password" class="form-control" id="confirm_new_password"
-                                name="confirm_new_password" required>
+                                name="confirm_new_password" required aria-label="Repite Nueva Contraseña">
                             <i class="fas fa-eye password-icon" id="togglePasswordConfirm"
                                 onclick="mostrarPass('confirm_new_password','togglePasswordConfirm')"></i>
                         </div>
