@@ -15,7 +15,7 @@ include("includes/a-config.php"); ?>
         <div class="card w-75 rounded-3 bg-light overflow-hidden fw-bold fst-italic" id="cardFormulario">
             <div class="card-body d-flex flex-column justify-content-between p-4">
                 <section class="text-center">
-                    <img src="/assets/img/LogoSinFondo.png" class="w-25">
+                    <img src="/assets/img/LogoSinFondo.png" class="w-25" alt="logo de la Pagina Web (Oneo)">
                     <h1 class="card-title">Resumen de la Reserva</h1>
                 </section>
                 <hr class="my-4">
@@ -25,29 +25,29 @@ include("includes/a-config.php"); ?>
                         <div class="col-md">
                             <div class="mb-4">
                                 <!--Nombre-->
-                                <label class="form-label">Nombre</label>
+                                <label for="nombreInput" class="form-label">Nombre</label>
                                 <input type="text" class="form-control" id="nombreInput" value="Francisco" disabled>
                             </div>
                             <div class="mb-4">
                                 <!--Apellidos-->
-                                <label class="form-label">Apellidos</label>
+                                <label class="form-label" for="apellidosInput">Apellidos</label>
                                 <input type="text" class="form-control" id="apellidosInput" value="Martin Corredera"
                                     disabled>
                             </div>
                             <div class="mb-4">
                                 <!--Fecha Y Hora-->
-                                <label class="form-label">Fecha Y Hora</label>
-                                <input type="text" class="form-control" id="telefonoInput" value="15/12/2024 - 2:00PM"
+                                <label class="form-label" for="fechaInput">Fecha Y Hora</label>
+                                <input type="text" class="form-control" id="fechaInput" value="15/12/2024 - 2:00PM"
                                     disabled>
                             </div>
                             <div class="mb-4">
                                 <!--Ubicación-->
-                                <label class="form-label">Ubicación</label>
+                                <label class="form-label" for="ubicacionInput">Ubicación</label>
                                 <input type="text" class="form-control" id="ubicacionInput" value="Ubicación" disabled>
                             </div>
                             <div class="mb-4">
                                 <!--Número de Personas-->
-                                <label class="form-label">Número de Personas</label>
+                                <label class="form-label" for="numPersonas">Número de Personas</label>
                                 <input type="number" id="numPersonas" class="form-control" min="1" max="20" value="10"
                                     disabled>
                             </div>
