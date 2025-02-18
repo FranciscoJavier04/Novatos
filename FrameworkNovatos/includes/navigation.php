@@ -24,17 +24,22 @@ include_once("./controllers/Usuario.php");
           <a class="nav-link ms-3 me-3 fs-4 text-warning" href="delivery.php">Delivery</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link ms-3 me-3 dropdown-toggle fs-4 text-danger" id="languageDropdown" role="button"
-            data-bs-toggle="dropdown">
-            <i class="fas fa-globe-europe"></i> / ES
+          <a class="nav-link ms-3 me-3 dropdown-toggle fs-4 text-danger" id="languageDropdown" role="button" data-bs-toggle="dropdown">
+            <i class="fas fa-globe-europe"></i> / <span id="languageText">ES</span>
           </a>
           <ul class="dropdown-menu fs-4 bg-secondary">
-            <li><a class="dropdown-item text-danger">Español</a></li>
-            <li><a class="dropdown-item text-danger">Inglés</a></li>
-            <li><a class="dropdown-item text-danger">Francés</a></li>
-            <li><a class="dropdown-item text-danger">Alemán</a></li>
+            <li><a class="dropdown-item text-danger" onclick="changeLanguage('ES')">Español</a></li>
+            <li><a class="dropdown-item text-danger" onclick="changeLanguage('EN')">Inglés</a></li>
+            <li><a class="dropdown-item text-danger" onclick="changeLanguage('FR')">Francés</a></li>
+            <li><a class="dropdown-item text-danger" onclick="changeLanguage('DE')">Alemán</a></li>
           </ul>
         </li>
+        <script>
+          function changeLanguage(language) {
+            var languageText = document.getElementById('languageText');
+            languageText.textContent = language; // Cambia el texto del enlace al idioma seleccionado
+          }
+        </script>
         <li class="nav-item">
           <?php
 
