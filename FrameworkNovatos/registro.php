@@ -32,7 +32,7 @@ if ($_COOKIE['aceptarCookie'] == "false") {
                     </div>
                     <div class="text-center">
 
-                        <h2 class="mt-2 fw-bold">REGISTRARSE</h2>
+                        <h1 class="mt-2 fw-bold">REGISTRARSE</h1>
                         <p class="mt-3">Introduce tus datos para disfrutar de todas nuestras funciones.</p>
                         <?php
                         if (isset($_GET['error'])) {
@@ -55,60 +55,60 @@ if ($_COOKIE['aceptarCookie'] == "false") {
                     </div>
                     <form method="POST" action="controllers/registrarse.php">
                         <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre</label>
+                            <label for="nombre" class="form-label">Nombre*</label>
                             <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Manuel"
                                 value="<?php if (isset($_SESSION['user_first_name'])) {
-                                    echo $_SESSION['user_first_name'];
-                                } ?>">
+                                            echo $_SESSION['user_first_name'];
+                                        } ?>" aria-label="Nombre">
                         </div>
                         <div class="mb-3">
-                            <label for="apellidos" class="form-label">Apellidos</label>
+                            <label for="apellidos" class="form-label">Apellidos*</label>
                             <input type="text" class="form-control" name="apellidos" id="apellidos"
                                 placeholder="Romero Reyes" value="<?php if (isset($_SESSION['user_last_name'])) {
-                                    echo $_SESSION['user_last_name'];
-                                } ?>">
+                                                                        echo $_SESSION['user_last_name'];
+                                                                    } ?>" aria-label="Apellidos">
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <label for="email" class="form-label">Correo Electrónico*</label>
                             <input type="email" class="form-control" name="email" id="email"
                                 placeholder="fran@gmail.com" value="<?php if (isset($_SESSION['user_email_address'])) {
-                                    echo $_SESSION['user_email_address'];
-                                } ?>">
+                                                                        echo $_SESSION['user_email_address'];
+                                                                    } ?>" aria-label="Email">
                         </div>
                         <div class="mb-3 password-container">
-                            <label for="password" class="form-label">Contraseña</label>
+                            <label for="password" class="form-label">Contraseña*</label>
                             <input type="password" class="form-control" name="password" id="password"
-                                placeholder="********">
+                                placeholder="********" aria-label="Contraseña">
                             <i class="fas fa-eye password-icon" id="togglePassword"
                                 onclick="mostrarPass('password','togglePassword')"></i>
                         </div>
                         <div class="mb-3 password-container">
-                            <label for="password" class="form-label">Confirmar Contraseña</label>
+                            <label for="conf_password" class="form-label">Confirmar Contraseña*</label>
                             <input type="password" class="form-control" name="conf_password" id="conf_password"
-                                placeholder="********">
+                                placeholder="********" aria-label="Confirmar Contraseña">
                             <i class="fas fa-eye password-icon" id="togglePasswordConfirm"
                                 onclick="mostrarPass('conf_password','togglePasswordConfirm')"></i>
                         </div>
                         <div class="mb-3 row">
                             <div class="col-6">
-                                <label for="telefono" class="form-label">Teléfono</label>
+                                <label for="telefono" class="form-label">Teléfono*</label>
                                 <input type="text" class="form-control" name="telefono" id="telefono"
-                                    placeholder="000000000">
+                                    placeholder="000000000" aria-label="Teléfono">
                             </div>
                             <div class="col-6">
-                                <label for="fecha_nac" class="form-label">Fecha Nacimiento</label>
-                                <input type="date" class="form-control" name="fecha_nac" id="fecha_nac">
+                                <label for="fecha_nac" class="form-label">Fecha Nacimiento*</label>
+                                <input type="date" class="form-control" name="fecha_nac" id="fecha_nac" aria-label="Fecha Nacimiento">
                             </div>
                         </div>
                         <div class="mb-3 row">
                             <div class="col-6">
-                                <label for="pais" class="form-label">Pais</label>
-                                <input type="text" class="form-control" name="pais" id="pais" placeholder="España">
+                                <label for="pais" class="form-label">Pais*</label>
+                                <input type="text" class="form-control" name="pais" id="pais" placeholder="España" aria-label="Pais">
                             </div>
                             <div class="col-6">
-                                <label for="cod_postal" class="form-label">Código Postal</label>
+                                <label for="cod_postal" class="form-label">Código Postal*</label>
                                 <input type="text" class="form-control" name="cod_postal" id="cod_postal"
-                                    placeholder="14900">
+                                    placeholder="14900" aria-label="Código Postal">
                             </div>
                         </div>
                         <div class="mb-3">
@@ -116,12 +116,12 @@ if ($_COOKIE['aceptarCookie'] == "false") {
                                 <label for="captcha">Introduce el CAPTCHA:</label>
                                 <div class="d-flex align-items-center">
                                     <img src="generatecaptcha.php" alt="CAPTCHA" class="captcha-image img-fluid w-50" />
-                                    <button type="button" id="refreshCaptcha" class="btn btn-comun ms-2">
+                                    <button type="button" id="refreshCaptcha" class="btn btn-comun ms-2" aria-label="RefreshCaptcha">
                                         <i class="fas fa-redo"></i>
                                     </button>
                                 </div>
                                 <input type="text" id="captcha" name="captcha_challenge" pattern="[A-Z]{6}"
-                                    class="mt-2 form-control">
+                                    class="mt-2 form-control" aria-label="Captcha">
                             </div>
                         </div>
 

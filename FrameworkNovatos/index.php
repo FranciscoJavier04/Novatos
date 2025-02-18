@@ -10,7 +10,6 @@ include("includes/a-config.php"); ?>
 
 <body>
     <?php include("includes/navigation.php"); ?>
-    <!--CF2: El container lo tiene que englobar todo-->
     <div class="modal fade" id="modalNovedades" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="modalNovedadesLabel" aria-hidden="true">
         <div class="modal-dialog">
