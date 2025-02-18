@@ -12,7 +12,6 @@ include("includes/a-config.php"); ?>
     <?php include("includes/navigation.php"); ?>
 
     <!-- MAIN -->
-    <!--CF2: ¿Dónde está el container?-->
     <main class="main-carta">
         <div class="container">
             <div class="hero-logo-carta d-flex justify-content-center align-items-center mb-n3">
@@ -166,7 +165,8 @@ include("includes/a-config.php"); ?>
                     <div class="row">
                         <div class="flex-wrap gap-5 items-carta-postre d-flex justify-content-center">
                             <div class="item-carta-postre fs-6 d-flex flex-column">
-                                <img src="assets/img/carta/tartaSantiago.png" class="img-postres w-100 h-100" alt="tartaSantiago">
+                                <img src="assets/img/carta/tartaSantiago.png" class="img-postres w-100 h-100"
+                                    alt="tartaSantiago">
                                 <p>Tarta de Santiago.</p>
                                 <p>Con helado de vainilla y crema de almendras.</p>
                                 <p>Precio . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15 €</p>

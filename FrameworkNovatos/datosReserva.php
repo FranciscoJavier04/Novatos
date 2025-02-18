@@ -29,7 +29,7 @@ if (!isset($_SESSION['user'])) {
                     <div class="row">
                         <div class="text-center col-md align-items-center">
                             <h2>Elige tu día</h2>
-                            <img src="/assets/img/LogoSinFondo.png" class="mt-4 w-25">
+                            <img src="/assets/img/LogoSinFondo.png" class="mt-4 w-25" alt="logo Oneo">
                         </div>
                         <div class="col-md">
                             <!-- Selección de Fecha -->
