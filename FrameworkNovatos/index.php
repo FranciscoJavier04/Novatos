@@ -108,9 +108,10 @@ include("includes/a-config.php"); ?>
                         </section>
                     </div>
                 </div>
-                <div class="p-0 col-md-6">
+                <div class="p-0 col-md-6" aria-label="Texto descriptivo del video que se muestra">
                     <p>
-                        Estoy seguro de que has visto el Padrino, uno de los nuestros o cualquier película de Mafiosos.
+                        Hola Estoy seguro de que has visto el Padrino, uno de los nuestros o cualquier película de
+                        Mafiosos.
                         Pues hoy os traigo Comiendo en el RESTAURANTE DE LA MAFIA en Marbella.
                     </p>
                 </div>
