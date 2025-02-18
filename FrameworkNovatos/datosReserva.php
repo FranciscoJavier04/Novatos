@@ -59,8 +59,8 @@ if (!isset($_SESSION['user'])) {
                                     placeholder="Número de personas">
                             </div>
                             <div>
-                                <label for="numPersonas" class="form-label">Diseña tu sala</label>
-                                <a href="mapaInteractivo.php" class="btn btn-comun">Sala</a>
+                                <span class="form-label">Diseña tu sala</span>
+                                <a href="mapaInteractivo.php" id="mapInteractivo" class="btn btn-comun">Sala</a>
                             </div>
                         </div>
                     </div>
