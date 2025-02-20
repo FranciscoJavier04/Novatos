@@ -73,12 +73,13 @@ include("includes/a-config.php"); ?>
             <!-- Primera tarjeta -->
             <div class="mb-3 row align-items-center">
                 <div class="p-0 col-md-6 d-flex flex-column align-items-center">
-                    <iframe id="youtube-player-1" class="video"
+                    <iframe id="youtube-player-1" class="video" title="Video de YouTube Probando nuestra comida"
                         src="https://www.youtube.com/embed/nSHrVn5ANZo?enablejsapi=1&controls=0"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen>
                     </iframe>
+                    <track label="Español" kind="subtitles" srclang="es" src="subtitulos1.vtt" default>
                     <div id="controls-1"
                         class="flex-wrap gap-2 px-1 my-0 video-controls d-flex align-items-center bg-secondary text-primary">
                         <button class="toggle-btn btn btn-primary d-flex align-items-center"><span class="d-none">Boton
@@ -121,7 +122,7 @@ include("includes/a-config.php"); ?>
             <!-- Segunda tarjeta (invertida) -->
             <div class="my-3 row align-items-center">
                 <div class="p-0 col-md-6 d-flex flex-column align-items-center order-md-1">
-                    <iframe id="youtube-player-2" class="video"
+                    <iframe id="youtube-player-2" class="video" title="Video de YouTube Probando nuestra comida"
                         src="https://www.youtube.com/embed/nSHrVn5ANZo?enablejsapi=1&controls=0"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -169,7 +170,7 @@ include("includes/a-config.php"); ?>
             <!-- Tercera tarjeta -->
             <div class="my-3 row align-items-center">
                 <div class="p-0 col-md-6 d-flex flex-column align-items-center">
-                    <iframe id="youtube-player-3" class="video"
+                    <iframe id="youtube-player-3" class="video" title="Video de YouTube Probando nuestra comida"
                         src="https://www.youtube.com/embed/nSHrVn5ANZo?enablejsapi=1&controls=0"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

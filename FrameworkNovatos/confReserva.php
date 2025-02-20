@@ -15,7 +15,7 @@ include("includes/a-config.php"); ?>
         <div class="card w-75 rounded-3 bg-light overflow-hidden fw-bold fst-italic" id="cardFormulario">
             <div class="card-body d-flex flex-column justify-content-between p-4">
                 <section class="text-center">
-                    <img src="/assets/img/LogoSinFondo.png" class="w-25" alt="logo de la Pagina Web (Oneo)">
+                    <img src="/assets/img/LogoSinFondo.png" class="w-25" alt="">
                     <h1 class="card-title">Resumen de la Reserva</h1>
                 </section>
                 <hr class="my-4">

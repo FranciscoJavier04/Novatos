@@ -25,7 +25,7 @@ if ($_COOKIE['aceptarCookie'] == "false") {
             <div class="col-md-6 d-flex justify-content-center align-items-center">
                 <div class="text-left login-container">
                     <div class="mt-4">
-                        <img class="rounded-4 w-100" src="/assets/img/logo-login.png" alt="Logo Óneo">
+                        <img class="rounded-4 w-100" src="/assets/img/logo-login.png" alt="">
                     </div>
                     <h1 class="mt-4 text-center fw-bold">BIENVENIDO DE NUEVO!</h1>
                     <p class="mt-4">Introduce tus datos para disfrutar de todas nuestras funciones.</p>
@@ -48,22 +48,23 @@ if ($_COOKIE['aceptarCookie'] == "false") {
                         <div class="mt-3 mb-3">
                             <label for="email" class="form-label">Correo Electrónico</label>
                             <input type="email" class="form-control" name="email" id="email" value="<?php if (isset($_COOKIE['email'])) {
-                                                                                                        echo $_COOKIE['email'];
-                                                                                                    } ?>" required placeholder="fran@gmail.com" aria-label="Correo Electrónico">
+                                echo $_COOKIE['email'];
+                            } ?>" required placeholder="fran@gmail.com" aria-label="Correo Electrónico">
                         </div>
                         <div class="mb-3 password-container">
                             <label for="password" class="form-label">Contraseña</label>
                             <input type="password" class="form-control" required name="password" id="password" value="<?php if (isset($_COOKIE['pass']))
-                                                                                                                            echo $_COOKIE['pass']; ?>" placeholder="********" aria-label="Contraseña">
+                                echo $_COOKIE['pass']; ?>" placeholder="********" aria-label="Contraseña">
                             <i class="fas fa-eye password-icon" id="togglePassword"
                                 onclick="mostrarPass('password','togglePassword')"></i>
                         </div>
                         <div class="mb-3 text-end">
                             <input type="checkbox" id="rememberMe" name="rememberMe" <?php if (isset($_COOKIE['rememberMe']))
-                                                                                            echo "checked"; ?> aria-labelledby="recuerdame">
+                                echo "checked"; ?> aria-labelledby="recuerdame">
                             <label>Recuérdame</label>
                         </div>
-                        <button type="submit" class="mb-2 btn btn-comun w-100">Iniciar Sesión</button>
+                        <button type="submit" class="mb-2 btn btn-comun w-100" value="Iniciar Sesion">Iniciar
+                            Sesión</button>
                         <div class="text-center">
                             <a href="<?php echo $login_button; ?>"><button type="button"
                                     class="p-2 m-3 btn rounded-3 btn-google">
