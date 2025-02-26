@@ -84,7 +84,7 @@
   gap: 0.5rem;
   font-weight: bold;
   &:hover {
-    background-color: $primary;
+    background-color: $secondary;
     color: $dark;
     opacity: 90%;
   }
@@ -92,11 +92,16 @@
 
 .btn-modificar {
   background-color: #007bff;
+  &:focus {
+    background-color: white;
+  }
 }
 
 .btn-eliminar {
   background-color: #dc3545;
-  
+  &:focus {
+    background-color: white;
+  }
 }
 
 .btn-insertar {
@@ -106,4 +111,7 @@
   color: white;
   border-radius: 5px;
   margin: 2px;
+  &:focus {
+    outline: 2px solid rgb(0, 0, 0) !important; /* Cambia el color del foco a rojo */
+  }
 }
