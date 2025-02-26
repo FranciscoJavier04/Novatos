@@ -1,18 +1,21 @@
 /* Footer */
 
+*:focus {
+  outline: 2px solid rgb(255, 255, 255) !important;
+}
 .logo {
-    width: 120px;
+  width: 120px;
 }
 
 .fs7 {
-    font-size: 64px;
+  font-size: 64px;
 }
 
 .linea {
-    width: 1px; 
-    border-left: 2px solid white;
+  width: 1px;
+  border-left: 2px solid white;
 }
 .lineao {
-    width:70%; 
-    border-top: 2px solid white;
+  width: 70%;
+  border-top: 2px solid white;
 }

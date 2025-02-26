@@ -18,7 +18,7 @@ if (!isset($_SESSION['user']) || $_SESSION['user']->getRol() == 'user') {
 
 </head>
 
-<body class="body-back align-items-center text-black ">
+<body class="text-black body-back align-items-center ">
 
     <?php include("includes/navigation.php"); ?>
     <div class="p-4 mb-4 container-del d-flex">
@@ -35,13 +35,13 @@ if (!isset($_SESSION['user']) || $_SESSION['user']->getRol() == 'user') {
 
             <!-- Contenido Principal -->
             <div class="w-5 p-3 mx-auto text-justify carta-del col-md-9 bg-warning rounded-3 text-paragraph">
-                <div class="row">
+                <div class="row justify-content-end">
 
                     <!-- GESTIÓN DE USUARIOS -->
                     <h1 class="mt-3" id="usuarios">Gestión de Usuarios</h1>
 
                     <!-- Botón para abrir el modal de Insertar Usuario -->
-                    <button type="button" class="btn btn-insertar" id="abrirModalInsertar" data-bs-toggle="modal"
+                    <button type="button" class="btn btn-insertar w-25 " id="abrirModalInsertar" data-bs-toggle="modal"
                         data-bs-target="#modalUsuario">
                         Insertar Usuario
                     </button>
@@ -181,7 +181,7 @@ if (!isset($_SESSION['user']) || $_SESSION['user']->getRol() == 'user') {
 
                             <!-- Script de Validación -->
                             <script>
-                                document.getElementById("formUsuario").addEventListener("submit", function (event) {
+                                document.getElementById("formUsuario").addEventListener("submit", function(event) {
                                     let valid = true;
 
                                     // Validar Email
@@ -248,7 +248,7 @@ if (!isset($_SESSION['user']) || $_SESSION['user']->getRol() == 'user') {
                                 }
 
                                 // Restablecer el modal cuando se abre para insertar usuario
-                                document.getElementById('modalUsuario').addEventListener('show.bs.modal', function () {
+                                document.getElementById('modalUsuario').addEventListener('show.bs.modal', function() {
                                     if (modalTitle.textContent === 'Insertar Usuario') {
                                         passwordInput.disabled = false;
                                     }
@@ -261,7 +261,7 @@ if (!isset($_SESSION['user']) || $_SESSION['user']->getRol() == 'user') {
                     <!-- GESTIÓN DE PLATOS -->
                     <h1 class="mt-5" id="platos">Gestión de Platos</h1>
                     <!-- Botón para abrir el modal de Insertar Usuario -->
-                    <button type="button" class="btn btn-insertar" id="abrirModalInsertar" data-bs-toggle="modal"
+                    <button type="button" class="btn btn-insertar w-25" id="abrirModalInsertar" data-bs-toggle="modal"
                         data-bs-target="#modalPlato">
                         Insertar Plato
                     </button>
@@ -375,7 +375,7 @@ if (!isset($_SESSION['user']) || $_SESSION['user']->getRol() == 'user') {
 
                     <!-- Script de Validación -->
                     <script>
-                        document.getElementById("formPlato").addEventListener("submit", function (event) {
+                        document.getElementById("formPlato").addEventListener("submit", function(event) {
                             let valid = true;
 
                             // Validar Nombre del Plato
@@ -420,7 +420,7 @@ if (!isset($_SESSION['user']) || $_SESSION['user']->getRol() == 'user') {
 
                     <!-- GESTIÓN DE VALORACIONES -->
                     <h1 class="mt-5" id="valoraciones">Gestión de Valoraciones</h1>
-                    <button type="button" class="btn btn-insertar" id="abrirModalInsertarValoracion"
+                    <button type="button" class="btn btn-insertar w-25" id="abrirModalInsertarValoracion"
                         data-bs-toggle="modal" data-bs-target="#modalValoracion">
                         Insertar Valoración
                     </button>
@@ -540,7 +540,7 @@ if (!isset($_SESSION['user']) || $_SESSION['user']->getRol() == 'user') {
 
                     <!-- Script de Validación -->
                     <script>
-                        document.getElementById("formValoracion").addEventListener("submit", function (event) {
+                        document.getElementById("formValoracion").addEventListener("submit", function(event) {
                             let valid = true;
 
                             const valoracion = parseFloat(document.getElementById("valoracion").value);

@@ -1,5 +1,8 @@
 .navbar {
   font-family: $tipografia_titulos;
+  *:focus {
+    outline: 2px solid rgb(255, 255, 255); /* Cambia el color del foco a rojo */
+  }
   .navbar-brand {
     img {
       width: 100px;

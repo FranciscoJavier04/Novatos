@@ -1,4 +1,15 @@
 //MANU
+
+*:focus {
+  outline: 2px solid rgb(255, 255, 255); /* Cambia el color del foco a rojo */
+}
+
+.modal {
+  *:focus {
+    outline: 2px solid rgb(0, 0, 0) !important; /* Cambia el color del foco a rojo */
+  }
+}
+
 .bg-login {
   background-image: url("/assets/img/imagenInicio.png");
   background-size: cover;
