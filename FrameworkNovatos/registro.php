@@ -28,7 +28,7 @@ if ($_COOKIE['aceptarCookie'] == "false") {
             <div class="my-5 col-md-6 d-flex align-items-center justify-content-center">
                 <div class="text-left login-container">
                     <div class="mt-4">
-                        <img class="rounded-4 w-100" src="/assets/img/logo-login.png" alt="Logo Óneo">
+                        <img class="rounded-4 w-100" src="/assets/img/logo-login.png" alt="">
                     </div>
                     <div class="text-center">
 
@@ -58,22 +58,22 @@ if ($_COOKIE['aceptarCookie'] == "false") {
                             <label for="nombre" class="form-label">Nombre*</label>
                             <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Manuel"
                                 value="<?php if (isset($_SESSION['user_first_name'])) {
-                                            echo $_SESSION['user_first_name'];
-                                        } ?>" aria-label="Nombre">
+                                    echo $_SESSION['user_first_name'];
+                                } ?>" aria-label="Nombre">
                         </div>
                         <div class="mb-3">
                             <label for="apellidos" class="form-label">Apellidos*</label>
                             <input type="text" class="form-control" name="apellidos" id="apellidos"
                                 placeholder="Romero Reyes" value="<?php if (isset($_SESSION['user_last_name'])) {
-                                                                        echo $_SESSION['user_last_name'];
-                                                                    } ?>" aria-label="Apellidos">
+                                    echo $_SESSION['user_last_name'];
+                                } ?>" aria-label="Apellidos">
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Correo Electrónico*</label>
                             <input type="email" class="form-control" name="email" id="email"
                                 placeholder="fran@gmail.com" value="<?php if (isset($_SESSION['user_email_address'])) {
-                                                                        echo $_SESSION['user_email_address'];
-                                                                    } ?>" aria-label="Email">
+                                    echo $_SESSION['user_email_address'];
+                                } ?>" aria-label="Email">
                         </div>
                         <div class="mb-3 password-container">
                             <label for="password" class="form-label">Contraseña*</label>
@@ -97,13 +97,15 @@ if ($_COOKIE['aceptarCookie'] == "false") {
                             </div>
                             <div class="col-6">
                                 <label for="fecha_nac" class="form-label">Fecha Nacimiento*</label>
-                                <input type="date" class="form-control" name="fecha_nac" id="fecha_nac" aria-label="Fecha Nacimiento">
+                                <input type="date" class="form-control" name="fecha_nac" id="fecha_nac"
+                                    aria-label="Fecha Nacimiento">
                             </div>
                         </div>
                         <div class="mb-3 row">
                             <div class="col-6">
                                 <label for="pais" class="form-label">Pais*</label>
-                                <input type="text" class="form-control" name="pais" id="pais" placeholder="España" aria-label="Pais">
+                                <input type="text" class="form-control" name="pais" id="pais" placeholder="España"
+                                    aria-label="Pais">
                             </div>
                             <div class="col-6">
                                 <label for="cod_postal" class="form-label">Código Postal*</label>
@@ -116,7 +118,8 @@ if ($_COOKIE['aceptarCookie'] == "false") {
                                 <label for="captcha">Introduce el CAPTCHA:</label>
                                 <div class="d-flex align-items-center">
                                     <img src="generatecaptcha.php" alt="CAPTCHA" class="captcha-image img-fluid w-50" />
-                                    <button type="button" id="refreshCaptcha" class="btn btn-comun ms-2" aria-label="RefreshCaptcha">
+                                    <button type="button" id="refreshCaptcha" class="btn btn-comun ms-2"
+                                        aria-label="RefreshCaptcha">
                                         <i class="fas fa-redo"></i>
                                     </button>
                                 </div>
@@ -125,7 +128,8 @@ if ($_COOKIE['aceptarCookie'] == "false") {
                             </div>
                         </div>
 
-                        <button type="submit" id="submitBtn" class="mt-3 btn btn-comun w-100">Registrarse</button>
+                        <button type="submit" id="submitBtn" class="mt-3 btn btn-comun w-100"
+                            value="Registrarse">Registrarse</button>
 
                         <p class="mt-3">¿Ya tienes cuenta? <a href="login.php">Iniciar Sesión</a></p>
 
